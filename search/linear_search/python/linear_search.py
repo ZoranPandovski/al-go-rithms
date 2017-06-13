@@ -1,16 +1,16 @@
 # Return positon if given number is found in the list
-def linear_search(arr, key):
-	for i, num in enumerate(arr):
+def linear_search(list, key):
+	for i, num in enumerate(list):
 		if num == key:
 			return i
 	return None
 
 # Return True if given number is found in the list
-def linear_search1(arr, key):
+def linear_search1(list, key):
 	position = 0
 	found = False
-	while position < len(arr) and not found:		
-		if arr[position] == key:
+	while position < len(list) and not found:		
+		if list[position] == key:
 			found = True
 		position += 1
 	return found

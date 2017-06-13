@@ -1,12 +1,12 @@
-def binary_search(arr, num):
+def binary_search(list, num):
     found = False
     first = 0
-    last = len(arr) - 1
+    last = len(list) - 1
     while first <= last and not found:
         middle = (first + last)//2
-        if arr[middle] == num:
+        if list[middle] == num:
             found = True
-        elif arr[middle] < num:
+        elif list[middle] < num:
             first = middle + 1
         else:
             last = middle - 1
