@@ -1,7 +1,7 @@
 (function(){
 'use strict'
 
-const assert = function assert(condition, message) {
+const assert = function(condition, message) {
     if (!condition) {
         message = message || "Assertion failed";
         if (typeof Error !== "undefined") {
