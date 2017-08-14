@@ -10,5 +10,10 @@ def caesar_cipher(plaintext, shift):
     return cipher_text
 
 
+def test():
+    cipher = 'Khoor'
+    assert caesar_cipher('Hello', 3) == cipher
+
+
 if __name__ == "__main__":
-    print caesar_cipher('zdravo', 3)
+    test()
