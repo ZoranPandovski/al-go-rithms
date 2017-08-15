@@ -1,4 +1,4 @@
-### Data Structures and Algorithms
+# Data Structures and Algorithms
 
 Clean examples implementations of data structures and algorithms written in different languages.
 
@@ -15,5 +15,20 @@ Clean examples implementations of data structures and algorithms written in diff
   * [russian peasant](russian_peasant)
 * Cryptography
   * [caesar cipher](caesar_cipher)
+  
+ ## Resources
+ 
+ Curated list of resources dealing with algorithms.
+ 
+ * Books
+   * [Introduction to algorithms](https://www.amazon.com/Introduction-Algorithms-Second-Edition-Thomas/dp/0262032937)
+  
+ * Sites
+   * [Tutorials point](https://www.tutorialspoint.com/data_structures_algorithms/index.htm)
+  
+ * Online classes
+   * [Introduction to algorithms Part1](https://www.coursera.org/learn/introduction-to-algorithms)
+
+
   
   
