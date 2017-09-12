@@ -17,6 +17,17 @@ Clean examples implementations of data structures and algorithms written in diff
 * [Cryptography](cryptography)
   * [caesar cipher](cryptography/caesar_cipher)
   
+ ## Contribution
+ * Contributions are always welcome. Language doesn't matter. Just make sure you're implementing an algorithm.
+ * PRs are welcome. To begin developing, follow the structure:
+ 
+   > algorithm_name/language-name/file_name.extension
+   
+ * Please include description for the algorithm that you are implementing. It doesn't matter if it's copied from somwhere as      long as it helps to people that are learning new algorithm.
+ * Graphical example would be verry helpful too.
+ * Don't forget to include tests.
+  
+ 
  ## Resources
  
  Curated list of resources dealing with algorithms.
