@@ -11,10 +11,11 @@ Clean examples implementations of data structures and algorithms written in diff
   * [bubble sort](sort/bubble_sort)
   * [insertion sort](sort/insertion_sort)
   * [quick sort](sort/quick_sort)
-* Math
-  * [russian peasant](russian_peasant)
-* Cryptography
-  * [caesar cipher](caesar_cipher)
+* [Math](math)
+  * [russian peasant](math/russian_peasant)
+  * [towers_of_hanoi](math/towers_of_hanoi)
+* [Cryptography](cryptography)
+  * [caesar cipher](cryptography/caesar_cipher)
   
  ## Resources
  
