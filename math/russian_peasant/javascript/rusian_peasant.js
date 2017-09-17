@@ -1,6 +1,7 @@
-'use strict';
+(function(){
+"use strict"
 
-const russian_peasant = function(a, b) {
+const russianPeasant = function(a, b) {
     let x = a,
         y = b,
         sum = 0;
@@ -13,3 +14,7 @@ const russian_peasant = function(a, b) {
     }
     return sum;
 }
+
+
+console.assert(russianPeasant(5,5) === 25);
+})();

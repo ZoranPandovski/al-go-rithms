@@ -14,7 +14,7 @@ def bubble_sort(list):
 def test():
 	list = [2, 1, 2, 7, 88, 4, 3, 6]
 	sorted_list = bubble_sort(list)
-	assert (sorted(list) == sorted_list) == True
+	assert (sorted(list) == sorted_list)
 	
 
 if __name__ == '__main__':
