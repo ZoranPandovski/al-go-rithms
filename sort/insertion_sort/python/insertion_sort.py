@@ -11,9 +11,9 @@ def insertion_sort(list):
 
 
 def test():
-	list = [5,7,6,2,1,7,3]
+	list = [5, 7, 6, 2, 1, 7, 3]
 	sorted_list = insertion_sort(list)
-	assert (sorted(list) == sorted_list) == True
+	assert (sorted(list) == sorted_list)
 
 if __name__ == '__main__':
     test()	
