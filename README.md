@@ -52,6 +52,7 @@ Clean examples implementations of data structures and algorithms written in diff
    * [Intro to algorithms - Udacity](https://www.udacity.com/course/intro-to-algorithms--cs215)
    * [Algorithms - Edx](https://www.edx.org/course/algorithms-iitbombayx-cs213-3x-0)
    * [Algorithms and data structures - Edx](https://www.edx.org/course/algorithms-data-structures-microsoft-dev285x)
+   * [Algorithm Design and Analysis - Edx](https://courses.edx.org/courses/course-v1:PennX+SD3x+2T2017/course/)
 
 
   
