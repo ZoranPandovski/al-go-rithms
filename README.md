@@ -18,6 +18,8 @@ Clean examples implementations of data structures and algorithms written in diff
   * [towers_of_hanoi](math/towers_of_hanoi)
 * [Cryptography](cryptography)
   * [caesar cipher](cryptography/caesar_cipher)
+* [Greedy](greedy)
+  * [dijkstra’s algorithm](greedy/dijkstra’s_algorithm)
 
 ## Contribution
  * Contributions are always welcome. Language doesn't matter. Just make sure you're implementing an algorithm.
