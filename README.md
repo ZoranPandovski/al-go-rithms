@@ -56,3 +56,12 @@ Clean examples implementations of data structures and algorithms written in diff
    * [Algorithms - Edx](https://www.edx.org/course/algorithms-iitbombayx-cs213-3x-0)
    * [Algorithms and data structures - Edx](https://www.edx.org/course/algorithms-data-structures-microsoft-dev285x)
    * [Algorithm Design and Analysis - Edx](https://courses.edx.org/courses/course-v1:PennX+SD3x+2T2017/course/)
+ * Coding Practice Sites
+    * [HackerRank](https://www.hackerrank.com/)
+    * [HackerEarth](https://www.hackerearth.com/)
+    * [SPOJ](http://www.spoj.com/)
+    * [TopCoder](https://www.topcoder.com/)
+    * [CodeChef](https://www.codechef.com/)
+    * [Codeforces](http://codeforces.com/)
+    * [Project Euler](https://projecteuler.net/)
+    * [LeetCode](https://leetcode.com/)
