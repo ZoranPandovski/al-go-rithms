@@ -28,3 +28,12 @@ def merge_sort(array):
     right = merge_sort(array[half:])
 
     return merge(left, right)
+
+
+def test():
+    list = [5, 7, 6, 2, 1, 7, 3]
+    sorted_list = merge_sort(list)
+    print 'Sorted: ', sorted_list
+
+if __name__ == '__main__':
+    test()
