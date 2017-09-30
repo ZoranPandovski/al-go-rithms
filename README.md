@@ -11,27 +11,29 @@ Clean examples implementations of data structures and algorithms written in diff
   * [bubble sort](sort/bubble_sort)
   * [insertion sort](sort/insertion_sort)
   * [quick sort](sort/quick_sort)
+  * [merge sort](sort/merge_sort)
+  * [heap sort](sort/heap_sort)
 * [Math](math)
   * [russian peasant](math/russian_peasant)
   * [towers_of_hanoi](math/towers_of_hanoi)
 * [Cryptography](cryptography)
   * [caesar cipher](cryptography/caesar_cipher)
-  
+
 ## Contribution
  * Contributions are always welcome. Language doesn't matter. Just make sure you're implementing an algorithm.
  * PRs are welcome. To begin developing, follow the structure:
- 
+
    > algorithm_name/language-name/file_name.extension
-   
+
  * Please include description for the algorithm that you are implementing. It doesn't matter if it's copied from somwhere as      long as it helps to people that are learning new algorithm.
  * Graphical example would be verry helpful too.
  * Don't forget to include tests.
-  
- 
+
+
 ## Resources
- 
+
  Curated list of resources dealing with algorithms.
- 
+
  * Books
    * [Introduction to algorithms](https://www.amazon.com/Introduction-Algorithms-Second-Edition-Thomas/dp/0262032937)
    * [Algorithms and Data structures](https://www.amazon.com/Algorithms-Structures-Prentice-Hall-Automatic-Computation/dp/0130224189)
@@ -53,7 +55,3 @@ Clean examples implementations of data structures and algorithms written in diff
    * [Algorithms - Edx](https://www.edx.org/course/algorithms-iitbombayx-cs213-3x-0)
    * [Algorithms and data structures - Edx](https://www.edx.org/course/algorithms-data-structures-microsoft-dev285x)
    * [Algorithm Design and Analysis - Edx](https://courses.edx.org/courses/course-v1:PennX+SD3x+2T2017/course/)
-
-
-  
-  
