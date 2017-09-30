@@ -16,6 +16,7 @@ Clean examples implementations of data structures and algorithms written in diff
 * [Math](math)
   * [russian peasant](math/russian_peasant)
   * [towers_of_hanoi](math/towers_of_hanoi)
+  * [armstrong_number](math/armstrong_number)
 * [Cryptography](cryptography)
   * [caesar cipher](cryptography/caesar_cipher)
 
