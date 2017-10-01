@@ -1,4 +1,4 @@
-PlayFair Cipher
+### PlayFair Cipher
 
 The Playfair cipher uses a 5 by 5 table containing a key word or phrase. Memorization of the keyword and 4 simple rules was all that was required to create the 5 by 5 table and use the cipher.
 To generate the key table, one would first fill in the spaces in the table with the letters of the keyword (dropping any duplicate letters), then fill the remaining spaces with the rest of the letters of the alphabet in order (usually omitting "J" or "Q" to reduce the alphabet to fit; other versions put both "I" and "J" in the same space). The key can be written in the top rows of the table, from left to right, or in some other pattern, such as a spiral beginning in the upper-left-hand corner and ending in the center. The keyword together with the conventions for filling in the 5 by 5 table constitute the cipher key.
@@ -10,8 +10,9 @@ To encrypt a message, one would break the message into digrams (groups of 2 lett
 
 To decrypt, use the INVERSE (opposite) of the last 3 rules, and the 1st as-is (dropping any extra "X"s, or "Q"s that do not make sense in the final message when finished).
 
-Execution and test cases:
+#### Execution and test cases:
 
+```
 $ python3 playfair.py 
 ------------------PLAYFAIR ENCRYPTION------------------
 1.Encryption
@@ -49,3 +50,4 @@ HELLO
 3.Exit
 Enter an option : 3
 Bye bye...
+```
