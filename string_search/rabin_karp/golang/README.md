@@ -1,5 +1,5 @@
 
-### Algorithm
+### Rabin Karp
 
 In depth reference [Wikipedia](https://www.wikiwand.com/en/Rabin%E2%80%93Karp_algorithm)
 
