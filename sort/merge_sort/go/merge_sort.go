@@ -1,51 +1,40 @@
-package main
+package mergesort
 
-import "fmt"
-
-func main() {
-	arr := []int{5,15,154,1,3,2,4,8,9,5,8,4,5,6,3,2,4,5}
-
-	fmt.Printf("Unsorted: %v\n", arr)
-	fmt.Printf("Sorted: %v\n", Sort(arr))
+// MergeSort uses the merge sort algorithm to sort an integer slice.
+func MergeSort(slice []int) {
+	sortedSlice := mergeSort(slice)
+	for i, val := range sortedSlice {
+		slice[i] = val
+	}
 }
 
-func merge(left []int, right []int) []int {
-	var arr = make([]int, len(left) + len(right))
-	var leftIndex = 0
-	var rightIndex = 0
+func mergeSort(slice []int) []int {
+	if len(slice) <= 1 {
+		return slice
+	}
+	m := len(slice) / 2
+	left := mergeSort(slice[:m])
+	right := mergeSort(slice[m:])
+	return merge(left, right)
+}
 
-	for leftIndex < len(left) && rightIndex < len(right) {
-
-		if left[leftIndex] <= right[rightIndex] {
-			arr[leftIndex+rightIndex] = left[leftIndex]
-			leftIndex++
+func merge(left, right []int) []int {
+	slice := make([]int, len(left)+len(right))
+	i, j := 0, 0
+	for i < len(left) && j < len(right) {
+		if left[i] <= right[j] {
+			slice[i+j] = left[i]
+			i++
 		} else {
-			arr[leftIndex+rightIndex] = right[rightIndex]
-			rightIndex++
+			slice[i+j] = right[j]
+			j++
 		}
-
 	}
-
-	for ; leftIndex < len(left); leftIndex++ {
-		arr[leftIndex+rightIndex] = left[leftIndex]
+	for ; i < len(left); i++ {
+		slice[i+j] = left[i]
 	}
-
-	for ; rightIndex < len(right); rightIndex++ {
-		arr[leftIndex+rightIndex] = right[rightIndex]
+	for ; j < len(right); j++ {
+		slice[i+j] = right[j]
 	}
-
-	return arr
-}
-
-func Sort(items []int) []int {
-	if len(items) < 2 {
-		return items
-	}
-
-	middle := len(items) / 2
-
-	a := Sort(items[:middle])
-	b := Sort(items[middle:])
-
-	return merge(a, b)
+	return slice
 }
