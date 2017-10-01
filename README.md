@@ -20,6 +20,7 @@ Clean examples implementations of data structures and algorithms written in diff
   * [euclid's gcd](math/euclids_gcd)
   * [prime seive](math/prime_seive)
   * [strong_number](math/strong_number)
+  * [factorial](math/factorial)
 
 * [Cryptography](cryptography)
   * [caesar cipher](cryptography/caesar_cipher)
