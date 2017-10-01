@@ -2,7 +2,7 @@
 class BinarySearch
 {
     //Search for a number in an array
-    private static int search(int arr[], int x)
+    protected static int search(int arr[], int x)
     {
         return binarySearch(arr, 0, arr.length-1, x);
     }
