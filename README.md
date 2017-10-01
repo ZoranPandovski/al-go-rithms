@@ -19,8 +19,16 @@ Clean examples implementations of data structures and algorithms written in diff
   * [armstrong_number](math/armstrong_number)
 * [Cryptography](cryptography)
   * [caesar cipher](cryptography/caesar_cipher)
+  * [substitution cipher](cryptography/substitution_cipher)
 * [Greedy](greedy)
   * [dijkstra’s algorithm](greedy/dijkstra’s_algorithm)
+* [Graphs](graphsearch)
+  * [breadth-first-search](graphsearch/breadth-first-search)
+  * [depth-first-search](graphsearch/depth-first-search)
+  * [topological sorting](graphsearch/topological_sorting)
+* [String search](string_search)
+  * [knuth morris pratt](string_search/knuth_morris_pratt)
+  * [rabin karp](string_search/rabin_karp)
 
 ## Contribution
  * Contributions are always welcome. Language doesn't matter. Just make sure you're implementing an algorithm.
