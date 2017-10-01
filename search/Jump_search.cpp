@@ -49,6 +49,6 @@ int main()
     int index = jumpSearch(arr, x, n);
  
     // Print the index where 'x' is located
-    cout << "\nNumber " << x << " is at index " << index;
+     cout << "\nNumber " << x << " is at index " << index;
     return 0;
 }
