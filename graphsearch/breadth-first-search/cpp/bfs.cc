@@ -48,7 +48,7 @@ int main() {
 		lista[u].push_back(w);
 	}
 
-	dfs(lista, 0); //0 is the start
+	bfs(lista, 0); //0 is the start
 	
 	/* example:
 	http://pages.cs.wisc.edu/~mcw/cs367/lectures/images/bfs.gif
