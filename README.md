@@ -28,6 +28,7 @@ Clean examples implementations of data structures and algorithms written in diff
   * [substitution cipher](cryptography/substitution_cipher)
   * [vernam cipher](cryptography/vernam_cipher)
   * [vigenere cipher](cryptography/vigenere_cipher)
+  * [playfair cipher](cryptography/playfair_cipher)
 * [Greedy](greedy)
   * [dijkstra’s algorithm](greedy/dijkstra’s_algorithm)
   * [kruskal's algorithm](greedy/kruskal's_algorithm)
@@ -42,6 +43,8 @@ Clean examples implementations of data structures and algorithms written in diff
   * [rabin karp](string_search/rabin_karp)
 * [Cluster analysis](cluster_analysis)
   * [k-means](cluster_analysis/k-means)
+* [Dynamic Programming](dp)
+  * [kadane algorithm](dp/kadane-_algorithm)
 
 ## Contribution
  * Contributions are always welcome. Language doesn't matter. Just make sure you're implementing an algorithm.
