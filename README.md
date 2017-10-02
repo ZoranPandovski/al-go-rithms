@@ -51,7 +51,7 @@ Clean examples implementations of data structures and algorithms written in diff
  * PRs are welcome. To begin developing, follow the structure:
 
    > algorithm_name/language-name/file_name.extension
-
+ * If there is implementation of the same algorithm in your language add you username in front of the file name
  * Please include description for the algorithm that you are implementing. It doesn't matter if it's copied from somwhere as      long as it helps to people that are learning new algorithm.
  * Graphical example would be verry helpful too.
  * Don't forget to include tests.
