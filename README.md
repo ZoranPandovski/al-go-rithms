@@ -1,4 +1,6 @@
 [![Join the chat at https://gitter.im/al-go-rithms](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/al-go-rithms?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![License](https://img.shields.io/badge/license-MIT%20License-brightgreen.svg)](https://opensource.org/licenses/MIT)
+
 # Data Structures and Algorithms
 
 Clean examples implementations of data structures and algorithms written in different languages.
