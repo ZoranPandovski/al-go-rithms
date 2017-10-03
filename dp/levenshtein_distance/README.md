@@ -21,10 +21,10 @@ always minimizes the cost locally. This way the number in the lower right corner
 
 Here is an example that features the comparison of "meilenstein" and "levenshtein":
 
-![](https://github.com/ZoranPandovski/al-go-rithms/blob/master/dp/levenshtein_distance/levenshtein_meilenstein_matrix.gif)
+![](https://github.com/arijitkar98/al-go-rithms/blob/master/dp/levenshtein_distance/levenshtein_meilenstein_matrix.gif)
 
 There are two possible paths through the matrix that actually produce the least cost solution. Namely
 
-![](https://github.com/ZoranPandovski/al-go-rithms/blob/master/dp/levenshtein_distance/levenshtein_meilenstein_path.gif)
+![](https://github.com/arijitkar98/al-go-rithms/blob/master/dp/levenshtein_distance/levenshtein_meilenstein_path.gif)
 
 "=" Match; "o" Substitution; "+" Insertion; "-" Deletion
