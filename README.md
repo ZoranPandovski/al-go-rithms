@@ -47,6 +47,9 @@ Clean examples implementations of data structures and algorithms written in diff
   * [k-means](cluster_analysis/k-means)
 * [Dynamic Programming](dp)
   * [kadane algorithm](dp/kadane-_algorithm)
+  * [knapsack algorithm](dp/knapsack_problem)
+  * [levenshtein distance](dp/levenshtein_distance)
+  * [minimum cost path](dp/min_cost_path)
 
 ## Contribution
  * Contributions are always welcome. Language doesn't matter. Just make sure you're implementing an algorithm.
