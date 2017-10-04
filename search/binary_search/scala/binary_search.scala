@@ -1,6 +1,13 @@
 
 
-
+/**
+* Recursive binary search algorithm 
+* @param lst the integer array which is being searched
+* @param l lower value for partition
+* @param r upper value for partition
+* @param num number which is being searched for
+* @return the index of the element that matches the search term, returns -1 if not found
+*/
 def binary_search(lst:Array[Int],l:Int,r:Int,num:Int):Int={
 
 	if(l <= r){
