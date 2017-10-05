@@ -55,6 +55,8 @@ Clean examples implementations of data structures and algorithms written in diff
   * [floyd Warshall algorithm](dp/floyd_warshall_algorithm)
 * [Data structures](data_structures)
   * [linked list](data_structures/linked_list)
+* [Backtracking](backtracking)
+  * [sudoku](backtracking/sudoku)
 
 ## Contribution
  * Contributions are always welcome. Language doesn't matter. Just make sure you're implementing an algorithm.
