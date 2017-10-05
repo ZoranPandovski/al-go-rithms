@@ -35,6 +35,7 @@ Clean examples implementations of data structures and algorithms written in diff
   * [dijkstra’s algorithm](greedy/dijkstra’s_algorithm)
   * [kruskal's algorithm](greedy/kruskal's_algorithm)
   * [prim's algorithm](greedy/prim's_algorithm)
+  * [job sequencing problem](greedy/Job_sequencing_problem)
 * [Graphs](graphsearch)
   * [breadth-first-search](graphsearch/breadth-first-search)
   * [depth-first-search](graphsearch/depth-first-search)
@@ -50,6 +51,10 @@ Clean examples implementations of data structures and algorithms written in diff
   * [knapsack algorithm](dp/knapsack_problem)
   * [levenshtein distance](dp/levenshtein_distance)
   * [minimum cost path](dp/min_cost_path)
+  * [matrix chain multiplication](dp/matrix_chain_multiplication)
+  * [floyd Warshall algorithm](dp/floyd_warshall_algorithm)
+* [Data structures](data_structures)
+  * [linked list](data_structures/linked_list)
 
 ## Contribution
  * Contributions are always welcome. Language doesn't matter. Just make sure you're implementing an algorithm.
