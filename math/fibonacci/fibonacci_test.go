@@ -11,8 +11,8 @@ var testCase = []struct {
 	{1, 1},
 	{5, 8},
 	{9, 55},
-  {19, 6765},
-  {13, 377},
+  	{19, 6765},
+  	{13, 377},
 }
 
 func TestFib(t *testing.T) {
