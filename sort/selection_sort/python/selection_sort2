@@ -27,7 +27,7 @@ def selection_sort(items):
 
 
 if __name__ == '__main__':
-    # to make it run on both version python 2.x and 3.x 
+    # to make it work on both version python 2.x and 3.x 
     if sys.version_info.major > 3:
         input_fun = input   
     else:
