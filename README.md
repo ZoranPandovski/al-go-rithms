@@ -17,6 +17,7 @@ Clean examples implementations of data structures and algorithms written in diff
   * [quick sort](sort/quick_sort)
   * [merge sort](sort/merge_sort)
   * [heap sort](sort/heap_sort)
+  * [selection sort](sort/selection_sort)
 * [Math](math)
   * [russian peasant](math/russian_peasant)
   * [towers of hanoi](math/towers_of_hanoi)
