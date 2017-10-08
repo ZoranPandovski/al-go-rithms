@@ -25,6 +25,8 @@ Clean examples implementations of data structures and algorithms written in diff
   * [prime seive](math/prime_seive)
   * [strong number](math/strong_number)
   * [factorial](math/factorial)
+  * [fibonacci sequence](math/fibonacci)
+  * [sum of digits](math/sum_of_digits)
 * [Cryptography](cryptography)
   * [caesar cipher](cryptography/caesar_cipher)
   * [substitution cipher](cryptography/substitution_cipher)
