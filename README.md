@@ -17,6 +17,7 @@ Clean examples implementations of data structures and algorithms written in diff
   * [quick sort](sort/quick_sort)
   * [merge sort](sort/merge_sort)
   * [heap sort](sort/heap_sort)
+  * [selection sort](sort/selection_sort)
 * [Math](math)
   * [russian peasant](math/russian_peasant)
   * [towers of hanoi](math/towers_of_hanoi)
@@ -27,6 +28,7 @@ Clean examples implementations of data structures and algorithms written in diff
   * [factorial](math/factorial)
   * [fibonacci sequence](math/fibonacci)
   * [sum of digits](math/sum_of_digits)
+  * [fast exponentiation](math/fast_exponentiation)
 * [Cryptography](cryptography)
   * [caesar cipher](cryptography/caesar_cipher)
   * [substitution cipher](cryptography/substitution_cipher)
@@ -59,6 +61,8 @@ Clean examples implementations of data structures and algorithms written in diff
   * [coin change](dp/coin_change)
 * [Data structures](data_structures)
   * [linked list](data_structures/linked_list)
+  * [avl tree](data_structures/avl_tree)
+  * [heap](data_structures/heap)
 * [Backtracking](backtracking)
   * [sudoku](backtracking/sudoku)
 
@@ -67,6 +71,9 @@ Clean examples implementations of data structures and algorithms written in diff
  * PRs are welcome. To begin developing, follow the structure:
 
    > algorithm_name/language-name/file_name.extension
+   e.g
+   > buble_sort/python/buble_sort.py
+   
  * If there is implementation of the same algorithm in your language add you username in front of the file name
  * Please include description for the algorithm that you are implementing. It doesn't matter if it's copied from somwhere as      long as it helps to people that are learning new algorithm.
  * Graphical example would be verry helpful too.
