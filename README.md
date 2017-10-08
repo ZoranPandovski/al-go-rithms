@@ -75,7 +75,7 @@ Clean examples implementations of data structures and algorithms written in diff
    > buble_sort/python/buble_sort.py
    
  * If there is implementation of the same algorithm in your language add you username in front of the file name
- * Please include description for the algorithm that you are implementing. It doesn't matter if it's copied from somwhere as      long as it helps to people that are learning new algorithm.
+ * Please include description for the algorithm that you are implementing. It doesn't matter if it's copied from somewhere as      long as it helps to people that are learning new algorithm.
  * Graphical example would be verry helpful too.
  * Don't forget to include tests.
 
