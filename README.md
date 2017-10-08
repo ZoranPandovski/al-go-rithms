@@ -59,6 +59,8 @@ Clean examples implementations of data structures and algorithms written in diff
   * [coin change](dp/coin_change)
 * [Data structures](data_structures)
   * [linked list](data_structures/linked_list)
+  * [avl tree](data_structures/avl_tree)
+  * [heap](data_structures/heap)
 * [Backtracking](backtracking)
   * [sudoku](backtracking/sudoku)
 
