@@ -28,6 +28,7 @@ Clean examples implementations of data structures and algorithms written in diff
   * [factorial](math/factorial)
   * [fibonacci sequence](math/fibonacci)
   * [sum of digits](math/sum_of_digits)
+  * [fast exponentiation](math/fast_exponentiation)
 * [Cryptography](cryptography)
   * [caesar cipher](cryptography/caesar_cipher)
   * [substitution cipher](cryptography/substitution_cipher)
