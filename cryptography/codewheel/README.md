@@ -5,10 +5,10 @@ Follow letter down the column to the final wheel and output letter.
 
 After every letter encoded, rotate the wheels as described.
 
-add wheels as necessary, increasing the rotation for each one to be the next
+Add wheels as necessary, increasing the rotation for each one to be the next
 prime number.
 
-minimum of 2 wheels are necessary for this cipher.
+A minimum of 2 wheels are necessary for this cipher.
 
 Minimal example:
 wheel #1: a b c d e f (rotates left by 2) (shift, push)
