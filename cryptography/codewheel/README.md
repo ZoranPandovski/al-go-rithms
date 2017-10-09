@@ -11,11 +11,12 @@ prime number.
 A minimum of 2 wheels are necessary for this cipher.
 
 Minimal example:
-wheel #1: a b c d e f (rotates left by 2) (shift, push)
-wheel #2: d e f a b c (starts and rotates right by 3) (pop, unshift)
-wheel #3: f a b c d e (starts and rotates left by 5)
-wheel #4: f a b c d e (starts and rotates right by 7)
-...
+
+> wheel #1: a b c d e f (rotates left by 2) (shift, push)  
+> wheel #2: d e f a b c (starts and rotates right by 3) (pop, unshift)  
+> wheel #3: f a b c d e (starts and rotates left by 5)  
+> wheel #4: f a b c d e (starts and rotates right by 7)  
+> ...  
 
 Using the above 4 wheels, the letter 'd' would be output as 'c'.
 
