@@ -1,4 +1,4 @@
-5shore = {1:['m1','m2','m3','c1','c2','c3'],2:[]}
+shore = {1:['m1','m2','m3','c1','c2','c3'],2:[]}
 boat = {1:True,2:False}
 boat_cap = 0
 boat_hold = []
