@@ -1,20 +1,9 @@
-var n1;
-var n2;
-var ans = document.getElementById('ans');
-var ansH = document.getElementById('ansH');
-var answer = document.getElementById('answer')
-document.getElementById("mainForm").addEventListener("click", function(event){
-    event.preventDefault()
-});
+var n1 = '00101101';
+var n2 = '00011101';
 
 function add() {
-    ans.style.display = 'block';
-    ans.style.textAlign = 'center';
-    ansH.style.display = 'block';
 
-    n1=document.getElementById('n1').value;
     n1.toString();
-    n2=document.getElementById('n2').value;
     n2.toString();
 
     var len1 = n1.length;
@@ -26,7 +15,7 @@ function add() {
         for(var k=0;i<len1;i++){
             res[i]=0;
             if(!(n1[i]==0||n1[i]==1)){
-                answer.innerHTML="NOT BINARY NUMBERS";
+                console.log('Not Binary numbers');
                 return 0;
             }
         }
@@ -67,12 +56,12 @@ function add() {
             }
         }
         res.toString();
-        answer.innerHTML=res.join('');
+        console.log(res.join(''));
     } else {
         for(var k=0;i<len2;i++){
             res[i]=0;
             if(!(n2[i]==0||n2[i]==1)){
-                answer.innerHTML="NOT BINARY NUMBERS";
+                console.log('Not binary numbers');
                 return 0;
             }
         }
@@ -113,6 +102,6 @@ function add() {
             }
         }
         res.toString();
-        answer.innerHTML=res.join('');
+        console.log(res.join(''));
     }
 }
