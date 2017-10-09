@@ -3,6 +3,7 @@ public class JumpSearch
     public static int jumpSearch(int[] arr, int x)
     {
         int n = arr.length;
+        // Finding block size to be jumped
         int step = (int)Math.floor(Math.sqrt(n));
         int prev = 0;
         while (arr[Math.min(step, n)-1] < x)
@@ -12,6 +13,7 @@ public class JumpSearch
             if (prev >= n)
                 return -1;
         }
+        // Doing a linear search for x in block beginning with prev.
         while (arr[prev] < x)
         {
             prev++;
