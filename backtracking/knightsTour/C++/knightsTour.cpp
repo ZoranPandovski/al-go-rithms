@@ -4,20 +4,22 @@ using std::vector;
 
 class knightsTour{
   vector< vector<int> > board;
-  int size;
+  int sizeX;
+  int sizeY;
   bool complete;
   unsigned long long numMoves;
 public:
-  knightsTour(const int& s, const int& startX, const int& startY){
-    for (size_t i = 0; i < s; i++) {
+  knightsTour(const int& sizeX, const int& sizeY, const int& startX, const int& startY){
+    for (size_t i = 0; i < sizeY; i++) {
       vector<int> v;
-      for (size_t j = 0; j < s; j++) {
+      for (size_t j = 0; j < sizeX; j++) {
         v.push_back(0);
       }
       board.push_back(v);
     }
-    complete=false;
-    size=s;
+    this->complete = false;
+    this->sizeX = sizeX;
+    this->sizeY = sizeY;
     traverse(startX, startY);
   }
   void traverse(const int& currentX, const int& currentY, const int& count=1);
@@ -32,20 +34,20 @@ void knightsTour::traverse(const int& currentX, const int& currentY, const int& 
 
   // Illegal positions (out of range)
   if((currentX<0)||(currentY<0)) return;
-  if((currentX>=size)||(currentY>=size)) return;
+  if((currentX>=sizeX)||(currentY>=sizeY)) return;
 
   // This position has already been tried
-  if(board[currentX][currentY]>0){
+  if(board[currentY][currentX]>0){
     return;
   }
   else{
     // Set board to this count
-    board[currentX][currentY]=count;
+    board[currentY][currentX]=count;
     numMoves++;
 
     // If count is the square of the size, this is the last square nessesary
     // to complete the knight's tour so complete is set to true
-    if (count==(size*size)) {
+    if (count==(sizeX*sizeY)) {
       complete=true;
       return;
     }
@@ -67,9 +69,9 @@ void knightsTour::traverse(const int& currentX, const int& currentY, const int& 
     // then this is not the correct move from its parent state so go back up
     // and try a different move.
     if(!complete){
-      board[currentX][currentY]=0;
+      board[currentY][currentX]=0;
       if (count==1){
-        std::cout << "Tour of "<< size << " by " << size;
+        std::cout << "Tour of "<< sizeX << " by " << sizeY;
         std::cout <<" not found through any combination.\nNot possible to have a knights tour from this start position"<< std::endl;
       }
       return;
@@ -79,15 +81,15 @@ void knightsTour::traverse(const int& currentX, const int& currentY, const int& 
     // out the board with the ordering filled in.
     if((complete)&&(count==1)){
       printBoard();
-      std::cout << "Tour of "<< size << " by " << size;
+      std::cout << "Tour of "<< sizeX << " by " << sizeY;
       std::cout <<" board complete in "<< numMoves <<" moves!"<< std::endl;
     }
   }
 }
 
 void knightsTour::printBoard(){
-  for (size_t i = 0; i < size; i++) {
-    for (size_t j = 0; j < size; j++) {
+  for (size_t i = 0; i < sizeY; i++) {
+    for (size_t j = 0; j < sizeX; j++) {
       std::cout<<board[i][j]<<"\t";
     }
     std::cout<<"\n";
@@ -95,9 +97,10 @@ void knightsTour::printBoard(){
 }
 
 int main(){
-  int size = 6;
-  int startX = 0;
-  int startY = 0;
-  knightsTour k(size, startX, startY);
+  int sizeX = 5;
+  int sizeY = 5;
+  int startX = 2;
+  int startY = 2;
+  knightsTour k(sizeX, sizeY, startX, startY);
   return 0;
 }
