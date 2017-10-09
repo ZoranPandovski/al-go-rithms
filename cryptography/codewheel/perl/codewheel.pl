@@ -3,16 +3,39 @@
 use List::MoreUtils qw(firstidx);
 use List::Util qw(max);
 
-# useful for debugging, prints a wheel as a single line
-sub dump_wheels
+# Assuming that indexes start with 0, find the letter to be encoded on the
+# (char pos in text % (num wheels - 1))th wheel.
+#
+# follow letter down the column to the final wheel and output letter.
+# after every letter encoded, rotate the wheel as described.
+#
+# add wheels as necessary, increasing the rotation for each one to be the next
+# prime number.
+#
+# reverse process to decrypt, find letter on final wheel, look up the decoded
+# letter on the (char pos in encrypted text % (num wheels - 1))th weel.
+#
+# minimum of 2 wheels are necessary for this cipher.
+#
+# wheel #1: a b c d e f  (rotates left by 2) (shift, push)
+# wheel #2: d e f a b c  (starts and rotates right by 3) (pop, unshift)
+# wheel #3: f a b c d e  (starts and rotates left by 5)
+# wheel #4: f a b c d e  (starts and rotates right by 7)
+# ...
+#
+# using 2 wheels, the message 'RUN NOW!' becomes U][2ekxG
+# using 3 wheels, the message 'RUN NOW!' becomes MEC_=~@@
+# using 4 wheels, the message 'RUN NOW!' becomes Y]rBb85A
+#
+# only supports up to 100 wheels. To support more, add more prime numbers to
+# the nth_prime sub.
+
+sub letters
 {
-  my $wheel_set = shift;
-  foreach my $wheel (@$wheel_set) {
-    print join('', @$wheel) . "\n";
-  }
+  return [map {chr} (ord(' ') .. ord('~'))];
 }
 
-# returns the nth prime
+
 sub nth_prime
 {
   my $num = shift;
@@ -35,33 +58,6 @@ sub nth_prime
   return $primes[$num - 1];
 }
 
-# the letters used in the cipher
-sub letters
-{
-  return [map {chr} (ord(' ') .. ord('~'))];
-}
-
-# rotates a wheel, left or right
-sub rotate_wheel
-{
-  my ($wheel, $num, $rotate_left) = @_;
-
-  my $i = 0;
-  while ($i < $num) {
-    if ($rotate_left) {
-      my $letter = shift @$wheel;
-      push @$wheel, $letter;
-    } else {
-      my $letter = pop @$wheel;
-      unshift @$wheel, $letter;
-    }
-    $i++;
-  };
-
-  return $wheel;
-}
-
-# initialize the wheels
 sub initialize_wheels
 {
   my $num_wheels = shift;
@@ -81,35 +77,54 @@ sub initialize_wheels
   return $wheel_set;
 }
 
-# encode / decode a letter using the wheel set
+
+sub rotate_wheel
+{
+  my ($wheel, $num, $rotate_left) = @_;
+
+  my $i = 0;
+  while ($i < $num) {
+    if ($rotate_left) {
+      my $letter = shift @$wheel;
+      push @$wheel, $letter;
+    } else {
+      my $letter = pop @$wheel;
+      unshift @$wheel, $letter;
+    }
+    $i++;
+  };
+
+  return $wheel;
+}
+
 sub read_wheels
 {
-  my ($wheel_set, $letter, $encode) = @_;
+  my ($wheel_set, $letter, $pos, $encode) = @_;
   my $encoded_letter;
 
   # ensure we can encode the letter, otherwise just emit it unchanged.
   return $letter unless firstidx {$_ eq $letter} (letters());
 
   # encoding reads top down, decoding reads bottom up
+  my $chosen = $pos % (scalar (@$wheel_set) - 1);
   if ($encode) {
-    my $idx = firstidx { $_ eq $letter } @{$wheel_set->[0]};
+    my $idx = firstidx { $_ eq $letter } @{$wheel_set->[$chosen]};
     $encoded_letter = $wheel_set->[$#wheel_set][$idx];
   } else {
     my $idx = firstidx { $_ eq $letter } @{$wheel_set->[$#wheel_set]};
-    $encoded_letter = $wheel_set->[0][$idx];
+    $encoded_letter = $wheel_set->[$chosen][$idx];
   }
 
   return $encoded_letter;
 }
 
-# rotate all the wheels
 sub rotate_wheels
 {
-  my ($wheel_set, $num_wheels) = @_;
+  my $wheel_set = shift;
   my $i = 0;
 
   # odd wheels rotate left
-  while ($i < $num_wheels) {
+  while ($i < scalar (@$wheel_set)) {
     $wheel_set->[$i] = rotate_wheel($wheel_set->[$i], nth_prime($i + 1), $i % 2);
     $i++;
   }
@@ -117,43 +132,54 @@ sub rotate_wheels
   return $wheel_set;
 }
 
-# encrypt the text
+sub dump_wheels
+{
+  my $wheel_set = shift;
+  foreach my $wheel (@$wheel_set) {
+    print join('', @$wheel) . "\n";
+  }
+}
+
 sub encrypt
 {
-  my ($text, $num_wheels) = @_;
+  my ($data, $num_wheels) = @_;
   
   $num_wheels = 2 unless $num_wheels > 2;
 
   my $wheel_set = initialize_wheels($num_wheels);
   
-  my $encoded_text;
-  foreach my $letter (split(//, $text)) {
-    $encoded_text .= read_wheels($wheel_set, $letter, 1);
-    $wheel_set = rotate_wheels($wheel_set, $num_wheels);
+  my $encoded_data;
+
+  my @chars = split(//, $data);
+  for (my $pos = 0; $pos < scalar @chars; $pos++) {
+    $encoded_data .= read_wheels($wheel_set, $chars[$pos], $pos, 1);
+    $wheel_set = rotate_wheels($wheel_set);
   }
 
-  return $encoded_text;
+  return $encoded_data;
 }
 
 sub decrypt
 {
-  my ($text, $num_wheels) = @_;
+  my ($data, $num_wheels) = @_;
   
   $num_wheels = 2 unless $num_wheels > 2;
   my $wheel_set = initialize_wheels($num_wheels);
   
-  my $decoded_text;
-  foreach my $letter (split(//, $text)) {
-    $decoded_text .= read_wheels($wheel_set, $letter, 0);
-    $wheel_set = rotate_wheels($wheel_set, $num_wheels);
+  my $decoded_data;
+  my @chars = split(//, $data);
+  for (my $pos = 0; $pos < scalar @chars; $pos++) {
+    $decoded_data .= read_wheels($wheel_set, $chars[$pos], $pos, 0);
+    $wheel_set = rotate_wheels($wheel_set);
   }
 
-  return $decoded_text;
+  return $decoded_data;
 }
 
 my $num_wheels = max(2, int(rand(101)));
-my $text = 'This is a test.  This is only a test.';
+my $text = 'This is a test.  This is only a test. If this had been a real emergency, then something important would be in this message.';
 
 my $encrypted = encrypt($text, $num_wheels);
 my $decrypted = decrypt($encrypted, $num_wheels);
+
 print "Decrypted matches original\n" if $decrypted eq $text;
