@@ -1,18 +1,25 @@
 #include <stdio.h>
 
+/* Shell's method - a generalized insertion sort  
+  For more info, visit https://www.tutorialspoint.com/data_structures_algorithms/shell_sort_algorithm.htm */
+
 void shell_sort(int *a, int n)
 {
-  int i, j, inc, temp;
+  int i, j, gap, temp;
 
-  for(inc = n/2 ; inc > 0 ; inc /= 2)
+  /* Assess the array in gaps starting at half the array size - Each gap is a sublist of 2 values */
+  for(gap = n/2 ; gap > 0 ; gap /= 2)
   {
-    for(i = inc ; i < n ; i++)
+    /* Index at the right value of each gap */
+    for(i = gap ; i < n ; i++)
     {
+      /* Take a copy of the value under inspection */
       temp = a[i];
-      for(j = i ; j >= inc ; j-= inc)
+      for(j = i ; j >= gap ; j-= gap)
       {
-        if(temp < a[j-inc])
-          a[j] = a[j-inc];
+        /* Compare the values in the sub lists and swap where necessary */
+        if(temp < a[j-gap])
+          a[j] = a[j-gap];
         else
           break;
       }
