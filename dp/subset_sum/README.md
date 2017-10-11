@@ -7,7 +7,7 @@ case of subset sum is the partition problem, in which s is half of the sum of al
 
 #### The algorithm
 
-Let isSubSetSum(int set[], int n, int s) be the function to find whether there is a subset of set[] 
+Let isSubsetSum(int set[], int n, int s) be the function to find whether there is a subset of set[] 
 with sum equal to s, where n is the number of elements in set[].
 
 The isSubsetSum problem can be divided into two subproblems
