@@ -22,6 +22,6 @@
  * This leads to the following calculation:
  * factorial(5) => 5 * 4 * 3 * 2 * 1
  */
-const factorial = n => n == 1 ? 1 : n * factorial(n - 1);
+const factorial = n => n === 1 ? 1 : n * factorial(n - 1);
 
 console.log(factorial(parseInt(process.argv[2])))
