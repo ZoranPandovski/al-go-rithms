@@ -18,9 +18,6 @@ Clean examples implementations of data structures and algorithms written in diff
   * [merge sort](sort/merge_sort)
   * [heap sort](sort/heap_sort)
   * [selection sort](sort/selection_sort)
-  * [counting sort](sort/counting_sort)
-  * [radix sort](sort/radix_sort)
-  * [shell sort](sort/shell_sort)
 * [Math](math)
   * [russian peasant](math/russian_peasant)
   * [towers of hanoi](math/towers_of_hanoi)
@@ -32,20 +29,12 @@ Clean examples implementations of data structures and algorithms written in diff
   * [fibonacci sequence](math/fibonacci)
   * [sum of digits](math/sum_of_digits)
   * [fast exponentiation](math/fast_exponentiation)
-  * [add binary numbers](math/AddBinaryNumbers)
-  * [interval bisection](math/interval_bisection)
-  * [lucas series](math/lucas_series)
-  * [numerical integration](math/numerical_integration)
-  * [pernicious number](math/pernicious_number)
 * [Cryptography](cryptography)
   * [caesar cipher](cryptography/caesar_cipher)
   * [substitution cipher](cryptography/substitution_cipher)
   * [vernam cipher](cryptography/vernam_cipher)
   * [vigenere cipher](cryptography/vigenere_cipher)
   * [playfair cipher](cryptography/playfair_cipher)
-  * [chinese cipher](cryptography/chinese_cipher)
-  * [codewheel](cryptography/codewheel)
-  * [end to end](cryptography/end_to_end)
 * [Greedy](greedy)
   * [dijkstra’s algorithm](greedy/dijkstra’s_algorithm)
   * [kruskal's algorithm](greedy/kruskal's_algorithm)
@@ -60,7 +49,6 @@ Clean examples implementations of data structures and algorithms written in diff
 * [String search](string_search)
   * [knuth morris pratt](string_search/knuth_morris_pratt)
   * [rabin karp](string_search/rabin_karp)
-  * [quick search](string_search/quick_search)
 * [Cluster analysis](cluster_analysis)
   * [k-means](cluster_analysis/k-means)
 * [Dynamic Programming](dp)
@@ -71,19 +59,12 @@ Clean examples implementations of data structures and algorithms written in diff
   * [matrix chain multiplication](dp/matrix_chain_multiplication)
   * [floyd Warshall algorithm](dp/floyd_warshall_algorithm)
   * [coin change](dp/coin_change)
-  * [longest common subsequence](dp/longest_common_subsequence)
 * [Data structures](data_structures)
   * [linked list](data_structures/linked_list)
   * [avl tree](data_structures/avl_tree)
   * [heap](data_structures/heap)
-  * [b tree](data_structures/b_tree)
-  * [dictionary](data_structures/dictionary)
-  * [queue](data_structures/Queue)
-  * [stack](data_structures/Stack)
 * [Backtracking](backtracking)
   * [sudoku](backtracking/sudoku)
-  * [knights tour](backtracking/knightsTour)
-  * [n queens](backtracking/n-queens)
 
 ## Contribution
  * Contributions are always welcome. Language doesn't matter. Just make sure you're implementing an algorithm.
@@ -92,7 +73,7 @@ Clean examples implementations of data structures and algorithms written in diff
    > algorithm_name/language-name/file_name.extension
    e.g
    > buble_sort/python/buble_sort.py
-
+   
  * If there is implementation of the same algorithm in your language add you username in front of the file name
  * Please include description for the algorithm that you are implementing. It doesn't matter if it's copied from somewhere as      long as it helps to people that are learning new algorithm.
  * Graphical example would be verry helpful too.

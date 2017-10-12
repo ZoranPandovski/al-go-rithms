@@ -1,84 +1,63 @@
-// Radix sort Java implementation
-import java.io.*;
-import java.util.*;
- 
-class Radix {
- 
-    // A utility function to get maximum value in arr[]
-    static int getMax(int arr[], int n)
-    {
-        int mx = arr[0];
-        for (int i = 1; i < n; i++)
-            if (arr[i] > mx)
-                mx = arr[i];
-        return mx;
-    }
- 
-    // A function to do counting sort of arr[] according to
-    // the digit represented by exp.
-    static void countSort(int arr[], int n, int exp)
-    {
-        int output[] = new int[n]; // output array
-        int i;
-        int count[] = new int[10];
-        Arrays.fill(count,0);
- 
-        // Store count of occurrences in count[]
-        for (i = 0; i < n; i++)
-            count[ (arr[i]/exp)%10 ]++;
- 
-        // Change count[i] so that count[i] now contains
-        // actual position of this digit in output[]
-        for (i = 1; i < 10; i++)
-            count[i] += count[i - 1];
- 
-        // Build the output array
-        for (i = n - 1; i >= 0; i--)
-        {
-            output[count[ (arr[i]/exp)%10 ] - 1] = arr[i];
-            count[ (arr[i]/exp)%10 ]--;
+package core;
+
+import java.util.Arrays;
+
+public class Radix_Sort {
+	
+	//Find the maximum value in an array
+	public static int findMaximum(int[] array){
+		int max = array[0];
+		for(int i = 0; i < array.length; i++){
+			if(array[i] > max){
+				max = array[i];
+			}
+		}
+		return max;
+	}
+	
+	public static int getDigit(int n, int d){
+		return (n/d) % 10;
+	}
+	
+	public static void sortRound(int[] array, int p){
+		//Defined above to speed up process
+		int i;
+		//Returned list
+		int[] result = new int[array.length];
+		//Create a list of number frequencies
+		int[] frequencyList = new int[10];
+		//Sets frequencies to 0
+		Arrays.fill(frequencyList, 0);
+		
+        for (i = 0; i < array.length; i++){
+        	//Add 1 to the frequency of p digit number.
+            frequencyList[getDigit(array[i], p)]++;
         }
- 
-        // Copy the output array to arr[], so that arr[] now
-        // contains sorted numbers according to curent digit
-        for (i = 0; i < n; i++)
-            arr[i] = output[i];
-    }
- 
-    // The main function to that sorts arr[] of size n using
-    // Radix Sort
-    static void radixsort(int arr[], int n)
-    {
-        // Find the maximum number to know number of digits
-        int m = getMax(arr, n);
- 
-        // Do counting sort for every digit. Note that instead
-        // of passing digit number, exp is passed. exp is 10^i
-        // where i is current digit number
-        for (int exp = 1; m/exp > 0; exp *= 10)
-            countSort(arr, n, exp);
-    }
- 
-    // A utility function to print an array
-    static void print(int arr[], int n)
-    {
-        for (int i=0; i<n; i++)
-            System.out.print(arr[i]+" ");
-    }
- 
- 
-    /*Driver function to check for above function*/
-    public static void main (String[] args)throws IOException
-    {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter size :\t");
-        int n = sc.nextInt();
-        sc.nextLine();
-        int a[] = new int[n];
-        for(int i=0;i<n;i++)
-            a[i] = sc.nextInt();
-        sc.nextLine();
-        radixsort(a, n);
-        print(a, n);
-    }
+        
+        for(i = 1; i < 10; i++){
+        	frequencyList[i] += frequencyList[i-1];
+        }
+        
+        for(i = array.length - 1; 0 <= i; i--){
+        	//Add value to resulting list
+        	result[frequencyList[getDigit(array[i], p)] - 1] = array[i];
+        	//Remove occurrence from frequency list
+        	frequencyList[getDigit(array[i], p)]--;
+        }
+        
+        //Update the original array to the
+        //resulting array.
+        for(i = 0; i < array.length; i++){
+        	array[i] = result[i];
+        }
+	}
+	
+	public static void sort(int[] array){
+		int max = findMaximum(array);
+		
+		for(int p = 1; /* Integer division */ max / p > 0; p *= 10){
+			sortRound(array, p);
+		}
+	}
+	
 }

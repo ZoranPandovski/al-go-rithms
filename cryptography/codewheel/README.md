@@ -26,5 +26,5 @@ Using the full letter range for each wheel:
 > using 3 wheels, the message `RUN NOW!` becomes `MEC_=~@@`  
 > using 4 wheels, the message `RUN NOW!` becomes `Y]rBb85A`  
 
-Only supports up to 100 wheels. To support more, add more prime numbers to the rotate_amount sub.
+Only supports up to 100 wheels. To support more, add more prime numbers to the nth_prime sub.
 

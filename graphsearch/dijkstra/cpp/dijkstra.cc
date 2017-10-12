@@ -33,7 +33,7 @@ void dijkstra(int src) {
 			}
 		}
 	}
-  	//prints all distances from 0 to all nodes
+  //prints all distances from 0 to all nodes
 	for(auto i : dist)
 		cout << i << ' ';
 }
