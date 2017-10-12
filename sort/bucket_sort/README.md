@@ -11,6 +11,6 @@ The main idea of the algorithm is :
 4) Sort individual buckets.
 5) Concatenate the sorted buckets.
 
-## An example of operation##
+## An example of operation ##
 
 ![Bucketsort example](BucketSort.png)
