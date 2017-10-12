@@ -65,6 +65,7 @@ Clean examples implementations of data structures and algorithms written in diff
   * [heap](data_structures/heap)
 * [Backtracking](backtracking)
   * [sudoku](backtracking/sudoku)
+  * [n queens](backtracking/n-queens)
 
 ## Contribution
  * Contributions are always welcome. Language doesn't matter. Just make sure you're implementing an algorithm.
