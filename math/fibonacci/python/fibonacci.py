@@ -1,11 +1,8 @@
-def fibonacci(n):
-	fib = [1, 1]
-	
-	for i in range(2, n):
-		fib.append(fib[i-1] + fib[i-2])
-
-	return fib[-1]
-
-
-for i in range(1,10):
-	print(fibonacci(i))
+def fib(n):  # return Fibonacci series up to n from: https://docs.python.org/2/tutorial/controlflow.html
+    """Return a list containing the Fibonacci series up to n."""
+    result = []
+    a, b = 0, 1
+    while a < n:
+        result.append(a)
+        a, b = b, a+b
+    return result
