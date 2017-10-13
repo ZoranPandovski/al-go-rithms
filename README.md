@@ -97,7 +97,7 @@ Clean examples implementations of data structures and algorithms written in diff
  * Please include description for the algorithm that you are implementing. It doesn't matter if it's copied from somewhere as      long as it helps to people that are learning new algorithm.
  * Graphical example would be verry helpful too.
  * Don't forget to include tests.
-
+ * Don't remove previous implementation of algorithms. Just add new file with your own implementation.
 
 ## Resources
 
