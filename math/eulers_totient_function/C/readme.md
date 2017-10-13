@@ -1,4 +1,4 @@
-###Euler's Totient Function
+### Euler's Totient Function
 
 Euler’s Totient function Φ(n) for an input n is count of numbers in {1, 2, 3, …, n} that are relatively prime to n, i.e., the numbers whose GCD (Greatest Common Divisor) with n is 1.
 
@@ -24,7 +24,7 @@ gcd(1, 6) is 1 and gcd(5, 6) is 1
 
 ```
 
-#How to compute Φ(n) for an input n?
+# How to compute Φ(n) for an input n?
 
 A simple solution is to iterate through all numbers from 1 to n-1 and count numbers with gcd with n as 1. 
 
