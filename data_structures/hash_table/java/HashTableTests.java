@@ -36,7 +36,7 @@ public class HashTableTests {
 		System.out.println("---Quadraticly Hashed Table Tests---\n" + hashed2);
 		System.out.printf("rehashed: " + hashed2.getRehashCount() + 
 				"\nload: " + hashed2.getLoad() + "/" + hashed2.getSize() + ": %.2f%n",  ((double) hashed2.getLoad()/hashed2.getSize()));
-		System.out.println("checking for " + (num+1) + " in the table: " + hashed2.find(num));	// this value will definitely be in the table
+		System.out.println("checking for " + num + " in the table: " + hashed2.find(num));	// this value will definitely be in the table
 		System.out.println("deleting " + num + " from table: " + hashed2.delete(num) +
 				"\nnew load: " + hashed2.getLoad());
 		System.out.println(hashed2);
