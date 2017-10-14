@@ -72,6 +72,7 @@ Clean example implementations of data structures and algorithms written in diffe
   * [floyd Warshall algorithm](dp/floyd_warshall_algorithm)
   * [coin change](dp/coin_change)
   * [longest common subsequence](dp/longest_common_subsequence)
+  * [longest increasing subsequence](dp/longest_increasing_subsequence)
 * [Data structures](data_structures)
   * [linked list](data_structures/linked_list)
   * [avl tree](data_structures/avl_tree)
