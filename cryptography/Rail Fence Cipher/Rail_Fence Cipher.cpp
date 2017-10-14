@@ -110,13 +110,13 @@ string decrypt(string cipher, int key)
 //driver program(main function)
 int main()
 {
-    cout << encrypt("sagar gupta", 3) << endl;
-    cout << encrypt("GeeksforGeeks ", 3) << endl;
-    cout << encrypt("defend the east wall", 3) << endl;
- 
-    cout << decrypt("srpaa utagg",3) << endl;
-    cout << decrypt("atc toctaka ne",2) << endl;
-    cout << decrypt("dnhaweedtees alf tl",3) << endl;
+   cout << encrypt("Rail fence", 3) << endl;
+    cout << encrypt("Cryptography", 3) << endl;
+    cout << encrypt("Github", 3) << endl;
+    cout<<"DEcrypted Code"<<endl;
+    cout << decrypt("R calfneie",3) << endl;
+    cout << decrypt("Ctarporpyygh",3) << endl;
+    cout << decrypt("Guihbt",3) << endl;
  
     return 0;
 }
