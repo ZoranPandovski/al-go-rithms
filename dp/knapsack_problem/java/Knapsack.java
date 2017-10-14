@@ -42,9 +42,9 @@ public class Knapsack {
 				if (weights[i - 1] <= w) {
 					//Find maximum value get by excluding or including the item
 					K[i][w] = Math.max(
-						                  values[i - 1] + K[i - 1][w - weights[i - 1]],  //including the item
-						                  K[i - 1][w] // excluding the item
-                             ); 
+							values[i - 1] + K[i - 1][w - weights[i - 1]],  //including the item
+							K[i - 1][w] // excluding the item
+			                             ); 
 				} else {
 					//If current item weight is more than the running weight, just keep going without the current item
 					K[i][w] = K[i - 1][w];
