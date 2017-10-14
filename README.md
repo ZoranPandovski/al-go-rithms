@@ -3,7 +3,7 @@
 
 # Data Structures and Algorithms
 
-Clean examples implementations of data structures and algorithms written in different languages.
+Clean example implementations of data structures and algorithms written in different languages.
 
 ## List of implementations
 
@@ -93,11 +93,11 @@ Clean examples implementations of data structures and algorithms written in diff
    e.g
    > buble_sort/python/buble_sort.py
 
- * If there is implementation of the same algorithm in your language add you username in front of the file name
- * Please include description for the algorithm that you are implementing. It doesn't matter if it's copied from somewhere as      long as it helps to people that are learning new algorithm.
- * Graphical example would be verry helpful too.
+ * If there is an implementation of the same algorithm in your language, add your username in front of the file name
+ * Please include a description for the algorithm that you are implementing. It doesn't matter if it's copied from somewhere as      long as it helps people that are learning new algorithm.
+ * Graphical examples would be very helpful too.
  * Don't forget to include tests.
- * Don't remove previous implementation of algorithms. Just add new file with your own implementation.
+ * Don't remove previous implementations of algorithms. Just add a new file with your own implementation.
 
 ## Resources
 
