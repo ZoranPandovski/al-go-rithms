@@ -16,3 +16,7 @@ class Stack(object):
     # Add an element to the end of the stack array.
     def push(self, element):
         self.stack.append(element)
+
+    # Return the last element of the stack array (without removing it).
+    def peek(self):
+        return self.stack[-1]
