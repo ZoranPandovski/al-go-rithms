@@ -37,6 +37,7 @@ Clean example implementations of data structures and algorithms written in diffe
   * [lucas series](math/lucas_series)
   * [numerical integration](math/numerical_integration)
   * [pernicious number](math/pernicious_number)
+  * [moments](math/moments)
   * [primality check](math/is_prime)
 * [Cryptography](cryptography)
   * [caesar cipher](cryptography/caesar_cipher)
