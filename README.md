@@ -49,6 +49,7 @@ Clean example implementations of data structures and algorithms written in diffe
   * [chinese cipher](cryptography/chinese_cipher)
   * [codewheel](cryptography/codewheel)
   * [end to end](cryptography/end_to_end)
+  * [polybius cipher](cryptography/polybius_cipher)
 * [Greedy](greedy)
   * [dijkstra’s algorithm](greedy/dijkstra’s_algorithm)
   * [kruskal's algorithm](greedy/kruskal's_algorithm)
