@@ -5,4 +5,10 @@
 class Stack(object):
     def __init__(self):
         # Initialize stack as empty array
-        self.stack = [] 
+        self.stack = []
+
+    # Return and remove the last element of the stack array.
+    def pop(self):
+        # If the stack is not empty, pop.
+        if self.stack.length > 0:
+            return self.stack.pop() 
