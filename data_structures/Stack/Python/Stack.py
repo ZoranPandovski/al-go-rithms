@@ -12,3 +12,7 @@ class Stack(object):
         # If the stack is not empty, pop.
         if self.stack.length > 0:
             return self.stack.pop() 
+
+    # Add an element to the end of the stack array.
+    def push(self, element):
+        self.stack.append(element)
