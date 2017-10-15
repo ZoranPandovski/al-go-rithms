@@ -54,6 +54,7 @@ Clean example implementations of data structures and algorithms written in diffe
   * [kruskal's algorithm](greedy/kruskal's_algorithm)
   * [prim's algorithm](greedy/prim's_algorithm)
   * [job sequencing problem](greedy/Job_sequencing_problem)
+  * [egyptian fraction](greedy/egyptian_fraction)
 * [Graphs](graphsearch)
   * [breadth-first-search](graphsearch/breadth-first-search)
   * [depth-first-search](graphsearch/depth-first-search)
