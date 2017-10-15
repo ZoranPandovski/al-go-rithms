@@ -37,6 +37,7 @@ Clean example implementations of data structures and algorithms written in diffe
   * [lucas series](math/lucas_series)
   * [numerical integration](math/numerical_integration)
   * [pernicious number](math/pernicious_number)
+  * [primality check](math/is_prime)
 * [Cryptography](cryptography)
   * [caesar cipher](cryptography/caesar_cipher)
   * [substitution cipher](cryptography/substitution_cipher)
@@ -51,7 +52,6 @@ Clean example implementations of data structures and algorithms written in diffe
   * [kruskal's algorithm](greedy/kruskal's_algorithm)
   * [prim's algorithm](greedy/prim's_algorithm)
   * [job sequencing problem](greedy/Job_sequencing_problem)
-  * [activity selection problem](greedy/activity_selection)
 * [Graphs](graphsearch)
   * [breadth-first-search](graphsearch/breadth-first-search)
   * [depth-first-search](graphsearch/depth-first-search)
@@ -91,7 +91,7 @@ Clean example implementations of data structures and algorithms written in diffe
  * PRs are welcome. To begin developing, follow the structure:
 
    > algorithm_name/language-name/file_name.extension
-   > e.g
+   e.g
    > buble_sort/python/buble_sort.py
 
  * If there is an implementation of the same algorithm in your language, add your username in front of the file name
