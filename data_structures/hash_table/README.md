@@ -20,7 +20,7 @@ As you can see, this will simply place a number into a table based on its remain
 # Collisions
 What happens if two numbers give the same result from a hash function? This is called a collision, and resolving collisions is one of the areas of study in hash tables. There are multiple ways to resolve collisions, popular ones are simply simply adding 1 to the result until an open slot is found (called linear probing), hashing the number again using result of the number of collisions^2 (quadratic probing), and using a second hash function in conjunction with the first (double hashing). 
 
-#Rehashing
+# Rehashing
 Hash tables are only optimized when they can avoid collisions(or at least resolve them quickly) and rehashing. In order to keep this property true, we want a couple main properties to exist for our hash table:
  - its size is a prime number
  - its never more than half full
