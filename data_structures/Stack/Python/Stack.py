@@ -10,7 +10,7 @@ class Stack(object):
     # Return and remove the last element of the stack array.
     def pop(self):
         # If the stack is not empty, pop.
-        if self.stack.length > 0:
+        if len(self.stack) > 0:
             return self.stack.pop() 
 
     # Add an element to the end of the stack array.
@@ -20,3 +20,12 @@ class Stack(object):
     # Return the last element of the stack array (without removing it).
     def peek(self):
         return self.stack[-1]
+
+# Test:
+st = Stack()
+
+st.push("Hello")
+st.push("World")
+
+print(st.pop())
+print(st.pop())
