@@ -2,49 +2,61 @@
 #include <iostream> /* cout and cin */
 #include <chrono> /* steady_clock::now */
 
-bool binarySearchIterative(int list[], int first, int end, int item){
+bool binarySearchIterative(int list[], int first, int end, int item)
+{
 
 	int middle;
 
-	while(first <= end){
-		middle = (first + end)/2;
-		if(list[middle] == item) {
+	while(first <= end)
+	{
+	     middle = (first + end)/2;
+	     if(list[middle] == item)
+	        {
 			return true;
 		}
-		if(list[middle] < item) {
+		if(list[middle] < item)
+		{
 			first = middle + 1;
-		} else {
+		} else
+		{
 			end = middle - 1;
 		}
 	}
 	return false;
 }
 
-bool binarySearchRecursive(int list[], int first, int end, int item){
+bool binarySearchRecursive(int list[], int first, int end, int item)
+{
 
 	int middle = (first + end)/2;
 
-	if(list[middle] == item){
+	if(list[middle] == item)
+	{
 		return true;
 	}
-	if(first >= end){
+	if(first >= end)
+	{
 		return false;
 	}
-	if(list[middle] < item){
+	if(list[middle] < item)
+	{
 		return binarySearchRecursive(list, middle+1, end, item);
-	} else {
+	} else
+	{
 		return binarySearchRecursive(list, first, middle-1, item);
 	}
 
 }
 
-int main(int argc, char const *argv[]){
+int main(int argc, char const *argv[])
+{
   std::cout << "Please, enter the size of the list." << std::endl;
   int size, value, option;
   bool find;
   std::cin >> size;
   int *list = new int[size];
-  for(int i = 0; i < size; i++){
+  for(int i = 0; i < size; i++)
+  {
     std::cout << "Enter the element " << i << " of the list." << std::endl;
     std::cin >> list[i];
   }
@@ -79,7 +91,8 @@ int main(int argc, char const *argv[]){
         {
           std::cout << "You find the element using the binary search recursive." << std::endl;
         }
-        else{
+        else
+	{
           std::cout << "You not find the element using the binary search recursive." << std::endl;
         }
         std::cout << "And the time of search was " << std::chrono::duration <double, std::milli> (diff).count() << " ms." << std::endl;
