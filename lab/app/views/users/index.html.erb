@@ -1,0 +1,5 @@
+<% @users.each do |message| %>  
+  <p ><%= message.email %></p> 
+  <p ><%= message.created_at %></p> 
+<% end %>
+<%= link_to 'New Message', "users/new" %>
