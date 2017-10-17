@@ -125,8 +125,8 @@ Clean example implementations of data structures and algorithms written in diffe
    e.g
    > buble_sort/python/buble_sort.py
 
- * If there is an implementation of the same algorithm in your language, add your username in front of the file name
- * Please include a description for the algorithm that you are implementing. It doesn't matter if it's copied from somewhere as      long as it helps people that are learning new algorithm.
+ * If there is an implementation of the same algorithm in your language, add your username in front of the file name.
+ * Please include a description for the algorithm that you are implementing. It doesn't matter if it's copied from somewhere as long as it helps people that are learning new algorithm.
  * Graphical examples would be very helpful too.
  * Don't forget to include tests.
  * Don't remove previous implementations of algorithms. Just add a new file with your own implementation.
