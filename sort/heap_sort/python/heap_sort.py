@@ -36,12 +36,12 @@ def heapSort(arr):
 		heapify(arr, i, 0)
 
 def test():
-    test1 = [12, 11, 13, 5, 6, 7]
-    test2 = [10,67,2,998,23,56,32,21,91,21,22]
+    test1 = test3 = [12, 11, 13, 5, 6, 7]
+    test2 = test4 = [10,67,2,998,23,56,32,21,91,21,22]
     heapSort(test1)
     heapSort(test2)
-    print(test1)
-    print(test2)
+    assert (sorted(test3) == test1)
+    assert (sorted(test4) == test2)
 
 if __name__=="__main__":
     test()
