@@ -21,3 +21,5 @@ function Stack() {
         items = [];
     };
 }
+
+module.exports = Stack;
