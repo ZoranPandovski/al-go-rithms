@@ -17,7 +17,5 @@ const insertionSort = function(arr){
     }return arr;
 }
 
-//test
-const uns_arr = [5,3,21,1,4];
-console.log(uns_arr + ' => ' + insertionSort([5,3,21,1,4]));
-});
+module.exports = insertionSort;
+})();

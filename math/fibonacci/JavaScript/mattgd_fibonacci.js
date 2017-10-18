@@ -22,24 +22,5 @@
         return fib;
     }
 
-    // Tests
-    // n = 1
-    var expected = [ 1 ].toString();
-    var actual = fibonacci(1).toString();
-    console.assert(actual === expected);
-
-    // n = 2
-    expected = [ 1, 1 ].toString();
-    actual = fibonacci(2).toString();
-    console.assert(actual === expected);
-
-    // n = 5
-    expected = [ 1, 1, 2, 3, 5 ].toString();
-    actual = fibonacci(5).toString();
-    console.assert(actual === expected);
-
-    // n = 8
-    expected = [ 1, 1, 2, 3, 5, 8, 13, 21 ].toString();
-    actual = fibonacci(8).toString();
-    console.assert(actual === expected);
+    module.exports = fibonacci;
 })();
