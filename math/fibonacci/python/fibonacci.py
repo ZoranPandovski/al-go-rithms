@@ -1,11 +1,11 @@
 def fibonacci(n):
-	fib = [1, 1]
+	fib = [0, 1]
 	
-	for i in range(2, n):
-		fib.append(fib[i-1] + fib[i-2])
+	for i in range(n+1):
+		fib.append(fib[-1] + fib[-2])
 
-	return fib[-1]
+	return fib[n]
 
 
-for i in range(1,10):
+for i in range(0,10):
 	print(fibonacci(i))
