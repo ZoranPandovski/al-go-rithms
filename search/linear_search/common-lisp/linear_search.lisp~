@@ -1,0 +1,4 @@
+(defpackage :linear_search
+  (:use :cl))
+(in-package :linear_search)
+
