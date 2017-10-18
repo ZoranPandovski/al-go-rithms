@@ -1,4 +1,0 @@
-(defpackage :jump_search
-  (:use :cl))
-(in-package :jump_search)
-
