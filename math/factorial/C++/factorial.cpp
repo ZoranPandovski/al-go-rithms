@@ -12,26 +12,19 @@
 // 10! = 3,628,800
 // 20! = 2,432,902,008,176,640,000
 
-#include <iostream>
-
-long long int factorial(int n){
-	if (n < 2){
-		return 1;
-	}
-	
-	long long int output = 1;
-	for (int i = n; i > 1; i--){
-		output *= i;
-	}
-
-	return output;
+#include <iostream.h>
+#include<conio.h>
+void main();
+clrscr();
+int fact=1,num,k;
+cout<<"\n\t Enter a number:";
+cin>>num;
+k=num;
+while(num>0)
+{
+	fact=fact*num;
+	--num;
 }
-
-int main() {
-	int userInput;
-	std::cout << "Enter a positive integer: " << std::endl;
-	std::cin >> userInput;
-	std::cout << "The factorial is: " << factorial(userInput) << std::endl;
-
-	return 0;
+cout<<"\n\t factorial of "<<k<<" is:"<<fact;
+getch();
 }
