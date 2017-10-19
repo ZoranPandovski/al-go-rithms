@@ -5,6 +5,7 @@
 using namespace std;
 
 // Josepheus Problem Algorithm - Returns 'the survivor'.
+// Considering the initial position as 0, and the direction left-right.
 int f(int n, int k){
 	if(n==1) return 1;
 
