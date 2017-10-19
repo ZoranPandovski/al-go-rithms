@@ -17,7 +17,7 @@ initial circle to avoid execution.</p>
 can change it easily to attends to your needs! </p>
 
 <h2> Tests </h2>
-<p> You can discover and practice more about this problem on URI. Here some cool problemns to solve: </p>
+<p> You can discover and practice more about this problem on URI. Here some cool problems to solve: </p>
 <ol>
   <li>https://www.urionlinejudge.com.br/judge/pt/problems/view/1030</li>
   <li>https://www.urionlinejudge.com.br/judge/pt/problems/view/1031</li>
