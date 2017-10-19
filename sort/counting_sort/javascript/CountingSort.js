@@ -20,7 +20,4 @@ function countingSort(array, minimumValue, maximumValue) {
     return array;
 }
 
-var arrayToSort = [9,4,1,7,9,1,2,0];
-console.log('Not sorted array', arrayToSort);
-countingSort(arrayToSort, 0, 9);
-console.log('Sorted array', arrayToSort);
+module.exports = countingSort;
