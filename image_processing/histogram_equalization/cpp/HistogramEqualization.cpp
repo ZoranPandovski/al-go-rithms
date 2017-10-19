@@ -92,23 +92,29 @@ void reMap(const map<int, double>& distribution, Mat& img)
 		for(int j=0; j<img.cols; j++)
 		{
 			map<int, double>::const_iterator itr = distribution.find(img.at<int>(i, j));
-			//cout<<img.at<int>(i, j)<<" ----> "<<itr->second<<endl;
 			img.at<int>(i, j) = itr->second;
 		}
 }
 
-void showNewImage(const Mat& img)
+void result(const Mat& img)
 {
+	string save_destination;
 	imshow("Image after running histogram equalization...", img);
 	waitKey(0);
 	cvDestroyAllWindows();
+	cout<<"Where do you want to save your result?(ENTER A VALID FULL PATH WITH THE FILE NAME) : ";
+	cin>>save_destination;
+	if(save_destination!="")
+	{
+		imwrite(save_destination, img);
+		cout<<"Image saved successfully!"<<endl;
+	}
 }
 
 void histogram(Mat& img)
 {
 	const int no_of_pixels = getPixelCount(img);
 
-	// Initializing the distribution map
 	map<int, double> distribution;
 
 	createDistribution(distribution, img);
@@ -117,7 +123,7 @@ void histogram(Mat& img)
 	normalize(distribution);
 	showDistribution(distribution);
 	reMap(distribution, img);
-	showNewImage(img);
+	result(img);
 }
 
 main(int argc, char const *argv[])
