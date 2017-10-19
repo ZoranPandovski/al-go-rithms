@@ -13,19 +13,10 @@ int f(int n, int k){
 }
 
 int main(){
-	int n, k, res;
-
-	cin >> n;
-	k = 1;
-	while(n){
-		res = f(n-1, k);
-		if(res == 12){
-			cout << k << "\n";
-
-			k = 1;
-			cin >> n;
-			continue;
-		}
-		k++;
-	}
+	// n -> number of pernsons
+	// k -> skipp
+	int n, k;
+	
+	cin >> n >> k;
+	cout << "Survivor: " << f(n, k) << endl;
 }
