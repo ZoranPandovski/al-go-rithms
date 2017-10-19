@@ -1,4 +1,4 @@
-# Part of Cosmos by OpenGenus Foundation
+
 def dijkstra(graph, source):
 
     vertices, edges = graph

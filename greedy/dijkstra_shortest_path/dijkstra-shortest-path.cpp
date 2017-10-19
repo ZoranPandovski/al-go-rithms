@@ -1,4 +1,4 @@
-// Implemented by jhbecares based on Dijkstra's algorithm in "Competitive Programming 3"
+// Implemented by joctamois based on Dijkstra's algorithm in "Competitive Programming 3"
 // Example extracted from problem 10986 - Sending email from UVa Online Judge
 /*
 Try with the following data:
