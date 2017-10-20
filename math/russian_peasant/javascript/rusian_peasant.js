@@ -15,6 +15,6 @@ const russianPeasant = function(a, b) {
     return sum;
 }
 
+module.exports = russianPeasant;
 
-console.assert(russianPeasant(5,5) === 25);
 })();

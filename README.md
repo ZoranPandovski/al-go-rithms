@@ -3,7 +3,7 @@
 
 # Data Structures and Algorithms
 
-Clean examples implementations of data structures and algorithms written in different languages.
+Clean example implementations of data structures and algorithms written in different languages.
 
 ## List of implementations
 
@@ -11,6 +11,8 @@ Clean examples implementations of data structures and algorithms written in diff
   * [binary search](search/binary_search)
   * [linear search](search/linear_search)
   * [jump search](search/jump_search)
+  * [ternary search](search/ternary_search)
+  * [interpolation search](search/interpolation_search)
 * [Sort](sort)
   * [bubble sort](sort/bubble_sort)
   * [insertion sort](sort/insertion_sort)
@@ -21,6 +23,9 @@ Clean examples implementations of data structures and algorithms written in diff
   * [counting sort](sort/counting_sort)
   * [radix sort](sort/radix_sort)
   * [shell sort](sort/shell_sort)
+  * [comb sort](sort/Comb_sort)
+  * [bucket sort](sort/bucket_sort)
+  * [cycle sort](sort/cycle_sort)
 * [Math](math)
   * [russian peasant](math/russian_peasant)
   * [towers of hanoi](math/towers_of_hanoi)
@@ -37,6 +42,10 @@ Clean examples implementations of data structures and algorithms written in diff
   * [lucas series](math/lucas_series)
   * [numerical integration](math/numerical_integration)
   * [pernicious number](math/pernicious_number)
+  * [catalan number](math/catalan)
+  * [moments](math/moments)
+  * [primality check](math/is_prime)
+  * [euler's totient](math/eulers_totient_function)
 * [Cryptography](cryptography)
   * [caesar cipher](cryptography/caesar_cipher)
   * [substitution cipher](cryptography/substitution_cipher)
@@ -46,17 +55,25 @@ Clean examples implementations of data structures and algorithms written in diff
   * [chinese cipher](cryptography/chinese_cipher)
   * [codewheel](cryptography/codewheel)
   * [end to end](cryptography/end_to_end)
+  * [polybius cipher](cryptography/polybius_cipher)
+  * [atbash cipher](cryptography/atbash_cipher)
+  * [hill cipher](cryptography/hillcipher)
+  * [rail fence cipher](cryptography/rail_fence_cipher)
 * [Greedy](greedy)
   * [dijkstra’s algorithm](greedy/dijkstra’s_algorithm)
   * [kruskal's algorithm](greedy/kruskal's_algorithm)
   * [prim's algorithm](greedy/prim's_algorithm)
   * [job sequencing problem](greedy/Job_sequencing_problem)
+  * [egyptian fraction](greedy/egyptian_fraction)
+  * [activity selection](greedy/activity_selection)
+  * [knapsack problem](greedy/knapsack_problem)
 * [Graphs](graphsearch)
   * [breadth-first-search](graphsearch/breadth-first-search)
   * [depth-first-search](graphsearch/depth-first-search)
   * [topological sorting](graphsearch/topological_sorting)
   * [a-star search](graphsearch/a-star-search)
   * [dijkstra](graphsearch/dijkstra)
+  * [dinics algorithm](graphsearch/dinics_algorithm)
 * [String search](string_search)
   * [knuth morris pratt](string_search/knuth_morris_pratt)
   * [rabin karp](string_search/rabin_karp)
@@ -72,6 +89,11 @@ Clean examples implementations of data structures and algorithms written in diff
   * [floyd Warshall algorithm](dp/floyd_warshall_algorithm)
   * [coin change](dp/coin_change)
   * [longest common subsequence](dp/longest_common_subsequence)
+  * [longest increasing subsequence](dp/longest_increasing_subsequence)
+  * [longest palindromic subsequence](dp/longest_palindromic_subsequence)
+  * [maximum subarray problem](dp/maximum_subarray_problem)
+  * [rod cutting](dp/rod_cutting)
+  * [subset sum](dp/subset_sum)
 * [Data structures](data_structures)
   * [linked list](data_structures/linked_list)
   * [avl tree](data_structures/avl_tree)
@@ -80,10 +102,20 @@ Clean examples implementations of data structures and algorithms written in diff
   * [dictionary](data_structures/dictionary)
   * [queue](data_structures/Queue)
   * [stack](data_structures/Stack)
+  * [hash table](data_structures/hash_table)
+  * [binary search tree](data_structures/binarySearch_tree)
+  * [binary indexed tree](data_structures/binary_indexed_tree)
+  * [red and black tree](data_structures/red_and_black_tree)
+  * [segment tree](data_structures/segment_tree)
+  * [splay tree](data_structures/Splay_trees)
 * [Backtracking](backtracking)
   * [sudoku](backtracking/sudoku)
   * [knights tour](backtracking/knightsTour)
   * [n queens](backtracking/n-queens)
+  * [rat in a maze](backtracking/rat_in_a_maze)
+  * [wordsearch](backtracking/wordsearch)
+* [Synchronization](synchronization)
+  * [Producer consumer problem](synchronization/ProducerConsumer)
 
 ## Contribution
  * Contributions are always welcome. Language doesn't matter. Just make sure you're implementing an algorithm.
@@ -93,11 +125,11 @@ Clean examples implementations of data structures and algorithms written in diff
    e.g
    > buble_sort/python/buble_sort.py
 
- * If there is implementation of the same algorithm in your language add you username in front of the file name
- * Please include description for the algorithm that you are implementing. It doesn't matter if it's copied from somewhere as      long as it helps to people that are learning new algorithm.
- * Graphical example would be verry helpful too.
+ * If there is an implementation of the same algorithm in your language, add your username in front of the file name.
+ * Please include a description for the algorithm that you are implementing. It doesn't matter if it's copied from somewhere as long as it helps people that are learning new algorithm.
+ * Graphical examples would be very helpful too.
  * Don't forget to include tests.
-
+ * Don't remove previous implementations of algorithms. Just add a new file with your own implementation.
 
 ## Resources
 
@@ -115,6 +147,7 @@ Clean examples implementations of data structures and algorithms written in diff
    * [Algorithms - Princetone edu](http://algs4.cs.princeton.edu/home/)
    * [Data structures and algorithms - Hackr](https://hackr.io/tutorials/learn-data-structures-algorithms)
    * [Data science - Topcoder](https://www.topcoder.com/community/data-science/data-science-tutorials/)
+   * [Fundamentals Of Algorithms- Geeks For Geeks](http://www.geeksforgeeks.org/fundamentals-of-algorithms/)
  * Online classes (Free)
    * [Introduction to algorithms Part 1 - Coursera](https://www.coursera.org/learn/introduction-to-algorithms)
    * [Algorithms - Khanacademy](https://www.khanacademy.org/computing/computer-science/algorithms)
@@ -133,3 +166,5 @@ Clean examples implementations of data structures and algorithms written in diff
     * [Codeforces](http://codeforces.com/)
     * [Project Euler](https://projecteuler.net/)
     * [LeetCode](https://leetcode.com/)
+    * [CodingGame](https://www.codingame.com/)
+    * [CodeWars](https://codewars.com/)

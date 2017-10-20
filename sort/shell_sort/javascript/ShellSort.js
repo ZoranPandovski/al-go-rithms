@@ -9,7 +9,5 @@ function shellSort (a) {
     }
     return a;
 }
-var arrayToSort = [1,4,5,-4,2,56,345,23];
-console.log('Not sorted array', arrayToSort);
-shellSort(arrayToSort);
-console.log('Sorted array', arrayToSort);
+
+module.exports = shellSort;
