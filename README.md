@@ -60,7 +60,7 @@ Clean example implementations of data structures and algorithms written in diffe
   * [hill cipher](cryptography/hillcipher)
   * [rail fence cipher](cryptography/rail_fence_cipher)
 * [Greedy](greedy)
-  * [dijkstra’s algorithm](greedy/dijkstra’s_algorithm)
+  * [dijkstra’s algorithm](greedy/dijkstra_shortest_path)
   * [kruskal's algorithm](greedy/kruskal's_algorithm)
   * [prim's algorithm](greedy/prim's_algorithm)
   * [job sequencing problem](greedy/Job_sequencing_problem)
