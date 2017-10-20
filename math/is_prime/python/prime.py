@@ -13,7 +13,7 @@ def is_prime(n):
 	return True
 
 def test():
-	assert is_prime(1001)
+	assert is_prime(1009)
 
 if __name__ == "__main__":
 	test()
