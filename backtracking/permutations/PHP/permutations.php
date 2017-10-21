@@ -1,5 +1,13 @@
 <?php
 
+# PHP 7.0.8+
+
+/**
+ * Print all permutations of a given string
+ *
+ * @param string $entry
+ * @param int [$level]
+ */
 function permute(string $entry, int $level = 0)
 {
     static $num = 0;
@@ -16,6 +24,14 @@ function permute(string $entry, int $level = 0)
     }
 }
 
+/**
+ * Swaps char position of a given string
+ *
+ * @param string $input
+ * @param int $fromIndex
+ * @param int $toIndex
+ * @return string
+ */
 function swap(string $input, int $fromIndex, int $toIndex) : string
 {
     $swapFrom = $input[$fromIndex];
@@ -25,4 +41,41 @@ function swap(string $input, int $fromIndex, int $toIndex) : string
     return $input;
 }
 
+/**
+ * Example:
+ *
+ * permute('abc');
+ *
+ * Output:
+ *  1. abc
+ *  2. acb
+ *  3. bac
+ *  4. bca
+ *  5. cab
+ *  6. cba
+ */
+
+# Test
+
+$expectedResult = <<<EOD
+1. abc
+2. acb
+3. bac
+4. bca
+5. cab
+6. cba
+
+EOD;
+
+ob_start();
 permute('abc');
+$result = ob_get_contents();
+ob_end_clean();
+
+if ($result === $expectedResult) {
+    print('Success');
+} else {
+    print('fail');
+}
+
+print(" ==> \n\n$result");
