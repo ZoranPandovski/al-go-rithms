@@ -5,13 +5,6 @@ def selection_sort(items):
     """Implementation of the selection sort algorithm using Python
     inside parameter we can pass some items which are heterogeneous
     comparable
-    Example:
-    
-   C:\Users\Hp\Desktop> python selectionsortorfi.py
-   Enter numbers separated by a comma:
-   7,5,8,3,2
-   [2, 3, 5, 7, 8]
-   by d78ui98
     """
 
     length = len(items)
@@ -25,14 +18,9 @@ def selection_sort(items):
         )
     return items
 
+def test():
+    array = [2, 10, 7, 1]
+    assert selection_sort(array) == [1, 2, 7, 10]
 
 if __name__ == '__main__':
-    # to make it work on both version python 2.x and 3.x 
-    if sys.version_info.major > 3:
-        input_fun = input   
-    else:
-        input_fun = raw_input
-
-    user_input = input_fun('Enter numbers separated by a comma:\n')
-    unsorted = [int(item) for item in user_input.split(',')]
-    print(selection_sort(unsorted))
+    test()
