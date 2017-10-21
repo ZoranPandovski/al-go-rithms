@@ -1,6 +1,6 @@
 # Baconian Cipher
 
-From [Rosetta Code]:(https://rosettacode.org/wiki/Bacon_cipher) Bacon's cipher is a method of steganography created by Francis Bacon.
+From [Rosetta Code:](https://rosettacode.org/wiki/Bacon_cipher) Bacon's cipher is a method of steganography created by Francis Bacon.
 This task is to implement a program for encryption and decryption of plaintext using the simple alphabet of the Baconian cipher or some other kind of representation of this alphabet (make anything signify anything).
 
 The Baconian alphabet:
