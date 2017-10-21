@@ -16,4 +16,5 @@ The Baconian alphabet may optionally be extended to encode all lower case charac
 It is impractical to use the original change in font for the steganography. For this task you must provide an example that uses a change in the case of successive alphabetical characters instead. Other examples for the language are encouraged to explore alternative steganographic means.
 
 [Example in Python](https://rosettacode.org/wiki/Bacon_cipher#Python)
+
 [Example in C++](https://rosettacode.org/wiki/Bacon_cipher#C.2B.2B)
