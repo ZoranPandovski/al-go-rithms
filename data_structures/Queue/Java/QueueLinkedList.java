@@ -1,21 +1,21 @@
 import java.util.LinkedList;
 
-public class queueLinkedList {
+public class QueueLinkedList<T> {
 
-	LinkedList<Object> list = new LinkedList<Object>();
+	LinkedList<T> list = new LinkedList<T>();
 
-	public void enqueue(final Object item) {
+	public void enqueue(final T item) {
 		if (item == null) {
 			return;
 		}
 		list.addLast(item);
 	}
 
-	public Object dequeue() {
+	public T dequeue() {
 		if (list.isEmpty()) {
 			throw null;
 		}
-		Object x;
+		T x;
 		x = list.getFirst();
 		list.removeFirst();
 		return x;
