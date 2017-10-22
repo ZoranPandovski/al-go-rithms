@@ -1,23 +1,22 @@
 
-public class queueArray {
+public class QueueArray<T> {
 
 	private int first = -1;
 	private int last = -1;
 	private int size = 0;
 	private int sizequeuee;
+	public T[] x;
 
 	queueArray(final int sizequeue) {
-		x = new Object[sizequeue];
+		x = (T[]) new Object[sizequeue];
 		this.sizequeuee = sizequeue;
 	}
-
-	public Object[] x = new Object[sizequeuee];
-
+	
 	public boolean full() {
 		return ((first == last && last != -1 && first != -1) || (first == -1 && last == (x.length - 1)));
 	}
 
-	public void enqueue(final Object item) {
+	public void enqueue(final T item) {
 		if (this.full()) {
 			throw null;
 		}
@@ -27,12 +26,12 @@ public class queueArray {
 
 	}
 
-	public Object dequeue() {
+	public T dequeue() {
 		if (this.isEmpty()) {
 			throw null;
 		}
 		first = (first + 1) % x.length;
-		Object z = x[first];
+		T z = x[first];
 		if (first == last) {
 			first = -1;
 			last = -1;
