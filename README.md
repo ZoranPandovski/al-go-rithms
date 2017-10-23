@@ -95,7 +95,7 @@ Clean example implementations of data structures and algorithms written in diffe
   * [activity selection problem](greedy/activity_selection_problem)
   * [knapsack problem](greedy/knapsack_problem)
 * [Graphs](graphsearch)
-  * [bellman ford algorithm](graphsearch/bellman_ford_algorithm)
+  * [bellman ford algorithm](graphsearch/Bellman_Ford_algorithm)
   * [cycle directed graph](graphsearch/cycle_directed_graph)
   * [cycle undirected graph](graphsearch/cycle_undirected_graph)
   * [graph coloring](graphsearch/graph_coloring)
