@@ -208,3 +208,4 @@ dkms.conf
 *.exe
 *.out
 *.app
+/.vs
