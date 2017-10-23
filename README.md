@@ -115,6 +115,7 @@ Clean example implementations of data structures and algorithms written in diffe
   * [tries](string_search/Tries)
 * [Cluster analysis](cluster_analysis)
   * [k-means](cluster_analysis/k-means)
+  * [DBSCAN](cluster_analysis/dbscan)
 * [Dynamic Programming](dp)
   * [kadane algorithm](dp/kadane-_algorithm)
   * [knapsack algorithm](dp/knapsack_problem)
