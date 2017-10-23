@@ -22,5 +22,5 @@ The DBSCAN algorithm can be abstracted into the following steps:
   require this by performing these steps for one point at a time.
 
 ## Results
-In this picture we can see two non-linearly separable clusters. 
 ![](https://upload.wikimedia.org/wikipedia/commons/0/05/DBSCAN-density-data.svg)
+
