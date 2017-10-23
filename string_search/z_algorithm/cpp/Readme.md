@@ -15,15 +15,19 @@ The first entry of Z array is meaning less as complete string is always prefix o
 Examples:
 
 Pattern: a   a   a   a   a   a
+
 Z array: 0   5   4   3   2   1
 
 Pattern: a   a   b   a   a   c   d
+
 Z array: 0   1   0   2   1   0   0
 
 Pattern: a   b   a   b   a   b   a   b
+
 Z array: 0   0   6   0   4   0   2   0
 
 Pattern: a   a   b   c   a   a   b   x   a   a   a   z
+
 Z array: 0   1   0   0   3   1   0   0   2   2   1   0
 
 ### How is Z array helpful in searching pattern in Linear time?
@@ -38,7 +42,9 @@ Pattern P = "aab",  Text T = "baabaa"
 The concatenated string is = "aab$baabaa"
 
 Z array for above concatenated string is
+
 a   a   b   $   b   a   a   b   a   a
+
 0   1   0   0   0   3   1   0   2   1
 
 Since length of pattern is 3, the value 3 in Z array indicates presence of pattern.
