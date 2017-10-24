@@ -5,6 +5,9 @@
 
 Clean example implementations of data structures and algorithms written in different languages.
 
+## List of implementations
+![Algorithms list](https://github.com/ZoranPandovski/al-go-rithms/blob/master/Implementations.md)
+
 ## Contribution
  * Contributions are always welcome. Language doesn't matter. Just make sure you're implementing an algorithm.
  * PRs are welcome. To begin developing, follow the structure:
