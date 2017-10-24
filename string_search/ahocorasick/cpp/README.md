@@ -1,4 +1,4 @@
-#Aho Corasick
+# Aho Corasick  
 Aho Corasick is a string searching algorithm very similar to [KMP](https://en.wikipedia.org/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm) but allows to match multiple patterns at the same time. The idea is the same as in KMP, calculate a fail function for a position of the current matching process, but in this case, we use a Trie instead of an array to store this function.
 
 The implementation is divided into three parts:  
