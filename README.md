@@ -81,6 +81,7 @@ Clean example implementations of data structures and algorithms written in diffe
   * [atbash cipher](cryptography/atbash_cipher)
   * [hill cipher](cryptography/hillcipher)
   * [rail fence cipher](cryptography/rail_fence_cipher)
+  * [ElGamal](cryptography/ElGamal)
 * [Geometry](geometry)
   * [graham scan](geometry/graham_scan)
 * [Greedy](greedy)
