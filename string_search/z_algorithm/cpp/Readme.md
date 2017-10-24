@@ -32,7 +32,7 @@ Z array: 0   1   0   0   3   1   0   0   2   2   1   0
 
 ### How is Z array helpful in searching pattern in Linear time?
 
-The idea is to concatenate pattern and text, and create a string “P$T” where P is pattern, $ is a special character should not be present in pattern and text, and T is text.
+The idea is to concatenate pattern and text, and create a string â€œP$Tâ€ where P is pattern, $ is a special character should not be present in pattern and text, and T is text.
 Build the Z array for concatenated string.
 In Z array, if Z value at any point is equal to pattern length, then pattern is present at that point.
 
@@ -49,30 +49,8 @@ a   a   b   $   b   a   a   b   a   a
 
 Since length of pattern is 3, the value 3 in Z array indicates presence of pattern.
 
-### How to construct Z array?
-
-The idea is to maintain an interval [L, R] which is the interval with max R
-such that [L,R] is prefix substring (substring which is also prefix).
-
-Steps for maintaining this interval are as follows –
-
-1) If i > R then there is no prefix substring that starts before i and
-   ends after i, so we reset L and R and compute new [L,R] by comparing
-   str[0..] to str[i..] and get Z[i] (= R-L+1).
-
-2) If i <= R then let K = i-L,  now Z[i] >= min(Z[K], R-i+1)  because
-   str[i..] matches with str[K..] for atleast R-i+1 characters (they are in
-   [L,R] interval which we know is a prefix substring).
-   Now two sub cases arise –
-      a) If Z[K] < R-i+1  then there is no prefix substring starting at
-         str[i] (otherwise Z[K] would be larger)  so  Z[i] = Z[K]  and
-         interval [L,R] remains same.
-      b) If Z[K] >= R-i+1 then it is possible to extend the [L,R] interval
-         thus we will set L as i and start matching from str[R]  onwards  and
-         get new R then we will update interval [L,R] and calculate Z[i] (=R-L+1).
-
 The algorithm runs in linear time because we never compare character less than R and with matching we increase R by one so there are at most T comparisons.
-In mismatch case, mismatch happen only once for each i (because of which R stops), that’s another at most T comparison making overall linear complexity.
+In mismatch case, mismatch happen only once for each i (because of which R stops), thatâ€™s another at most T comparison making overall linear complexity.
 
 ### Animation
 
