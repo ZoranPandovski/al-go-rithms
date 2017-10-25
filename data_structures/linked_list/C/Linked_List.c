@@ -434,7 +434,7 @@ struct node *reverseparticular (struct node *head, int k)
  
    struct node* prev=NULL;
   struct node* after=NULL;
-  //it will reverse the linked list to every key nodes entered by the user
+  //it will reverse the linked list to every key nodes entered by the users
   int x=1;
  
  while(current!=NULL&&x<=k)
