@@ -9,7 +9,7 @@ bool binarySearchIterative(int list[], int first, int end, int item)
 
 	while(first <= end)
 	{
-	     middle = (first + end)/2;
+	     middle =first + (end- first)/2;
 	     if(list[middle] == item)
 	        {
 			return true;

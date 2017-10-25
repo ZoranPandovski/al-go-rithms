@@ -1,5 +1,12 @@
+/* USAGE
+
+Specify the number of places to shift a given string. See code for example.
+
+*/
+
 public class RotN {
 
+		/* USAGE */
     public static void main(String[] args) {
         String test = "test";
 		
