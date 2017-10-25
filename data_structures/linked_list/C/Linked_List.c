@@ -427,7 +427,41 @@ node* sortedIntersect(node* head1, node* head2)
     return head;
 
 }
+struct node *reverseparticular (struct node *head, int k)
 
+{ 
+  struct node* current=head;
+ 
+   struct node* prev=NULL;
+  struct node* after=NULL;
+  //it will reverse the linked list to every key nodes entered by the user
+  int x=1;
+ 
+ while(current!=NULL&&x<=k)
+ 
+ {
+     after=current->next;
+ 
+       current->next=prev;
+  
+       prev=current;
+    
+       current=after;
+    
+       x++;
+
+   }
+  
+if(after!=NULL)
+ 
+   head->next=reverse(after,k);
+ 
+ 
+  return prev;
+ 
+
+
+}
 int main()
 {
      struct node* a = NULL;
