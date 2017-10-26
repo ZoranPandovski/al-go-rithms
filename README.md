@@ -40,6 +40,7 @@ Clean example implementations of data structures and algorithms written in diffe
    * [Data structures and algorithms - Hackr](https://hackr.io/tutorials/learn-data-structures-algorithms)
    * [Data science - Topcoder](https://www.topcoder.com/community/data-science/data-science-tutorials/)
    * [Fundamentals Of Algorithms- Geeks For Geeks](http://www.geeksforgeeks.org/fundamentals-of-algorithms/)
+   * [Visual Algorithm - visualising data structures and algorithms through animation](https://visualgo.net/en)
  * Online classes (Free)
    * [Introduction to algorithms Part 1 - Coursera](https://www.coursera.org/learn/introduction-to-algorithms)
    * [Algorithms - Khanacademy](https://www.khanacademy.org/computing/computer-science/algorithms)
