@@ -7,7 +7,7 @@ const int MOD = 37;
 int power_of(int num, int p)
 {
 	int answer = 1;
-	
+
 	while(p!=0)
 	{
 		if(p%2 == 1)
@@ -19,11 +19,11 @@ int power_of(int num, int p)
 		num = num%MOD;
 		p = p/2;
 	}
-	
+
 	return answer;
 }
 
-//Inverse modulo function 
+//Inverse modulo function
 int inverse_modulo(int n)
 {
 	return power_of(n,MOD-2);
@@ -32,20 +32,20 @@ int inverse_modulo(int n)
 int main()
 {
 	int n,p,newnum,div,ans;
-	
+
 	cout<<"Enter the number: ";
 	cin>>n;
-	
+
 	cout<<"Enter the power: ";
 	cin>>p;
-	
+
 	cout<<"Enter a valid divisor: ";
 	cin>>div;
-	
+
 	newnum = power_of(n,p);
-	
+
 	ans = newnum * inverse_modulo(div);
 	ans = ans%MOD;
-	
+
 	cout<<ans;
 }
