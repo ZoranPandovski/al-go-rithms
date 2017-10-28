@@ -143,6 +143,36 @@ disp_list(struct node *list) {
   }
   printf("\n");
 }
+//this is the optimized nethod for detection of loop in the linked list//
+void detectanddelete(struct node* head_ref)
+{
+    if(head_ref==NULL||head_ref->next==NULL)
+        return;
+    struct node* fast=head_ref;
+    struct node* slow=head_ref;
+    slow=slow->next;
+    fast=fast->next->next;
+    while(fast&&fast->next)
+    {
+        if(slow==fast)
+            break;
+        slow=slow->next;
+        fast=fast->next->next;
+    }
+    if(slow==fast)
+    {
+        slow=head_ref;
+        while(slow->next!=fast->next)
+        {
+            slow=slow->next;
+            fast=fast->next;
+        }
+        fast->next=NULL;
+    }
+
+
+
+};
 
 int
 main(int argc, char *argv[]) {
