@@ -7,7 +7,7 @@ constexpr bool isPrimeRecursive(const unsigned int number, const unsigned int re
 
 constexpr bool isPrime(const unsigned int number)
 {
-    return (number < 2) ? false : isPrimeRecursive(number, 2);
+    return (number < 4) ? false : isPrimeRecursive(number, 2);
 }
 
 int main()
