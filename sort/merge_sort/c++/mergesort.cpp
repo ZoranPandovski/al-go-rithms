@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 int arr[1000000],a[1000000],b[1000000];
-void merge(int l,int m,int h)
+void merge(int l,int m,int h) // merges two sorted array
 {
 	int len1=(m-l+1),len2=(h-m);
 	int i=0,j=0,k=l;
@@ -29,6 +29,7 @@ void merge(int l,int m,int h)
 		k++;
 	}
 }
+//divide and conquer strategy
 void msort(int l,int h)
 {
 	if(l<h)
