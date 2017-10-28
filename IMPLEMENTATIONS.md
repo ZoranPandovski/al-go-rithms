@@ -19,6 +19,7 @@
   * [counting sort](sort/counting_sort)
   * [radix sort](sort/radix_sort)
   * [shell sort](sort/shell_sort)
+  * [shaker sort](sort/shaker_sort)
   * [comb sort](sort/Comb_sort)
   * [bucket sort](sort/bucket_sort)
   * [cycle sort](sort/cycle_sort)
