@@ -24,12 +24,12 @@ public class CedricEratosthenesSieve {
      while(p != null) {
        int multiplier = 2;
        int multiple = p * multiplier;
-       remove all multiples from the candidate
+       //remove all multiples from the candidate
        while (multiple<=n) {
         primeCandidates.remove(multiple);
          multiple = p * ++multiplier;
        }
-       //Stop when the last prime number found is the last item in the candidates 
+       //Check other prime candidates. Stop when the last prime number found is the last item in the candidates 
        p = primeCandidates.higher(p); 
      }  
 
