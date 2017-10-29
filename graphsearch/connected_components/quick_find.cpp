@@ -3,6 +3,7 @@
 #include <vector>
 #include <queue>
 #include <stack>
+#include <map>
 
 using namespace std;
 
@@ -47,5 +48,20 @@ map<int, int> quick_find(vector<vector<int> > edges) {
 		}
 	}
 	return ccid;
+}
+
+int main() {
+	vector<vector<int> >edges(0, vector<int>(2));
+	int node1, node2;
+	while (cin >> node1 >> node2) {
+		vector<int>temp(2);
+		temp[0] = node1;
+		temp[1] = node2;
+		edges.push_back(temp);
+	}
+	map<int, int>ccid = quick_find(edges);
+	for (auto it = ccid.begin(); it != ccid.end(); ++it) {
+		cout << it->first << " " << it->second << endl;
+	}
 }
 
