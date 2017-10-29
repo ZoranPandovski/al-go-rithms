@@ -564,6 +564,30 @@ void removeLoop(struct Node *loop_node, struct Node *head)
      make next of ptr2 as NULL */
    ptr2->next = NULL;
 }
+//to rotate a linked list after the given integral position
+void rotate(struct node* head_ref,int k)
+{
+struct node* temp=*head_ref;
+if(k==0)
+return;
+int count=1;
+while(count<k&&temp->next!=NULL)
+{
+temp=temp->next;
+count++;
+}
+if(temp=NULL)
+return;
+struct node* temp2=temp;
+while(temp!=NULL)
+{
+temp=temp->next;
+}
+temp->next=(*head_ref);
+(*head_ref)=temp2->next;
+temp2->next=NULL;
+
+}
 int main()
 {
      struct node* a = NULL;
