@@ -18,6 +18,9 @@ def binary_search(list: Array[Int], l: Int, r: Int, num:Int): Int = {
 }
 
 def test(){
-  val l = Array(12,3,4,5,6,7)
-  assert(binary_search(l,1,l.length,4) == 2)
+  val l = Array(1, 3, 4, 5, 6, 7)
+  assert(binary_search(l, 0, l.length - 1, 4) == 2)
+  assert(binary_search(l, 0, l.length - 1, 8) == -1)
+  assert(binary_search(l, 0, l.length - 1, 2) == -1)
+  assert(binary_search(l, 0, l.length - 1, 6) == 4) 
 }
