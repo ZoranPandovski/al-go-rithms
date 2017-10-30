@@ -73,4 +73,5 @@ int BooyerMoor(char *T,char *P)
 		}
 	}
 	printf("No Match");
+	return 0;
 }
