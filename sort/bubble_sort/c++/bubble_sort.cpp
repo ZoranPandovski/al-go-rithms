@@ -22,12 +22,12 @@ void bubble_sort(int arr[], int sz)
 int main()
 {
     int sz;
-    cout<<"Enter the size of Array : ";
+    
     cin>>sz;
 
     // TAKING INPUT FROM USER
     int arr[sz];
-    cout<<"\nEnter Elements : ";
+    
     for(int i=0; i<sz;i++)
         cin>>arr[i];
     bubble_sort(arr,sz);        // FUNCTION CALLING
