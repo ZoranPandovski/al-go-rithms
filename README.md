@@ -6,7 +6,7 @@
 Clean example implementations of data structures and algorithms written in different languages.
 
 ## List of implementations
-[Algorithms list](https://github.com/ZoranPandovski/al-go-rithms/blob/master/IMPLEMENTATIONS.md)
+[Algorithms list](https://github.com/AgentJ08/al-go-rithms/blob/master/IMPLEMENTATIONS.md)
 
 ## Contribution
  * Contributions are always welcome. Language doesn't matter. Just make sure you're implementing an algorithm.
@@ -34,6 +34,7 @@ Clean example implementations of data structures and algorithms written in diffe
    * [The Algorithm Design Manual](https://www.amazon.com/Algorithm-Design-Manual-Steven-Skiena/dp/1849967202)
    * [Algorithm Design](https://www.amazon.com/Algorithm-Design-Jon-Kleinberg/dp/0321295358)
    * [Grokking Algorithms](https://www.amazon.com/Grokking-Algorithms-illustrated-programmers-curious/dp/1617292230/ref=zg_bs_3870_3?_encoding=UTF8&psc=1&refRID=CBQSARF3C86P7FMQ4DEV)
+   * [Algorithms](https://www.amazon.in/Algorithms-Robert-Sedgewick/dp/032157351X)
  * Sites
    * [Algorithms - Tutorials point](https://www.tutorialspoint.com/data_structures_algorithms/index.htm)
    * [Algorithms - Princetone edu](http://algs4.cs.princeton.edu/home/)
