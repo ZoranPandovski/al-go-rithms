@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 int binarySearch(int arr[], int start, int end, int x) {
+
 	if (start <= end) {
 
 		int mid = start + (end - start) / 2;
 
 		if (arr[mid] == x)
-
 			return mid;
 
 		if (arr[mid] > x)
