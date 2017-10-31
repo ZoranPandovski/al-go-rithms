@@ -17,12 +17,7 @@ Sample Output
 150
 unreachable
 */
-#include <iostream>
-#include <stdio.h>
-#include <cstdlib>
-#include <queue>
-#include <vector>
-#include <algorithm>
+#include <bits/stdc++.h>
 using namespace std;
 
 typedef pair<int,int> ii;
