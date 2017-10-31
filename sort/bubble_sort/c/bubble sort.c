@@ -1,34 +1,43 @@
 #include <stdio.h>
 
-#define N 5
+#define MAX_SIZE 50
 
 void swap(int* x,int* y)
 {
-    (*x)=(*x)+(*y);
-    (*y)=(*x)-(*y);
-    (*x)=(*x)-(*y);
+    int tmp;
+    tmp = *x;
+    *x = *y;
+    *y = tmp;
     return;
 }
+
+void bubbleSort(int arr[], int n)
+{
+    int i, j;
+
+    for(i=0; i<(n-1); i++)
+        for(j=n-1; j>i; j--)
+            if(arr[j-1] > arr[j])
+                swap(&arr[j-1],&arr[j]);
+    
+}
+
 int main()
 {
-    int arr[N];
-    int i,j;
-    for(i=0;i<N;i++)
+    int arr[MAX_SIZE];
+
+    int i,n;
+
+    scanf("%d", &n);
+
+    for(i=0;i<n;i++)
         scanf("%d",&arr[i]);
 
-    for(i=0;i<(N-1);i++){
-        for(j=(N-1);j>i;j--){
-            if((arr[j-1])>(arr[j])){
-                swap(&arr[j-1],&arr[j]);
-                /*arr[j-1]=arr[j-1]+arr[j];
-                arr[j]=arr[j-1]-arr[j];
-                arr[j-1]=arr[j-1]-arr[j];*/
+    bubbleSort(arr, n);
 
-            }
-        }
-    }
-    for(i=0;i<N;i++)
+    for(i=0;i<n;i++)
         printf("%d ",arr[i]);
 
     return 0;
+
 }

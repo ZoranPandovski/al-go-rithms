@@ -19,7 +19,7 @@ int main() {
 
     else if (discriminant == 0) {
         cout << "Roots are real and same." << endl;
-        x1 = (-b + sqrt(discriminant)) / (2*a);
+        x1 = (-b) / (2*a);
         cout << "x1 = x2 =" << x1 << endl;
     }
 
