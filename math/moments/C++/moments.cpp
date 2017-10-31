@@ -65,7 +65,7 @@ inline double Median(const std::vector<double>& data)
 {
 	size_t n{ std::size(data) / 2 };	
 	std::vector<double> sortedData{ data };
-	std::nth_element(std::begin(sortedData), std::begin(sortedData) + n, std::end(sortedData));
+	std::sort(sortedData.begin(), sortedData.end());
 	return n % 2 == 0 ? sortedData[n] : 0.5 * (sortedData[n - 1] + sortedData[n]);
 }
 
