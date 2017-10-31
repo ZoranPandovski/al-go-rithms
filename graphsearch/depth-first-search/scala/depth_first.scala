@@ -20,8 +20,8 @@ class Node(var value:Int,var edges:Set[Node]=Set[Node]()){
 	def test(): Unit ={
 		val node1 = new Node(0,Set(new Node(1,Set[Node]()),new Node(4,Set[Node]())))
 
-		val out = depthFirst(node1,Set[Node]())
-		print(out)
+		val output = depthFirst(node1,Set[Node]())
+		print(output)
 	}
 
 
