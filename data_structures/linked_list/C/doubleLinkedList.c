@@ -177,6 +177,52 @@ disp_list(struct node *list) {
   printf("\n");
 }
 
+//quick sort for double linked list//
+Node* partition(Node *l, Node *h)
+{
+    // set pivot as h element
+    int x  = h->data;
+ 
+    // similar to i = l-1 for array implementation
+    Node *i = l->prev;
+ 
+    // Similar to "for (int j = l; j <= h- 1; j++)"
+    for (Node *j = l; j != h; j = j->next)
+    {
+        if (j->data <= x)
+        {
+            // Similar to i++ for array
+            i = (i == NULL)? l : i->next;
+ 
+            swap(&(i->data), &(j->data));
+        }
+    }
+    i = (i == NULL)? l : i->next; // Similar to i++
+    swap(&(i->data), &(h->data));
+    return i;
+}
+ 
+/* A recursive implementation of quicksort for linked list */
+void _quickSort(struct Node* l, struct Node *h)
+{
+    if (h != NULL && l != h && l != h->next)
+    {
+        struct Node *p = partition(l, h);
+        _quickSort(l, p->prev);
+        _quickSort(p->next, h);
+    }
+}
+ 
+// The main function to sort a linked list. It mainly calls _quickSort()
+void quickSort(struct Node *head)
+{
+    // Find last node
+    struct Node *h = lastNode(head);
+ 
+    // Call the recursive QuickSort
+    _quickSort(head, h);
+}
+
 int
 main(int argc, char *argv[]) {
   struct node *list;

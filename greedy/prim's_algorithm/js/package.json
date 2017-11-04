@@ -1,0 +1,12 @@
+{
+  "name": "prim_dijkstra",
+  "version": "1.0.0",
+  "description": "",
+  "main": "prim.js",
+  "scripts": {
+    "prim": "node prim.js",
+    "dijkstra": "node dijkstra.js"
+  },
+  "author": "GustavoKatel",
+  "license": "ISC"
+}

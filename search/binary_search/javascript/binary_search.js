@@ -9,18 +9,13 @@ const binarySearch = function(arr, num, start = 0, end = (arr.length - 1)) {
         case end - start === 0:
             return false;
         case arr[middle] < num:
-            return binary_search(arr, num, middle + 1, end);
+            return binarySearch(arr, num, middle + 1, end);
         case arr[middle] > num:
-            return binary_search(arr, num, start, middle);
+            return binarySearch(arr, num, start, middle);
     }
     return middle;
 }
 
+module.exports = binarySearch;
 
-//test
-const arr = [1,3,5,6,8,11,14,122];
-const num = 11;
-const result = binarySearch(arr, num);
-console.assert(result === num);
 })();
-

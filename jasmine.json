@@ -1,0 +1,7 @@
+{
+  "spec_dir": ".",
+  "spec_files": [
+    "**/*_test.js"
+  ],
+  "random": false
+}
