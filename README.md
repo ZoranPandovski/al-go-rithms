@@ -1,3 +1,10 @@
+
+<h1 align="center">
+	<img width="400" src="http://www.geeksforgeeks.org/wp-content/uploads/Competitive-Programming-1.jpg" alt="Algorithms">
+	<br>
+	<br>
+</h1>
+
 [![Join the chat at https://gitter.im/al-go-rithms](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/al-go-rithms?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![License](https://img.shields.io/badge/license-MIT%20License-brightgreen.svg)](https://opensource.org/licenses/MIT)
 
