@@ -1,7 +1,5 @@
-//saru95, cruxiu :)
-#include <iostream> /* cout and cin */
-#include <chrono> /* steady_clock::now */
-
+#include<bits/stdc++.h>
+using namespace std;
 bool binarySearchIterative(int list[], int first, int end, int item)
 {
 
@@ -50,56 +48,56 @@ bool binarySearchRecursive(int list[], int first, int end, int item)
 
 int main(int argc, char const *argv[])
 {
-  std::cout << "Please, enter the size of the list." << std::endl;
+ cout << "Please, enter the size of the list." << endl;
   int size, value, option;
   bool find;
-  std::cin >> size;
+ cin >> size;
   int *list = new int[size];
   for(int i = 0; i < size; i++)
   {
-    std::cout << "Enter the element " << i << " of the list." << std::endl;
-    std::cin >> list[i];
+   cout << "Enter the element " << i << " of the list." << endl;
+   cin >> list[i];
   }
-  std::cout << "Now, enter a value to be searched in the list." << std::endl;
-  std::cin >> value;
-  std::cout << "Now, would you like to use a binary search iterative (0) or a binary search recursive(1)." << std::endl;
-  std::cin >> option;
+ cout << "Now, enter a value to be searched in the list." << endl;
+ cin >> value;
+  cout << "Now, would you like to use a binary search iterative (0) or a binary search recursive(1)." <<endl;
+ cin >> option;
   switch (option) {
     case 0:
       {
-        auto start = std::chrono::steady_clock::now();
+        auto start =chrono::steady_clock::now();
         find = binarySearchIterative(list, 0, size-1, value);
-        auto end = std::chrono::steady_clock::now();
+        auto end =chrono::steady_clock::now();
         auto diff = end - start;
         if(find)
         {
-          std::cout << "You find the element using the binary search iterative." << std::endl;
+         cout << "You find the element using the binary search iterative." << endl;
         }
         else{
-          std::cout << "You not find the element using the binary search iterative." << std::endl;
+          cout << "You not find the element using the binary search iterative." <<endl;
         }
-        std::cout << "And the time of search was " << std::chrono::duration <double, std::milli> (diff).count() << " ms." << std::endl;
+       cout << "And the time of search was " <<chrono::duration <double,milli> (diff).count() << " ms." << endl;
       }
       break;
     case 1:
       {
-        auto start = std::chrono::steady_clock::now();
+        auto start =chrono::steady_clock::now();
         find = binarySearchRecursive(list, 0, size-1, value);
-        auto end = std::chrono::steady_clock::now();
+        auto end =chrono::steady_clock::now();
         auto diff = end - start;
         if(find)
         {
-          std::cout << "You find the element using the binary search recursive." << std::endl;
+          cout << "You find the element using the binary search recursive." <<endl;
         }
         else
 	{
-          std::cout << "You not find the element using the binary search recursive." << std::endl;
+         cout << "You not find the element using the binary search recursive." << endl;
         }
-        std::cout << "And the time of search was " << std::chrono::duration <double, std::milli> (diff).count() << " ms." << std::endl;
+       cout << "And the time of search was " << chrono::duration <double, milli> (diff).count() << " ms." << endl;
       }
       break;
     default:
-      std::cout << "This isn't a valid option, please restart the program." << std::endl;
+      cout << "This isn't a valid option, please restart the program." << endl;
       break;
   }
   delete[] list;

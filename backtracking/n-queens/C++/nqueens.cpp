@@ -10,7 +10,8 @@ int cols[BOARD_SIZE];
 
 // check positions by order of increasing colum
 bool check_forwards(int row, int col){
-	int tmp_row = row; int tmp_col = col;
+	int tmp_row = row; 
+	int tmp_col = col;
 	while((row < BOARD_SIZE) && (col < BOARD_SIZE)){
 		if(rows[row] == col)
 			return true;

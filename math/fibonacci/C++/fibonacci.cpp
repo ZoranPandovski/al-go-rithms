@@ -49,7 +49,7 @@ void fib_Accurate(long long n) { // ADDED
 	}
 }
 
-void fib(int n, int a, int b) {
+void fib(int n, long long a, long long b) {
 	int tmp;
 	for(int i = 0; i < n; i++) {
 		std::cout << a << " ";
@@ -61,7 +61,7 @@ void fib(int n, int a, int b) {
 
 int main() {
 	long long n; // MODIFIED
-	int a = 0, b = 1;
+	long long a = 0, b = 1;
 	std::cout << "How many numbers would you like to compute?\n>> ";
 	std::cin >> n;
 

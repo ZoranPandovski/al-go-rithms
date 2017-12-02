@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-#define MAX 10000
+#define MAX 100000
 // defined a class stack
 class Stack {
 	//top variable which represents the top of the stack
