@@ -1,33 +1,23 @@
-#include <bits/stdc++.h>
-using namespace std;
-typedef long long int ll;
-
-ll power(int a,int b)
+//a turbo c++ program for armstrong
+#include<iostream.h>
+#include<conio.h>
+void main()
 {
-	if(b==0)
-		return 1;
-	if(b%2==0)
-		return power(a,b/2)*power(a,b/2); 
-	return a*power(a,b/2)*power(a,b/2);
-}
-int main()
-{
-	ll x,n,sum=0;
-	cout << "Enter a number : ";
-	cin >> n;
-	ll num = n,c = 0;
-	while(n)
-		n=n/10,c++;
-	n=num;
-	while(n)
+	texbackground(10);
+	textcolor(0);
+	clrscr();
+	int arm=0,num,r;
+	cout<<"\n\t Enter a number:";
+	cin>>num;
+	while(num>0)
 	{
-		x=n%10;
-		n=n/10;
-		sum+=power(x,c);
+		r=num%10;
+		arm=arm+r*r*r;
+		num=num/10;
 	}
-	if(sum==num)
-		cout<<"Number is an armstrong number"<<endl;
+	if(num==arm)
+		cout<<"\n\t armstrong number";
 	else
-		cout<<"Number is not an armstrong number"<<endl;
-	return 0;
+		cout<<"\n\t not an armstrong number";
+	getch();
 }
