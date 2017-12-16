@@ -11,3 +11,9 @@ def is_prime(n):
 		i += 1
 
 	return True
+
+def test():
+	assert is_prime(1009)
+
+if __name__ == "__main__":
+	test()

@@ -31,7 +31,7 @@ void swap(int *a,int *b)
 	*b = temp;
 }
 
-//FUNCTION TO LINK TWO BINOMIAL TREES (MAKES X PARENT OF Y)
+//FUNCTIONTO LINK TWO BINOMIAL TREES (MAKES X PARENT OF Y)
 void binomiallink(node* y, node* x)		
 {
 	y->parent = x;

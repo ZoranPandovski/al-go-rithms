@@ -1,121 +1,23 @@
+
+<h1 align="center">
+	<img width="400" src="http://www.geeksforgeeks.org/wp-content/uploads/Competitive-Programming-1.jpg" alt="Algorithms">
+	<br>
+	<br>
+</h1>
+
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/ZoranPandovski/al-go-rithms/issues)
+[![Waffle.io - Columns and their card count](https://badge.waffle.io/ZoranPandovski/al-go-rithms.svg?columns=all)](https://waffle.io/ZoranPandovski/al-go-rithms)
 [![Join the chat at https://gitter.im/al-go-rithms](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/al-go-rithms?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![License](https://img.shields.io/badge/license-MIT%20License-brightgreen.svg)](https://opensource.org/licenses/MIT)
 
-# Data Structures and Algorithms
+
+# Data Structures and Algorithms 
 
 Clean example implementations of data structures and algorithms written in different languages.
 
 ## List of implementations
 
-* [Search](search)
-  * [binary search](search/binary_search)
-  * [linear search](search/linear_search)
-  * [jump search](search/jump_search)
-  * [ternary search](search/ternary_search)
-  * [interpolation search](search/interpolation_search)
-* [Sort](sort)
-  * [bubble sort](sort/bubble_sort)
-  * [insertion sort](sort/insertion_sort)
-  * [quick sort](sort/quick_sort)
-  * [merge sort](sort/merge_sort)
-  * [heap sort](sort/heap_sort)
-  * [selection sort](sort/selection_sort)
-  * [counting sort](sort/counting_sort)
-  * [radix sort](sort/radix_sort)
-  * [shell sort](sort/shell_sort)
-  * [comb sort](sort/Comb_sort)
-  * [bucket sort](sort/bucket_sort)
-  * [cycle sort](sort/cycle_sort)
-* [Math](math)
-  * [russian peasant](math/russian_peasant)
-  * [towers of hanoi](math/towers_of_hanoi)
-  * [armstrong number](math/armstrong_number)
-  * [euclid's gcd](math/euclids_gcd)
-  * [prime seive](math/prime_seive)
-  * [strong number](math/strong_number)
-  * [factorial](math/factorial)
-  * [fibonacci sequence](math/fibonacci)
-  * [sum of digits](math/sum_of_digits)
-  * [fast exponentiation](math/fast_exponentiation)
-  * [add binary numbers](math/AddBinaryNumbers)
-  * [interval bisection](math/interval_bisection)
-  * [lucas series](math/lucas_series)
-  * [numerical integration](math/numerical_integration)
-  * [pernicious number](math/pernicious_number)
-  * [catalan number](math/catalan)
-  * [moments](math/moments)
-  * [primality check](math/is_prime)
-  * [euler's totient](math/eulers_totient_function)
-* [Cryptography](cryptography)
-  * [caesar cipher](cryptography/caesar_cipher)
-  * [substitution cipher](cryptography/substitution_cipher)
-  * [vernam cipher](cryptography/vernam_cipher)
-  * [vigenere cipher](cryptography/vigenere_cipher)
-  * [playfair cipher](cryptography/playfair_cipher)
-  * [chinese cipher](cryptography/chinese_cipher)
-  * [codewheel](cryptography/codewheel)
-  * [end to end](cryptography/end_to_end)
-  * [polybius cipher](cryptography/polybius_cipher)
-  * [atbash cipher](cryptography/atbash_cipher)
-  * [hill cipher](cryptography/hillcipher)
-  * [rail fence cipher](cryptography/rail_fence_cipher)
-* [Greedy](greedy)
-  * [dijkstra’s algorithm](greedy/dijkstra’s_algorithm)
-  * [kruskal's algorithm](greedy/kruskal's_algorithm)
-  * [prim's algorithm](greedy/prim's_algorithm)
-  * [job sequencing problem](greedy/Job_sequencing_problem)
-  * [egyptian fraction](greedy/egyptian_fraction)
-  * [activity selection](greedy/activity_selection)
-  * [knapsack problem](greedy/knapsack_problem)
-* [Graphs](graphsearch)
-  * [breadth-first-search](graphsearch/breadth-first-search)
-  * [depth-first-search](graphsearch/depth-first-search)
-  * [topological sorting](graphsearch/topological_sorting)
-  * [a-star search](graphsearch/a-star-search)
-  * [dijkstra](graphsearch/dijkstra)
-  * [dinics algorithm](graphsearch/dinics_algorithm)
-* [String search](string_search)
-  * [knuth morris pratt](string_search/knuth_morris_pratt)
-  * [rabin karp](string_search/rabin_karp)
-  * [quick search](string_search/quick_search)
-* [Cluster analysis](cluster_analysis)
-  * [k-means](cluster_analysis/k-means)
-* [Dynamic Programming](dp)
-  * [kadane algorithm](dp/kadane-_algorithm)
-  * [knapsack algorithm](dp/knapsack_problem)
-  * [levenshtein distance](dp/levenshtein_distance)
-  * [minimum cost path](dp/min_cost_path)
-  * [matrix chain multiplication](dp/matrix_chain_multiplication)
-  * [floyd Warshall algorithm](dp/floyd_warshall_algorithm)
-  * [coin change](dp/coin_change)
-  * [longest common subsequence](dp/longest_common_subsequence)
-  * [longest increasing subsequence](dp/longest_increasing_subsequence)
-  * [longest palindromic subsequence](dp/longest_palindromic_subsequence)
-  * [maximum subarray problem](dp/maximum_subarray_problem)
-  * [rod cutting](dp/rod_cutting)
-  * [subset sum](dp/subset_sum)
-* [Data structures](data_structures)
-  * [linked list](data_structures/linked_list)
-  * [avl tree](data_structures/avl_tree)
-  * [heap](data_structures/heap)
-  * [b tree](data_structures/b_tree)
-  * [dictionary](data_structures/dictionary)
-  * [queue](data_structures/Queue)
-  * [stack](data_structures/Stack)
-  * [hash table](data_structures/hash_table)
-  * [binary search tree](data_structures/binarySearch_tree)
-  * [binary indexed tree](data_structures/binary_indexed_tree)
-  * [red and black tree](data_structures/red_and_black_tree)
-  * [segment tree](data_structures/segment_tree)
-  * [splay tree](data_structures/Splay_trees)
-* [Backtracking](backtracking)
-  * [sudoku](backtracking/sudoku)
-  * [knights tour](backtracking/knightsTour)
-  * [n queens](backtracking/n-queens)
-  * [rat in a maze](backtracking/rat_in_a_maze)
-  * [wordsearch](backtracking/wordsearch)
-* [Synchronization](synchronization)
-  * [Producer consumer problem](synchronization/ProducerConsumer)
+[Algorithms list](https://github.com/ZoranPandovski/al-go-rithms/blob/master/IMPLEMENTATIONS.md)
 
 ## Contribution
  * Contributions are always welcome. Language doesn't matter. Just make sure you're implementing an algorithm.
@@ -123,13 +25,14 @@ Clean example implementations of data structures and algorithms written in diffe
 
    > algorithm_name/language-name/file_name.extension
    e.g
-   > buble_sort/python/buble_sort.py
+   > bubble_sort/python/bubble_sort.py
 
  * If there is an implementation of the same algorithm in your language, add your username in front of the file name.
  * Please include a description for the algorithm that you are implementing. It doesn't matter if it's copied from somewhere as long as it helps people that are learning new algorithm.
  * Graphical examples would be very helpful too.
  * Don't forget to include tests.
  * Don't remove previous implementations of algorithms. Just add a new file with your own implementation.
+ * Beautify and cleanup your code for easier reading
 
 ## Resources
 
@@ -142,11 +45,14 @@ Clean example implementations of data structures and algorithms written in diffe
    * [The Algorithm Design Manual](https://www.amazon.com/Algorithm-Design-Manual-Steven-Skiena/dp/1849967202)
    * [Algorithm Design](https://www.amazon.com/Algorithm-Design-Jon-Kleinberg/dp/0321295358)
    * [Grokking Algorithms](https://www.amazon.com/Grokking-Algorithms-illustrated-programmers-curious/dp/1617292230/ref=zg_bs_3870_3?_encoding=UTF8&psc=1&refRID=CBQSARF3C86P7FMQ4DEV)
+   * [Algorithms](https://www.amazon.in/Algorithms-Robert-Sedgewick/dp/032157351X)
  * Sites
    * [Algorithms - Tutorials point](https://www.tutorialspoint.com/data_structures_algorithms/index.htm)
    * [Algorithms - Princetone edu](http://algs4.cs.princeton.edu/home/)
    * [Data structures and algorithms - Hackr](https://hackr.io/tutorials/learn-data-structures-algorithms)
    * [Data science - Topcoder](https://www.topcoder.com/community/data-science/data-science-tutorials/)
+   * [Fundamentals Of Algorithms- Geeks For Geeks](http://www.geeksforgeeks.org/fundamentals-of-algorithms/)
+   * [Visual Algorithm - visualising data structures and algorithms through animation](https://visualgo.net/en)
  * Online classes (Free)
    * [Introduction to algorithms Part 1 - Coursera](https://www.coursera.org/learn/introduction-to-algorithms)
    * [Algorithms - Khanacademy](https://www.khanacademy.org/computing/computer-science/algorithms)
@@ -165,3 +71,5 @@ Clean example implementations of data structures and algorithms written in diffe
     * [Codeforces](http://codeforces.com/)
     * [Project Euler](https://projecteuler.net/)
     * [LeetCode](https://leetcode.com/)
+    * [CodingGame](https://www.codingame.com/)
+    * [CodeWars](https://codewars.com/)

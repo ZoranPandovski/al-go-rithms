@@ -44,7 +44,4 @@ function heapSort(input) {
     }
 }
 
-var arrayToSort = [40, 10, 50, 24, 1, 2, 4, -10, 15, 7, 8, 5];
-console.log('Not yet sorted array', arrayToSort);
-heapSort(arrayToSort);
-console.log('Sorted array', arrayToSort);
+module.exports = heapSort;

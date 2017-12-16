@@ -17,8 +17,4 @@ function isPerfect (n) {
   return result === n
 }
 
-console.log(isPerfect(6)) // true
-console.log(isPerfect(28)) // true
-console.log(isPerfect(496)) // true
-console.log(isPerfect(8128)) // true
-console.log(isPerfect(16723)) // false
+module.exports = isPerfect;

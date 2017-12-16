@@ -34,4 +34,4 @@ function merge(left, right)
     return result;
 }
  
-console.log(mergeSort([9,8,6,7,6,4,6,3,2,1]));
+module.exports = mergeSort;

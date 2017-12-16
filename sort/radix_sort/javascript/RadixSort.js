@@ -32,5 +32,5 @@ function radixSort(list){
     }
     return list
 }
-var a = [2,423,2,43,23423,43,22,123];
-radixSort(a);
+
+module.exports = radixSort;

@@ -1,3 +1,5 @@
+import java.util.*;
+
 class InsertionSort
 {
 	void sort(int arr[])
@@ -28,11 +30,18 @@ class InsertionSort
 
 	public static void main(String args[])
 	{        
-		int arr[] = {12, 11, 13, 5, 6};
-
+		Scanner S = new Scanner(System.in);
+		System.out.println("Enter the size of your array: ");
+		int n = S.nextInt();
+		int arr[] = new int[n];
+		System.out.println("Enter the elements of the array: ");
+		for(int i=0;i<n;i++)
+		{
+			arr[i] = S.nextInt();
+		}
 		InsertionSort ob = new InsertionSort();        
 		ob.sort(arr);
-
+		System.out.println("The sorted array is:");
 		printArray(arr);
 	}
 } 
