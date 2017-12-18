@@ -20,9 +20,9 @@ In public-key cryptosystems, the public key may be freely distributed, while its
 [Learn Cryptography](https://learncryptography.com/)
 
 #### Online Courses:
-[Coursera Cryptography](https://www.coursera.org/learn/crypto)
+[Cryptography I - Coursera](https://www.coursera.org/learn/crypto)
 
-[Udacity Cryptography](https://in.udacity.com/course/applied-cryptography--cs387)
+[Applied Cryptography - Udacity](https://in.udacity.com/course/applied-cryptography--cs387)
 
-[NPTEL Cryptography](https://onlinecourses.nptel.ac.in/noc16_cs21/preview)
+[Introduction to Cryptography - NPTEL](https://onlinecourses.nptel.ac.in/noc16_cs21/preview)
 
