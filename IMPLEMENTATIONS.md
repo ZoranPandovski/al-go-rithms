@@ -25,6 +25,7 @@
   * [cycle sort](sort/cycle_sort)
   * [python bucket sort](sort/python_bucket_sort)
   * [binary insertion sort](sort/binary%20insertion%20sort.cpp)
+  * [slow sort](sort/Slow_Sort)
 * [Math](math)
   * [russian peasant](math/russian_peasant)
   * [towers of hanoi](math/towers_of_hanoi)
