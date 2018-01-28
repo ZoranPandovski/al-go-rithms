@@ -63,6 +63,8 @@ Clean example implementations of data structures and algorithms written in diffe
    * [Algorithms and data structures - Edx](https://www.edx.org/course/algorithms-data-structures-microsoft-dev285x)
    * [Algorithm Design and Analysis - Edx](https://courses.edx.org/courses/course-v1:PennX+SD3x+2T2017/course/)
    * [Graph Algorithms - EdX](https://www.edx.org/es/course/graph-algorithms-uc-san-diegox-algs202x)
+   * [Data Structures - EdX](https://www.edx.org/es/course/data-structures-uc-san-diegox-algs201x)
+   * [Algorithmic Design and Techniques - EdX](https://www.edx.org/es/course/algorithmic-design-techniques-uc-san-diegox-algs200x)
  * Coding Practice Sites
     * [HackerRank](https://www.hackerrank.com/)
     * [HackerEarth](https://www.hackerearth.com/)
