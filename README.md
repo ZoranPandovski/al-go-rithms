@@ -38,7 +38,7 @@ Clean example implementations of data structures and algorithms written in diffe
 
  Curated list of resources dealing with algorithms.
 
- * Books
+ * **Books**
    * [Introduction to algorithms](https://www.amazon.com/Introduction-Algorithms-Second-Edition-Thomas/dp/0262032937)
    * [Algorithms and Data structures](https://www.amazon.com/Algorithms-Structures-Prentice-Hall-Automatic-Computation/dp/0130224189)
    * [Data Structures and Algorithms](https://www.amazon.com/Data-Structures-Algorithms-Alfred-Aho/dp/0201000237/ref=pd_sim_14_3?_encoding=UTF8&pd_rd_i=0201000237&pd_rd_r=XQVWWBZYKCYN7V573D1B&pd_rd_w=jmpvR&pd_rd_wg=FCwc5&psc=1&refRID=XQVWWBZYKCYN7V573D1B)
@@ -46,26 +46,30 @@ Clean example implementations of data structures and algorithms written in diffe
    * [Algorithm Design](https://www.amazon.com/Algorithm-Design-Jon-Kleinberg/dp/0321295358)
    * [Grokking Algorithms](https://www.amazon.com/Grokking-Algorithms-illustrated-programmers-curious/dp/1617292230/ref=zg_bs_3870_3?_encoding=UTF8&psc=1&refRID=CBQSARF3C86P7FMQ4DEV)
    * [Algorithms](https://www.amazon.in/Algorithms-Robert-Sedgewick/dp/032157351X)
- * Sites
+ * **Sites**
    * [Algorithms - Tutorials point](https://www.tutorialspoint.com/data_structures_algorithms/index.htm)
    * [Algorithms - Princetone edu](http://algs4.cs.princeton.edu/home/)
    * [Data structures and algorithms - Hackr](https://hackr.io/tutorials/learn-data-structures-algorithms)
    * [Data science - Topcoder](https://www.topcoder.com/community/data-science/data-science-tutorials/)
    * [Fundamentals Of Algorithms- Geeks For Geeks](http://www.geeksforgeeks.org/fundamentals-of-algorithms/)
    * [Visual Algorithm - visualising data structures and algorithms through animation](https://visualgo.net/en)
- * Online classes (Free)
-   * [Introduction to algorithms Part 1 - Coursera](https://www.coursera.org/learn/introduction-to-algorithms)
-   * [Algorithms - Khanacademy](https://www.khanacademy.org/computing/computer-science/algorithms)
-   * [Algorithms specialization 4 courses - Coursera](https://www.coursera.org/specializations/algorithms)
-   * [Computability, Complexity & Algorithms - Udacity](https://www.udacity.com/course/computability-complexity-algorithms--ud061)
-   * [Intro to algorithms - Udacity](https://www.udacity.com/course/intro-to-algorithms--cs215)
-   * [Algorithms - Edx](https://www.edx.org/course/algorithms-iitbombayx-cs213-3x-0)
-   * [Algorithms and data structures - Edx](https://www.edx.org/course/algorithms-data-structures-microsoft-dev285x)
-   * [Algorithm Design and Analysis - Edx](https://courses.edx.org/courses/course-v1:PennX+SD3x+2T2017/course/)
-   * [Graph Algorithms - EdX](https://www.edx.org/es/course/graph-algorithms-uc-san-diegox-algs202x)
-   * [Data Structures - EdX](https://www.edx.org/es/course/data-structures-uc-san-diegox-algs201x)
-   * [Algorithmic Design and Techniques - EdX](https://www.edx.org/es/course/algorithmic-design-techniques-uc-san-diegox-algs200x)
- * Coding Practice Sites
+* **Online classes (Free)**
+  * Coursera 
+      * [Introduction to algorithms Part 1](https://www.coursera.org/learn/introduction-to-algorithms)
+      * [Algorithms specialization 4 courses](https://www.coursera.org/specializations/algorithms)
+   * Khan Academy 
+     * [Algorithms](https://www.khanacademy.org/computing/computer-science/algorithms)
+   * Udacity
+      * [Computability, Complexity & Algorithms](https://www.udacity.com/course/computability-complexity-algorithms--ud061)
+      * [Intro to algorithms](https://www.udacity.com/course/intro-to-algorithms--cs215)
+   * EdX
+      * [Algorithms](https://www.edx.org/course/algorithms-iitbombayx-cs213-3x-0)
+      * [Algorithms and data structures](https://www.edx.org/course/algorithms-data-structures-microsoft-dev285x)
+     * [Algorithm Design and Analysis](https://courses.edx.org/courses/course-v1:PennX+SD3x+2T2017/course/)
+     * [Graph Algorithms](https://www.edx.org/es/course/graph-algorithms-uc-san-diegox-algs202x)
+     * [Data Structures](https://www.edx.org/es/course/data-structures-uc-san-diegox-algs201x)
+      * [Algorithmic Design and Techniques](https://www.edx.org/es/course/algorithmic-design-techniques-uc-san-diegox-algs200x)
+ * **Coding Practice Sites**
     * [HackerRank](https://www.hackerrank.com/)
     * [HackerEarth](https://www.hackerearth.com/)
     * [SPOJ](http://www.spoj.com/)
