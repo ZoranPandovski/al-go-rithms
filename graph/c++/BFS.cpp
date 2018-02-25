@@ -40,7 +40,7 @@ int main()
 			if(visited[ graph[current][i] ] == 0)
 			{
 				q.push(graph[current][i]);
-				visited[ graph[current][i] ] = 1;	
+				visited[ graph[current][i] ] = 1; 
 			}
 		}
 	}
