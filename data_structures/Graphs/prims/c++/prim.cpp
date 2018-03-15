@@ -5,7 +5,7 @@ bool visited[100001]={false};
 int cost=0;
 void prim(int v)
 {
-	priority_queue<pair<int,int>,vector<pair<int,int>>,greater<pair<int,int>>>q;
+	priority_queue<pair<int,int>,vector<pair<int,int> >,greater<pair<int,int> > >q;
 	q.push(make_pair(0,v));
 	int i;
 	while(!q.empty())
