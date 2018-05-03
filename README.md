@@ -5,6 +5,7 @@
 	<br>
 </h1>
 
+[![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ZoranPandovski)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/ZoranPandovski/al-go-rithms/issues)
 [![Waffle.io - Columns and their card count](https://badge.waffle.io/ZoranPandovski/al-go-rithms.svg?columns=all)](https://waffle.io/ZoranPandovski/al-go-rithms)
 [![Join the chat at https://gitter.im/al-go-rithms](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/al-go-rithms?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
