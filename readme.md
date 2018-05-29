@@ -1,6 +1,6 @@
 
 <h1 align="center">
-	<img width="400" src="http://www.geeksforgeeks.org/wp-content/uploads/Competitive-Programming-1.jpg" alt="Algorithms">
+	<img width="400" src="media/algorithms.jpeg" alt="Algorithms">
 	<br>
 	<br>
 </h1>
