@@ -4,7 +4,7 @@ Sometimes referred to as "finite state automata", a state machine is a machine o
 
 ## Contribution
 * Add a folder with the language you are using and its appropriate files.
-* I based the Java machine off of the coin machine example in the YouTube video below, but pleas ebe creative! Practical applications are fun!
+* I based the Java machine off of the coin machine example in the YouTube video below, but please be creative! Practical applications are fun!
 
 ## Resources
 * [Computers Without Memory - Computerphile](https://www.youtube.com/watch?v=vhiiia1_hC4)
