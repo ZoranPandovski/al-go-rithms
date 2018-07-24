@@ -45,3 +45,13 @@ void search(char pattern[], char text[], int modulo_prime = 101) {
         }
     }
 }
+
+int main() {
+
+    char text[N];
+    char pattern[N];
+    cin.getline(text, N);
+    cin.getline(pattern, N);
+    search(pattern, text);
+    return 0;
+}
