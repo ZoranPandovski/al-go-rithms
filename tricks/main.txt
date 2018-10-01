@@ -1,0 +1,14 @@
+Here comes a repository of Tricks to you programming more faster and more eficient:
+
+odd or even:
+a & 1 == 1, return true if a is a odd number. 
+
+Fast swap:
+
+a^=b;
+b^=a;
+a^=b;
+
+its a easy swap without using any other variable.
+
+...
