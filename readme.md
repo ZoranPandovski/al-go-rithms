@@ -72,6 +72,7 @@ Clean example implementations of data structures and algorithms written in diffe
      * [String Processing and Pattern Matching Algorithms](https://www.edx.org/course/string-processing-pattern-matching-uc-san-diegox-algs204x)
      * [Graph Algorithms in Genome Sequencing](https://www.edx.org/course/graph-algorithms-genome-sequencing-uc-san-diegox-algs206x)
      * [Algorithms and Data Structures Capstone](https://www.edx.org/course/algorithms-data-structures-capstone-uc-san-diegox-algs207x) 
+     * [Data Structures and Algorithms](https://www.programiz.com/dsa)
  * **Coding Practice Sites**
     * [HackerRank](https://www.hackerrank.com/)
     * [HackerEarth](https://www.hackerearth.com/)
