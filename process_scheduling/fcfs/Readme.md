@@ -5,25 +5,11 @@ This is used in Batch Systems.
 It's easy to understand and implement programmatically, using a Queue data structure, where a new process enters through the tail of the queue, and the scheduler selects process from the head of the queue.
 A perfect real life example of FCFS scheduling is buying tickets at ticket counter.
 
-Calculating Average Waiting Time
+Below we have a few shortcomings or problems with the FCFS scheduling algorithm:
 
-For every scheduling algorithm, Average waiting time is a crucial parameter to judge it's performance.
+1)It is Non Pre-emptive algorithm, which means the process priority doesn't matter.
+If a process with very least priority is being executed, more like daily routine backup process, which takes more time, and all of a sudden some other high priority process arrives, like interrupt to avoid system crash, the high priority process will have to wait, and hence in this case, the system will crash, just because of improper process scheduling.
 
-AWT or Average waiting time is the average of the waiting times of the processes in the queue, waiting for the scheduler to pick them for execution.
-
-Lower the Average Waiting Time, better the scheduling algorithm.
-Consider the processes P1, P2, P3, P4 given in the below table, arrives for execution in the same order, with Arrival Time 0, and given Burst Time, let's find the average waiting time using the FCFS scheduling algorithm.
-
-First Come First Serve(FCFS) Scheduling
-
-The average waiting time will be 18.75 ms
-
-For the above given proccesses, first P1 will be provided with the CPU resources,
-
-Hence, waiting time for P1 will be 0
-P1 requires 21 ms for completion, hence waiting time for P2 will be 21 ms
-Similarly, waiting time for process P3 will be execution time of P1 + execution time for P2, which will be (21 + 3) ms = 24 ms.
-For process P4 it will be the sum of execution times of P1, P2 and P3.
-The GANTT chart above perfectly represents the waiting time for each process.
-
+2)Not optimal Average Waiting Time.
+3)Resources utilization in parallel is not possible, which leads to Convoy Effect, and hence poor resource(CPU, I/O etc) utilization.
 
