@@ -81,9 +81,10 @@ Clean example implementations of data structures and algorithms written in diffe
     * [Codeforces](http://codeforces.com/)
     * [Project Euler](https://projecteuler.net/)
     * [LeetCode](https://leetcode.com/)
-    * [CodingGame](https://www.codingame.com/)
+    * [CodinGame](https://www.codingame.com/)
     * [CodeWars](https://codewars.com/)
-
+    * [Coderbyte](https://www.coderbyte.com/)
+    * [HireVue](https://www.hirevue.com/)
 ## License
 
 [![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
