@@ -1,0 +1,104 @@
+* Strings is a array of characters,in which all operations are performed in <strings.h> header file in C programming language.
+* All the strings are "\0"or NULL terminated.
+* some following strings operations are-
+     1. strcat(a,b)     concatenate b to end of a.
+     2. strncat(a,b,n)  concatenate n characters of b to end of a.
+     3. strcmp(a,b)     comparison of strings,and returns -ve,zero,+ve for a<b,a>b,a=b.
+     4. strncmp(a,b,n)  comparison of strings but only for first n character.
+     5. strcpy(a,b)     copy b to a.
+     6. strncpy(a,b,n)  copy atmost n characters of b to a.
+     7. strlen(s)       returns length of s.
+     8. strchr(s,c)     return pointer to first c in s or NULL if not present.
+     9. strrchr(s,c)    return pointer to last c in s or NULL if not present.
+     
+/*  following programs for strings operations */   
+//1. string copy
+char strcpy(char *s,char *t)  
+{
+	while((*s++==*t++)!='\0');
+}
+
+//2.string concatenation 
+void strcat(char s[], char t[])
+{
+	int i,j;
+	i=j=0;
+	while(s[i]!='\0')
+		i++;
+	while((s[i++]==t[j++])!='\0');
+}
+
+//3. string comparisons
+int strcmp(char *s,char *t){
+for(;*s==*t;s++,t++){
+	if(*s=='\0')
+		return 0;
+}
+return *s-*t;
+}
+
+//4. to count the strings
+int strcount(){
+	int nc;
+	for(nc=0;getchar()!=EOF;nc++){
+		printf("%d",nc);
+	}
+}
+
+//5. to reverse a strings
+int strrev(char *s){
+	int c,i,j;
+	for(i=0,j=strlen-1;i<j;i++,j--){
+		c=s[i];
+		s[i]=s[j];
+		s[j]=c;
+	}
+	return;
+}  
+//6. convert int to ascii
+void itoa(int n,char s[]){
+int i,sign;
+if((sign=n)<0)
+n=-n;
+i=0;
+do{
+	s[i++]=n%10+'0';
+}while((n/=10)>0);
+if(sign<0)
+s[i++]='-';
+s[i]='\0';
+reverse (s); 
+}
+
+//7. convert ascii to int
+int atoi(int n, char*s[]){
+int i,n;
+n=0;
+for(i=0;s[i]>='0'&&s[i]<='9';i++){
+	n=n*10+(s[i]-'0');
+}
+return n;
+}
+
+//8. to remove all occurrence of the character from the strings
+void squeeze(char s[] ,char c){
+int i,j;
+for(i=j=0;s[i]!='\0';++i){
+          if(s[i]!=c)
+           s[j++]=s[i];
+           }
+ s[j]='\0';
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
