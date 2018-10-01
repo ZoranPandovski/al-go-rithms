@@ -29,6 +29,8 @@ void push(struct Node** head_ref, int new_data)
 // else returns false. 
 bool detectLoop(struct Node *h) 
 { 
+    if(h==NULL || h->next==NULL)
+        return false;
     Node *slow, *fast;
     slow=h;
     fast=h->next;
