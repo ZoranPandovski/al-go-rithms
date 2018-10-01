@@ -1,0 +1,2 @@
+# Shortest Job First
+Shortest job first (SJF) or shortest job next, is a scheduling policy that selects the waiting process with the smallest execution time to execute next. This is the non-preemptive version of the algorithm.
