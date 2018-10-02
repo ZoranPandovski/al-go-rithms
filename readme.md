@@ -12,6 +12,7 @@
 [![Join the chat at https://gitter.im/al-go-rithms](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/al-go-rithms?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 # Data Structures and Algorithms 
+Data structures and algorithms are very important for competitive coding.
 
 Clean example implementations of data structures and algorithms written in different languages.
 
