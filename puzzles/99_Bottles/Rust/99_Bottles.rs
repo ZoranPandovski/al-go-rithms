@@ -1,7 +1,7 @@
 // Sings '99 Bottles of Beer'
 fn main()
 {
-    for bottle in (0..100).rev()
+    for bottle in (1..100).rev()
     {
         if bottle > 1
         {
@@ -9,11 +9,13 @@ fn main()
             if bottle > 2
             {
                 println!("Take one down and pass it around, {} bottles of beer on the wall.", bottle - 1);
-            } else
+            }
+            else
             {
                 println!("Take one down and pass it around, 1 bottle of beer on the wall.");
             }
-        } else
+        }
+        else
         {
             println!("1 bottle of beer on the wall, 1 bottle of beer.");
             println!("Take one down and pass it around, no more bottles of beer on the wall.");
