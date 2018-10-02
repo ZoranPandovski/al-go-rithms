@@ -34,14 +34,14 @@ bool detectLoop(struct Node *h)
     Node *slow, *fast;
     slow=h;
     fast=h->next;
-    while(fast && fast->next && slow!=fast)
+    while(fast && fast->next && slow)
     {
     	fast=fast->next->next;
     	slow=slow->next;
-    }
     if(slow==fast)
     	return true;
     return false;
+    }
 } 
   
 
