@@ -45,7 +45,6 @@ model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy']
 
 
 model.fit(X_train, Y_train, epochs=5, batch_size=32, verbose=1)
-model.save_weights('Weights/conv5.h5')
 
 results = model.predict(X_test, batch_size=1, verbose=1)
 run_test(results, Y_test)
