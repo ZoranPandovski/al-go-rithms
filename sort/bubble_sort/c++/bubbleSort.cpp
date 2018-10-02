@@ -19,8 +19,10 @@ void bubble_sort(int*a, int n)
 int main()
 {
     int n;
+    cout<<"Enter size of array: ";
     cin>>n;
     int arr[n];
+    cout<<"Enter elements in array: ";
     for(int i=0;i<n;i++)
     {
         cin>>arr[i];

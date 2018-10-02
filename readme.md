@@ -71,8 +71,11 @@ Clean example implementations of data structures and algorithms written in diffe
       * [Algorithmic Design and Techniques](https://www.edx.org/course/algorithmic-design-techniques-uc-san-diegox-algs200x)
      * [String Processing and Pattern Matching Algorithms](https://www.edx.org/course/string-processing-pattern-matching-uc-san-diegox-algs204x)
      * [Graph Algorithms in Genome Sequencing](https://www.edx.org/course/graph-algorithms-genome-sequencing-uc-san-diegox-algs206x)
+
      * [Algorithms and Data Structures Capstone](https://www.edx.org/course/algorithms-data-structures-capstone-uc-san-diegox-algs207x)
-    * **[Data Structures](https://www.youtube.com/user/mycodeschool)**
+     * [Data Structures](https://www.youtube.com/user/mycodeschool)
+     * [Algorithms and Data Structures Capstone](https://www.edx.org/course/algorithms-data-structures-capstone-uc-san-diegox-algs207x) 
+     * [Data Structures and Algorithms](https://www.programiz.com/dsa)
  * **Coding Practice Sites**
     * [HackerRank](https://www.hackerrank.com/)
     * [HackerEarth](https://www.hackerearth.com/)
@@ -82,9 +85,10 @@ Clean example implementations of data structures and algorithms written in diffe
     * [Codeforces](http://codeforces.com/)
     * [Project Euler](https://projecteuler.net/)
     * [LeetCode](https://leetcode.com/)
-    * [CodingGame](https://www.codingame.com/)
+    * [CodinGame](https://www.codingame.com/)
     * [CodeWars](https://codewars.com/)
-
+    * [Coderbyte](https://www.coderbyte.com/)
+    * [HireVue](https://www.hirevue.com/)
 ## License
 
 [![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)

@@ -1,44 +1,42 @@
-
-import java.util.Arrays;
-
-public class SelectionSort {
-
-    /**
-     * Uses the Selection Sort algorithm to sort the provided array of integers
-     * in place.
-     *
-     * @param a The array of integers to sort
-     */
-    public static void sort(int[] a) {
-        int n = a.length;
-
-        for (int j = 0; j < n - 1; j++) {
-            // keep track of the index of the smallest value
-            int min = j;
-
-            // compare the smallest value to the other values until a smaller value is found.
-            for (int i = j + 1; i < n; i++) {
-                // if this value is smaller than the value at min, it is now the smallest.
-                if (a[i] < a[min]) {
-                    min = i;
-                }
-            }
-
-            // swap a new smallest value with an old smallest value.
-            if (min != j) {
-                int temp = a[j];
-                a[j] = a[min];
-                a[min] = temp;
-            }
-
+class SelectionSort
+{
+    void sort(int arr[])
+    {
+        int n = arr.length;
+ 
+        // One by one move boundary of unsorted subarray
+        for (int i = 0; i < n-1; i++)
+        {
+            // Find the minimum element in unsorted array
+            int min_idx = i;
+            for (int j = i+1; j < n; j++)
+                if (arr[j] < arr[min_idx])
+                    min_idx = j;
+ 
+            // Swap the found minimum element with the first
+            // element
+            int temp = arr[min_idx];
+            arr[min_idx] = arr[i];
+            arr[i] = temp;
         }
-
     }
-
-    public static void main(String[] args) {
-        int[] testArray = {4, 2, 5, 1, 2, 17, 7, -1, -199, 500, 1245, -5};
-        sort(testArray);
-        System.out.println(Arrays.toString(testArray));
-
+ 
+    // Prints the array
+    void printArray(int arr[])
+    {
+        int n = arr.length;
+        for (int i=0; i<n; ++i)
+            System.out.print(arr[i]+" ");
+        System.out.println();
+    }
+ 
+    // Driver code to test above
+    public static void main(String args[])
+    {
+        SelectionSort ob = new SelectionSort();
+        int arr[] = {64,25,12,22,11};
+        ob.sort(arr);
+        System.out.println("Sorted array");
+        ob.printArray(arr);
     }
 }
