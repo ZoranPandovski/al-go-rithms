@@ -1,62 +1,45 @@
+#include <functional>
 #include <iostream>
-#include <vector>
+#include <chrono>
+#include <random>
+#include <cmath>
 using namespace std;
-//Naive matrix multiplications!! Anyways, to compile g++ -std=c++14 -o main conjugate_gradient.cpp
+//VEGAS Estimation of the integral of 1d function with T estimates.
+//To compile: g++ -std=c++14 -o main vegas_algorithm.cpp
 //gionuno
-vector<double> conjugate_gradient(const vector<vector<double> > & A, const vector<double> & b,int T)
+double vegas_algorithm(const std::function<double(double)> & f,double a,double b,int K = 256,int T=100,int S=100000)
 {
-	int N = b.size();
-	vector<double> r(N,0.0);
-	vector<double> p(N,0.0);
-	vector<double> x(N,0.0);
-	for(int i=0;i<N;i++)
-		p[i] = r[i] = b[i];
-	int t = 0;
-	while(t < T)
+	unsigned seed = std::chrono::system_clock::now().time_since_epoch().count();
+	std::default_random_engine gen(seed);
+    std::uniform_real_distribution<double> dist(0.0,1.0);
+	
+	vector<double> g(K,0.0);
+	for(int t=0;t<T;t++)
 	{
-		double rtr = 0.0;
-		double ptAp = 0.0;
-		for(int i=0;i<N;i++)
-			rtr += r[i]*r[i];
-		for(int i=0;i<N;i++)
-			for(int j=0;j<N;j++)
-				ptAp += A[i][j]*p[i]*p[j];
-		double alpha = rtr / (ptAp + 1e-10);
-		vector<double> rn(N,0.0);
-		for(int i=0;i<N;i++)
+		for(int k=0;k<K;k++)
 		{
-			x[i] += alpha * p[i];
-			rn[i] = r[i];
-			for(int j=0;j<N;j++)
-				rn[i] -= alpha*A[i][j]*p[j];
+			double y = (b-a)*(dist(gen)+k)/K+a;
+			g[k] += fabs(f(y))/T;
 		}
-		double rntrn = 0.0;
-		for(int i=0;i<N;i++)
-			rntrn += rn[i]*rn[i];
-		if(rntrn < 1e-10) break;
-		double beta = rntrn / rtr;
-		for(int i=0;i<N;i++)
-		{
-			p[i] = beta*p[i] + rn[i];
-			r[i] = rn[i];
-		} 
-		t++;
 	}
-	return x;
+	
+	double s_g = 0.0;
+	for(int k=0;k<K;k++) s_g += g[k];
+	for(int k=0;k<K;k++) g[k] /= s_g;
+	
+	std::discrete_distribution<int> bin_dist(g.begin(),g.end());
+	double I = 0.0;
+	for(int s=0;s<S;s++)
+	{
+		int z = bin_dist(gen);
+		double x = (b-a)*(dist(gen)+z)/K+a;
+		I += (b-a)*f(x)/(g[z]*K*S);
+	}
+	return I; 
 }
 int main()
 {
-	//Only well defined for symmetric positive def matrices.
-	vector<vector<double> > A(3,vector<double>(3,0.0));
-	A[0][0] =  7.0; A[0][1] =  3.0; A[0][2] =  1.0;
-	A[1][0] =  3.0;	A[1][1] =  7.0;
-	A[2][0] =  1.0;                 A[2][2] = 10.0;
-	vector<double> b(3,0.0);
-	b[0] = 1.0;
-	b[1] = -5.0;
-	b[2] = 2.0;
-	vector<double> x = conjugate_gradient(A,b,1000);
-	for(int i=0;i<b.size();i++)
-		cout << x[i] << endl;
+	cout.precision(17);
+	cout << "pi approx " << fixed << 2.0*vegas_algorithm([](double x)->double{ return sqrt(1.0-x*x);},-1.0,1.0) << endl;
 	return 0;
 }
