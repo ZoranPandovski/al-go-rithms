@@ -1,4 +1,3 @@
-
 <h1 align="center">
 	<img width="400" src="media/algorithms.jpeg" alt="Algorithms">
 	<br>

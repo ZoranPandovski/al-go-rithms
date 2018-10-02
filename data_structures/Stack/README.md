@@ -9,7 +9,11 @@ In computer science, a stack is an abstract data type that serves as a collectio
 - pop, which removes the most recently added element that was not yet removed.
 
 The order in which elements come off a stack gives rise to its alternative name, LIFO (last in, first out). Additionally, a peek operation may give access to the top without modifying the stack.
-
+The ADT operations on stack are:
+1. push-inserts an element at top of stack.
+2. pop-deletes one element from top of stack.
+3. Top -gives top element of stack.
+4. IsEmpty-whether stack is empty or not.
 ![](https://upload.wikimedia.org/wikipedia/commons/b/b4/Lifo_stack.png)
 
 [Credits](https://en.wikipedia.org/wiki/Stack_(abstract_data_type))
