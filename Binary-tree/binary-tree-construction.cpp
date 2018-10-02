@@ -17,7 +17,7 @@ struct node* mnew(int key)
 
 void make_tree(struct node* root,int key)
 {
-    queue<node* > my;
+    queue<node*> my;
         my.push(root);
         while(!my.empty())
         {
@@ -30,13 +30,12 @@ void make_tree(struct node* root,int key)
         if(cur->left==NULL)
         {cur->left =  mnew(key);break;}
         if(cur->right==NULL)
-           {cur->right = mnew(key);break;}
+        {cur->right = mnew(key);break;}
         }
 }
 
 void print(struct node* root)
-{
-    if(root==NULL)
+{    if(root==NULL)
         return;
     else
     {
@@ -44,7 +43,6 @@ void print(struct node* root)
         cout<<root->data<<" ";
         print(root->right);
     }
-
 }
 
 int main()
@@ -57,15 +55,10 @@ int main()
     {
         cin>>c;
         if(root==NULL)
-        {
        root = mnew(c);
-        }
         else
         make_tree(root,c);
     }
     cout<<"tree in inorder traversal\n";
     print(root);
-
 }
-
-
