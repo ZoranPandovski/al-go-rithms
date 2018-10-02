@@ -1,0 +1,148 @@
+
+
+1.)Calculating the number of digits directly:-
+
+Instead of using loop you can efficiently use log to determine the number of digits in a number;
+total number of bits of ‘N’= floor(log10(N)) +1
+
+C++ code:
+
+1
+2
+3
+4
+5
+6
+//function to calculate number of digits//
+int numberofdigits(int x)
+{
+ int digits=floor(log10(x)) +1;
+ return digits;
+}
+Run on IDE
+
+2.)	How to know if a number is a power of 2 :
+
+1
+2
+3
+4
+5
+6
+7
+//* Function to check if x is power of 2*//
+bool isPowerOfTwo (int x)
+{
+  //* First x in the below expression is 
+  for the case when x is 0 *//
+  return x &amp;amp;amp;amp;amp;amp;amp;&amp;amp;amp;amp;amp;amp;amp; (!(x&amp;amp;amp;amp;amp;amp;amp;(x-1)));
+}
+Run on IDE
+
+If it is true then the value value would be is ‘1’ else ‘0’.
+(Note: The maximum size of an array can be initialize upto 10^6 locally and 10^7 globally)
+
+
+3.)Compute XOR from 1 to n (direct method) : Observation based efficient solution :
+C++ code:
+
+01
+02
+03
+04
+05
+06
+07
+08
+09
+10
+11
+12
+//Direct XOR of all numbers from 1 to n//
+ int computeXOR(int n)
+ {
+    if (n % 4 == 0)
+    return n;
+    if (n % 4 == 1)
+    return 1;
+    if (n % 4 == 2)
+    return n + 1;
+    else
+    return 0;
+ }
+Run on IDE
+Input: 6
+
+ Output: 7
+
+
+4.)Must remember Trick:
+
+You can calculate the total number of combinations with numbers smaller than or equal to with a number whose sum and XOR is equal.
+Instead of using looping (Brute force method), you can directly find it by a mathematical trick i.e.
+
+ Answer = pow(2,count of zero bits)
+
+
+
+5.)Another Amazing tactic:
+
+Immediately writing code is not good ; as simpler solution can save much efforts.Suppose u want to know the XOR of all the contiguous combinations of an array.
+Contiguous combinations of an array a={1,2,3}:
+{1},{2},{3},{1,2},{2,3},{1,2,3}.
+If number of elements of array is even then, answer is 0 or if number of elements is odd then, answer is the XOR between the elements of odd position elements (first element is at a[1]).
+
+
+6.)How to know number of leading, trailing zeroes and number of 1’s in a binary code of an integer:
+
+It can be done by using inbuilt function i.e.
+
+ Number of leading zeroes: builtin_clz(x)
+             Number of trailing zeroes : builtin_ctz(x)
+             Number of 1-bits: __builtin_popcount(x)
+          
+
+
+7.)Convert binary code directly into an integer:
+
+C++ 14 code:-
+
+01
+02
+03
+04
+05
+06
+07
+08
+09
+10
+//Conversion into Binary code//
+#include&amp;amp;amp;amp;amp;amp;lt;iostream&amp;amp;amp;amp;amp;amp;gt;
+using namespace std;
+#include&amp;amp;amp;amp;amp;amp;lt;bits/stdc++.h&amp;amp;amp;amp;amp;amp;gt;
+int main()
+{
+    auto number = 0b011;
+    cout &amp;amp;amp;amp;amp;amp;lt;&amp;amp;amp;amp;amp;amp;lt; number;
+    return 0;
+}
+Run on IDE
+Output: 3
+
+8.)The Quickest way to swap two numbers:
+a^=b;
+b^=a;
+a^=b;
+
+
+9.)Simple approach to flip the bits of a number:
+It can be done by a simple way , just simply subtract the number from the value obtained when all the bits are equal to 1 .
+For example:
+
+Number = 23,
+Binary form: 10111;
+After flipping digits number will be: 01000;
+Value: 11111==31;
+
+<Flipped number = Value – Number.
