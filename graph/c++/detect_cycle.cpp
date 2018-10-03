@@ -25,7 +25,8 @@ int main()
 	
 	for (int i = 0; i<n; i++)
 		discovered[i] = 0;
-	
+	discovered[0] = 1;
+
 	string ans = "no";
 	while (S.size() > 0)
 	{
