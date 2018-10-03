@@ -6,7 +6,7 @@
 void main()
 {
  clrscr();	
-char ch[100],ch1[100];
+char *ch,*ch1;
 	cout<<"\n Enter string 1: ";
 	gets(ch);
 	cout<<"\n Enter String 2: ";
