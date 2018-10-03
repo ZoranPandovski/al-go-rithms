@@ -1,11 +1,13 @@
 use std::io::stdin;
 use std::collections::VecDeque;
 
-// DFS receives a graph and the start point
+// BFS receives a graph and the start point
 fn bfs(graph: &mut Vec<Vec<usize>>, start: usize) {
     let mut visited: Vec<bool> = Vec::new();
     visited.resize(graph.len(), false);
 
+    // Create a VecDeque, it will function as a Queue if we use push_back(value: T) and pop_front(),
+    // push starting node to queue and set as visited
     let mut queue = VecDeque::new();
     visited[start] = true;
     queue.push_back(start);
@@ -14,6 +16,8 @@ fn bfs(graph: &mut Vec<Vec<usize>>, start: usize) {
         let node = queue.pop_front().unwrap();
         println!("{}", node);
 
+        // While queue is not empty, get a slice of the neighbors of chosen node and visit them
+        // A slice allows us to traverse the vector read-only by borrowing a section of an array
         let adj_list = &graph[node];
         for neighbor in adj_list {
             if !visited[*neighbor] {
