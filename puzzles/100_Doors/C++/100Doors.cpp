@@ -1,36 +1,19 @@
 #include <iostream>
-#include <string>
-using namespace std;
-
-string doorStatus(bool);
-
-const int NUMBEROFDOORS = 100;
 
 int main()
 {
-	bool doors[NUMBEROFDOORS] = { false };
+	bool is_open[100] = { false };
 
-	for (int i = 0; i < NUMBEROFDOORS; i++){
-		for (int j = i; j < NUMBEROFDOORS; j+= i + 1){
-			doors[j] = !doors[j];
-			
+	// do the 100 passes
+	for (int pass = 0; pass < 100; ++pass){
+		for (int door = pass; door < 100; door += pass+1){
+			is_open[door] = !is_open[door];
 		}
-			
 	}
 
-	for (int i = 0; i < NUMBEROFDOORS; i++){
-		cout << "Door " << i + 1 << ": " << doorStatus(doors[i]);
+	// output the result
+	for (int door = 0; door < 100; ++door){
+		std::cout << "door #" << door+1 << (is_open[door]? " is open." : " is closed.") << std::endl;
 	}
-	
-
-}
-
-string doorStatus(bool door)
-{
-	if (door){
-		return " is open\n";
-	} else {
-		return " is closed\n";
-	}
-
+	return 0;
 }
