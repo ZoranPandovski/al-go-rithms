@@ -1,38 +1,33 @@
-//PROGRAM TO SORT AN ARRAY USING BUBBLE SORT METHOD
+#include <algorithm>
+#include <iostream>
+#include <vector>
 
-#include<iostream>   // INCLUDING LIBRARIES
 using namespace std;
 
-//FUNCTION TO SORT ARRAY
-void bubble_sort(int arr[], int sz)
-{
-    for(int i=0;i<sz-1;i++)
-    {
-        for(int j=0;j<sz-1-i;j++)
-        {
-            if(arr[j]>arr[j+1])
-            {
-                swap(arr[j],arr[j+1]);
+
+void bubble_sort(vector<int> &a) {
+    int n = a.size();
+    for (int i = 0; i < n - 1; i++) {
+        for (int j = 0; j + i < n - 1; j++) {
+            if (a[j] > a[j + 1]) {
+                swap(a[j], a[j + 1]);
             }
         }
     }
 }
 
-// MAIN FUNCION
-int main()
-{
-    int sz;
-    
-    cin>>sz;
-
-    // TAKING INPUT FROM USER
-    int arr[sz];
-    
-    for(int i=0; i<sz;i++)
-        cin>>arr[i];
-    bubble_sort(arr,sz);        // FUNCTION CALLING
-    cout<<"\nSorted Array : ";  // DISPLAY SORTED ARRAY
-    for(int i=0;i<sz;i++)
-        cout<<" "<<arr[i];
-    return 0;
-}
+int main() {
+    int n;
+    cout << "Enter size of array: ";
+    cin >> n;
+    vector<int> arr(n);
+    cout << "Enter elements in array:\n";
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
+    bubble_sort(arr);
+    cout << "Sorted array:\n";
+    for (int i = 0; i < n; i++) {
+        cout << a[i] << ' ';
+    }
+    cout <
