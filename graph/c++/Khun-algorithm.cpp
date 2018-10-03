@@ -3,6 +3,13 @@ using namespace std;
 
 /*
     Khun algorithm computes maximum bipartite matching in O(|V|^3)
+    Sample input:
+        5 5
+        0 3
+        1 3
+        1 4
+        2 3
+        2 4
 */
 
 bool tryKhun(int n, const vector<vector<int>>& adj, vector<bool>& used, vector<int>& M, int v)
