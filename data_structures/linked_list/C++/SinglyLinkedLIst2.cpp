@@ -63,6 +63,17 @@ void display()
 	}
 	cout<<"\n"<<"---------------------------"<<"\n";
 }
+void count()
+{
+	int c=0;
+	Node* temp=A;
+	while(temp!=NULL)
+	{
+		c++;
+		temp=temp->link;
+	}
+	cout<<c<<endl;
+}
 void rev()
 {
 	Node* temp=A;
@@ -84,7 +95,7 @@ int main()
 	while(1)
 	{
 		int ch;
-		cout<<"Enter your choice:\n1-Insert\n2-Delete\n3-Display\n4-Reverse\n5-Exit\n->";
+		cout<<"Enter your choice:\n1-Insert\n2-Delete\n3-Display\n4-Reverse\n5-Count\n6-Exit\n->";
 		cin>>ch;
 		switch(ch)
 		{
@@ -101,6 +112,9 @@ int main()
 				rev();
 				break;
 			case 5:
+				count();
+				break;
+			case 6:
 				exit(0);
 		}
 	}
