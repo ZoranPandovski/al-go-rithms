@@ -23,7 +23,6 @@ int main()
     int a,b;cin>>a>>b;
     adj[a].push_back(b);
   }
-  // cout<<"sdfdf";
   dfs(1);
   int len=st.size();
   // cout<<len<<endl;
