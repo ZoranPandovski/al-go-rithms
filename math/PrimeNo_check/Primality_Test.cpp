@@ -1,40 +1,19 @@
-#include <iostream>
-using namespace std;
- 
- 
- //A simple and efficient implementation of a function to test if a number is prime, based on the fact that
- //Every Prime number, except 2 and 3 are of the form 6*k+1 or 6*k-1 for integer values of k.
- //it checks if the given number is divisible by all numbers of the form 6k ± 1.
- 
- bool IsPrime( int number )
- {
-  if ( ( (!(number & 1)) && number != 2 ) || (number < 2) || (number % 3 == 0 && number != 3) )
-    {
-    return false;
-    }
-
-    for( int k = 1; 36*k*k-12*k < number;++k)
-    {
-   	if ( (number % (6*k+1) == 0) || (number % (6*k-1) == 0) )
-        {
-        return false;
-        }		
-  	}
-   return true;
- }
- 
-  	//Main Function
-    
- int main()
- {
- 	cout <<"Enter the value of n to check if Prime\n";
- 	int n;
- 	cin >> n;
-  
- 	if(IsPrime(n))
- 		cout << n << " is Prime" <<endl;
- 	else	
- 		cout << n << " is not Prime" <<endl;
-     
- 	return 0;
- }
+#include<stdio.h>  
+int main(){    
+int n,i,m=0,flag=0;    
+printf("Enter the number to check prime:");    
+scanf("%d",&n);    
+m=n/2;    
+for(i=2;i<=m;i++)    
+{    
+if(n%i==0)    
+{    
+printf("Number is not prime");    
+flag=1;    
+break;    
+}    
+}    
+if(flag==0)    
+printf("Number is prime");     
+return 0;  
+ }   
