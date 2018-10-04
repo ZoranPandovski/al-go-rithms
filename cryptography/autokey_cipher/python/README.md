@@ -11,5 +11,3 @@ There are two forms of autokey cipher: key-autokey and text-autokey ciphers. A k
 In modern cryptography, self-synchronising stream ciphers are autokey ciphers.
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Vigen%C3%A8re_square_shading.svg/600px-Vigen%C3%A8re_square_shading.svg.png)
-
-### 
