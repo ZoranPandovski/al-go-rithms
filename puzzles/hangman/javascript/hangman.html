@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JS Animal Hangman</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link  href="./hangman.css" type="text/css" rel="stylesheet">
+    <script src="./hangman.js"></script>
+</head>
+<body>
+    <div class="display-3">Animal Hangman</div> <hr>
+    <br>
+
+    <div class="row">
+
+        <div class="col-md-3">
+            <img class="sidebarImg" src="https://images.pexels.com/photos/247502/pexels-photo-247502.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260">
+            <br>
+            <img class="sidebarImg" src="https://images.pexels.com/photos/225869/pexels-photo-225869.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+            <br>
+            <img class="sidebarImg" src="https://images.pexels.com/photos/104373/pexels-photo-104373.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+            <br>
+        </div>
+        <div class="col-md-6">
+            <div class="h5">The classic game of Hangman, with cute little animals.</div>
+            <br>
+            <div class="instr">Press any key to begin guessing! </div>
+
+            <br>
+            <div class="metrics">
+                <p>Wins: <span id="wins"> </span></p>
+                <p>Losses: <span id="losses"> </span></p>
+                <p>Current word: <span id="current"> </span></p>
+                <p>Guesses Left: <span id="remainingGuesses">10</span></p>
+                <p>Your incorrect guesses so far: <span id="guessedLetters"> </span></p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <img class="sidebarImg" src="https://images.pexels.com/photos/39504/giraffe-animal-funny-facial-expression-39504.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+            <br>
+            <img class="sidebarImg" src="https://images.pexels.com/photos/23087/sea-animal-dog-zoo-23087.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+            <br>
+            <img class="sidebarImg" src="https://images.pexels.com/photos/35435/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+            <br>
+        </div>
+
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    
+</body>
+</html>
