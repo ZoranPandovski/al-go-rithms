@@ -77,7 +77,7 @@ int main(int argc, char *argv[])
 		cout << "\n\t\t\t\tThe month was : " << month << endl;
 	}
 	cin.ignore();
-	cin.get();
+	//cin.get();
 	return 0;
 }
 
