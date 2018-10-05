@@ -1,41 +1,105 @@
-// SATYAMEVA JAYATE
-//				To find an element in increasing seq. of values
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
+bool binarySearchIterative(int list[], int first, int end, int item)
+{
 
-int arr[100];
-int binary(int l,int r,int key)
-{
-	while(l<=r)
+	int middle;
+
+	while(first <= end)
 	{
-		int mid = (l+r)/2;
-		if(arr[mid] == key) // key is the element to find
-		{
-			return mid;
+	     middle =first + (end- first)/2;
+	     if(list[middle] == item)
+	        {
+			return true;
 		}
-		else if( arr[mid] > key)
+		if(list[middle] < item)
 		{
-			r = mid-1;
-		}
-		else
+			first = middle + 1;
+		} else
 		{
-			l = mid+1;
+			end = middle - 1;
 		}
 	}
-		return -1; // Not Found 
+	return false;
 }
-int main()
+
+bool binarySearchRecursive(int list[], int first, int end, int item)
 {
-	int n,m,i;
-	cin >> n; // Size of the array
-	for(i=0;i<n;i++)
+
+	int middle = (first + end)/2;
+
+	if(list[middle] == item)
 	{
-		cin >> arr[i]; 
+		return true;
 	}
-	sort(arr,arr+n); // Hence the array is sorted
-	cout<<"Enter the element to be searched\n";
-	cin >> m;
-	int x = binary(0,n,m);
-	cout << x<<"\n";
+	if(first >= end)
+	{
+		return false;
+	}
+	if(list[middle] < item)
+	{
+		return binarySearchRecursive(list, middle+1, end, item);
+	} else
+	{
+		return binarySearchRecursive(list, first, middle-1, item);
+	}
+
+}
+
+int main(int argc, char const *argv[])
+{
+ cout << "Please, enter the size of the list." << endl;
+  int size, value, option;
+  bool find;
+ cin >> size;
+  int *list = new int[size];
+  for(int i = 0; i < size; i++)
+  {
+   cout << "Enter the element " << i << " of the list." << endl;
+   cin >> list[i];
+  }
+ cout << "Now, enter a value to be searched in the list." << endl;
+ cin >> value;
+  cout << "Now, would you like to use a binary search iterative (0) or a binary search recursive(1)." <<endl;
+ cin >> option;
+  switch (option) {
+    case 0:
+      {
+        auto start =chrono::steady_clock::now();
+        find = binarySearchIterative(list, 0, size-1, value);
+        auto end =chrono::steady_clock::now();
+        auto diff = end - start;
+        if(find)
+        {
+         cout << "You find the element using the binary search iterative." << endl;
+        }
+        else{
+          cout << "You not find the element using the binary search iterative." <<endl;
+        }
+       cout << "And the time of search was " <<chrono::duration <double,milli> (diff).count() << " ms." << endl;
+      }
+      break;
+    case 1:
+      {
+        auto start =chrono::steady_clock::now();
+        find = binarySearchRecursive(list, 0, size-1, value);
+        auto end =chrono::steady_clock::now();
+        auto diff = end - start;
+        if(find)
+        {
+          cout << "You find the element using the binary search recursive." <<endl;
+        }
+        else
+	{
+         cout << "You not find the element using the binary search recursive." << endl;
+        }
+       cout << "And the time of search was " << chrono::duration <double, milli> (diff).count() << " ms." << endl;
+      }
+      break;
+    default:
+      cout << "This isn't a valid option, please restart the program." << endl;
+      break;
+  }
+  delete[] list;
 	return 0;
 }

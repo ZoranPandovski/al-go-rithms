@@ -1,4 +1,3 @@
-
 ## List of implementations
 
 * [Search](search)
@@ -146,6 +145,7 @@
   * [red and black tree](data_structures/red_and_black_tree)
   * [segment tree](data_structures/segment_tree)
   * [splay tree](data_structures/Splay_trees)
+  * [sqrt decomposition](data_structures/sqrt_root_decomposition)
 * [Backtracking](backtracking)
   * [sudoku](backtracking/sudoku)
   * [permutations](backtracking/permutations)

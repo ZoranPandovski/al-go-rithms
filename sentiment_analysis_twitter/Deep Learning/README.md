@@ -1,0 +1,1 @@
+Given a dataset of [tweets about the GOP debate of the 2016 US elections](https://www.kaggle.com/crowdflower/first-gop-debate-twitter-sentiment), we are tasked with building a model to classify tweets as either positive or negative. For this, we will use a toy Convolutional Neural Network using the deep learning library `Keras`.

@@ -1,4 +1,3 @@
-
 <h1 align="center">
 	<img width="400" src="media/algorithms.jpeg" alt="Algorithms">
 	<br>
@@ -71,7 +70,12 @@ Clean example implementations of data structures and algorithms written in diffe
       * [Algorithmic Design and Techniques](https://www.edx.org/course/algorithmic-design-techniques-uc-san-diegox-algs200x)
      * [String Processing and Pattern Matching Algorithms](https://www.edx.org/course/string-processing-pattern-matching-uc-san-diegox-algs204x)
      * [Graph Algorithms in Genome Sequencing](https://www.edx.org/course/graph-algorithms-genome-sequencing-uc-san-diegox-algs206x)
-     * [Algorithms and Data Structures Capstone](https://www.edx.org/course/algorithms-data-structures-capstone-uc-san-diegox-algs207x) 
+     * [Algorithms and Data Structures Capstone](https://www.edx.org/course/algorithms-data-structures-capstone-uc-san-diegox-algs207x)
+* **Online classes (paid)**
+  * Udemy 
+      * [The Coding Interview Bootcamp: Algorithms + Data Structures](https://www.udemy.com/coding-interview-bootcamp-algorithms-and-data-structure/)
+      * [JavaScript Algorithms and Data Structures Masterclass](https://www.udemy.com/js-algorithms-and-data-structures-masterclass/)
+      * [Learning Algorithms in JavaScript from Scratch](https://www.udemy.com/learning-algorithms-in-javascript-from-scratch/)
  * **Coding Practice Sites**
     * [HackerRank](https://www.hackerrank.com/)
     * [HackerEarth](https://www.hackerearth.com/)
@@ -83,6 +87,8 @@ Clean example implementations of data structures and algorithms written in diffe
     * [LeetCode](https://leetcode.com/)
     * [CodingGame](https://www.codingame.com/)
     * [CodeWars](https://codewars.com/)
+    * [InterviewBit](https://www.interviewbit.com/courses/programming/)
+    * [TechGig](https://www.techgig.com/)
 
 ## License
 
