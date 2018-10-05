@@ -1,0 +1,35 @@
+.display-3{
+    text-align: center;
+    background-color: whitesmoke;
+    padding-bottom: 20px;
+}
+
+hr{
+    margin: 0;
+}
+
+.h5{
+    padding-top: 50px;
+}
+
+.row{
+    margin: auto;
+    width: 100%;
+}
+
+.metrics{
+    padding: 10px;
+    border: solid thick darkgray;
+    background:whitesmoke;
+}
+
+.sidebarImg{
+    width: 200px;
+    height: 125px;
+    margin: 10px 50px 10px 50px;
+    border: solid thick darkgray;
+}
+
+body{
+    background-image: url("https://cdn.pixabay.com/photo/2015/12/03/08/50/paper-1074131_960_720.jpg");
+}
