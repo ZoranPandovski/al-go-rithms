@@ -24,19 +24,19 @@ bool isAnagrams(std::string str1, std::string str2) {
 	std::transform(str2.begin(), str2.end(), str2.begin(), ::tolower);
 
 	// The difference between frequency of each letter in str1 and str2
-	int frequencyDiff[ALPHABET_SIZE]={0};
+	int frequencyDiff[ALPHABET_SIZE] = {0};
 	
 	// Calculating the frequency of letters for str1 and str2
 	for (int i = 0; i < strLength; ++i) {
 		// str1
 		int charValue = static_cast<int>(str1[i]) - 'a';
 		assert(charValue >= 0 && charValue < ALPHABET_SIZE);
-		frequencyDiff[charDiff]++;
+		frequencyDiff[charValue]++;
 
 		// str2
 		charValue = static_cast<int>(str2[i]) - 'a';
 		assert(charValue >= 0 && charValue < ALPHABET_SIZE);
-		frequencyDiff[charDiff]--;
+		frequencyDiff[charValue]--;
 	}
 
 	for (int i = 0; i < ALPHABET_SIZE; ++i) {
