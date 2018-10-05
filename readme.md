@@ -47,10 +47,10 @@ Clean example implementations of data structures and algorithms written in diffe
    * [Algorithms](https://www.amazon.in/Algorithms-Robert-Sedgewick/dp/032157351X)
  * **Sites**
    * [Algorithms - Tutorials point](https://www.tutorialspoint.com/data_structures_algorithms/index.htm)
-   * [Algorithms - Princetone edu](http://algs4.cs.princeton.edu/home/)
+   * [Algorithms - Princetone edu](https://algs4.cs.princeton.edu/home/)
    * [Data structures and algorithms - Hackr](https://hackr.io/tutorials/learn-data-structures-algorithms)
    * [Data science - Topcoder](https://www.topcoder.com/community/data-science/data-science-tutorials/)
-   * [Fundamentals Of Algorithms- Geeks For Geeks](http://www.geeksforgeeks.org/fundamentals-of-algorithms/)
+   * [Fundamentals Of Algorithms- Geeks For Geeks](https://www.geeksforgeeks.org/fundamentals-of-algorithms/)
    * [Visual Algorithm - visualising data structures and algorithms through animation](https://visualgo.net/en)
 * **Online classes (Free)**
   * Coursera 
@@ -79,10 +79,10 @@ Clean example implementations of data structures and algorithms written in diffe
  * **Coding Practice Sites**
     * [HackerRank](https://www.hackerrank.com/)
     * [HackerEarth](https://www.hackerearth.com/)
-    * [SPOJ](http://www.spoj.com/)
+    * [SPOJ](https://www.spoj.com/)
     * [TopCoder](https://www.topcoder.com/)
     * [CodeChef](https://www.codechef.com/)
-    * [Codeforces](http://codeforces.com/)
+    * [Codeforces](https://codeforces.com/)
     * [Project Euler](https://projecteuler.net/)
     * [LeetCode](https://leetcode.com/)
     * [CodingGame](https://www.codingame.com/)
@@ -92,6 +92,6 @@ Clean example implementations of data structures and algorithms written in diffe
 
 ## License
 
-[![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
+[![CC0](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 
 To the extent possible under law, [Zoran Pandovski](https://github.com/ZoranPandovski/) has waived all copyright and related or neighboring rights to this work.
