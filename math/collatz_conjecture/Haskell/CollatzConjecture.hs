@@ -1,6 +1,6 @@
 import System.IO
 
--- | TThis function takes a positive integer, divides it by 2 if even or otherwise
+-- | This function takes a positive integer, divides it by 2 if even or otherwise
 -- multipies it by 3 and adds 1 to it. This is done repeatedly until the
 -- number is 1. It is conjectured that this function will always terminate.
 collatz :: Int -> [Int]
