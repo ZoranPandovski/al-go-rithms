@@ -5,26 +5,26 @@
  return -1 */
 #include<iostream>
 using namespace std;
-int search(int arr[], int n, int x)
+int search(int arr[], int n, int x)                    // function which performs the search
 {
     int i;
     for (i = 0; i < n; i++)
         if (arr[i] == x)
-         return i;
-    return -1;
+         return i;                                    // returns the location of the key if it is present in the array
+    return -1;                                        // returns -1 in case the key is not present in the array
 }
 int main()
 {
     cout<<"enter size of array ";
     int n,k;
-    cin>>n;
+    cin>>n;                                            // n=size of the array in which the number is to be searched
     int * arr= new int [n];
     cout<<"enter elements of array ";
     for(int i=0;i<n;i++)
-    cin>>arr[i];
+    cin>>arr[i];                                        // adding elements to the array
     cout<<"enter the element to be searched";
-    cin>>k;
-    if(search(arr,n,k)==-1)
+    cin>>k;                                             // number to be searched or the key
+    if(search(arr,n,k)==-1)                             // calling function search(rr,n,k)
     cout<<"element not found";
     else
     cout<<"element is present at "<<search(arr,n,k)<<" index";
