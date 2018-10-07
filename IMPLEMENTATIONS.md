@@ -10,6 +10,7 @@
 * [Sort](sort)
   * [bubble sort](sort/bubble_sort)
   * [bogo sort](sort/bogo_sort)
+  * [bitonic sort](sort/bitonic_sort)
   * [insertion sort](sort/insertion_sort)
   * [quick sort](sort/quick_sort)
   * [merge sort](sort/merge_sort)
