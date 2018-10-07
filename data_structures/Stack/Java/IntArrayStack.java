@@ -17,7 +17,10 @@ class integerArrayStack
     
     public boolean push(int value)
     {
-        if(isFull()){return false;}
+        if(isFull())
+	{
+		return false;
+	}
         else
         {
             theArrayStack[nextAvailableSpot] = value;
@@ -27,7 +30,10 @@ class integerArrayStack
     }
     public int pop()
     {
-        if(isEmpty()){return 0;}
+        if(isEmpty())
+	{
+		return 0;
+	}
         else
         {
             nextAvailableSpot--;
@@ -36,7 +42,10 @@ class integerArrayStack
     }
     public int peek()
     {
-        if(isEmpty()){return 0;}
+        if(isEmpty())
+	{
+		return 0;
+	}
         else
             return theArrayStack[nextAvailableSpot-1];
     }
@@ -46,13 +55,25 @@ class integerArrayStack
     }
     public boolean isEmpty()
     {
-        if(nextAvailableSpot == 0){return true;}
-        else{ return false;}
+        if(nextAvailableSpot == 0)
+	{
+		return true;
+	}
+        else
+	{ 
+		return false;
+	}
     }
     public boolean isFull()
     {
-        if(nextAvailableSpot == theArrayStack.length){return true;}
-        else{ return false;}
+        if(nextAvailableSpot == theArrayStack.length)
+	{
+		return true;
+	}
+        else
+	{ 
+		return false;
+	}
     }
     public void clear()
     {
