@@ -8,7 +8,7 @@ To better understand bitonic sort we must first understand what is a Bitonic Seq
 
 A sequence is called Bitonic if it is first increasing, then decreasing. In other words, an array *arr[0...n-1]* is Bitonic if there exists an index i where 0 <= i <= n-1 such that:
 
-**x<sub>0</sub> <= x<sub>1</sub> .. <= x<sub>i</sub>   AND   x<sub>i</sub> >= x<sub>i+1</sub> .. >= x<sub>n-1</sub>**
+**arr[0] <= arr[1] .. <= arr[i]   AND   arr[i] >= arr[i+1] .. >= arr[n-1]**
 
 1. A sequence, sorted in increasing order is considered Bitonic with the decreasing part as empty. Similarly, a decreasing order sequence is considered Bitonic with the increasing part as empty.
 2. A rotation of Bitonic sequence is also bitonic.
