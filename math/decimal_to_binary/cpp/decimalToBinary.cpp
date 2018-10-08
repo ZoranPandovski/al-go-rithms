@@ -7,11 +7,11 @@ using namespace std;
 // DECLARE VARIABLES
 int pos = 0;
 string result = "";
+int number;
 
 // MAIN FUNCTION
 int main ()
 {
-    int number;
     cin >> number;
 
     while (1) {
