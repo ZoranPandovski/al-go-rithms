@@ -4,7 +4,7 @@ defmodule Search do
 
     array
     |> Enum.sort()
-    |> binary_search(1, high, num)
+    |> binary_search(0, high, num)
   end
 
   defp binary_search(array, low, high, num) when low <= high do
@@ -26,3 +26,4 @@ defmodule Search do
 end
 
 IO.inspect(Search.binary_search([4, 5, 9, 88, 104, 203, 501, 670], 5))
+
