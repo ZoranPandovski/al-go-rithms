@@ -78,6 +78,7 @@ Clean example implementations of data structures and algorithms written in diffe
       * [Learning Algorithms in JavaScript from Scratch](https://www.udemy.com/learning-algorithms-in-javascript-from-scratch/)
    * Skillshare
       * [Data Structures and Algorithms Bootcamp](https://www.skillshare.com/classes/Data-structures-and-Algorithms-Bootcamp/1438095036?via=search-layout-grid/)
+      * [An introduction to algorithms in Python](https://www.skillshare.com/classes/An-introduction-to-algorithms-in-Python/780267817?via=search-layout-grid/)
       
  * **Coding Practice Sites**
     * [HackerRank](https://www.hackerrank.com/)
