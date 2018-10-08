@@ -25,5 +25,7 @@ int binarySearch(List<int> array, int start, int end, int elementIndex) {
 void main() {
   print("Hello world");
   List<int> values = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-  print("Found the value @ index ${search(values, 3)}");
+  var result = search(values, 3);
+  assert (result == 2);
+  print("Found the value @ index $result");
 }
