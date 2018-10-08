@@ -1,3 +1,8 @@
+/* Floyd Warshall's algorithm is an all pair shortest path algorithm which finds 
+ * shortest path between each pair of vetices in O(V^3) time complexity, where
+ * V is the number of vertices in the graph. In this implementation matrix representation
+ * of graph is used.
+ */
 public class FloydWarshall {
     public final static int INFINITE = 100000;
     public int[][] floydWarshall(int graph[][]) {
