@@ -26,6 +26,16 @@
   * [python bucket sort](sort/python_bucket_sort)
   * [binary insertion sort](sort/binary%20insertion%20sort.cpp)
   * [slow sort](sort/Slow_Sort)
+  * [Cocktail Selection Sort](sort/Cocktail Selection Sort)
+  * [Circle sort](sort/circle_sort)
+  * [Gnome sort](sort/gnome_sort)
+  * [Intro sort](sort/intro_sort)
+  * [Pigeon Hole sort](sort/pigeonhole_sort)
+  * [Sleep sort](sort/sleep_sort)
+  * [Stooge sort](sort/stooge_sort)
+  * [Tim sort](sort/timsort)
+  
+  
 * [Math](math)
   * [russian peasant](math/russian_peasant)
   * [towers of hanoi](math/towers_of_hanoi)
