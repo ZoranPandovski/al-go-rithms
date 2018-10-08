@@ -1,10 +1,6 @@
 (function(){
 "use strict"
 
-const max = function(x,y) {
-
-}
-
 const lps = function(seq, i, j) {
     if (i > j) {
         return 0;
