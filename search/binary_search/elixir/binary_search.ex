@@ -1,8 +1,10 @@
 defmodule Search do
   def binary_search(array, num) do
-    low = 1
     high = Enum.count(array)
-    binary_search(array, low, high, num)
+
+    array
+    |> Enum.sort()
+    |> binary_search(1, high, num)
   end
 
   defp binary_search(array, low, high, num) when low <= high do
