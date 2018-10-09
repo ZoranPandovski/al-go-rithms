@@ -1,5 +1,6 @@
 #define KGRN  "\x1B[32m"
 #define KNRM  "\x1B[0m"
+
 struct dir {
   char fname[10][10];
   struct dir *subdir[10];
@@ -39,6 +40,8 @@ int fileSearch(struct dir *loc){
   }
   return -1;
 }
+
+// Memory allocation and preparation
 struct dir *alloc(struct dir *loc){
   struct dir *temp;
   temp = (struct dir*) malloc (sizeof(struct dir));
@@ -58,6 +61,9 @@ void hierarichal() {
   }
   directory();
 }
+
+
+
 
 void directory() {
   while (1) {
