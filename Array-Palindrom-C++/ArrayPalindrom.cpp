@@ -12,7 +12,7 @@ int main(void)
 
 
 
-cout<<"Masukan panjang array: ";
+cout<<"Input Array n : ";
 cin>>n;
 cout<<endl;
 for(int i=1;i<=n;i++)
@@ -68,7 +68,7 @@ cout<<endl;
        }
    }
  }
- cout<<"Subarray palindrom terpanjang";
+ cout<<"Subarray palindrom";
  cout<<endl;
   for (i=start_index;i<start_index+max_count;++i)
   {
