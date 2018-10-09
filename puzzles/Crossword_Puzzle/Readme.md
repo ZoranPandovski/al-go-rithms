@@ -2,28 +2,3 @@ A 10 x 10 Crossword grid is provided, along with a set of words (or names of pla
 You are also given an array of words that need to be filled in Crossword grid.
 
 
-Example :
-
-Input :
-+++++++++-
--++++++++-
--------++-
--++++++++-
--++++++++-
--++++-----
-------+++-
--++++++++-
-+---------
-++++++++++
-
-Output :
-+++++++++C
-P++++++++H
-HISTORY++E
-Y++++++++M
-S++++++++I
-I++++MATHS
-CIVICS+++T
-S++++++++R
-+GEOGRAPHY
-++++++++++
