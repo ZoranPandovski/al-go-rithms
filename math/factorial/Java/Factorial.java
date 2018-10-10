@@ -17,6 +17,9 @@ public class Factorial {
         for (int i = 1; i <= n; i++ ){
            product = product*i;
         }
+        if (n < 0) {
+            return 1 / product;
+        }
         
         return product;
     }
