@@ -237,3 +237,7 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# Jupyther Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
