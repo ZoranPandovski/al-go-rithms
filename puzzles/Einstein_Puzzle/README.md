@@ -1,5 +1,6 @@
 #Einstein puzzle
 
+<img src="http://4.bp.blogspot.com/-3Y2IJtW_GzA/VirFyMnrMyI/AAAAAAAAACs/HSvlYr4IlBE/s320/cien.jpg">
 Variations of this riddle appear on the net from time to time. It is sometimes attributed to Albert Einstein and it is claimed that 98% of the people are incapable of solving it. Some commentators suggest that Einstein created such puzzles not to test out intelligence but to get rid of all the students who wanted him as an advisor. It is not likely that there is any truth to these stories. Whereever this comes from, it is a nice riddle.
 
 Let us assume that there are five houses of different colors next to each other on the same road. In each house lives a man of a different nationality. Every man has his favorite drink, his favorite brand of cigarettes, and keeps pets of a particular kind.
