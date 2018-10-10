@@ -12,4 +12,4 @@ The algorithm is defined as follows:
 
 It is important to get the integer sort size used in the recursive calls by rounding the 2/3 upwards, e.g. rounding 2/3 of 5 should give 4 rather than 3, as otherwise the sort can fail on certain data. However, if the code is written to end on a base case of size 1, rather than terminating on either size 1 or size 2, rounding the 2/3 of 2 upwards gives an infinite number of calls.
 
-![Stooge sort](https://en.wikipedia.org/wiki/Stooge_sort#/media/File:Sorting_stoogesort_anim.gif)
+![](https://upload.wikimedia.org/wikipedia/commons/f/f8/Sorting_stoogesort_anim.gif)
