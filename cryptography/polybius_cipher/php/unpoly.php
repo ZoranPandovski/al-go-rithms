@@ -7,8 +7,8 @@
  * convert each 2 digit decimal to ascii and output string of encoded characters
  * We only care about visible ascii, so offset ascii table by -32. (so ascii A (DEC 65) gets encoded as 32 less than the decimal (DEC 33))
  * 
- * Usage: stuffToEncode | php poly.php -p"Passphrase to use" > output
- * TODO support filename as alternate to string to encode
+ * Usage: stuffToDecode | php unpoly.php -p ["Passphrase to use"]
+ * TODO support filename as alternate to encoded string
  */
 
 $options = getopt('p::');
@@ -69,36 +69,36 @@ for ($x = 0; $x < $polyTableX; $x++)
     }
 }
 
-$codeForSpace = '';
-$codeForSemicolon = '';
-$codeForComma = '';
-
-while ($originalString = fgets(STDIN))
+while ($encryptedString = fgets(STDIN))
 {
-    $originalStringCharacters = str_split($originalString);
-    $cryptString = '';
+    $encryptedStringCharacters = str_split($encryptedString);
+    $originalString = '';
 
-    foreach ($originalStringCharacters as $char)
+    foreach ($encryptedStringCharacters as $char)
     {
         if ($char == ' ')
         {
-            $cryptString .= ' ';
+            $originalString .= ' ';
             continue;
         }
 
-        foreach ($polyTable as $x => $polyRow)
+        $dec = (ord($char) - $asciiOffset);
+
+        if ($dec < 32 || $dec > 127)
         {
-            $y = array_search($char, $polyRow);
-
-            if ($y !== false)
-            {
-                $newCharCode = (int)($x.$y) + $asciiOffset;
-                $cryptString .= chr($newCharCode);
-
-                break;
-            }
+            continue;
         }
+
+        $code = (string)$dec; // convert back to decimal
+        
+        if (strlen($code) == 1)
+        {
+            $code = '0'.$code;
+        }
+
+        $coords = str_split($code);
+        $originalString .= $polyTable[$coords[0]][$coords[1]];
     }
 
-    fputs(STDOUT, $cryptString.PHP_EOL);
+    fwrite(STDOUT, $originalString.PHP_EOL);
 }
