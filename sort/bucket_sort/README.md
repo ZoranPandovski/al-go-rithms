@@ -1,6 +1,6 @@
 ## Bucketsort ##
 
-Bucketsort is a good sort when your input is unifomily distributed across the range.
+Bucketsort is a good sort when your input is uniformly distributed across the range.
 All of the elements have to be in range from 0.0 to 1.0.
 
 The main idea of the algorithm is :
