@@ -166,3 +166,5 @@
   * [wordsearch](backtracking/wordsearch)
 * [Synchronization](synchronization)
   * [Producer consumer problem](synchronization/ProducerConsumer)
+  * [Row and column summations using mutex ](synchronization/ArraysOperationsWithMutex)
+  
