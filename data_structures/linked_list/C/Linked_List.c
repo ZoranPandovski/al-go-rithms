@@ -1,12 +1,14 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+//struct to store data
 typedef struct node
 {
-    int data;
-    struct node *next;
+    int data;                 //actual data stored (must be an int)
+    struct node *next;        //pointer to next element
 }node;
 
+//prints a null terminated linked list starting at the pointer to the node given
 void printList(node *n)
 {
     while(n!=NULL)
@@ -16,12 +18,14 @@ void printList(node *n)
     }
 }
 
+//creates a new node, allocating memory appropriately
 node* newNode()
 {
     node* new_node = (node*)malloc(sizeof(node));
 
     return new_node;
 }
+
 //To add new node at starting of the list
 void push(node** head, int new_data)
 {
@@ -376,6 +380,7 @@ void sortedInsert(node** head, int value)
 
 }
 
+//swaps each adjacent pair of nodes, starting with the head
 void pairWiseSwap(node* head)
 {
 
@@ -393,8 +398,6 @@ void pairWiseSwap(node* head)
     }
 
     return;
-
-
 
 }
 
