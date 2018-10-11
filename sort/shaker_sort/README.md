@@ -1,7 +1,7 @@
 # Shaker Sort / Cocktail Sort
 
 Shakersort is a _**bidirectional**_ variation of bubble sort. 
-This is stable sorting algorithm with time complexity _**O(n<sup>2</sup>)**_.
+This is stable sorting algorithm with time complexity _**O(n*n)**_.
 
 ## Description
 
