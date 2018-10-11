@@ -53,7 +53,7 @@ void updateByIndex(int *a,int index,int val)
 {
 	a[index]=val;
 }
-
+// deletes an element at specified index location and moves elements to left by one index location
 int deleteindex(int *a,int in,int n)
 {
 	for(int i=in;i<n-1;i++)
