@@ -4,7 +4,6 @@ def takeSecond(elem):
 
 def display_rail(lines):
 	depth = len(lines)
-	col = len(lines[0])
 	# depth is the number of rows of the grid
 	# lines is a tuple where line[i] is the i-th line to print
 	# col is the number of columns = number of characters of the initial string
@@ -48,7 +47,7 @@ def encrypt(string,depth):
 	return encrString
 	
 def decrypt(encrString,depth):
-	# from depth and the length of the string we can determin the sequence
+	# from depth and the length of the string we can determine the sequence
 	# of places in the rails as they were filled
 	nChar = len(encrString)
 	if depth == 2:
@@ -73,7 +72,7 @@ def decrypt(encrString,depth):
 	for i in range(nChar):
 		sequence[i].append(encrString[i])
 		
-	# finally for decription we rearrange the list items according to columns and read the result
+	# finally for decryption we rearrange the list items according to columns and read the result
 	sequence.sort(key=takeSecond)
 	string = ''.join(c[2] for c in sequence)
 	
