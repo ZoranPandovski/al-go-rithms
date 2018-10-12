@@ -28,11 +28,11 @@
 */
 
 
-%fato
-fat(0, 1) :- !.
+%stopping criterion
+factorial(0, 1) :- !.
 
-%regras
-fat(N, F) :- 
+%recursion
+factorial(N, F) :- 
     N1 is N - 1,
     fat(N1, N2),
     F is N * N2.
