@@ -27,11 +27,17 @@ def bogosort(lst):
     # Finally in order
     return lst
 
+def test():
+	list = [14,37,22,84,2,31]
+	sorted_list = bogosort(list)
+	assert (sorted_list == sorted(list)) == True
 
-print(bogosort([1, 2, 3]))
-print(bogosort([3, 2, 1]))
-print(bogosort([2, 3, 1]))
-print(bogosort([2, 6, 1, 5, 7, 4, 3]))
-print(bogosort(['c', 'a', 'b']))
-print(bogosort([randrange(0,13) for i in range(13)]))  # Will take a long time (probably)
+if __name__ == "__main__":
+    test()
+    print(bogosort([1, 2, 3]))
+    print(bogosort([3, 2, 1]))
+    print(bogosort([2, 3, 1]))
+    print(bogosort([2, 6, 1, 5, 7, 4, 3]))
+    print(bogosort(['c', 'a', 'b']))
+    print(bogosort([randrange(0,13) for i in range(13)]))  # Will take a long time (probably)
 
