@@ -4,6 +4,7 @@ def takeSecond(elem):
 
 def display_rail(lines):
 	depth = len(lines)
+	col = len(lines[0])
 	# depth is the number of rows of the grid
 	# lines is a tuple where line[i] is the i-th line to print
 	# col is the number of columns = number of characters of the initial string
