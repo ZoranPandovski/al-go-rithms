@@ -8,4 +8,4 @@ The general idea is to use knowledge, that a model has learned from a task where
 new task where we don’t have a lot of data. Instead of starting the learning process from scratch, you start from patterns that 
 have been learned from solving a related task. Transfer Learning is mostly used in Computer Vision and Natural Language Processing 
 Tasks like Sentiment Analysis, because of the huge amount of computational power that is needed for them.
-![alt workflow](https://github.com/BAJUKA/al-go-rithms/blob/master/deep_learning/transfer-learning/image/transfer-learning.jpeg)
+![alt workflow](https://github.com/BAJUKA/al-go-rithms/blob/master/deep_learning/python/transfer-learning/image/transfer-learning.jpeg)
