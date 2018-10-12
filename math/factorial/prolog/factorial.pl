@@ -27,6 +27,10 @@
 * 
 */
 
+%to run this, you use the swipl then you use, for exemple,  
+%factorial(5, X). 
+%this will print X = 120.
+%Have fun!
 
 %stopping criterion
 factorial(0, 1) :- !.
