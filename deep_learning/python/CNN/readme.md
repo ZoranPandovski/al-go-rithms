@@ -6,7 +6,7 @@ of convolution multiplies and sums the pixel values of an image with the values 
 the filter is shifted to a different position and the convolutional step is repeated until all pixels are processed at least once.
 The resulting matrix eventually detects edges or transitions between dark and light colors and eventually more complex forms. The 
 more filters you apply, the more details the CNN is capable to recognize.<br>
-![alt WORKFLOW](https://github.com/BAJUKA/al-go-rithms/blob/master/deep_learning/CNN/image/cnn.gif)<br>
+![alt WORKFLOW](https://github.com/BAJUKA/al-go-rithms/blob/master/deep_learning/python/CNN/image/cnn.gif)<br>
 ## Components of Convolutional Neural Network
 <b>1. Pooling </b><br>
 The first secret sauce that has made CNNs very effective is pooling. Pooling is a vector to scalar transformation that operates on 
