@@ -26,3 +26,11 @@ def rot13(string):
                     else:
                             result += chr(ascii_value + 13)		
     return result
+
+def test():
+    string="helloworld"
+    rot13_string=rot13(string)
+    assert("uryybjbeyq" == rot13_string)
+    
+if __name__ == "__main__":
+    test()
