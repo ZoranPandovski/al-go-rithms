@@ -61,12 +61,23 @@ public class Arrays {
         num = temp;
     }
 
+    static void Addition(int var) {
+        System.out.println("\nAdd: " + var);
+        int[] temp = new int[num.length + 1];
+        for(int i = 0; i < num.length; i++) {
+            temp[i] = num[i];
+        }
+        temp[temp.length - 1] = var;
+    }
+
     public static void main(String[] args) {
         Insertion();
         Traverse();
         Search(10);
         Update(10, 100);
         Deletion(100);
+        Addition(15);
+        Traverse();
         Traverse();
     }
 
