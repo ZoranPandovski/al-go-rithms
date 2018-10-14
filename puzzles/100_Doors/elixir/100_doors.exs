@@ -8,9 +8,7 @@ defmodule Doors do
 
 	def output(list) do
 		list
-		|> Enum.map(fn({a, b}) -> "Door #{a} is #{b}" end)
-		|> Enum.join("\r\n")
-		|> IO.inspect
+		|> Enum.map(fn({a, b}) -> IO.inspect("Door #{a} is #{b}") end)
 	end
 
 	def open_doors(doors, []), do: doors
