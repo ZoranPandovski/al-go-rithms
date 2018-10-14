@@ -1,4 +1,4 @@
-# Extend Array class by adding combsort
+# Extend Array class by adding comb sort
 class Array
   def combsort!
     gap = size
