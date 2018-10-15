@@ -19,9 +19,9 @@ class neural_network:
     def train(self, batch_size, inputs, labels, num_epochs, learning_rate, filename):
         self.batch_size = batch_size
         self.learning_rate = learning_rate
-        for j in range(num_epochs):
+        for k in range(num_epochs):
             i = 0
-            print("== EPOCH: ", j, " ==")
+            print("== EPOCH: ", k, " ==")
             while i+batch_size != len(inputs):
                 self.error = 0  
                 # input_batch = []
