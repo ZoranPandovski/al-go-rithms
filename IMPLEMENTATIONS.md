@@ -74,7 +74,7 @@
   * [morse cipher](cryptography/morse_cipher)
   * [porta cipher](cryptography/porta_cipher)
   * [rot13 cipher](cryptogrpahy/rot13_cipher)
-  * [rsa](cryptography/rsa)
+  * [RSA](cryptography/RSA)
   * [running key cipher](cryptography/runningkey_cipher)
   * [caesar cipher](cryptography/caesar_cipher)
   * [substitution cipher](cryptography/substitution_cipher)
