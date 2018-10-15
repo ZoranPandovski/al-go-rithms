@@ -1,33 +1,22 @@
 /*
-Given a binary tree, print the top view.
+Given a binary tree, print the vertical traversal.
 
 Case 1
-				1
-			2		3
-		4	   _|5
-	                6
-						7
-
-Level order traversal: 1, 2, 3, 4, 5, 6, 7
-Top view of tree: 4, 2, 1, 3, 7
-
-
-Case 2
                 1
 	        2		3
         4	   5|6		7
 
 Level order traversal: 1, 2, 3, 4, 5, 6, 7
-Top view of tree: 4, 2, 1, 3, 7
+Top view of tree: 4, 2, 1, 5, 6, 3, 7
 
 
 
 Logic: Do a level order traversal and keep a map of nodes on X axis
 Maintain a simple map like map = { 
-    '0' : [1],
-    '-1': 2,
-    '+1': 3,
-    '-2': 4,
+    '0' : [1, 5, 6],
+    '-1': [2],
+    '+1': [3],
+    '-2': [4],
     ....
  }
 */
@@ -35,9 +24,9 @@ Maintain a simple map like map = {
 
 /*
     Input: Root element of tree
-    Output: An array containing vertical traversal of tree starting from leftmost to the rightmost element
+    Output: An array containing the top view starting from leftmost to the rightmost element
 */
-function topView(root) {
+function verticalTraverse(root) {
 	if (root == null) {
 		return [];
 	}
@@ -53,8 +42,10 @@ function topView(root) {
 		node = element.node;
 		xAxis = element.xAxis;
 
-		if (!hash[xAxis.toString()]) {
-			hash[xAxis.toString()] = node.data;
+		if (hash[xAxis.toString()]) {
+			hash[xAxis.toString()].push(node.data);
+		} else {
+			hash[xAxis.toString()] = [node.data];
 		}
 
 		if (node.left) {
@@ -68,11 +59,11 @@ function topView(root) {
 		}
 	}
 
-	var topview = [];
+	var verticalorder = [];
 	for (var i = minX; i <= maxX; i++) {
 		var horizontalDistance = i.toString();
-		topview.push(hash[horizontalDistance]);
+		verticalorder.push(hash[horizontalDistance]);
 	}
 
-	return topview;
+	return verticalorder;
 }
