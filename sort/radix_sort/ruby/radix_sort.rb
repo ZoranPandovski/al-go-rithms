@@ -14,10 +14,10 @@ class Array
 end
 
 # Perform radix sort on a fixed array
-p [210, 52, 30, -100, 3, 21, -750, 18, -12].radix_sort
+[210, 52, 30, -100, 3, 21, -750, 18, -12].radix_sort
 
 # Perform radix sort on a randomly generated array
-p Array.new(10) { rand(-500...500) }.radix_sort
+Array.new(10) { rand(-500...500) }.radix_sort
 
 # Benchmark radix sort
 require 'benchmark'
