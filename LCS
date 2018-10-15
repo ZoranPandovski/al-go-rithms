@@ -1,0 +1,14 @@
+1) Construct L[m+1][n+1] using the following steps
+   Let the input sequences be X[0..m-1] and Y[0..n-1] of lengths m and n respectively. And let L(X[0..m-1], Y[0..n-1]) be the length of LCS of the two sequences X and Y. Following is the recursive definition of L(X[0..m-1], Y[0..n-1]).
+
+      If last characters of both sequences match (or X[m-1] == Y[n-1]) 
+      then L(X[0..m-1], Y[0..n-1]) = 1 + L(X[0..m-2], Y[0..n-2])
+
+      If last characters of both sequences do not match (or X[m-1] != Y[n-1]) 
+      then L(X[0..m-1], Y[0..n-1]) = MAX ( L(X[0..m-2], Y[0..n-1]), L(X[0..m-1], Y[0..n-2]) )
+
+2) The value L[m][n] contains length of LCS. Create a character array lcs[] of length equal to the length of lcs plus 1 (one extra to store \0).
+
+3) Traverse the 2D array starting from L[m][n]. Do following for every cell L[i][j]
+…..a) If characters (in X and Y) corresponding to L[i][j] are same (Or X[i-1] == Y[j-1]), then include this character as part of LCS.
+…..b) Else compare values of L[i-1][j] and L[i][j-1] and go in direction of greater value.
