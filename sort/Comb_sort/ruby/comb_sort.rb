@@ -17,4 +17,16 @@ class Array
   end
 end
 
+# Perform comb sort on a fixed array
 p [3, 21, 75, 47, 93, 30, 3, 9, 1, 51, 12, 14, 12, 57, 78].combsort!
+
+# Perform comb sort on a randomly generated array
+p Array.new(10) { rand(-500...500) }.combsort!
+
+# Benchmark radix sort
+require 'benchmark'
+puts Benchmark.measure {
+  100_000.times do
+    Array.new(10) { rand(-500...500) }.combsort!
+  end
+}
