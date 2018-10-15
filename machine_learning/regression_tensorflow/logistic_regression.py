@@ -3,6 +3,7 @@ import pandas as pd
 import tensorflow as tf
 import datetime
 from sklearn.model_selection import train_test_split
+from sklearn.metrics import roc_auc_score
 
 def logistic_regression(x_full, y_full, n_features, epochs, learning_rate, batch_size):
 
@@ -51,4 +52,19 @@ def logistic_regression(x_full, y_full, n_features, epochs, learning_rate, batch
 
         writer.close()
         ret_value = y_model.eval(feed_dict = {X : x_test})
-    return ret_value
+    return y_test, ret_value
+
+
+"""
+#Sample code to test this function
+#Uncomment and use
+
+from sklearn.datasets import make_moons
+m = 10000
+X_moons, y_moons = make_moons(m, noise=0.1, random_state=42)
+X_moons_with_bias = np.c_[np.ones((m, 1)), X_moons]
+y_moons_column_vector = y_moons.reshape(-1, 1)
+y_test, y_pred_logistic_reg = logistic_regression(X_moons_with_bias, y_moons_column_vector, X_moons_with_bias.shape[1], 50,
+                           0.1, 250)
+print(roc_auc_score(y_test, y_pred_logistic_reg))
+"""
