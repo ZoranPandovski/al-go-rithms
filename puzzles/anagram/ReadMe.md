@@ -1,8 +1,9 @@
-Expecting reader to know C++.
-1) AnagramStrings.h: contains bool isAnagram(string, string) interface.
+# Anagram
 
-Assumptions in solution:
- <ul><li>Only alphabets are there in strings.</li></ul>
- 
- Property Used:
- <ul><li>XOR (A^A = 0)</li></ul>
+An anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once. Any word or phrase that exactly reproduces the letters in another order is an anagram. [Wikipedia](https://en.wikipedia.org/wiki/Anagram)
+
+### Example
+![example](https://qph.fs.quoracdn.net/main-qimg-b25796e0986604dc7aed848cecafa658 "Anagram")
+
+### Contributing
+Before a making a PR follow guidelines [here]( al-go-rithms/CONTRIBUTING.md )
