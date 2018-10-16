@@ -1,5 +1,5 @@
 package arrays;
-
+importjava.util.Scanner;
 /**
  * @author Jose Chavarría
  * @license MIT
@@ -10,7 +10,13 @@ public class ArraysTwoDimensional {
     /**
      * @param args the command line arguments
      */
-    static Integer[][] num = new Integer[6][6];
+    Scanner sc=new Scanner(System.in);
+    //read values from user
+    //row
+    int row=sc.nextInt();
+    int col=sc.nextInt();
+    
+    static Integer[][] num = new Integer[row][col];
 
     static void Insertion() {
         System.out.println("Insertion...");
