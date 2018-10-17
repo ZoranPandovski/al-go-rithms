@@ -1,22 +1,21 @@
-#include <stdio.h>
-int main()
-{
-    int n1, n2, minMultiple;
-    printf("Enter two positive integers: ");
-    scanf("%d %d", &n1, &n2);
+#include <stdio.h> 
 
-    // maximum number between n1 and n2 is stored in minMultiple
-    minMultiple = (n1>n2) ? n1 : n2;
+long long __gcd(long long a, long long b) {
+	if(b == 0) 
+		return a;
+	return __gcd(b, a % b);
+}
 
-    // Always true
-    while(1)
-    {
-        if( minMultiple%n1==0 && minMultiple%n2==0 )
-        {
-            printf("The LCM of %d and %d is %d.", n1, n2,minMultiple);
-            break;
-        }
-        ++minMultiple;
-    }
-    return 0;
+long long __lcm(long long a, long long b) {
+	return a * b / __gcd(a, b);
+}
+
+int main() {
+	long long num1, num2;
+	printf("Please enter two numbers.\n");
+	scanf("%lld %lld", &num1, &num2);
+
+	long long lcm = __lcm(num1, num2);
+	printf("LCM of %lld and %lld is %lld\n", num1, num2, lcm);
+	return 0;
 }
