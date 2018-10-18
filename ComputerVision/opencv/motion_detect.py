@@ -7,7 +7,7 @@ def diffImg(t0, t1, t2):
 
 cam = cv2.VideoCapture(0)
 
-winName = "Movement Indicator"
+winName = "Motion Indicator"
 cv2.namedWindow(winName)
 
 # Read three images first:
