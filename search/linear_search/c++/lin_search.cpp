@@ -18,13 +18,13 @@ int main()
     cout<<"enter size of array ";
     int n,k;
     cin>>n;                                            // n=size of the array in which the number is to be searched
-    int * arr= new int [n];
+    int * arr= new int [n];                            // providing size from heap array to the pointer dynamically 
     cout<<"enter elements of array ";
     for(int i=0;i<n;i++)
     cin>>arr[i];                                        // adding elements to the array
     cout<<"enter the element to be searched";
     cin>>k;                                             // number to be searched or the key
-    if(search(arr,n,k)==-1)                             // calling function search(rr,n,k)
+    if(search(arr,n,k)==-1)                             // calling function search(arr,n,k)
     cout<<"element not found";
     else
     cout<<"element is present at "<<search(arr,n,k)<<" index";
