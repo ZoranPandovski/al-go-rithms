@@ -1,4 +1,4 @@
-## Contribution
+## Contribution!
  * Contributions are always welcome. Language doesn't matter. Just make sure you're implementing an algorithm.
  * PRs are welcome. To begin developing, follow the structure:
 
