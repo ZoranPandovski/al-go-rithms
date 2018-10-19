@@ -10,7 +10,7 @@ package binarysearch
 func BinarySearch(value int, sortedSlice []int) (index int, found bool) {
 	low, high := 0, len(sortedSlice)-1
 	for low <= high {
-		mid := (low + high) / 2
+		mid := low + (high-low) / 2
 		if sortedSlice[mid] < value {
 			low = mid + 1
 		} else if sortedSlice[mid] > value {

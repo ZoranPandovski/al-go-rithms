@@ -1,7 +1,7 @@
 (function() {
     const binarySearch = function (array, findValue, min = 0, max = (array.length - 1)) { 
         array = array.sort((a, b) => a - b);
-        let mid = Math.floor((min+max)/2);
+        let mid = Math.floor((min+(max-min)/2);
 
         while( array[mid] !== findValue && min < max){
             if(array[mid] > findValue){
