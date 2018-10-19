@@ -1,0 +1,33 @@
+//tester class to print out the sum of an array of integers
+public class tester {
+  
+  //main method that will run first
+  public static void main(String[] args) {
+  
+    //initializing integer array to a new int array of size 5 
+    int[] arr = new int[5];
+    
+    //adding values to each index of the array: (1,4,3,6,29)
+    arr[0] = 1;
+    arr[1] = 4;
+    arr[2] = 3;
+    arr[3] = 6;
+    arr[4] = 29;
+   
+    //printing out the sum of each integer in the array
+    System.out.println(findSum(arr));   
+  }
+}
+//function to find the sum
+public int findSum(int[] array) {
+
+  //integer to keep track of total sum as we loop through
+  int sum = 0;
+  
+  //for loop goes through each integer in the array one at a time and adds it to the sum
+  for(int i : array) {
+    sum += i;
+  }
+  //return the sum to the main method
+  return sum;
+}
