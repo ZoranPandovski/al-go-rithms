@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-%matplotlib inline
+#%matplotlib inline
 import pandas as pd
 
 ## Dataset
@@ -42,7 +42,7 @@ print (eig_val)
 print (eig_vec)
 
 indexes = np.array(range(red_Z.shape[0]))
-print indexes.shape
+print (indexes.shape)
 for ix in range(red_Z.shape[0]):
     plt.scatter(indexes[ix], red_Z[ix,0],c='b')
 
@@ -51,17 +51,17 @@ info = []
 for ix in range(eig_val.shape[0]):
     dx = [eig_val[ix], eig_vec[:, ix]]
     info.append(dx)
-print info
+print (info)
 for k in info:
-    print k
+    print (k)
 info = sorted(info, key=lambda z:z[0], reverse=True)
 sorted_vals = []
 sorted_vecs = []
 for ix in range(len(info)):
     sorted_vals.append(info[ix][0])
     sorted_vecs.append(info[ix][1])
-print sorted_vals
+print (sorted_vals)
 
 sorted_vals = np.array(sorted_vals)
 explained_variances_ratio = sorted_vals/sum(sorted_vals)
-print explained_variances_ratio
+print (explained_variances_ratio)
