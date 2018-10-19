@@ -18,8 +18,6 @@ int main()
 	{
 		int u, v;
 		scanf("%d%d", &u, &v);
-		// arrival.push_back(u);
-		// burst.push_back(v);
 		arrival[i] = u;
 		burst[i] = v;
 		q.push(i);
@@ -32,10 +30,8 @@ int main()
 	q.pop();
 	if(burst[first] <= tq)
 	{
-		// cout << "H";
 		completion[first] = burst[first];
 		completion_t = burst[first];
-		// cout << completion[first] << completion_t << endl;
 	}
 	else
 	{
