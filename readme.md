@@ -94,6 +94,7 @@ Clean example implementations of data structures and algorithms written in diffe
     * [Codejam](https://code.google.com/codejam/)
     * [Excercism](https://exercism.io/)
     * [freeCodeCamp](https://www.freecodecamp.org/)
+    * [CodingBat](https://codingbat.com)
 
 ## License
 
