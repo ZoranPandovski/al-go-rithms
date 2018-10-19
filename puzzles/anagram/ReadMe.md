@@ -6,4 +6,4 @@ An anagram is a word or phrase formed by rearranging the letters of a different 
 ![example](https://qph.fs.quoracdn.net/main-qimg-b25796e0986604dc7aed848cecafa658 "Anagram")
 
 ### Contributing
-Before a making a PR follow guidelines [here]( al-go-rithms/CONTRIBUTING.md )
+Before a making a PR follow guidelines [here](/CONTRIBUTING)
