@@ -36,6 +36,7 @@ void twoDarray::display()
 		for(j = 0; j < c; j++)
 			cout<<a[i][j]<<"\t";
 	}
+	cout<<endl;
 }
 
 void twoDarray::search()
@@ -118,8 +119,8 @@ void twoDarray::sumdiagonal()
         cout<<"\nMatrix is not sqaure. Sum of diagonal cannot be found!";
         return;
     }
-	cout<<"\nSum of 1st diagonal is : "<<s1;
-	cout<<"\nSum of 2nd diagonal is : "<<s2;
+	cout<<"\nSum of Primary diagonal : "<<s1;
+	cout<<"\nSum of Secondary diagonal : "<<s2;
 }
 
 int main()
