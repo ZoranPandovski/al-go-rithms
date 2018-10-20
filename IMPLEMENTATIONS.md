@@ -39,6 +39,7 @@
 * [Math](math)
   * [russian peasant](math/russian_peasant)
   * [towers of hanoi](math/towers_of_hanoi)
+  * [Sieve of Eratosthenes](math/sieve%20of%20eratosthenes)
   * [armstrong number](math/armstrong_number)
   * [euclid's gcd](math/euclids_gcd)
   * [prime seive](math/prime_seive)
