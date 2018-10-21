@@ -1,62 +1,26 @@
-#include <iostream>
-#include <stack>
-#include <string>
+#include<iostream>
+#include<stack>
+#include<string.h>
 using namespace std;
-bool check(char x, char y)
-{
-	if ((x=='(' && y==')') || (x=='{' && y=='}') || (x=='[' && y==']') || (x=='<' && y=='>'))
-	{
-		return true;
-	}
-	else
-	{
-		return false;
-	}
-}
-
-bool checkbalancedparenthesis(string s)
-{
-	stack<char> st;
-	int top=-1;
-	int l=s.length();
-	for(int i=0;i<l;i++)
-	{
-		if(s[i]=='(' || s[i]=='{' || s[i]=='[')
-		{
-		st.push(s[i]);
-		top=top+1;
-		}
-		else if(s[i]==')' || s[i]=='}' || s[i]==']')
-		{
-			if(top==-1 || check(st.top(),s[i])==false)
-			{
-				return false;
-			}
-			else
-			{
-			st.pop();
-			top=top-1;
-			}
-		}
-	}
-	if(top==-1)
-	return true;
-	else
-	return false;
-}
-int main() 
-{
-	// your code goes here
-	int test;
-	cin>>test;
-	while(test-->0)
-	{
-	string s;
-	cin>>s;
-	if(checkbalancedparenthesis(s)==true)
-	cout<<"BALANCED"<<endl;
-	else
-	cout<<"NOT BALANCED"<<endl;
-	}
-	return 0;
+int main(){
+    string str;
+    cin>>str;
+    int flag=1;
+    stack <char> s;
+    for (int i=0;i<str.length();i++){
+        if (str[i]=='('||str[i]=='{'||str[i]=='[') s.push(str[i]);
+        if (str[i]==')'||str[i]=='}'||str[i]==']'){
+            if (s.empty()) flag=0;
+            else{
+                char temp=s.top();
+                if (str[i]==')' && (temp=='{'||str[i]=='[')) flag=0;
+                if (str[i]=='}' && (temp=='('||str[i]=='[')) flag=0;
+                if (str[i]==']' && (temp=='{'||str[i]=='(')) flag=0;
+                else s.pop();
+            }
+        }
+    }
+    if (!s.empty()) flag=0;
+    if (flag==1) cout<<"valid"<<endl;
+    else cout<<"invalid"<<endl;
 }
