@@ -71,6 +71,8 @@ Clean example implementations of data structures and algorithms written in diffe
      * [String Processing and Pattern Matching Algorithms](https://www.edx.org/course/string-processing-pattern-matching-uc-san-diegox-algs204x)
      * [Graph Algorithms in Genome Sequencing](https://www.edx.org/course/graph-algorithms-genome-sequencing-uc-san-diegox-algs206x)
      * [Algorithms and Data Structures Capstone](https://www.edx.org/course/algorithms-data-structures-capstone-uc-san-diegox-algs207x)
+   * Stony Brook University
+     * [Skiena's algorithms lectures](http://www3.cs.stonybrook.edu/~algorith/video-lectures/)
 * **Online classes (paid)**
   * Udemy 
       * [The Coding Interview Bootcamp: Algorithms + Data Structures](https://www.udemy.com/coding-interview-bootcamp-algorithms-and-data-structure/)
@@ -94,6 +96,7 @@ Clean example implementations of data structures and algorithms written in diffe
     * [Codejam](https://code.google.com/codejam/)
     * [Excercism](https://exercism.io/)
     * [freeCodeCamp](https://www.freecodecamp.org/)
+    * [CodingBat](https://codingbat.com)
 
 ## License
 

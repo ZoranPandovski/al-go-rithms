@@ -6,5 +6,5 @@ The 24 Game is an arithmetical card game in which the objective is to find a way
 For the card with the numbers 4, 7, 8, 8, a possible solution is **( 7 − ( 8 ÷ 8 ) ) × 4 = 24**
 
 ### Contributing
-Before making a PR follow guidelines [here]( al-go-rithms/CONTRIBUTING.md )
+Before making a PR follow guidelines [here](/CONTRIBUTING)
 
