@@ -2,7 +2,7 @@ package quicksort
 
 // QuickSort uses the Quick sort algorithm to sort an integer slice.
 // The following code implements Lomuto partition scheme, based on
-// wall-shifting idea and median-of-three pivot selection algorithm
+// wall shifting idea and median-of-three pivot selection algorithm
 // for higher optimality. You can read more about that here:
 // https://en.wikipedia.org/wiki/Quicksort#Lomuto_partition_scheme
 // https://en.wikipedia.org/wiki/Quicksort#Choice_of_pivot
