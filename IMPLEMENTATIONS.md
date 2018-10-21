@@ -41,7 +41,7 @@
   * [towers of hanoi](math/towers_of_hanoi)
   * [armstrong number](math/armstrong_number)
   * [euclid's gcd](math/euclids_gcd)
-  * [prime seive](math/prime_seive)
+  * [prime sieve](math/prime_sieve)
   * [strong number](math/strong_number)
   * [factorial](math/factorial)
   * [fibonacci sequence](math/fibonacci)
