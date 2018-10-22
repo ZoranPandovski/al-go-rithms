@@ -16,7 +16,8 @@ void main()
 {
   printf("\n Enter the infix expression \n");
   scanf("%s",infix);
-  push('#');                            // '#' is the identification element. if top reaches '#', that means the array postfix is empty.
+  // '#' is the identification element. if top reaches '#', that means the array postfix is empty.  
+  push('#');                            
   while(ch==infix[i++]!='\0')
   {
     if(isalnum(ch))                             
@@ -27,7 +28,8 @@ void main()
     {
       push(ch);
     }
-    else if(ch==')')                   // when ')' appears, the elements which is there inside '()' will be moved to postfix array !
+    // when ')' appears, the elements which is there inside '()' will be moved to   postfix array !
+    else if(ch==')')                   
     {
       while(STACK[top]!='(')
       {
@@ -60,7 +62,8 @@ void main()
 
 int pre(char ch)
 {
-  switch(ch)                               // returning values according to thier priority..!!
+  // returning values according to thier priority..!!
+  switch(ch)                               
   {
     case '+' :
     case '-' : return 2;
@@ -83,16 +86,7 @@ char pop()
   return(STACK[top--]);
 }
 
-
-
-
-
-  
-  
-      
-      
-      
-      
+    
 /* OUTPUT :
    
 1.   Enter the infix expression
