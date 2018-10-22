@@ -5,19 +5,31 @@ INF = 999999999
 
 
 class Graph:
+
+    # Constructor
     def __init__(self, vertices, directed=True):
+        # default dictionary to store graph
         self.graph = defaultdict(list)
+
+        # Number of vertices
         self.V = vertices
+
+        # Is a directed graph?
         self.directed = directed
+
+        # Initialize adjacency matrix
         for i in range(self.V):
             self.graph[i] = [INF] * self.V
             self.add_edge(i, i, 0)
 
-    def add_edge(self, u, v, distance):
-        self.graph[u][v] = distance
+    # Add an edge from vertex u to vertex v with weight w 
+    # if it's a undirected graphs, add an edge from v to u too
+    def add_edge(self, u, v, w):
+        self.graph[u][v] = w
         if not self.directed:
-            self.graph[v][u] = distance
+            self.graph[v][u] = w
 
+    # Solves the lowest distance between each vertex pair
     def solve(self):
         for k in range(self.V):
             for i in range(self.V):
