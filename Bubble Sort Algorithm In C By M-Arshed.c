@@ -1,4 +1,3 @@
-
 /*C Program To Sort data in ascending order using bubble sort By M-Arshed.*/
 #include <stdio.h>
 int main()
