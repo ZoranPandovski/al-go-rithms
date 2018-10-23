@@ -7,6 +7,7 @@
   * [ternary search](search/ternary_search)
   * [interpolation search](search/interpolation_search)
   * [best first search](search/best_first_search)
+  * Breadth First Search(al-go-rithms/graph/Breadth First Search or BFS for a Graph)
 * [Sort](sort)
   * [bubble sort](sort/bubble_sort)
   * [bogo sort](sort/bogo_sort)
