@@ -2,7 +2,7 @@
 "use strict"
 
 const binarySearch = function(arr, num, start = 0, end = (arr.length - 1)) {
-    let middle = Math.floor((start + end) / 2);
+    let middle = Math.floor(start + (end-start) / 2);
     switch (true) {
         case arr[middle] === num:
             return arr[middle];

@@ -3,7 +3,7 @@
 using namespace std;
 int bin_search(int *a,int item,int len,int low,int high)
 {
-	int mid=(high+low)/2;
+	int mid=(low + (high - low))/2;
 	if(item==a[mid])
 		return mid;
 	if(item<mid)
