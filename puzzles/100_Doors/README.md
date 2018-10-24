@@ -20,4 +20,4 @@ There are 100 doors in a row, all doors are initially closed. A person walks thr
 
 
 ### Contributing
-Before making a PR follow guidelines [here]( al-go-rithms/CONTRIBUTING.md )
+Before making a PR follow guidelines [here](/CONTRIBUTING)
