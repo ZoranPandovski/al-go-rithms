@@ -16,7 +16,7 @@
         n * sum(Xi * Xi) - [sum(Xi)]^2
 
     It takes 3 arguments: set of (x, y) points and an 'n' as a size of vectors
-    Returns: std::pair(double, double)
+    Returns: std::pair(T, T) where T is a typename (double for example)
 */
 
 int main()
