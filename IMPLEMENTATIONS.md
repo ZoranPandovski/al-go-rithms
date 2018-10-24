@@ -42,7 +42,7 @@
   * [Sieve of Eratosthenes](math/sieve%20of%20eratosthenes)
   * [armstrong number](math/armstrong_number)
   * [euclid's gcd](math/euclids_gcd)
-  * [prime seive](math/prime_seive)
+  * [prime sieve](math/prime_sieve)
   * [strong number](math/strong_number)
   * [factorial](math/factorial)
   * [fibonacci sequence](math/fibonacci)
