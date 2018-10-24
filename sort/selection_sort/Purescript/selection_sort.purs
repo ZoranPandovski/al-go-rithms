@@ -1,7 +1,7 @@
 module SelectionSort where
 
 import Prelude
-import Data.Array (cons, delete, index, length)
+import Data.Array (snoc, delete, index, length)
 import Data.Maybe (Maybe(..))
 
 unsortedList :: Array Int
@@ -21,8 +21,7 @@ iterateList arr newArr pos minVal | pos < length(arr) = iterateList arr newArr (
 								  | otherwise = createNewArr arr newArr pos minVal
 
 createNewArr :: Array Int -> Array Int -> Int -> Int -> Array Int
-createNewArr arr newArr pos minVal | length(arr) > 0 = iterateList (delete minVal arr) (cons minVal newArr) 1 (isItEmpty (index (delete minVal arr) 0))
-								   --| (length(arr) == 1 = (cons minVal newArr)
+createNewArr arr newArr pos minVal | length(arr) > 0 = iterateList (delete minVal arr) (snoc newArr minVal) 1 (isItEmpty (index (delete minVal arr) 0))
 								   | otherwise = newArr
 
 isItEmpty :: Maybe Int -> Int						
