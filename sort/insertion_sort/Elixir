@@ -19,4 +19,4 @@ defmodule Insertion do
     if min >= elem do [elem|[min|rest]] else [min|insert(elem, rest)] end
   end
 end
-IO.inspect Insertion.sort([5,1,3,2,5,0])
+IO.inspect Insertion.sort([5,1,3,2,5,4,0])
