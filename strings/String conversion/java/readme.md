@@ -1,4 +1,4 @@
-My implementation for Ceasar Cipher problem on HackerRank. 
+My implementation for Caesar Cipher problem on HackerRank. 
 
 Expected input format:
 n - length of input string
