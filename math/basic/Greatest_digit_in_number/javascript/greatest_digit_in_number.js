@@ -11,6 +11,6 @@ function greatest_digit_in_number(num) {
 }
 
 // Example
-var number = 37847862;
+var number = 378478621;
 var digit = greatest_digit_in_number(number);
 console.log(digit); // Expected output: 8
