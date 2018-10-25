@@ -11,6 +11,12 @@ function countingSort(array, minimumValue, maximumValue) {
     for (i=0; i < array.length; i++) {
         count[array[i]]++;
     }
+
+    //add method whit forEach
+    array.forEach(function(element) {
+        count[element]++;
+    });
+
     // Modify array and move elements into their sorted location.
     for (i = minimumValue; i <= maximumValue; i++) {
         while (count[i]-- > 0) {
