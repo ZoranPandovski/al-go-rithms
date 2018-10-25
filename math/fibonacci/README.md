@@ -4,3 +4,6 @@ In mathematics, the Fibonacci numbers are the numbers in the following integer s
 
 The Fibonacci numbers occur in the sums of "shallow" diagonals in Pascal's triangle:
 ![](https://upload.wikimedia.org/wikipedia/commons/b/bf/PascalTriangleFibanacci.svg)
+
+The fibbonacci can be represent by such spiral
+![./fibbonaci.gif]
