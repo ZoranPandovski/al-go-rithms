@@ -15,3 +15,7 @@ Output:
 4. bca
 5. cba
 6. cab
+
+The following image shows the description of above permutations:
+
+![](NewPermutation.gif)
