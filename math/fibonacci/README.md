@@ -6,4 +6,4 @@ The Fibonacci numbers occur in the sums of "shallow" diagonals in Pascal's trian
 ![](https://upload.wikimedia.org/wikipedia/commons/b/bf/PascalTriangleFibanacci.svg)
 
 The fibbonacci can be represent by such spiral
-![./fibbonaci.gif]
+![](./fibbonaci.gif)
