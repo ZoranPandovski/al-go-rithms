@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Fibonacci Sequence Algorithm</h1>
+<p>HTML + JS</p>
+
+<p id="algo"></p>
+
+<script>
+function fibonacci(num){
+  var a = 1, b = 0, temp;
+
+  while (num >= 0){
+    temp = a;
+    a = a + b;
+    b = temp;
+    num--;
+  }
+
+  return b;
+}
+
+const result = fibonacci(9);
+
+
+
+  document.getElementById("algo").innerHTML = result;
+</script>
+
+</body>
+</html>
