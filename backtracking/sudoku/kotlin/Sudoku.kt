@@ -25,7 +25,7 @@ fun main(args: Array<String>) {
     } else print("No solution is available for this puzzle!")
 }
 
-// solves the puzzle by recursively backtracking until a solution is found or all solutions have been exhausted
+// solves the puzzle by recursively backtracking until a solution is found or all possibilities have been exhausted
 private fun solvePuzzle(array: Array<IntArray>): Boolean {
     val locationOfEmptyCell = arrayOf(0, 0)
     if (!findNextEmptyCell(array, locationOfEmptyCell)) return true
@@ -46,8 +46,8 @@ private fun solvePuzzle(array: Array<IntArray>): Boolean {
 // returns true if there are still empty cells and updates the locationOfEmptyCell array, returns false when puzzle
 // is solved
 private fun findNextEmptyCell(sudokuArray: Array<IntArray>, locationOfEmptyCell: Array<Int>): Boolean {
-    for (row in locationOfEmptyCell[0]..8) {
-        for (column in locationOfEmptyCell[1]..8) {
+    for (row in 0..8) {
+        for (column in 0..8) {
             if (sudokuArray[row][column] == EMPTY_CELL) {
                 locationOfEmptyCell[0] = row
                 locationOfEmptyCell[1] = column
@@ -58,7 +58,7 @@ private fun findNextEmptyCell(sudokuArray: Array<IntArray>, locationOfEmptyCell:
     return false
 }
 
-// returns true if the chosen number does not occur in the row, column and quadrant
+// returns true if the chosen number does not occur in the row, column and quadrant, false otherwise
 private fun isValidMove(array: Array<IntArray>, row: Int, column: Int, numChoice: Int): Boolean {
     return checkRow(array, row, numChoice) &&
             checkColumn(array, column, numChoice) &&
