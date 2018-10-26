@@ -2,6 +2,8 @@
 """
 This module contains an implementation of Kadane's algorithm to determine the
 maximum sum of a subarray.
+
+Doctests included. Please use docstring as example to use algorithm.
 """
 
 
