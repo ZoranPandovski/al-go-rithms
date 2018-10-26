@@ -1,5 +1,5 @@
 /**
- * @author https://github.com/in2deep73/
+ * @author https://github.com/jeffament/
  */
 
 private const val EMPTY_CELL = 0
@@ -62,11 +62,11 @@ private fun findNextEmptyCell(sudokuArray: Array<IntArray>, locationOfEmptyCell:
 private fun isValidMove(array: Array<IntArray>, row: Int, column: Int, numChoice: Int): Boolean {
     return checkRow(array, row, numChoice) &&
             checkColumn(array, column, numChoice) &&
-            checkQuadrant(array, row, column, numChoice)
+            checkBox(array, row, column, numChoice)
 }
 
-// returns false if the chosen number is already in the quadrant, true otherwise
-private fun checkQuadrant(array: Array<IntArray>, row: Int, column: Int, numChoice: Int): Boolean {
+// returns false if the chosen number is already in the box, true otherwise
+private fun checkBox(array: Array<IntArray>, row: Int, column: Int, numChoice: Int): Boolean {
     val startingRowIndex = (row / 3) * 3
     val startingColumnIndex = (column / 3) * 3
 
