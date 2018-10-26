@@ -1,34 +1,21 @@
-#include<iostream.h>
-#include<conio.h>
-void main()
-{
-	clrscr();
-	int n, i, arr[50], j, temp;
-	cout<<"Enter total number of elements :";
-	cin>>n;
-	cout<<"Enter "<<n<<" numbers :";
-	for(i=0; i<n; i++)
-	{
-		cin>>arr[i];
-	}
-	cout<<"Sorting array using bubble sort technique...\n";
-	for(i=0; i<(n-1); i++)
-	{
-		for(j=0; j<(n-i-1); j++)
-		{
-			if(arr[j]>arr[j+1])
-			{
-				temp=arr[j];
-				arr[j]=arr[j+1];
-				arr[j+1]=temp;
-			}
-		}
-	}
-	cout<<"Elements sorted successfully..!!\n";
-	cout<<"Sorted list in ascending order :\n";
-	for(i=0; i<n; i++)
-	{
-		cout<<arr[i]<<" ";
-	}
-	getch();
-}
+#include <stdio.h> 
+  //provided more crisp code for bubble sort
+void swap(int *xp, int *yp) 
+{ 
+    int temp = *xp; 
+    *xp = *yp; 
+    *yp = temp; 
+} 
+  
+// A function to implement bubble sort 
+void bubbleSort(int arr[], int n) 
+{ 
+   int i, j; 
+   for (i = 0; i < n-1; i++)       
+  
+       // Last i elements are already in place    
+       for (j = 0; j < n-i-1; j++)  
+           if (arr[j] > arr[j+1]) 
+              swap(&arr[j], &arr[j+1]); 
+} 
+  
