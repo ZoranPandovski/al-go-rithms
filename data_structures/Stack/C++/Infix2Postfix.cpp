@@ -1,89 +1,75 @@
-#include<iostream>
-#include<stack>
-#include<string.h>
-using namespace std;
-stack<char> operatorStack;
-int length;
-
-int priority(char Operator){
-	if(Operator=='^')
-		return 3;
- 	if(Operator=='*' || Operator=='/')
-		return 2;
-	if(Operator=='+'|| Operator=='-')
-		return 1;
-	return-1;
-}
-
-bool isOperand(char currentChar){
-return ((currentChar>=65 && currentChar<=90)||(currentChar>=97 && currentChar<=122));
-}
-
-void infix2postfix(char infix[]){
-	char postfix[10000]={0};
-	char currentChar;
-	int i=0,j=0;
-	while(length--){
-		currentChar = infix[i];
-		if(isOperand(currentChar)){
-			postfix[j++] = currentChar;
-		}
-		else{
-			if(currentChar=='('){
-				operatorStack.push(currentChar);
-			}
-			else if(operatorStack.empty() && currentChar!=')'){
-				operatorStack.push(currentChar);
-			}
-			else if(currentChar==')'){
-				while(!operatorStack.empty()){
-				if(operatorStack.top()=='('){
-					operatorStack.pop();
-					break;
-				}
-				else{
-					postfix[j++] = operatorStack.top();
-					operatorStack.pop();
-				}
-			}
-			}
-			else{
-				if(priority(currentChar)>priority(operatorStack.top())){
-					operatorStack.push(currentChar);
-				}
-				else{
-					while(!operatorStack.empty()){
-						if(operatorStack.top()=='('){
-							operatorStack.pop();
-							break;
-						}
-						else{
-							postfix[j++] = operatorStack.top();
-							operatorStack.pop();
-						}
-					}
-					operatorStack.push(currentChar);
-				}
-			}
-		}
-		i++;
-	}
-	while(!operatorStack.empty()){
-		postfix[j++] = operatorStack.top();
-		operatorStack.pop();
-	}
-	postfix[j]='\0';
-	cout<<postfix<<endl;
-
-}
-int main(){
-	char infix[4000];
-	int testCases;
-	cin>>testCases;
-	while(testCases--){
-		cin>>infix;
-		length = strlen(infix);
-		infix2postfix(infix);
-	}
-	return 0;
-}
+#include<bits/stdc++.h> 
+using namespace std; 
+  
+//Function to return precedence of operators 
+int prec(char c) 
+{ 
+    if(c == '^') 
+    return 3; 
+    else if(c == '*' || c == '/') 
+    return 2; 
+    else if(c == '+' || c == '-') 
+    return 1; 
+    else
+    return -1; 
+} 
+  
+// The main function to convert infix expression 
+//to postfix expression 
+void infixToPostfix(string s) 
+{ 
+    std::stack<char> st; 
+    st.push('N'); 
+    int l = s.length(); 
+    string ns; 
+    for(int i = 0; i < l; i++) 
+    { 
+        // If the scanned character is an operand, add it to output string. 
+        if((s[i] >= 'a' && s[i] <= 'z')||(s[i] >= 'A' && s[i] <= 'Z')) 
+        ns+=s[i]; 
+  
+        // If the scanned character is an ‘(‘, push it to the stack. 
+        else if(s[i] == '(') 
+          
+        st.push('('); 
+          
+        // If the scanned character is an ‘)’, pop and to output string from the stack 
+        // until an ‘(‘ is encountered. 
+        else if(s[i] == ')') 
+        { 
+            while(st.top() != 'N' && st.top() != '(') 
+            { 
+                char c = st.top(); 
+                st.pop(); 
+               ns += c; 
+            } 
+            if(st.top() == '(') 
+            { 
+                char c = st.top(); 
+                st.pop(); 
+            } 
+        } 
+          
+        //If an operator is scanned 
+        else{ 
+            while(st.top() != 'N' && prec(s[i]) <= prec(st.top())) 
+            { 
+                char c = st.top(); 
+                st.pop(); 
+                ns += c; 
+            } 
+            st.push(s[i]); 
+        } 
+  
+    } 
+    //Pop all the remaining elements from the stack 
+    while(st.top() != 'N') 
+    { 
+        char c = st.top(); 
+        st.pop(); 
+        ns += c; 
+    } 
+      
+    cout << ns << endl; 
+  
+} 
