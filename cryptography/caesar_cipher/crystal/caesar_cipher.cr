@@ -1,16 +1,10 @@
 def caesarCipher(text, key, option)
-  alphabet = [] of Char
   outputText = ""
   offset = 65
 
   # if deciphering text, invert key offset
   if option == 'd'
     key = -key
-  end
-
-  # create alphabet
-  ('A'..'Z').each do |c|
-    alphabet << c
   end
 
   # caesar cipher
