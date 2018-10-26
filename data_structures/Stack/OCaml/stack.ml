@@ -58,13 +58,12 @@ module Stack : STACK =
 
 (* Print helper for stack. *)
 let rec print_stack s =
-  if (Stack.is_empty s) then
-    match (Stack.peek s) with
-    | Some f ->
-      print_int f;
-      print_string ", ";
-      print_stack (Stack.pop s)
-    | None -> ()
+  match (Stack.peek s) with
+  | Some f ->
+    print_int f;
+    print_string ", ";
+    print_stack (Stack.pop s)
+  | None -> ()
 
 (* Stack tester function *)
 let stack_test (): unit =
