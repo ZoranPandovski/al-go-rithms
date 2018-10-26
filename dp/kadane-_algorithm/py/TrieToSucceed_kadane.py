@@ -4,6 +4,7 @@ This module contains an implementation of Kadane's algorithm to determine the
 maximum sum of a subarray.
 """
 
+
 def kadane(list_obj=None):
     """
     Find maximum sum of a subarray
