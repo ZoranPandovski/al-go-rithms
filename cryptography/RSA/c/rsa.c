@@ -42,17 +42,17 @@ int main()
  
     // Message to be encrypted
     double msg = 12;
-    printf("Message data = %lf",msg);
+    printf("Message data = %lf\n",msg);
  
     // Encryption c = (msg ^ e) % n
     double c = pow(msg, e);
     c = fmod(c, n);
-    printf("\nEncrypted data = %lf", c);
+    printf("Encrypted data = %lf\n", c);
  
     // Decryption m = (c ^ d) % n
     double m = pow(c, d);
     m = fmod(m, n);
-    printf("\nOriginal Message Sent = %lf",m);
+    printf("Original Message Sent = %lf\n",m);
  
     return 0;
 }
