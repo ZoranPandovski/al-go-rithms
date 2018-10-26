@@ -1,3 +1,4 @@
+(* Data structure signature/interface. *)
 module type STACK =
   sig
     (* Stack type *)
