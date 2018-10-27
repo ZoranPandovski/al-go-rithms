@@ -27,7 +27,7 @@ def kadane(list_obj=None):
 
     Test 3 (list of ints):
     >>> print(kadane([3, 2, 3, -7, 5, -6]))
-    11
+    8
 
     Test 4 (invalid argument type):
     >>> print(kadane())
@@ -46,7 +46,7 @@ def kadane(list_obj=None):
         raise TypeError("input must be of type list")
     if not list_obj:
         raise ValueError("list must not be empty")
-    max_sum, cur_max = list_obj[0], list_obj[0]
+    max_sum, cur_max = list_obj[0], 0
     size = len(list_obj)
 
     for idx, val in enumerate(list_obj):
