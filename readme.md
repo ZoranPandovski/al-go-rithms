@@ -1,5 +1,5 @@
 <h1 align="center">
-	<img width="400" src="media/algorithms.jpeg" alt="Algorithms">
+	<img width="400" src="media/algorithms.jpeg" alt="Algorithms" height="400'>
 	<br>
 	<br>
 </h1>
