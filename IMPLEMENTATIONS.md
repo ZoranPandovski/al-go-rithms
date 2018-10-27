@@ -139,6 +139,8 @@
   * [maximum subarray problem](dp/maximum_subarray_problem)
   * [rod cutting](dp/rod_cutting)
   * [subset sum](dp/subset_sum)
+* [Branch And Bound](Branch%20And%20Bound)
+  * [0/1 Knapsack](Branch%20And%20Bound/0_1%20Knapsack)
 * [Data structures](data_structures)
   * [disjoint set union](data_structures/disjoint_set_union)
   * [graphs](data_structures/graphs)
