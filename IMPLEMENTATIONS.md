@@ -9,7 +9,7 @@
   * [best first search](search/best_first_search)
   * [exponential search](search/exponential_search)
   * [sublist search](search/sublist_search)
-  * [fibonacci search](search/best_first_search)
+  * [fibonacci search](search/fibonacci_search)
 * [Sort](sort)
   * [bubble sort](sort/bubble_sort)
   * [bogo sort](sort/bogo_sort)
