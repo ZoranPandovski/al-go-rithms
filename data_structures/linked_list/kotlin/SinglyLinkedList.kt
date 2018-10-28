@@ -6,14 +6,14 @@ class SinglyLinkedList(dat: Any) {
     private var head: Node? = Node(dat)
     var size: Int = 0
 
-    fun addAtHead(dat: Any) {
+    fun addHead(dat: Any) {
         val temp = head
         head = Node(dat)
         head!!.next = temp
         size++
     }
 
-    fun addAtTail(dat: Any) {
+    fun addTail(dat: Any) {
         var temp = head
         while (temp!!.next != null) {
             temp = temp.next
@@ -89,11 +89,11 @@ class TestSinglyLinkedList{
         @JvmStatic
         fun main(args: Array<String>) {
             val ll = SinglyLinkedList(10)
-            ll.addAtHead(11)
-            ll.addAtHead(12)
-            ll.addAtHead(13)
-            ll.addAtTail(8)
-            ll.addAtTail(7)
+            ll.addHead(11)
+            ll.addHead(12)
+            ll.addHead(13)
+            ll.addTail(8)
+            ll.addTail(7)
             ll.addAtIndex(4, 9)
             ll.addAtIndex(4, 9)
             ll.deleteAtIndex(4)
