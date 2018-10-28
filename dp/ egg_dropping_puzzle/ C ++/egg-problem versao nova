@@ -1,0 +1,36 @@
+#include <bits/stdc++.h>
+using namespace std;
+const int maxn = 100005;
+int tab[maxn];
+int tab2[maxn];
+void start(){
+	for(int i=0;i<maxn;i++){
+		tab[i] = i;
+	}
+	tab2[0] = 0;
+	tab2[1] = 1;
+	tab2[2] = 2;
+}
+void preenche(){
+	start();
+	for(int i=3;i<maxn;i++){
+		int lim = i;
+		int cost;
+		for(int j=1;j<lim;j++){
+			cost = (1 + max(tab[j-1],tab2[i-j]));
+			lim = min(cost,lim);
+		}
+		tab2[i] = lim;
+	}
+}
+int main(){
+	ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+	int tc;
+	preenche();
+	cin >> tc;
+	while(tc--){
+		int x;
+		cin >> x;
+		cout << tab2[x] << endl;
+	}
+}
