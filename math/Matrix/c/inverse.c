@@ -15,6 +15,7 @@ void inverse(double matrix[N][N]) {
  double identity[N][N];
  int i, j;
  
+ // make the identity matrix
  for(i = 0; i < N; i++) {
   for(j = 0; j < N; j++) {
    if(i == j) {
@@ -25,6 +26,7 @@ void inverse(double matrix[N][N]) {
   }
  }
 
+ // solve lower triangle
  int tempi = 0, tempj = 0;
  double m;
  for(i = 0; i < N; i++) {
@@ -56,6 +58,7 @@ void inverse(double matrix[N][N]) {
   }
  }
 
+ // solve upper triangle
  tempj = N;
  for(i = N; i--;) {
   for(j = N; j--;) {
@@ -74,6 +77,7 @@ void inverse(double matrix[N][N]) {
   }
  }
 
+ // print result of identity matrix
  for(i = 0; i < N; i++) {
   for(j = 0; j < N; j++) {
    printf("%lf\t", identity[i][j]);
