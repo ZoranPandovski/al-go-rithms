@@ -15,7 +15,7 @@ int hamming_distance(const string &s1, const string &s2) {
 }
 
 // current solution string s, input strings a, max number of changes left l, parameter m
-string center(string s, vector<string> a, int l, int m) {
+string center(const string &s, const vector<string> &a, int l, int m) {
 	if (l < 0) { // negative number of changes
 		return "";
 	}
@@ -45,9 +45,9 @@ string center(string s, vector<string> a, int l, int m) {
 // parameterized algorithm with runtime (m + 1)^m*n*k for closest string problem:
 // given k strings a_1, ..., a_k of length n, integer m
 // is there a string s with hamming_distance(s, a_i) <= m for all i?
-// returns: one such string, or if none exists the empty string
+// returns: one such string, or if none exists the empty string ("")
 // https://en.wikipedia.org/wiki/Closest_string
-string closest_string(vector<string> a, int m) {
+string closest_string(const vector<string> &a, int m) {
 	assert(!a.empty());
 	return center(a[0], a, m, m);
 }
