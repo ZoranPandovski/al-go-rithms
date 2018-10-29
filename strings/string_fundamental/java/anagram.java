@@ -12,7 +12,8 @@ public class Solution {
        
        for(int i = 0; i < A.length(); i++)
            try {
-               if(Character.toUpperCase(arrA[i]) != Character.toUpperCase(arrB[i])) return false;
+               if(Character.toUpperCase(arrA[i]) != Character.toUpperCase(arrB[i])) 
+                  return false;
            } // end try
            catch(Exception e) {
                return false;
@@ -25,8 +26,10 @@ public class Solution {
         String A=sc.next();
         String B=sc.next();
         boolean ret=isAnagram(A,B);
-        if(ret)System.out.println("Anagrams");
-        else System.out.println("Not Anagrams");
+        if(ret)
+           System.out.println("Anagrams");
+        else 
+           System.out.println("Not Anagrams");
         
     } // end main
 } // end class
