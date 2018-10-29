@@ -1,6 +1,7 @@
 
 // A C++ program to find articulation points in an undirected graph 
 #include<iostream> 
+#include<math.h>
 #include <list> 
 #define NIL -1 
 using namespace std; 
