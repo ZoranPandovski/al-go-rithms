@@ -1,44 +1,60 @@
-#include <iostream>
+#include<bits/stdc++.h> 
+  
+using namespace std; 
 
-using namespace std;
-struct node
-{
-    int data;
-    node*next;
-};
-
- bool isempty(node*head)
+//Change this to set the size of the stack you want.
+#define MAX 1000 
+  
+class Stack 
+{ 
+    int top; 
+public: 
+    int a[MAX];  
+    Stack()  
     {
-        if (head== NULL)
-        {
-            return true;
-        }
-        else
-            {
-                return false;
-            }
-
-    }
-    void insertelement(int x, node &*head,node &*last){ // & because i will change the address
-        // pointer for head and another for tail
-    node *temp = new node; // pointer of type node points to new nodes
-    temp -> data = x;       // using pointer to access node and data
-    temp -> next = NULL; // puts node at the end always
-    if (isempty(head)){
-     head = temp;
-     last = temp;
-    }
-    else{
-     last -> next = temp; // make it point at temp
-     last =temp;
-    }
-    }
-int main()
-{
-    node *head= NULL;
-    node *tail= NULL;
-    isempty(head);
-    cout<<(isempty(head));
-
-    return 0;
-}
+        top = -1;
+    } 
+    bool push(int x); 
+    int pop(); 
+    bool isEmpty(); 
+}; 
+  
+bool Stack::push(int x) 
+{ 
+    if (top >= (MAX-1)) 
+    { 
+        cout << "Stack Overflow, Please pop some values first."; 
+        return false; 
+    } 
+    else
+    { 
+        a[++top] = x;  
+        return true; 
+    } 
+} 
+  
+int Stack::pop() 
+{ 
+    if (top < 0) 
+    { 
+        cout << "Stack Underflow, Please push some values first."; 
+        return 0; 
+    } 
+    else
+    { 
+        int x = a[top--]; 
+        return x; 
+    } 
+} 
+  
+bool Stack::isEmpty() 
+{ 
+    return (top < 0); 
+} 
+   
+int main() 
+{ 
+    struct Stack s; 
+    //Do whatever with the stack
+    return 0; 
+} 
