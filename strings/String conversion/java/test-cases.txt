@@ -1,0 +1,15 @@
+Sample Input
+12
+Se-vb-ae-yuY
+2
+
+Sample Output
+Ug-xd-cg-awA
+
+Sample Input
+5
+TYsdf
+30
+
+Sample Output
+XCwhj
