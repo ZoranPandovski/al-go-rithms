@@ -58,6 +58,7 @@
   * [add binary numbers](math/AddBinaryNumbers)
   * [interval bisection](math/interval_bisection)
   * [lucas series](math/lucas_series)
+  * [pell numbers](math/pell_numbers)
   * [numerical integration](math/numerical_integration)
   * [pernicious number](math/pernicious_number)
   * [catalan number](math/catalan)
