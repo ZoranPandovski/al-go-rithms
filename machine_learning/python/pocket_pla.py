@@ -9,8 +9,8 @@ def pla(X,y,m):
     ''' improved (pocket) perceptron learning algorithm
 
     Arguments:
-        X {list or numpy array}
-        y {list or numpy array} -- target
+        X {numpy array or numpy matrix}
+        y {numpy array or numpy matrix} -- target
         m {integer} -- the size of training dataset
 
     Returns:
