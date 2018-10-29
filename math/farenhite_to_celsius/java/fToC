@@ -1,0 +1,10 @@
+import java.util.*;
+public class fToC {
+    public static void main(String args[]) {
+        Scanner in = new Scanner(System.in);
+        float f = in.nextFloat();
+        float x = (float) 5/9;
+        float c = (f-32) * (float) x;
+        System.out.println("In celsius, " + f + " degrees fahrenheit is " + c);
+    }
+}
