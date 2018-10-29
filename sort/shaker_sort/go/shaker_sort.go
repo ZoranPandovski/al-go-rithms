@@ -1,13 +1,4 @@
-package main
-
-import "fmt"
-
-func main() {
-	dataset := []float32{2, 7, 3, 9, 2, 5, 4, 1, 92, 12, 45, 22, 56, 24, 6.2}
-	sorted := ShakerSort(dataset)
-	fmt.Println(dataset)
-	fmt.Println(sorted)
-}
+package shakersort
 
 func ShakerSort(dataset []float32) []float32 {
 	sorted := make([]float32, len(dataset))
