@@ -7,6 +7,9 @@
   * [ternary search](search/ternary_search)
   * [interpolation search](search/interpolation_search)
   * [best first search](search/best_first_search)
+  * [exponential search](search/exponential_search)
+  * [sublist search](search/sublist_search)
+  * [fibonacci search](search/best_first_search)
 * [Sort](sort)
   * [bubble sort](sort/bubble_sort)
   * [bogo sort](sort/bogo_sort)
@@ -33,9 +36,13 @@
   * [Pigeon Hole sort](sort/pigeonhole_sort)
   * [Sleep sort](sort/sleep_sort)
   * [Stooge sort](sort/stooge_sort)
-  * [Tim sort](sort/timsort)
-  
-  
+  * [Tim sort](sort/tim_sort)
+  * [Pancake sorting](sort/pancake_sort)
+  * [Tree sort](sort/tree_sort)
+  * [strand sort](sort/strand_sort)
+  * [cartesian sort](sort/cartesian_sort)
+  * [Tag sort](sort/tag_sort)
+      
 * [Math](math)
   * [russian peasant](math/russian_peasant)
   * [towers of hanoi](math/towers_of_hanoi)
@@ -68,6 +75,9 @@
   * [automorphic numbers](math/automorphic_numbers)
   * [josepheus_problem](math/josepheus_problem)
   * [fast pow](math/fast_pow)
+  * [nCr Computations](math/nCr_computations)
+  * [Chinese remainder theorem](math/chinese_remainder_theorem)
+  
 * [Cryptography](cryptography)
   * [affine cipher](cryptography/affine_cipher)
   * [autokey cipher](cryptography/autokey_cipher)
