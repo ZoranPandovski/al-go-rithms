@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int countSetBits (int n) {
+    
+    int count = 0;
+    while (n) {
+        n = n & (n - 1);
+        count++;
+    }
+
+    return count;
+}
+
+void main() {
+    int num;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    printf("The number of set bits (ones) in the given number are %d\n", countSetBits(num));
+
+  }
