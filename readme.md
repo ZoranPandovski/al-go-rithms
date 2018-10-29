@@ -47,9 +47,9 @@ Clean example implementations of data structures and algorithms written in diffe
    * [Algorithms](https://www.amazon.in/Algorithms-Robert-Sedgewick/dp/032157351X)
  * **Sites**
    * [Algorithms and Data Structures -Emaxx](https://cp-algorithms.com/algebra/extended-euclid-algorithm.html)
-   * [All Good Tutorials on Codeforces] (http://codeforces.com/blog/entry/57282)
-   * [DS & Algo + Maths + C++] (http://codeforces.com/blog/entry/13529)
-   * [Data Structures and Algorithms] (https://discuss.codechef.com/questions/48877/data-structures-and-algorithms)
+   * [All Good Tutorials on Codeforces](http://codeforces.com/blog/entry/57282)
+   * [DS & Algo + Maths + C++](http://codeforces.com/blog/entry/13529)
+   * [Data Structures and Algorithms](https://discuss.codechef.com/questions/48877/data-structures-and-algorithms)
    * [Algorithms - Tutorials point](https://www.tutorialspoint.com/data_structures_algorithms/index.htm)
    * [Algorithms - Princetone edu](https://algs4.cs.princeton.edu/home/)
    * [Data structures and algorithms - Hackr](https://hackr.io/tutorials/learn-data-structures-algorithms)
