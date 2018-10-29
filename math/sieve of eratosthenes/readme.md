@@ -1,12 +1,5 @@
-The 'Sieve of Eratosthenes' is a simple method used to find prime numbers.
+# Sieve of Erastothenes
+An algorithm used for finding all prime integers less than some positive number n. First create a list of all positive integers from 2 to n. Then, letting p be the first number in the list, repeatedly count up in increments of p and mark each number on that index excluding p itself (2p, 3p, 4p, and so on). p will then take the value of the next unmarked number. After iterating through the whole list, all the numbers that are not marked at the end will be prime.  
 
-1 must be left out from this as it is a factor of every number.
-So take 2 as prime number.
-Then cross of all the integers that are a mutiple of 2.
-Then move to the next number that has not been crossed out - 3
-Then cross of all the integers thata re a multiple of 3.
-
-This must be continued and eventually the prime numbers can be spotted.
-This method can be used for finding prime numbers in any range.
-
-![](https://upload.wikimedia.org/wikipedia/commons/b/b9/Sieve_of_Eratosthenes_animation.gif)
+Illustration: 
+![Image not available.](https://en.wikipedia.org/wiki/File:Sieve_of_Eratosthenes_animation.gif)
