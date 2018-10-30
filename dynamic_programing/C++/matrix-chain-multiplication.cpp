@@ -3,7 +3,7 @@
 #define loop(i,a,b) for(int i=a;i<b;i++)
 using namespace std;
 
-int m[100][100], s[100][100];
+int m[100][100], s[200][100];
 
 void print_optimal_parens(int i, int j) {
     if(i == j)
