@@ -14,8 +14,10 @@ class GFG
   
     public void sort(int array[]) 
     { 
+        
         for (int i = 1; i < array.length; i++) 
         { 
+            //int x from arr[1] until arr[10]
             int x = array[i]; 
   
             // Find location to insert using binary search 
