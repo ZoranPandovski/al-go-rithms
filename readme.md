@@ -31,7 +31,7 @@ Clean example implementations of data structures and algorithms written in diffe
  * Graphical examples would be very helpful too.
  * Don't forget to include tests.
  * Don't remove previous implementations of algorithms. Just add a new file with your own implementation.
- * Beautify and cleanup your code for easier reading
+ * Beautify and cleanup your code for easier reading.
 
 ## Resources
 
@@ -99,7 +99,7 @@ Clean example implementations of data structures and algorithms written in diffe
     * [freeCodeCamp](https://www.freecodecamp.org/)
     * [CodingBat](https://codingbat.com)
     * [CodeGround](https://codeground.in/online-coding-test.html)
-    
+    * [CoderByte](https://coderbyte.com/)
 
 ## License
 
