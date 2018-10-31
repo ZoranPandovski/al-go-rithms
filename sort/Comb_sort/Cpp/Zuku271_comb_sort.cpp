@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 
-constexpr int getSpan(const int span)
+constexpr unsigned int getSpan(const unsigned int span)
 {
     return ((span * 10) / 13 > 1 ? (span * 10) / 13 : 1);
 }
@@ -16,11 +16,11 @@ void swap (T &lhs, T &rhs)
 
 void combSort(std::vector<int> &input, int n)
 {
-    int span = n;
+    unsigned int span = n;
 
     bool hasSwapped = true;
 
-    while (span > 1)
+    while (span > 1 || hasSwapped)
     {
         span = getSpan(span);
         hasSwapped = false;
@@ -34,16 +34,20 @@ void combSort(std::vector<int> &input, int n)
             }
         }
     }
-
-
 }
 
 int main()
 {
-    std::vector<int> a = {8, 4, 1, 56, 3, -44, 23, -6, 78, 0};
-    size_t n = a.size();
+    std::vector<int> a = {15, 4, 1, 9, 3, -8, 23, -6, 563, 0, 5, 7, 10, 65};
+    unsigned int n = a.size();
  
     combSort(a, n);
   
+    for (int t : a)
+    {
+        std::cout << t << ' ';
+    }
+    std::cout << '\n';
+
     return 0;
 }
