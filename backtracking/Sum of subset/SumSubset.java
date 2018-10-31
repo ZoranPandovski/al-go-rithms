@@ -30,7 +30,7 @@ class SumSubset
 		else
 			subs.sub(0, 0, sum);
 
-		System.out.println(v + " Solutions found.");
+		System.out.println(v + " Solutions found.");//return should be given
 	}
 
 	/*
