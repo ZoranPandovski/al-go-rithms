@@ -1,0 +1,21 @@
+void recurReverse(struct Node** head) 
+{ 
+    struct Node* first; 
+    struct Node* last; 
+    
+    if (*head == NULL) 
+       return;    
+  
+    first = *head;   
+    last  = first->next; 
+ 
+    if (last == NULL) 
+       return;    
+  
+    recurReverse(&last); 
+    first->next->next  = first;   
+      
+    first->next  = NULL;           
+  
+    *head = last;               
+} 
