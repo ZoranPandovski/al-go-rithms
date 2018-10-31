@@ -95,7 +95,7 @@ class linkedlist:
         # store pointer to the next of node to be deleted 
         next = temp.next.next
   
-        # remove node from the linked list 
+        # remove nodes from the linked list 
         temp.next = None
   
         temp.next = next
