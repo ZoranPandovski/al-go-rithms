@@ -111,6 +111,35 @@ class LinkedList<T> {
         }
         return false;
     }
+
+    /**
+     * Removes the first item from the list and returns that item.
+     * @return Null<T>
+     */
+    public function shift():Null<T> {
+        if(head == null)    return null;
+
+        var item = head.item;
+        head = head.next;
+
+        if(head == null)    tail = null;
+
+        length--;
+        return item;
+    }
+
+    /**
+     * Calls `fn` for each item of the list.
+     * @param fn function with two arguments, where first arg is an item, second is an index of the item
+     */
+    public function iterate(fn:T->Int->Void) {
+        var curr = head;
+        var i = 0;
+        while(curr != null) {
+            fn(curr.item, i++);
+            curr = curr.next;
+        }
+    }
     
 }
 
