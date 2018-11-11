@@ -7,3 +7,7 @@ Array is one of the important data structure that consists of elements of same t
 
 #### Multi-dimensional (6x4) array:
 ![](https://upload.wikimedia.org/wikibooks/en/1/16/MultidimensionalArray.png)
+
+#### Key information about arrays 
+-Unlike Linkedlist, with arrays all your elements are stored right next to each other
+-Arrays allow fast reads
