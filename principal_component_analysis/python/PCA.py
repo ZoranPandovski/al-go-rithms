@@ -1,3 +1,7 @@
+## PCA >> Principal Component Analysis:
+# [it's a statistical tool, used to reduce the dimensionality of a data set]
+
+
 import numpy as np
 import matplotlib.pyplot as plt
 #%matplotlib inline
