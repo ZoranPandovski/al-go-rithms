@@ -1,0 +1,1 @@
+gcc memAllocation_Buddy_Method.c -lm -o Demo
