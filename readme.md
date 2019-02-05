@@ -10,7 +10,7 @@
 [![Waffle.io - Columns and their card count](https://badge.waffle.io/ZoranPandovski/al-go-rithms.svg?columns=all)](https://waffle.io/ZoranPandovski/al-go-rithms)
 [![Join the chat at https://gitter.im/al-go-rithms](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/al-go-rithms?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-# Data Structures and Algorithms [Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Algorithms written id different programing languages&url=https://github.com/ZoranPandovski/al-go-rithms)
+# Data Structures and Algorithms [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Algorithms%20written%20in%20different%20programing%20languages&url=https://github.com/ZoranPandovski/al-go-rithms&via=algorithms&hashtags=algorithms,datastructures,python,java,c,cpp,php,javascript)
 
 Clean example implementations of data structures and algorithms written in different languages.
 
