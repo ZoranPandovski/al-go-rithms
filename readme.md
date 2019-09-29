@@ -7,7 +7,6 @@
 [![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/ZoranPandovski)
 [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ZoranPandovski)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/ZoranPandovski/al-go-rithms/issues)
-[![Waffle.io - Columns and their card count](https://badge.waffle.io/ZoranPandovski/al-go-rithms.svg?columns=all)](https://waffle.io/ZoranPandovski/al-go-rithms)
 [![Join the chat at https://gitter.im/al-go-rithms](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/al-go-rithms?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 # Data Structures and Algorithms [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Algorithms%20written%20in%20different%20programing%20languages&url=https://github.com/ZoranPandovski/al-go-rithms&via=algorithms&hashtags=algorithms,datastructures,python,java,c,cpp,php,javascript)
