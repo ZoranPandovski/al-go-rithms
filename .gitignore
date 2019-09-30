@@ -243,3 +243,6 @@ Temporary Items
 # Jupyther Notebook
 .ipynb_checkpoints
 */.ipynb_checkpoints/*
+
+#stale bot
+.project
