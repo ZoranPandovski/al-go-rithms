@@ -1,0 +1,30 @@
+@anarchymonkey
+Given the contents in the file
+
+
+Bday,Aniket
+Bday,Animesh
+Wedding,August
+
+
+Count the Words before Each comma ',' with new lines as seperators
+
+FOR EXAMPLE:
+
+
+Input:
+
+
+Bday,Aniket
+Bday,Animesh
+Wedding,August
+
+
+Output:
+
+Bday 2
+Wedding 1
+
+										Happy Coding Folks
+
+--------------------------------------------------------------------------------------------****-------------------------------------------------------------------------------

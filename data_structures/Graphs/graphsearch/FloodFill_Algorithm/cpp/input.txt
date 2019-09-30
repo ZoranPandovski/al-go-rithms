@@ -1,0 +1,6 @@
+5 5
+S X X X X
+X O O O O
+X X O O O
+X X X X O
+X X X X D

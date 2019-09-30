@@ -1,0 +1,10 @@
+The Advanced Encryption Standard (AES), also known by its original name Rijndael (Dutch pronunciation: [ˈrɛindaːl]),[5][6] is a specification for the encryption of electronic data established by the U.S. National Institute of Standards and Technology (NIST) in 2001.[7]
+
+AES is a subset of the Rijndael cipher[6] developed by two Belgian cryptographers, Vincent Rijmen and Joan Daemen, who submitted a proposal to NIST during the AES selection process.[8] Rijndael is a family of ciphers with different key and block sizes.
+
+For AES, NIST selected three members of the Rijndael family, each with a block size of 128 bits, but three different key lengths: 128, 192 and 256 bits.
+
+AES has been adopted by the U.S. government and is now used worldwide. It supersedes the Data Encryption Standard (DES),[9] which was published in 1977. The algorithm described by AES is a symmetric-key algorithm, meaning the same key is used for both encrypting and decrypting the data.
+
+
+Please https://en.wikipedia.org/wiki/Advanced_Encryption_Standard

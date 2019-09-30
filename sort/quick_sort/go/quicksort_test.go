@@ -17,7 +17,7 @@ func equal(a, b []int) bool {
 	return true
 }
 
-func TestHeapSort(t *testing.T) {
+func TestQuickSort(t *testing.T) {
 	testCases := [][]int{
 		{2, 1, 2, 7, 88, 4, 3, 6},
 		{-2, 1, -2, -40, 10, 11, 48, -44, 0, 21, -121, 5066},

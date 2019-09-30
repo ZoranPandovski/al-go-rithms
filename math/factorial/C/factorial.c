@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-long long fact(long long x)
+unsigned long long fact(unsigned long long x)
 {
 	if(x > 1)
 		return x*fact(x-1);
@@ -9,9 +9,9 @@ long long fact(long long x)
 
 int main(void)
 {
-	int n, t, s=0, r;
+	unsigned int n, t, s=0, r;
 	printf("Enter the number: ");
-	scanf("%d", &n);
-	printf("\nFactorial of the number is: %lld",fact(n));
+	scanf("%u", &n);
+	printf("\nFactorial of the number is: %llu",fact(n));
 	return 0;
 }
