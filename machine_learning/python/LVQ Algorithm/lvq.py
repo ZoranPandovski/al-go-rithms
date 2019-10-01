@@ -6,7 +6,6 @@ def euclidean(x,y):
 class LVQClassifier():
     '''Classifier for the LVQ Algorithm'''
     def __init__(self, score_func, eta = 0.2):
-        
         # function to use for finding
         # distance to neurons
         self.score = score_func
@@ -31,7 +30,17 @@ class LVQClassifier():
     
     
     def train(self,train,labels,epochs = 5):
-        '''Train classifier with train set, labels for train set and set amount of epochs'''
+        '''Train classifier with train set, labels for train set and set amount of epochs.
+        Neural net has as many neurons as there are classes.
+
+        Process is:
+        1)Initialize neuron weights randomly
+        2)For every sample:
+            2.1) Find weight with smallest distance from sample
+            2.2) If neuron class is the same as the sample class,
+            add the quantity η*(sample - winner_weight) to the winner weight,
+            else subtract it
+        A rounding step is added to avoid floating point overflow errors.'''
         # for empty train set, do nothing
         if  train.size == 0 or labels.size == 0:
             return
