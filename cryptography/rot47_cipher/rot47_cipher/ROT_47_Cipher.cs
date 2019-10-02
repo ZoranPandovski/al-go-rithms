@@ -10,7 +10,7 @@ namespace rot47_cipher
             
             foreach (char c in text)
             {
-                if ((int) c >= 32 && (int) c <= 126 || (int) c == 2)
+                if ((int) c >= 32 && (int) c <= 126)
                 {
                     if (Char.IsWhiteSpace((char) c))
                     {
