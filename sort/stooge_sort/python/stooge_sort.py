@@ -27,7 +27,7 @@ def stoogesort(array, l, h):
 
 def main():
     input_array = [2, 4, 5, 3, 1]
-    sorted_array = input_array
+    sorted_array = input_array.copy()
 
     stoogesort(sorted_array, 0, len(input_array) - 1)
 
