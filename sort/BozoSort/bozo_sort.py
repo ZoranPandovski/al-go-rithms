@@ -14,7 +14,7 @@ def sort_check(array):
         if array[i]>array[i+1]:
             return False
     return True
-def bozo_sort(array):
+def bozo_sort_algo(array):
     while not sort_check(array):
         i,j=random.randint(0,len(array)-1),random.randint(0,len(array)-1)
         array[i],array[j]=array[j],array[i]
@@ -24,4 +24,10 @@ n=int(input('Enter Size of Array: '))
 arr=[input('Enter Element %d : '%(i+1)) for i in range(n)]
 
 print ('Original Array : ',arr)
-print ('Sorted Array : ',bozo_sort(arr))
+print ('Sorted Array : ',bozo_sort_algo(arr))
+
+def test():
+    arr=[54,78,95,63,12,221,1,0,-7,8,35,15,7,66,421,798]
+    print ('Original Array : ',arr)
+    print ('Sorted Array : ',bozo_sort_algo(arr))
+test()
