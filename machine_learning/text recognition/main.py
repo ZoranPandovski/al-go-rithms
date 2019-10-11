@@ -47,8 +47,3 @@ for i in range(30):
 	plt.matshow(d, cmap=plt.get_cmap('gray'))
 	plt.show()
 	time.sleep(1)
-
-#d=np.resize(X[0][2:402],(20,20))
-#plt.matshow(d, cmap=plt.get_cmap('gray'))
-#plt.show()
-#np.savetxt('result.txt',t)
