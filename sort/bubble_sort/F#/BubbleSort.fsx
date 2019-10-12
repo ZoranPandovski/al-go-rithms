@@ -1,8 +1,8 @@
-let bubble_sort (xs: 'a list) =
-    let rec inner acc sorted (xs: 'a list) =
-        match xs, sorted with
+let bubbleSort (lst: 'a list) =
+    let rec bubble acc sorted (lst: 'a list) =
+        match lst, sorted with
         | [], true -> acc |> List.rev
-        | [], false -> acc |> List.rev |> inner [] true
-        | x::y::t, _ when x > y -> inner (y::acc) false (x::t)
-        | h::t, state -> inner (h::acc) state t
-    inner [] false xs
+        | [], false -> acc |> List.rev |> bubble [] true
+        | x::y::t, _ when x > y -> bubble (y::acc) false (x::t)
+        | h::t, state -> bubble (h::acc) state t
+    bubble [] false lst
