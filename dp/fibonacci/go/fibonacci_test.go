@@ -1,4 +1,4 @@
-package main
+package fibs
 
 import (
 	"math/big"
@@ -24,8 +24,8 @@ func TestFibonacci(t *testing.T) {
 			if !ok {
 				t.Fatalf("Bad expected value in test case: %s", tc.expected)
 			}
-			res := fib(tc.n)
-			if res != expected {
+			res := Fib(tc.n)
+			if res.Cmp(expected) != 0 {
 				t.Fatalf("want %v, got %v\n", tc.expected, res)
 			}
 		})
