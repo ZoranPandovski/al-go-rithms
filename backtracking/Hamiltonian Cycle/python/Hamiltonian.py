@@ -76,21 +76,3 @@ class Graph():
 		for vertex in path: 
 			print vertex, 
 		print path[0], "\n"
-
-# Driver Code 
-
-g1 = Graph(5) 
-g1.graph = [ [0, 1, 0, 1, 0], [1, 0, 1, 1, 1], 
-			[0, 1, 0, 0, 1,],[1, 1, 0, 0, 1], 
-			[0, 1, 1, 1, 0], ] 
-
-# Print the solution 
-g1.hamCycle(); 
-
-g2 = Graph(5) 
-g2.graph = [ [0, 1, 0, 1, 0], [1, 0, 1, 1, 1], 
-		[0, 1, 0, 0, 1,], [1, 1, 0, 0, 0], 
-		[0, 1, 1, 0, 0], ] 
-
-# Print the solution 
-g2.hamCycle();
