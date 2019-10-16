@@ -1,4 +1,4 @@
-let insertion_sort (lst: 'a list) =
+let insertionSort (lst: 'a list) =
     let rec insert (lst: 'a list) elm =
         match lst with
         | [] -> [elm]
