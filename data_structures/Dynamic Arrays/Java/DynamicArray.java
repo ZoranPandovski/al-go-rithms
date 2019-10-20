@@ -37,6 +37,12 @@ class DynamicArrayImplementation {
 		return elements.length;
 	
 	}
+	public void displayArray() {
+		for(int i = 0; i<size; i++) {
+			System.out.print(elements[i]+" ");
+		}
+		System.out.println("");
+	}
 }
 class DynamicArray{
 	public static void main(String[] args) {

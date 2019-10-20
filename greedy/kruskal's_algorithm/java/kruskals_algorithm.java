@@ -363,4 +363,6 @@ class DisjointSet {
   public DisjointSet(List<Vertex> vertices) {
     this.rootNodes = new ArrayList<Node>(vertices.size());
     makeSets(vertices);
+  }
+  
 }

@@ -3,7 +3,7 @@ def binary_search(list, num):
     first = 0
     last = len(list) - 1
     while first <= last and not found:
-        middle = (first + last)//2
+        middle = (first + (last-first))//2
         if list[middle] == num:
             found = True
         elif list[middle] < num:
