@@ -1,44 +1,51 @@
 #include <iostream>
+#include <string>
+#include <vector>
 
 using namespace std;
-struct node
-{
-    int data;
-    node*next;
+
+template<class T>
+class Stack {
+public:
+	Stack();
+
+	void push(T x);
+	T pop();
+	bool isEmpty();
+	T peek();
+private:
+	std::vector<T> v;
 };
 
- bool isempty(node*head)
-    {
-        if (head== NULL)
-        {
-            return true;
-        }
-        else
-            {
-                return false;
-            }
+template <class T>
+Stack<T>::Stack() {
+}
 
-    }
-    void insertelement(int x, node &*head,node &*last){ // & because i will change the address
-        // pointer for head and another for tail
-    node *temp = new node; // pointer of type node points to new nodes
-    temp -> data = x;       // using pointer to access node and data
-    temp -> next = NULL; // puts node at the end always
-    if (isempty(head)){
-     head = temp;
-     last = temp;
-    }
-    else{
-     last -> next = temp; // make it point at temp
-     last =temp;
-    }
-    }
-int main()
-{
-    node *head= NULL;
-    node *tail= NULL;
-    isempty(head);
-    cout<<(isempty(head));
+template <class T>
+bool Stack<T>::isEmpty() {
+	return v.empty();
+}
 
-    return 0;
+template <class T>
+void Stack<T>::push(T x) {
+	v.push_back(x);
+}
+
+template <class T>
+T Stack<T>::pop() {
+	T val = v.back();
+	v.pop_back();
+	return val;
+}
+
+template <class T>
+T Stack<T>::peek() {
+	return v.back();
+}
+
+int main() {
+	Stack<int> s;
+	s.push(4);
+	cout<<s.peek();
+	return 0;
 }
