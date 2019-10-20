@@ -14,6 +14,10 @@ Queue.prototype.enqueue = function(value) {
 };
 
 Queue.prototype.dequeue = function() {
+  if (this.count() === 0) {
+    // no element in the queue
+    return "No element is present in the queue to dequeue.";
+  }
   var element = this._storage[this._head];
   delete this._storage[this._head];
   if (this._head < this._tail) this._head++;
@@ -22,11 +26,23 @@ Queue.prototype.dequeue = function() {
 
 Queue.prototype.peek = function() {
   return this._storage[this._head];
-}
+};
 
 Queue.prototype.count = function() {
   return this._tail - this._head;
 };
+
+Queue.prototype.clear = function() {
+  this._storage = {};
+  this._head = 0;
+  this._tail = 0;
+};
+
+Queue.prototype.getCapacity = function() {
+  return this._capacity;
+};
+
+module.exports = Queue;
 
 // var myQueue = new Queue(3);
 // console.log(myQueue.enqueue('a'), 'should be 1');

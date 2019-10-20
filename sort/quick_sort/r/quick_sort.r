@@ -1,0 +1,26 @@
+partition<-function(low,high){
+  pivot<-arr[high] 
+  i=low-1
+  for(j in low:(high-1)){
+    if(arr[j]<=pivot){
+      i=i+1
+      temp<-arr[i]
+      arr[i]<<-arr[j]
+      arr[j]<<-temp
+    }
+  }
+  temp<-arr[i+1]
+  arr[i+1]<<-arr[high]
+  arr[high]<<-temp
+  return(i+1)
+}
+sort<-function(low,high){
+  if(low<high){
+  pi<-partition(low,high)
+  sort(low,pi-1)
+  sort(pi+1,high)
+}
+}
+arr<-c(10,80,30,90,40,50,70)
+sort(1,length(arr))
+print(arr)
