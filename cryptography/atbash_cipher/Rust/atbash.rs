@@ -1,5 +1,5 @@
-fn encode_decode(plain: &str) -> String {
-    atbash(plain).collect()
+fn encode_decode(text: &str) -> String {
+    atbash(text).collect()
 }
 
 fn transcode_char(c: char) -> char {
