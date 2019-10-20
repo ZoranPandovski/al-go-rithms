@@ -1,17 +1,28 @@
-24® Game
-```
-'''24® Game''' is a competitive, arithmetical card game aimed predominantly at primary school and high school pupils. Although it can be played informally, the game was organised and operated within Southern Africa in a series of interschool, geographically increasing tournaments. The game experienced its peak during the 1990s, and is now no longer produced or played in any official manner.
-The modern version of the ''24® Game'' was invented and copyrighted by engineer and inventor [Robert Sun] in 1988. The first edition of the game, Single Digits, began appearing in schools in 1989. The 24® game is copyrighted, and is produced by Pennsylvania-based Suntex International Inc.
-Eight other editions of the game would follow. The project aimed to introduce pupils and encourage their participation in mathematics via entertaining activities including the 24® Game as a mathematics teaching tool.
-```
-Card Description
-```
-The cards are double-sided, thin cardboard squares with sides measuring approximately 10&nbsp;cm. The conventional cards bear the Old Mutual logo in the centres of each side, however with the green and white inverted on one side to differentiate. Later variations of the cards bore red, blue and black logos.
-The conventional card displays four numbers, each a single digit from 1 to 9. Numbers may repeat. The cards are designed to be viewed from any angle.
-The card difficulty is ranked by displaying one, two or three dots in each corner of the card in white, red and yellow respectively, as the difficulty increases.
-```
-Rules
-```
-Although official rules were later published, the game evolved with common basic rules, and many smaller variations.
-Any number of competitors (usually four at most) sit around a table. The cards are placed, one at a time, in the centre of the table. The first person to cover the card with their hand and claim to have the solution would then be given the first opportunity to give their answer.
-```
+# 24® Game
+
+The 24 Game is an arithmetical card game in which the objective is to find a way to manipulate four integers so that the end result is 24. [Wikipedia](https://www.google.com)
+
+## Task 
+
+Write a program that randomly chooses and displays four digits, each from 1 ──► 9 (inclusive) with repetitions allowed.
+
+The program should prompt for the player to enter an arithmetic expression using just those, and all of those four digits, used exactly once each. 
+The program should check then evaluate the expression.
+
+The goal is for the player to enter an expression that (numerically) evaluates to 24.
+
+* Only the following operators/functions are allowed: multiplication, division, addition, subtraction
+* Division should use floating point or rational arithmetic, etc, to preserve remainders.
+* Brackets are allowed, if using an infix expression evaluator.
+* Forming multiple digit numbers from the supplied digits is disallowed. (So an answer of 12+12 when given 1, 2, 2, and 1 is wrong).
+* The order of the digits when given does not have to be preserved.
+
+
+Source: [http://rosettacode.org/wiki/24_game](http://rosettacode.org/wiki/24_game)
+
+### Example
+For the card with the numbers 4, 7, 8, 8, a possible solution is **( 7 − ( 8 ÷ 8 ) ) × 4 = 24**
+
+### Contributing
+Before making a PR follow guidelines [here](/CONTRIBUTING)
+

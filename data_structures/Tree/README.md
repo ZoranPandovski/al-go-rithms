@@ -1,5 +1,6 @@
 # Tree
-_From [Wikipedia](https://en.wikipedia.org/wiki/Linked_list), the free encyclopedia_
+_From [Wikipedia](https://en.wikipedia.org/wiki/Tree_(data_structure)), the free encyclopedia_
+
 ### About
 In computer science, a tree is a widely used abstract data type (ADT)—or data structure implementing this ADT—that simulates a hierarchical tree structure, with a root value and subtrees of children with a parent node, represented as a set of linked nodes.
 
