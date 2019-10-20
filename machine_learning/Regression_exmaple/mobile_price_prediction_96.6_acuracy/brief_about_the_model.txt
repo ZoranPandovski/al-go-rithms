@@ -1,0 +1,7 @@
+Explanation of the model used for classification:
+1-Have used Logistic Regression model for the classification purpose
+2-used Libraries like numpy,sklearn,csv for mathematical purpose,preprocessing ,and working with the CSV respectively.
+3-Tried to scale the feature for better model training and development and giving each feature proper significance.
+4-Tried to change the parameters to get a better result.
+
+Dataset is available on kaggle: https://www.kaggle.com/iabhishekofficial/mobile-price-classification

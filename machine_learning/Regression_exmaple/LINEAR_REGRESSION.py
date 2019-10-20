@@ -1,6 +1,7 @@
 import numpy as np 
 
 import matplotlib.pyplot as plt 
+from sklearn.linear_model import LinearRegression
 
   
 
@@ -72,7 +73,14 @@ def plot_regression_line(x, y, b):
 
     plt.show() 
 
-  
+def check(x,y):
+    lr = LinearRegression()
+    lr.fit(x,y)
+    y_pred = lr.predict(x)
+    plt.plot(x,y_pred)
+    plt.scatter(x,y)
+    plt.show()
+
 
 def main(): 
 
@@ -96,10 +104,23 @@ def main():
 
     # plotting regression line 
 
-    plot_regression_line(x, y, b) 
+    plot_regression_line(x, y, b)
+    
+    #now check if the plot we have gotten matches with the plot we get by using the sklearn library
+    #but first we need to reshape x array as it should be a matrix
+    x = x.reshape((len(x),1)
+    check(x,y)
+    
+    
+                  
+
+
+
 
   
 
 if __name__ == "__main__": 
 
     main() 
+    
+

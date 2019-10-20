@@ -1,0 +1,19 @@
+class:
+
+main
+{
+	var value = 123
+	PRINT "Sum of " .. String.forInteger(value) .. " is " .. String.forInteger(sumOfDigits(value))
+	return 0
+}
+
+func sumOfDigits(value as int) static as int
+{
+	var sum = 0
+	var i = value
+	while i > 0 {
+		sum += i%10
+		i /= 10
+	}
+	return sum
+}
