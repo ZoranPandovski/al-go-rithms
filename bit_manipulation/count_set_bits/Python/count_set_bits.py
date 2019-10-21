@@ -14,6 +14,6 @@ Binary representation of of 7 is "10111" and number of set bits(ones) is 4.
 
 """
 
-num=7
+num=10
 count=(bin(num)[2::]).count('1')
-print(count)
+print("Number of set bits is :",count)
