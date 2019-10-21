@@ -11,7 +11,7 @@ const arrays = [
     }
 ]
 
-describe('Sort the arrays using Bubble Sort', () => {
+describe('Find prime numbers using sieve of eratosthenes', () => {
 
     arrays.forEach(array => {
 
