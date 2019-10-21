@@ -1,4 +1,4 @@
-const { sieveOfEratosthenes } = require('./sieveOfEratosthenes');
+const sieveOfEratosthenes = require('./sieveOfEratosthenes');
 
 const arrays = [
     {

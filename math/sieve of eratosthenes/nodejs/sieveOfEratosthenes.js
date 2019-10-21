@@ -28,4 +28,4 @@ function sieveOfEratosthenes(n) {
     return prime_list
 }
 
-module.exports = { sieveOfEratosthenes };
+module.exports = sieveOfEratosthenes;
