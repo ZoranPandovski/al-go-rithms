@@ -67,6 +67,33 @@ public class ArraysTwoDimensional {
         }
     }
 
+    static void rotateClockWise() {
+          int length = num.length-1;
+           
+          for (int i = 0; i <= (length)/2; i++) {
+              for (int j = i; j < length-i; j++) {
+                
+               //Coordinate 1
+               int p1 = num[i][j];
+                
+               //Coordinate 2
+               int p2 = num[j][length-i];
+                
+               //Coordinate 3
+               int p3 = num[length-i][length-j];
+                
+               //Coordinate 4
+               int p4 = num[length-j][i];
+                
+               //Swap values of 4 coordinates.
+               num[j][length-i] = p1;
+               num[length-i][length-j] = p2;
+               num[length-j][i] = p3;
+               num[i][j] = p4;
+              }
+          }
+    }
+
     public static void main(String[] args) {
         Insertion();
         Traverse();

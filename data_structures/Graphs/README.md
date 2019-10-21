@@ -1,4 +1,5 @@
-##Graph
+## Graph
+
 A graph is a pictorial representation of a set of objects where some pairs of objects are connected by links. The interconnected objects are represented by points termed as vertices, and the links that connect the vertices are called edges.
 
 Formally, a graph is a pair of sets (V, E), where V is the set of vertices and E is the set of edges, connecting the pairs of vertices
@@ -13,3 +14,6 @@ Mathematical graphs can be represented in data structure. We can represent a gra
 
 * Path - Path represents a sequence of edges between the two vertices. In the following example, ABCD represents a path from A to D.
 
+Example ([source](https://commons.wikimedia.org/wiki/File:6n-graf.svg)):
+
+![](https://upload.wikimedia.org/wikipedia/commons/5/5b/6n-graf.svg)
