@@ -1,4 +1,4 @@
-public class BinarySearch 
+_public class gbasupi_BinarySearch
 { 
 
     public static int binarySearch(int arr[], int l, int r, int x) 
