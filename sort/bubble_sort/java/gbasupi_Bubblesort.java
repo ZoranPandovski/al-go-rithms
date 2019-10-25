@@ -1,4 +1,4 @@
-public class Bubblesort
+public class gbasupi_Bubblesort
 {
     //method for bubble sorting
     public static void BubbleSort()
