@@ -1,4 +1,4 @@
-public class SelectionSort
+public class gbasupi_SelectionSort
 {
     public static void SelectionSort()
     {
