@@ -5,7 +5,7 @@ Created on Wed Apr 12 14:54:09 2017
 @author: venkatraman
 """
 
-# Dependencies
+#    Dependencies:
 import smtplib
 import email.message
 from bs4 import BeautifulSoup
@@ -17,7 +17,8 @@ import sys
 reload(sys)  
 sys.setdefaultencoding('utf8')
 
-# Routine to scrape the day's comics from a site and add to HTML mail
+#     Routine to scrape the day's comics from a site and add to HTML mail
+# routine is:
 def getComics():
     page = urllib2.urlopen("http://comics.azcentral.com/")
     soup = BeautifulSoup(page, "lxml")
