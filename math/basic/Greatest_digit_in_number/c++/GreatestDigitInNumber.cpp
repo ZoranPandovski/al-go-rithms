@@ -6,7 +6,7 @@ char Greatest_digit_in_number(string number);
 int main(){
    string number;
    cin>>number;
-   cout<<Greatest_digit_in_number(number)<<endl;
+   cout<<"The Greatest digit in this number is: "<<Greatest_digit_in_number(number)<<endl;
 return 0;
 }
 
