@@ -41,15 +41,18 @@ class Graph:
         for i in range(self.V):
             print(self.graph[i])
 
+def main():
+    g = Graph(4)
+    g.add_edge(0, 3, 10)
+    g.add_edge(2, 3, 1)
+    g.add_edge(0, 1, 5)
+    g.add_edge(1, 2, 3)
+    g.add_edge(3, 1, 7)
+    g.add_edge(2, 0, 9)
 
-g = Graph(4)
-g.add_edge(0, 3, 10)
-g.add_edge(2, 3, 1)
-g.add_edge(0, 1, 5)
-g.add_edge(1, 2, 3)
-g.add_edge(3, 1, 7)
-g.add_edge(2, 0, 9)
+    g.solve()
 
-g.solve()
+    g.print_matrix()
 
-g.print_matrix()
+if __name__ == '__main__':
+    main()

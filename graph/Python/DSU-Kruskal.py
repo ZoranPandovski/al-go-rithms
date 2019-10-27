@@ -30,32 +30,35 @@ class Node:
             node1.rank += 1
 
 
+def main():
+    n = int(input("Enter number of nodes:"))
+    node = Node()
+    node.makeset(n)
+    edges = int(input("Enter number of edges:"))
+    lis = []
+    mst = []
+    for i in range(edges):
+        x, y, w = input().split(' ')
+        lis.append((int(w), int(x), int(y)))
 
-n = int(input("Enter number of nodes:"))
-node = Node()
-node.makeset(n)
-edges = int(input("Enter number of edges:"))
-lis = []
-mst = []
-for i in range(edges):
-    x, y, w = input().split(' ')
-    lis.append((int(w), int(x), int(y)))
+    lis.sort()
+    print (lis)
 
-lis.sort()
-print (lis)
+    for j in range(edges):
+        u = lis[j][1]
+        v = lis[j][2]
+        a = node.findset(u)
+        b = node.findset(v)
+        # print (str(u) + " parent = " + str(node.nodes[u].parent.index))
+        # print (str(v) + " parent = " + str(node.nodes[v].parent.index))
+        if a != b:
+            node.union(a, b)
+            mst.append((u, v))
+        # print (str(u) + " parent = " + str(node.nodes[u].parent.index))
+        # print (str(v) + " parent = " + str(node.nodes[v].parent.index))
+        # print ("*****")
 
-for j in range(edges):
-    u = lis[j][1]
-    v = lis[j][2]
-    a = node.findset(u)
-    b = node.findset(v)
-    # print (str(u) + " parent = " + str(node.nodes[u].parent.index))
-    # print (str(v) + " parent = " + str(node.nodes[v].parent.index))
-    if a != b:
-        node.union(a, b)
-        mst.append((u, v))
-    # print (str(u) + " parent = " + str(node.nodes[u].parent.index))
-    # print (str(v) + " parent = " + str(node.nodes[v].parent.index))
-    # print ("*****")
+    print (mst)
 
-print (mst)
+if __name__ == '__main__':
+    main()
