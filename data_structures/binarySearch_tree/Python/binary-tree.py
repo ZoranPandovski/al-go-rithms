@@ -59,16 +59,13 @@ class Tree:
     def search(self, value):
         return self._search(self.root, value)
 
-    def _getMin(self, current):
+    def getMin(self, current):
         if current == None:
             return None
         if current.left == None:
             return current
         else:
-            return self._getMin(current.left)
-
-    def getMin(self):
-        return self._getMin(self.root)
+            return self.getMin(current.left)
 
     def _deleteNode(self, current, value):
         if current == None:
@@ -103,20 +100,3 @@ class Tree:
 
     def prtTree(self):
         self._prtTree(self.root)
-
-def main():
-    t = Tree()
-    t.addNode(10)
-    t.addNode(5)
-    t.addNode(1)
-    t.addNode(7)
-    t.addNode(2)
-    assert(t.getMin().key == 1)
-    t.deleteNode(t.getMin().key)
-    assert(t.getMin().key == 2)
-    t.deleteNode(t.getMin().key)
-    assert(t.getMin().key == 5)
-
-
-if __name__ == '__main__':
-    main()
