@@ -2,6 +2,11 @@ language: python
 python:
   - "3.7"
 
+# Limit to run only on master.
+branches:
+  only:
+  - master
+
 script:
   - python stats.py 
       --json-key j5r1c 
