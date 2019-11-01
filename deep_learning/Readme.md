@@ -1,3 +1,5 @@
+# Deep Learning and Artificial Neural Networks
+
 ## Neural Networks
 Artificial neural networks (ANN) or connectionist systems are computing systems vaguely inspired by the biological neural networks that constitute animal brains.[1] Such systems "learn" to perform tasks by considering examples, generally without being programmed with any task-specific rules. For example, in image recognition, they might learn to identify images that contain cats by analyzing example images that have been manually labeled as "cat" or "no cat" and using the results to identify cats in other images. They do this without any prior knowledge about cats, e.g., that they have fur, tails, whiskers and cat-like faces. Instead, they automatically generate identifying characteristics from the learning material that they process.
 
@@ -8,3 +10,16 @@ In common ANN implementations, the signal at a connection between artificial neu
 The original goal of the ANN approach was to solve problems in the same way that a human brain would. However, over time, attention moved to performing specific tasks, leading to deviations from biology. Artificial neural networks have been used on a variety of tasks, including computer vision, speech recognition, machine translation, social network filtering, playing board and video games and medical diagnosis.
 
 ![Illus](https://cdn-images-1.medium.com/max/800/1*Gh5PS4R_A5drl5ebd_gNrg@2x.png)
+
+
+## Deep Learning
+
+We have seen that ANNs mimic the architecture of the human brain. Hence training the model is akin to how humans learn, hence the term 'learning'.  **But what makes it deep?**
+
+The true power of an ANN comes from the level of abstraction obtained by using many layers:
+
+![The number of layers in an artificial neural network determine the model's depth; the maxmum number of neurons in a layer is its width (image: Ra Inta, 2018). ](ANN_architecture_intro.png)
+
+The number of layers that aren't input or output layers are referred to as _hidden_ layers. The greater the number of hidden layers, the deeper the model. An ANN currently may be considered 'deep' if there are six or more layers.
+
+Even a simple ANN architecture is capable of approximating any arbitrary function to incredible precision---they are sometimes referred to as a type of 'universal approximator'. However, the level of abstraction capable from a legitimately deep learning algorithm is truly astounding.
