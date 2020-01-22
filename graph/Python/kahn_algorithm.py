@@ -56,32 +56,34 @@ class Graph:
             print top_order
 
         
-
-       
-	
-#Normal case
-g= Graph(6)
-g.addEdge(5, 2);
-g.addEdge(5, 0);
-g.addEdge(4, 0);
-g.addEdge(4, 1);
-g.addEdge(2, 3);
-g.addEdge(3, 1);
- 
-print "Following is a Topological Sort of the given graph"
-g.topological_sort()
+def main():
+    #Normal case
+    g= Graph(6)
+    g.addEdge(5, 2);
+    g.addEdge(5, 0);
+    g.addEdge(4, 0);
+    g.addEdge(4, 1);
+    g.addEdge(2, 3);
+    g.addEdge(3, 1);
+     
+    print "Following is a Topological Sort of the given graph"
+    g.topological_sort()
 
 
 
-# Cyclic graph
-g2= Graph(6)
-g2.addEdge(5, 2);
-g2.addEdge(2, 5);
-g2.addEdge(4, 0);
-g2.addEdge(4, 1);
-g2.addEdge(2, 3);
-g2.addEdge(3, 1);
-g2.addEdge(5, 0);
- 
-print "Following is a Topological Sort of the given graph"
-g2.topological_sort()
+    # Cyclic graph
+    g2= Graph(6)
+    g2.addEdge(5, 2);
+    g2.addEdge(2, 5);
+    g2.addEdge(4, 0);
+    g2.addEdge(4, 1);
+    g2.addEdge(2, 3);
+    g2.addEdge(3, 1);
+    g2.addEdge(5, 0);
+     
+    print "Following is a Topological Sort of the given graph"
+    g2.topological_sort()
+
+
+if __name__ == '__main__':
+    main()

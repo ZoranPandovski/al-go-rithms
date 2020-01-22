@@ -43,3 +43,15 @@ def EK(graph, source, sink):
             graph[v][u] += path_flow
             v = parent[v]
     return max_flow
+
+def main():
+    graph = {}
+    graph[0] = [0, 1, 0, 0]
+    graph[1] = [0, 0, 1, 0]
+    graph[2] = [0, 0, 0, 1]
+    graph[3] = [0, 0, 0, 0]
+    max_flow = EK(graph, 0, 3)
+    assert(max_flow == 1)
+
+if __name__ == '__main__':
+    main()
