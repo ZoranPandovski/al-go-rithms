@@ -1,7 +1,9 @@
 ### Merge sort
 
-Merge sort is a sorting technique based on divide and conquer technique. It is one of the most respected algorithms. Merge sort first divides the array into equal halves and then combines them in a sorted manner.
+Merge sort is a "divide and conquer" sorting element that recursively splits the input into two halves, sorts them, and then combines the two arrays. It is widely used for its efficiency and simple implementation. 
 
-#### A graphical example of merge sort
+The worst-case and average complexities are both O(_n_ log _n_), making it one of the most efficient sorting algorithms. It is also one of the more efficient for sorting linked lists. 
+
+#### Visualization
 
 ![](https://brainmass.com/hubsimg/1492485/BMmergesort.gif)

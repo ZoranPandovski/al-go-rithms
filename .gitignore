@@ -3,11 +3,16 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+#vscode
+.vscode
+
 # C extensions
 *.so
 
 # Distribution / packaging
+.idea/
 .Python
+.idea/
 env/
 build/
 develop-eggs/
@@ -241,3 +246,6 @@ Temporary Items
 # Jupyther Notebook
 .ipynb_checkpoints
 */.ipynb_checkpoints/*
+
+#stale bot
+.project

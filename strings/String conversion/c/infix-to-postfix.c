@@ -3,6 +3,7 @@
 
 
 #include<stdio.h>
+#include<string.h>
 #include<stdlib.h>
 #include<ctype.h>
 #define MAX 100
@@ -56,7 +57,7 @@ void main()
     postfix[j++]=pop();
   }
   postfix[j]='\0';
-  printf("\n The postfix Expression is : \n ")
+  printf("\n The postfix Expression is : \n ");
   printf("%s\n",postfix);
 }
 

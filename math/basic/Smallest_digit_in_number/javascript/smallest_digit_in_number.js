@@ -1,3 +1,4 @@
+
 function smallest_digit_in_number(num) {
 	num = num.toString();
 	var a = num.split("");
@@ -14,3 +15,5 @@ function smallest_digit_in_number(num) {
 var number = 37847862;
 var digit = smallest_digit_in_number(number);
 console.log(digit); // Expected output: 2
+//Another example
+const smallestDigitInNumber = n => n.toString().split('').reduce((min, current) => min = min > current ? current : min, 9);

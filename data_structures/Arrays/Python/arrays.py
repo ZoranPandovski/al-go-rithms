@@ -16,11 +16,14 @@ The below example will use the following list to show commmon list operations
 my_list = []
 
 # Inserting into a list - the append method is used to insert an item at the end of a list
-my_list.append(1)
+"""my_list.append(1)
 my_list.append(2)
 my_list.append(3)
 my_list.append(4)
 my_list.append(5)
+"""
+for i in range(len(list_with_values)-1):
+    my_list.append(list_with_values[i])
 print(my_list)  # Prints -> [1, 2, 3, 4, 5]
 
 

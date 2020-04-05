@@ -35,35 +35,38 @@ class Set:
             ry.e.append(rx.element)
             rx.parent=ry
             ry.rank+=1
+def main():
+    '''x=Disjoint()
+    x.element=1
+    y=Disjoint()
+    y.element=2
+    s=Set()
+    s.makset(x,1)
+    s.makset(y,2)
+    print((s.findset(x)).element)
+    s.Union(x,y)
+    print((s.findset(x)).element)
+    print((s.findset(y)).element)'''
+    print("Enter the total no of nodes:")
+    n=int(input())
+    print("Enter no of edges:")
+    e=int(input())
+    arr=[Disjoint() for i in range(n)]
+    s=Set()
+    for i in range(n):
+        s.makset(arr[i],i)
+    i=0
+    while i<e:
+        print("enter edges:")
+        x,y=map(int,input().split())
+        if x<n and y<n:
+            s.Union(arr[x],arr[y])
+            i+=1
+        else:
+            print("Invalid edge:")
+            i-=1
+    for i in range(n):
+        print(arr[i].rank)
 
-'''x=Disjoint()
-x.element=1
-y=Disjoint()
-y.element=2
-s=Set()
-s.makset(x,1)
-s.makset(y,2)
-print((s.findset(x)).element)
-s.Union(x,y)
-print((s.findset(x)).element)
-print((s.findset(y)).element)'''
-print("Enter the total no of nodes:")
-n=int(input())
-print("Enter no of edges:")
-e=int(input())
-arr=[Disjoint() for i in range(n)]
-s=Set()
-for i in range(n):
-    s.makset(arr[i],i)
-i=0
-while i<e:
-    print("enter edges:")
-    x,y=map(int,input().split())
-    if x<n and y<n:
-        s.Union(arr[x],arr[y])
-        i+=1
-    else:
-        print("Invalid edge:")
-        i-=1
-for i in range(n):
-    print(arr[i].rank)
+if __name__ == '__main__':
+    main()
