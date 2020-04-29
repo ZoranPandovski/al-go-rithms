@@ -249,3 +249,6 @@ Temporary Items
 
 #stale bot
 .project
+
+#node modules
+node_modules
