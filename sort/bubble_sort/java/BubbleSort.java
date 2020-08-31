@@ -1,22 +1,12 @@
-/**
- * @author Tino097
- *
- */
-public class BubbleSort {
-
-	protected static void bubbleSort(int[] list) {
-		int temp = 0;
-		for (int i = 0; i < list.length; i++) {
-			for (int j = 1; j < list.length - i; j++) {
-				if (list[j - 1] > list[j]) {
-					//fast swap between list[j] and list[j-1]
-					list[j - 1] ^= list[j];
-					list[j] ^= list[j-1];
-					list[j - 1] ^= list[j];
-				}
-
-			}
-
-		}
-	}
-	
+public static void bubbleSort(int[] ranNum){
+        for (int i=0; i<ranNum.length-1; i++){
+            for (int j=0; j<ranNum.length-1-i; j++){
+                if(ranNum[j]>ranNum[j+1]){
+                    int temp = ranNum[j+1];
+                    ranNum[j+1] = ranNum[j];
+                    ranNum[j] = temp;
+                }
+            }
+        }
+        System.out.println(Arrays.toString(ranNum)); 
+}
