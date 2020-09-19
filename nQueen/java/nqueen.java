@@ -56,16 +56,19 @@ public class nqueen {
         }
         return false;
     }
+    // qspf: queen placed so far
+    // tnq: totatl number of queens to be placed, which is n in our case
+    // ans: String in which we will display the output.
     public static void driver(int[][] board, int row, int qpsf, int tnq, String ans) {
-        if (qpsf == tnq) {
+        if (qpsf == tnq) { // when qpsf = tnq, it means all the queens have been placed correctly, and we should print the answer.
             System.out.println(ans + ".");
             return;
         }
         for (int j = 0 ; j < board[0].length;j++){
             if (isSafe(board,row,j)){
-                board[row][j] = 1;
+                board[row][j] = 1;  // block the position on the board to signify a queen is placed
                 driver(board,row+1,qpsf+1,tnq,ans + row + "-" + j + ",");
-                board[row][j] = 0;
+                board[row][j] = 0; // unblock the position that was marked earlier when backtracking
             }
         }
     }
