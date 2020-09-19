@@ -13,7 +13,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
 
-public class nQueen {
+public class nqueen {
     // >>==>> I have taken input from the console using BufferedReader,
     //        you can skip this part, and directly provide arguments to the driver function
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
