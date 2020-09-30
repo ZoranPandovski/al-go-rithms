@@ -1,0 +1,8 @@
+///////////////SAY-droid427/////////////
+This folder contains 6 dynamic programming problems in C++
+1.coin_changeI.cpp  -C++ code to find the maximum number of ways to find the change of a given amount of money
+2.coin_changeII.cpp -C++ code to find the maximum number of ways to find the change of a given amount of money
+3.lps               -C++ code to find the longest common palindromic subsequence
+4.print_lcs         -C++ code to print the longest common subsequence
+5.rod.cpp           -C++ code to find the maximum value obtained by cutting the rod such that the price obtained by each length cut is provided
+6.unbounded_knapsack-C++ code for the famous unbounded knapsack
