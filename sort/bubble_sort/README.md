@@ -8,3 +8,4 @@ Bubble sort is a stable sort. This means that two objects with equal keys appear
 
 #### Visualization
 ![](https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif)
+

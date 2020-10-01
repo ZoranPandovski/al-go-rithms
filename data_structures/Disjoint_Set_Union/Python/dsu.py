@@ -28,12 +28,20 @@ def join(a,b):
 
 
 ''' Main Program Starts Here '''
+def main():
+	n=5
+	initialize(n)
+	join(1,2)
+	assert(find(2) == 1)
+	assert(find(3) == 3)
+	join(2,3)
+	assert(find(3) == 1)
+	assert(find(5) == 5)
+	join(4,5)
+	assert(find(5) == 4)
+	join(3,4)
+	assert(find(5) == 1)
 
-n=5
-initialize(n)
-join(1,2)
-join(2,3)
-join(4,5)
-
-print(find(3))
+if __name__ == '__main__':
+	main()
 		
