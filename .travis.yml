@@ -1,0 +1,33 @@
+language: python
+python:
+  - "3.7"
+
+# Limit to run only on master.
+branches:
+  only:
+  - master
+
+script:
+  - python stats.py 
+      --json-key j5r1c 
+      --exclude .git .github tutorials media
+      --count-as-one AssemblyLineDP 
+                     "Balanced Parentheses" 
+                     Blockchain 
+                     "Conjugate Gradient" 
+                     deep_learning graph 
+                     "K Means Clustering" 
+                     "K-Nearest Neighbour" 
+                     minimax 
+                     "Normal Distribution" 
+                     principal_component_analysis 
+                     "Recommender System  - Collaborator Filtering" 
+                     sentiment_analysis_twitter 
+                     stable_matching 
+                     stack 
+                     state_machines 
+                     VEGAS 
+      --badge-link "https://github.com/ZoranPandovski/al-go-rithms" 
+      --badge-label Algorithms 
+      --badge-hover "Number of Algorithms" 
+      --badge-style flat
