@@ -1,8 +1,4 @@
 /*
- * SHREYA CHETAN PAWASKAR
- * ROLL NO-2939
- * BATCH -C3
- * SY COMP DIVISION C
  * Assignment- implement banker's algorithm
  */
 
@@ -348,6 +344,9 @@ public static void main(String[] args)
 
 
 /*
+SAMPLE OUTPUT :
+
+
 ENTER THE NUMBER OF PROCESSES
 -8
 THE VALUE CANNOT BE NEGATIVE. TRY AGAIN
