@@ -9,3 +9,6 @@ And if computer wins then one score is added for computer else for player. After
 <br>
 <h2>GamePlay Example:</h2><hr>
 <br>
+<img src="Screenshot (36).png" /><br>
+<img src="Screenshot (37).png" />
+
