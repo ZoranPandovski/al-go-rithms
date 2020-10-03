@@ -1,4 +1,10 @@
-// C++ Program To Covert Infix to Postfix using Stack
+// C++ Program To Convert Infix to Postfix using Stack
+
+/*
+	Test Case : 
+		Input : a*(5+(c+7)*(e+f)/2)*h
+		Output : a5c7+ef+*2/+*h*
+*/
 
 #include<bits/stdc++.h>
 

@@ -1,6 +1,18 @@
 // C++ Program To Check Whether String is Palindrome or Not 
 // Without using STL.
 
+/*
+	Test Cases :
+		Input : radar
+		Output : Palindrome
+
+		Input : madam
+		Output : Palindrome
+
+		Input : classroom
+		Output : Not a Palindrome
+*/
+
 #include<iostream>
 #include<string.h>
 
