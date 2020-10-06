@@ -1,0 +1,51 @@
+//Print a 2d array in wave form i.e. \/\/\/\/
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a[1000][1000];
+    int m,n;
+    cin>>m>>n;
+    for(int i=0;i<m;i++){
+        for(int j=0;j<n;j++){
+            cin>>a[i][j];
+        }
+    }
+    cout<<"The 2-D Array is:"<<endl;
+    for(int i=0;i<m;i++){
+        for(int j=0;j<n;j++){
+            cout<<a[i][j]<<" ";
+        }
+    cout<<endl;
+    }
+    cout<<"The wave form of 2-D array is :"<<endl;
+    //coloumn is constant row is changing
+    //row will be the inner loop because its changing
+    for(int j=0;j<n;j++){
+        if(j%2==0){
+            //topdown in even col
+            for(int i=0;i<m;i++){
+                cout<<a[i][j]<<" ";
+            }
+        }
+        else{
+            //bottom down in odd col
+            for(int i=m-1;i>=0;i--){
+                cout<<a[i][j]<<" ";
+            }
+        }
+    }
+}
+
+/*
+input:-
+m=3 n=3                                                                                                                                    
+array_input:1 2 3 4 5 6 7 8 9
+Output:-
+The 2-D Array is:                                                                                                                      
+1 2 3                                                                                                                                  
+4 5 6                                                                                                                                  
+7 8 9                                                                                                                                  
+The wave form of 2-D array is :                                                                                                        
+1 4 7 8 5 2 3 6 9      
+*/
