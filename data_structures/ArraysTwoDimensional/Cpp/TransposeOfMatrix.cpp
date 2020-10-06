@@ -28,6 +28,8 @@ Explanation:
 Testcase 1: The matrix after rotation will be: 1 2 3 4 1 2 3 4 1 2 3 4 1 2 3 4.
 */
 
+
+#include <iostream>
 using namespace std;
 
 int main() {
