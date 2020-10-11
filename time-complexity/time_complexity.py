@@ -39,4 +39,16 @@ def quadratic(n):
             result += 1
     return result
 
-
+#########################
+# Exponential time - O(2^n)
+#########################
+def exponential(n, peg_from="A", peg_to="C", spare_peg="B"):
+    #Solving the tower of hanoi problem (Try here:  https://emerzon1.github.io/TowerOfHanoi/) takes 2^n-1 moves where n is the amount of disks
+    if n < 1:
+        return None
+    if n > 1:
+        exponential(n-1, peg_from, spare_peg, peg_to)
+    print("Move top disk from peg " + peg_from + " to peg " + peg_to)
+    if n > 1: 
+        exponential(n-1, spare_peg, peg_to, peg_from)
+    
