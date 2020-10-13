@@ -7,15 +7,25 @@
 ## Queue with C++
 
 > This is an empty queue and thus we have rear and empty set to -1.
+
 ![](ExamplePics/example1.jpg)
+
 > Next, we add 1 to the queue and as a result, the rear pointer moves ahead by one location.
+
 ![](ExamplePics/example2.jpg)
+
 > In the next figure, we add element 2 to the queue by moving the rear pointer ahead by another increment.
+
 ![](ExamplePics/example3.jpg)
+
 > In the following figure, we add element 3 and move the rear pointer by 1.
+
 ![](ExamplePics/example4.jpg)
+
 > At this point, the rear pointer has value 2 while the front pointer is at the 0th location. Next, we delete the element pointed by the front pointer. As the front pointer is at 0, the element that is deleted is 1.
+
 ![](ExamplePics/example5.jpg)
+
 > Thus the first element entered in the queue i.e. 1 happens to be the first element removed from the queue. As a result, after the first dequeue, the front pointer now will be moved ahead to the next location which is 1.
 
 ## Basic Operations
