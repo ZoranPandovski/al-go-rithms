@@ -98,6 +98,31 @@ Node *lca(Node *root, int v1, int v2){
 	}
 	return low;
   }
+
+  void topView(Node*root){
+    if(!root){
+      return;
+    }
+    map<int, pair<int, int>> m;
+    fillMap(root, 0, 0, m);
+    for (auto i = m.begin(); i != i.end(); i++){
+      cout << i->second.first << " ";
+    }
+  }
+
+  void fillMap(Node *root, int lvl, int horizontalDistance, map<int, pair<int, int>> &m){
+    if(!root){
+      return;
+    }
+    if(!m.count(horizontalDistance)){
+      m[horizontalDistance] = make_pair(root->data, lvl);
+    }else if(m[d].second > lvl){
+      m[horizontalDistance] = make_pair(root->data, lvl);
+    }
+    fillMap(root->left, lvl+1, horizontalDistance-1, m);
+    fillMap(root->right, lvl+1, horizontalDistance+1, m);
+  }
+
 };
 
  
@@ -138,7 +163,7 @@ Node *lca(Node *root, int v1, int v2){
 	root = myTree.insert(root,1);
 	root = myTree.insert(root,7);
 	root = myTree.insert(root,6);
-	
+  topView(root);
 	Node*ans = myTree.lca(root,1,7);
 	
 	std::cout << ans->data;
