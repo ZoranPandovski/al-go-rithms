@@ -98,10 +98,45 @@ Node *lca(Node *root, int v1, int v2){
 	}
 	return low;
   }
-};
 
  
- 
+
+};
+    void fillMap(Node *root, int lvl, int horizontalDistance, map<int, pair<int, int>> &m){
+    if(!root){
+      return;
+    }
+    if(!m.count(horizontalDistance)){
+      m[horizontalDistance] = make_pair(root->data, lvl);
+    }else if(m[horizontalDistance].second > lvl){
+      m[horizontalDistance] = make_pair(root->data, lvl);
+    }
+    fillMap(root->left, lvl+1, horizontalDistance-1, m);
+    fillMap(root->right, lvl+1, horizontalDistance+1, m);
+  }
+
+  void topView(Node*root){
+    if(!root){
+      return;
+    }
+    map<int, pair<int, int>> m;
+    fillMap(root, 0, 0, m);
+    for (auto i = m.begin(); i != m.end(); i++){
+      cout << i->second.first << " ";
+    }
+  }
+/*
+            4
+           /  \
+          /    \
+        2       7
+      /   \    /
+      1   3   6
+
+Nodes which are visible from top of the root node are considered for top view. In this 1 2 4 7 are visible
+from top of root node.(Consider this as 3d model and nodes which are visible from top is our ans.)
+
+ */
 /*    int main() {
   
     Solution myTree;
@@ -138,10 +173,10 @@ Node *lca(Node *root, int v1, int v2){
 	root = myTree.insert(root,1);
 	root = myTree.insert(root,7);
 	root = myTree.insert(root,6);
+  topView(root);
+	// Node*ans = myTree.lca(root,1,7);
 	
-	Node*ans = myTree.lca(root,1,7);
-	
-	std::cout << ans->data;
+	// std::cout << ans->data;
 	
 	return 0;
 }
