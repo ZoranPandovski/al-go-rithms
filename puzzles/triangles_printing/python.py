@@ -1,4 +1,4 @@
-// range
+# range
 r = 9
 bound = round(r/2)
 
