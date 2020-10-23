@@ -1,4 +1,6 @@
+#include <algorithm>
 #include <bits/stdc++.h>
+#include <iostream>
 
 using namespace std;
 
@@ -137,6 +139,16 @@ Nodes which are visible from top of the root node are considered for top view. I
 from top of root node.(Consider this as 3d model and nodes which are visible from top is our ans.)
 
  */
+
+int height(Node *root){
+	if(root){
+		return 1 + max(height(root->left), height(root->right));
+	}else {
+		return -1;
+	}
+}
+
+
 /*    int main() {
   
     Solution myTree;
@@ -173,11 +185,11 @@ from top of root node.(Consider this as 3d model and nodes which are visible fro
 	root = myTree.insert(root,1);
 	root = myTree.insert(root,7);
 	root = myTree.insert(root,6);
-  topView(root);
+	//topView(root);
 	// Node*ans = myTree.lca(root,1,7);
 	
 	// std::cout << ans->data;
-	
+	cout << height(root);
 	return 0;
 }
 
