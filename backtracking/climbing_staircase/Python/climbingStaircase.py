@@ -18,4 +18,4 @@ def findPossible(stair, k):
         print(results)
         for result in results:
             solutions.append([i]+result)
-return solutions
+    return solutions
