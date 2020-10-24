@@ -1,3 +1,4 @@
+from __future__ import print_function
 import random
 import math
 
@@ -5,7 +6,7 @@ outputdebug = False
 
 def debug(msg):
     if outputdebug:
-        print msg
+        print(msg)
 
 class Node():
     def __init__(self, key):
@@ -230,7 +231,7 @@ class AVLTree():
         self.update_heights()  # Must update heights before balances 
         self.update_balances()
         if(self.node != None): 
-            print '-' * level * 2, pref, self.node.key, "[" + str(self.height) + ":" + str(self.balance) + "]", 'L' if self.is_leaf() else ' '    
+            print('-' * level * 2, pref, self.node.key, "[" + str(self.height) + ":" + str(self.balance) + "]", 'L' if self.is_leaf() else ' ')    
             if self.node.left != None: 
                 self.node.left.display(level + 1, '<')
             if self.node.left != None:
@@ -242,7 +243,7 @@ class AVLTree():
 # Usage example
 if __name__ == "__main__": 
     a = AVLTree()
-    print "----- Inserting -------"
+    print("----- Inserting -------")
     #inlist = [5, 2, 12, -4, 3, 21, 19, 25]
     inlist = [7, 5, 2, 6, 3, 4, 1, 8, 9, 0]
     for i in inlist: 
@@ -250,14 +251,14 @@ if __name__ == "__main__":
          
     a.display()
     
-    print "----- Deleting -------"
+    print("----- Deleting -------")
     a.delete(3)
     a.delete(4)
     # a.delete(5) 
     a.display()
     
-    print 
-    print "Input            :", inlist 
-    print "deleting ...       ", 3
-    print "deleting ...       ", 4
-print "Inorder traversal:", a.inorder_traverse()
+    print() 
+    print("Input            :", inlist) 
+    print("deleting ...       ", 3)
+    print("deleting ...       ", 4)
+print("Inorder traversal:", a.inorder_traverse())

@@ -1,3 +1,4 @@
+from __future__ import print_function
 
 from collections import defaultdict
 
@@ -20,7 +21,7 @@ class Graph:
 
 		# Mark the current node as visited and print it
 		visited[v]= True
-		print v,
+		print(v, end=' ')
 
 		# Recur for all the vertices adjacent to this vertex
 		for i in self.graph[v]:
@@ -50,7 +51,7 @@ def main():
 	g.addEdge(2, 3)
 	g.addEdge(3, 3)
 
-	print "Following is DFS from (starting from vertex 2)"
+	print("Following is DFS from (starting from vertex 2)")
 	g.DFS(2)
 
 if __name__ == '__main__':

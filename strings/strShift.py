@@ -2,7 +2,7 @@ def shift_possible(str1,str2):
     if len(str1)==len(str2):
         return str1 and str2 and str2 in str1 * 2
     else:
-        print(error)
+        print("error")
 
 
 

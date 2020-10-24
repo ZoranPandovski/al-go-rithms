@@ -57,7 +57,8 @@ parameters = {"Waa": Waa, "Wax": Wax, "Wya": Wya, "ba": ba, "by": by}
 
 a_next, yt_pred, cache = rnn_cell_forward(xt, a_prev, parameters)
 print("a_next[4] = ", a_next[4])
-print("a_next.shape = ", a_next.shape)print("yt_pred[1] =", yt_pred[1])
+print("a_next.shape = ", a_next.shape)
+print("yt_pred[1] =", yt_pred[1])
 print("yt_pred[1] =", yt_pred[1])
 print("yt_pred.shape = ", yt_pred.shape)
 
@@ -261,7 +262,7 @@ def rnn_backward(da, caches):
     # Compute gradients at time step t. Choose wisely the "da_next" and the "cache" to use in the backward propagation step. (≈1 line)
 
 
-    gradients = rnn_cell_backward(da[:, :, t] + da_prevt, caches[t])
+        gradients = rnn_cell_backward(da[:, :, t] + da_prevt, caches[t])
     # Retrieve derivatives from gradients (≈ 1 line)
     dxt, da_prevt, dWaxt, dWaat, dbat = gradients["dxt"], gradients["da_prev"], gradients["dWax"], gradients["dWaa"], \
                                         gradients["dba"]
@@ -277,7 +278,7 @@ def rnn_backward(da, caches):
 
 da0 = da_prevt
 ### END CODE HERE ###
-
+'''
 
 # Store the gradients in a python dictionary
 gradients = {"dx": dx, "da0": da0, "dWax": dWax, "dWaa": dWaa, "dba": dba}
@@ -571,3 +572,4 @@ print("gradients[\"dbc\"][4] =", gradients["dbc"][4])
 print("gradients[\"dbc\"].shape =", gradients["dbc"].shape)
 print("gradients[\"dbo\"][4] =", gradients["dbo"][4])
 print("gradients[\"dbo\"].shape =", gradients["dbo"].shape)
+'''

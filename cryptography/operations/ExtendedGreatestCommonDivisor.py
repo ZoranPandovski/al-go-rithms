@@ -1,4 +1,6 @@
 # extended gcd and inverse mod
+from math import gcd
+
 
 def extgcd(a, b):
     if (abs(a) >= abs(b)):

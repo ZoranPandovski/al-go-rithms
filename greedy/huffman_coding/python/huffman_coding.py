@@ -179,4 +179,4 @@ class HuffmanCoding:
 			output.write(decompressed_text)
 
 		print("Decompressed")
-return output_path
+		return output_path

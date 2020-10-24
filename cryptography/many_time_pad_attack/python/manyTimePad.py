@@ -1,3 +1,4 @@
+from __future__ import print_function
 cipherTexts = [ '7ECC555AB95BF6EC605E5F22B772D2B34FF4636340D32FABC29B',
                 '73CB4855BE44F6EC60594C2BB47997B60EEE303049CD3CABC29B', 
                 '64C6401BAF45F6A930435F3DF875C4E102F8742A45C824AFCA9B', 
@@ -77,7 +78,7 @@ englishMap = {-65:' ',
                25:'z'}
 
 l = len(cipherTexts)
-print cipherTexts
+print(cipherTexts)
 messageLen = len(cipherTexts[0])
 combCipherTexts = []
 for text in range(l):
@@ -89,8 +90,8 @@ for text in range(l):
 
         combCipherTexts.append(processedCipher)
 
-print
-print combCipherTexts
+print()
+print(combCipherTexts)
 
 commonWords = ['the','hello','way','well','her','day','there','with','chinese','baking','tea','notable','could','tea tree','do not']
 
@@ -110,7 +111,7 @@ commonWordsHex = []
 for word in commonWords:
     commonWordsHex.append(hexValueForWord(word))
 
-print commonWordsHex
+print(commonWordsHex)
 
 def convertToEnglish(hexString):
     string = ''
@@ -128,7 +129,7 @@ def convertToEnglish(hexString):
 def cribDrag(commonWordsHex, combCipherTexts):
     for word in commonWordsHex:
         for text in combCipherTexts:
-            print "XORed with", convertToEnglish(word)
+            print("XORed with", convertToEnglish(word))
             word_len = len(word)
             for i in range(len(text)-word_len):
                 subText = text[i:i + word_len]
@@ -139,7 +140,7 @@ def cribDrag(commonWordsHex, combCipherTexts):
                 
                 newText = convertToEnglish(newText)
                 if newText != None:
-                    print newText, " ",
-            print
+                    print(newText, " ", end=' ')
+            print()
 
 cribDrag(commonWordsHex,combCipherTexts)

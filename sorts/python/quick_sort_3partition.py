@@ -25,7 +25,7 @@ if __name__ == '__main__':
     except NameError:
         raw_input = input  # Python 3
 
-    user_input = raw_input('Enter numbers separated by a comma:\n').strip()
+    user_input = input('Enter numbers separated by a comma:\n').strip()
     unsorted = [ int(item) for item in user_input.split(',') ]
     quick_sort_3partition(unsorted,0,len(unsorted)-1)
     print(unsorted)

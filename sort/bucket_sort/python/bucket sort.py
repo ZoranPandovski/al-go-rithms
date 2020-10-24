@@ -8,7 +8,7 @@ def bucketsort( A ):
     buck = buckets[x]
     buck.append( i )
   for bucket in buckets:
-    insertionsort( bucket )
+    bucketsort( bucket )
  
   ndx = 0
   # merge the buckets: O(n)

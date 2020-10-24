@@ -1,4 +1,5 @@
 """ Binary Search Tree """
+from __future__ import print_function
 
 import random
 
@@ -26,7 +27,7 @@ class Tree(object):
 
     def preorder(self,root):
         if root != None:
-            print root.val
+            print(root.val)
             self.preorder(root.left)
             self.preorder(root.right)
 
@@ -35,19 +36,19 @@ class Tree(object):
         if root != None:
             self.postorder(root.left)
             self.postorder(root.right)
-            print root.val
+            print(root.val)
 
 
     def inorder(self,root):
         if root != None:
             self.inorder(root.left)
-            print root.val
+            print(root.val)
             self.inorder(root.right)
 
 
 def testcaseBST(self):
     root = None
-    binaryTree = BinaryTree()
+    binaryTree = BinaryTree()  # noqa: F821 -- Missing imports
     binaryTree.insert(root, 5)
     binaryTree.insert(root, 3)
     binaryTree.insert(root, 2)

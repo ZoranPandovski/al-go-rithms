@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Bellman-ford algorith implementation on oriented weighted graph
 class OrientedGraph:
 	def __init__(self):
@@ -54,7 +55,7 @@ class OrientedGraph:
 			for v in graph[u]:
 				assert d[v] <= d[u] + graph[u][v]
 
-		print "Costs to reach destination from", start, "after bellman-ford: ", d
+		print("Costs to reach destination from", start, "after bellman-ford: ", d)
 		return d, p
 
 
@@ -64,7 +65,7 @@ def init():
 		graph.insertNode(u)
 	for u, v, w in [('a', 'b', 3), ('a', 'd', 2), ('b', 'c', 0), ('d', 'a', 1), ('d', 'c', 6), ('d', 'e', 10), ('e', 'c', 1), ('e', 'f', 0)]:
 		graph.insertEdge(u, v, w)
-	print str(graph)
+	print(str(graph))
 	#  Test bellman starting from a
 	graph.bellman_ford('a')
 	return

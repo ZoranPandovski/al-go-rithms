@@ -21,6 +21,6 @@ def generateLargePrime(k):
          r-=1
          if isPrime(n) == True:
              return n
-     return "Failure after "+`r_` + " tries."
+     return "Failure after " + repr(r_) + " tries."
 
 # print generateLargePrime(8)

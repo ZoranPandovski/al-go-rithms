@@ -1,3 +1,4 @@
+from __future__ import print_function
 from threading import Thread, Lock, Condition
 import random
 import time
@@ -17,14 +18,14 @@ class Producer(Thread):
             condition.acquire()
 
             if len(Q) == BUF_SIZE:
-                print "Q full : producer waiting"
+                print("Q full : producer waiting")
                 condition.wait()
-                print "Space available, consumer notified the producer"
+                print("Space available, consumer notified the producer")
 
             item = random.choice(array)
             #lock.acquire()
             Q.append(item)
-            print "produced", item
+            print("produced", item)
             condition.notify()
             condition.release()
             #lock.release()
@@ -37,12 +38,12 @@ class Consumer(Thread):
             condition.acquire()
             #lock.acquire()
             if not Q:
-                print "Q empty : consumer is waiting!"
+                print("Q empty : consumer is waiting!")
                 condition.wait()
-                print "producer added some item and notified the consumer"
+                print("producer added some item and notified the consumer")
 
             item = Q.pop(0)
-            print "consumed", item
+            print("consumed", item)
             condition.release()
             #lock.release()
             time.sleep(random.random())

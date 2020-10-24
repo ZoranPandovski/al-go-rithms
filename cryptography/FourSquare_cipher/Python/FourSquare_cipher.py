@@ -1,3 +1,4 @@
+from __future__ import print_function
 def Divider(inp):      #generates the string in the necessary format
     inp=inp.upper()
     str=""
@@ -13,7 +14,7 @@ def Divider(inp):      #generates the string in the necessary format
 def Key(key):      #key generator according to two input keys
     key=key.upper()
     fin=[]
-    store=[unichr(x) for x in range(65,91)]
+    store=[chr(x) for x in range(65,91)]
     for i in key:
         if i in store:
             fin.append(i)
@@ -34,18 +35,18 @@ def index2D(lst,val):
 
 def Foursquare():
     output=""
-    Inp=raw_input()
+    Inp=input()
     Inp=Divider(Inp)
 
-    temp11=[unichr(x) for x in range(65,91) if not unichr(x)=='J']
-    temp22=[unichr(x) for x in range(65,91) if not unichr(x)=='J']
+    temp11=[chr(x) for x in range(65,91) if not chr(x)=='J']
+    temp22=[chr(x) for x in range(65,91) if not chr(x)=='J']
 
     
     block11=[temp11[i: i+5] for i in range(0,(len(temp11)-5),5)]
     block22=[temp22[i: i+5] for i in range(0,(len(temp22)-5),5)]
 
-    key1=raw_input()
-    key2=raw_input()
+    key1=input()
+    key2=input()
     block12=Key(key1)
     block21=Key(key2)
     
@@ -57,6 +58,6 @@ def Foursquare():
         gety2=index2D(temp22,Inp[i+1])%5
     
         output=output+block12[getx1][gety2]+block21[getx2][gety1]
-    print output
+    print(output)
 
 Foursquare();

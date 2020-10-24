@@ -1,3 +1,4 @@
+from __future__ import print_function
 #Binary Insertion Sort using python
 
 #using binary search to look for location to insert current value
@@ -39,11 +40,11 @@ def BS(arr, val, low, high):
 def BIS(arr):
     #run binary search in every element in array
     #and immediately sort the array
-    for i in xrange(1, len(arr)):
+    for i in range(1, len(arr)):
         val = arr[i]
         j = BS(arr, val, 0, i-1)
         arr = arr[:j] + [val] + arr[j:i] + arr[i+1:]
     return arr
 
 print ("Sorted array: ")
-print BIS([37, 23, 0, 17, 45, 9, 80, 9, 9])
+print(BIS([37, 23, 0, 17, 45, 9, 80, 9, 9]))

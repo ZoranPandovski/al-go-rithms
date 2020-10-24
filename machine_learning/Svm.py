@@ -1,3 +1,4 @@
+from __future__ import print_function
 import numpy as np
 from numpy import linalg
 import cvxopt
@@ -56,7 +57,7 @@ class SVM(object):
         self.a = a[sv]
         self.sv = X[sv]
         self.sv_y = y[sv]
-        print "%d support vectors out of %d points" % (len(self.a), n_samples)
+        print("%d support vectors out of %d points" % (len(self.a), n_samples))
 
         # Intercept
         self.b = 0
@@ -198,7 +199,7 @@ if __name__ == "__main__":
 
         y_predict = clf.predict(X_test)
         correct = np.sum(y_predict == y_test)
-        print "%d out of %d predictions correct" % (correct, len(y_predict))
+        print("%d out of %d predictions correct" % (correct, len(y_predict)))
 
         plot_margin(X_train[y_train==1], X_train[y_train==-1], clf)
 
@@ -212,7 +213,7 @@ if __name__ == "__main__":
 
         y_predict = clf.predict(X_test)
         correct = np.sum(y_predict == y_test)
-        print "%d out of %d predictions correct" % (correct, len(y_predict))
+        print("%d out of %d predictions correct" % (correct, len(y_predict)))
 
         plot_contour(X_train[y_train==1], X_train[y_train==-1], clf)
 
@@ -226,7 +227,7 @@ if __name__ == "__main__":
 
         y_predict = clf.predict(X_test)
         correct = np.sum(y_predict == y_test)
-        print "%d out of %d predictions correct" % (correct, len(y_predict))
+        print("%d out of %d predictions correct" % (correct, len(y_predict)))
 
         plot_contour(X_train[y_train==1], X_train[y_train==-1], clf)
 

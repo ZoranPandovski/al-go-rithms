@@ -13,7 +13,32 @@ sys.stdout = _OUTPUT_BUFFER
 @atexit.register
 def write():
     sys.__stdout__.write(_OUTPUT_BUFFER.getvalue())
-# Node Class:
+def LeftView(root):
+    '''
+    :param root: root of given tree.
+    :return: print the left view of tree, dont print new line
+    '''
+    # code here
+    q=[]
+    q.append((root,0))
+    hmap={}
+    while(len(q)!=0):
+        curr=q.pop(0)
+        node=curr[0]
+        level=curr[1]
+        if hmap.get(level)==None:
+            hmap[level]=node.data
+        level+=1
+        if node.left!=None:
+            q.append((node.left,level))
+        if node.right!=None:
+            q.append((node.right,level))
+    # print(hmap)
+    # print(level)
+    for i in range(level):
+        print(hmap[i],end=" ")
+
+
 class Node:
     def __init__(self,val):
         self.data = val
@@ -69,27 +94,3 @@ class Node:
         self.left = None
         self.right = None
 '''
-def LeftView(root):
-    '''
-    :param root: root of given tree.
-    :return: print the left view of tree, dont print new line
-    '''
-    # code here
-    q=[]
-    q.append((root,0))
-    hmap={}
-    while(len(q)!=0):
-        curr=q.pop(0)
-        node=curr[0]
-        level=curr[1]
-        if hmap.get(level)==None:
-            hmap[level]=node.data
-        level+=1
-        if node.left!=None:
-            q.append((node.left,level))
-        if node.right!=None:
-            q.append((node.right,level))
-    # print(hmap)
-    # print(level)
-    for i in range(level):
-        print(hmap[i],end=" ")

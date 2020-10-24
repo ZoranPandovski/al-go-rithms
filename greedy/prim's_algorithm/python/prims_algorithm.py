@@ -1,3 +1,4 @@
+from __future__ import print_function
 import sys  # Library for INT_MAX
 
 class Graph():
@@ -9,9 +10,9 @@ class Graph():
 
     # A utility function to print the constructed MST stored in parent[]
     def printMST(self, parent):
-        print "Edge \tWeight"
+        print("Edge \tWeight")
         for i in range(1,self.V):
-            print parent[i],"-",i,"\t",self.graph[i][ parent[i] ]
+            print(parent[i],"-",i,"\t",self.graph[i][ parent[i] ])
 
     # A utility function to find the vertex with minimum distance value, from
     # the set of vertices not yet included in shortest path tree
