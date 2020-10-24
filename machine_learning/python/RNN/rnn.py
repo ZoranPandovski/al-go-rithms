@@ -278,7 +278,7 @@ def rnn_backward(da, caches):
 
 da0 = da_prevt
 ### END CODE HERE ###
-
+'''
 
 # Store the gradients in a python dictionary
 gradients = {"dx": dx, "da0": da0, "dWax": dWax, "dWaa": dWaa, "dba": dba}
@@ -572,3 +572,4 @@ print("gradients[\"dbc\"][4] =", gradients["dbc"][4])
 print("gradients[\"dbc\"].shape =", gradients["dbc"].shape)
 print("gradients[\"dbo\"][4] =", gradients["dbo"][4])
 print("gradients[\"dbo\"].shape =", gradients["dbo"].shape)
+'''
