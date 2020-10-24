@@ -20,56 +20,58 @@ which takes O(|V|^3) time with the Floyd–Warshall algorithm,
 On unweighted graphs, calculating betweenness centrality takes O(|V||E|) time using Brandes' algorithm
 """
 
+
 def betweenness_centrality():
-	
-	n = len(adj) 
-	betweenness_centrality = [0 for _ in range(n)]
 
-	for s in range(n):
-		# iterate through all nodes in graph to calculate single-source shortest paths for each vertex
-		stack = []
-		p = [[] for _ in range(n)]
-		sigma = [0 for _ in range(n)]
-		sigma[s]=1
+    n = len(adj)
+    betweenness_centrality = [0 for _ in range(n)]
 
-		# distance from node s 
-		d = [-1 for _ in range(n)]
-		d[s]=0
+    for s in range(n):
+        # iterate through all nodes in graph to calculate single-source shortest paths for each vertex
+        stack = []
+        p = [[] for _ in range(n)]
+        sigma = [0 for _ in range(n)]
+        sigma[s] = 1
 
-		queue = []
-		queue.append(s)
+        # distance from node s
+        d = [-1 for _ in range(n)]
+        d[s] = 0
 
-		while queue:
-			v = queue[0]
-			queue.pop(0)
-			stack.append(v)
-			for w in adj[v]:
-				# w found for first time
-				if d[w]<0:
-					queue.append(w)
-					d[w]=d[v]+1
+        queue = []
+        queue.append(s)
 
-				# shortest path to w passes through v
-				if d[w]==d[v]+1:
-					sigma[w] += sigma[v]
-					p[w].append(v)
+        while queue:
+            v = queue[0]
+            queue.pop(0)
+            stack.append(v)
+            for w in adj[v]:
+                # w found for first time
+                if d[w] < 0:
+                    queue.append(w)
+                    d[w] = d[v] + 1
 
-		# dependencies of the source on each other vertex are added to the centrality score of that vertex
-		delta = [0 for _ in range(n)]
-		while stack:
-			w = stack[-1]
-			stack.pop(-1)
-			for v in p[w]:
-				delta[v] += (sigma[v]/sigma[w]) * (1+delta[w])
-			if not w==s:
-				betweenness_centrality[w] += delta[w]
-	
-	# normalize - divide by no of pairs -> (n-1)*(n-2) / 2
-	# divide by 2, because in Brandes’ algorithm all shortest paths are considered twice
-	for i in range(n):
-		betweenness_centrality[i] *= 1/((n-1)*(n-2))
+                # shortest path to w passes through v
+                if d[w] == d[v] + 1:
+                    sigma[w] += sigma[v]
+                    p[w].append(v)
 
-	return betweenness_centrality
+        # dependencies of the source on each other vertex are added to the centrality score of that vertex
+        delta = [0 for _ in range(n)]
+        while stack:
+            w = stack[-1]
+            stack.pop(-1)
+            for v in p[w]:
+                delta[v] += (sigma[v] / sigma[w]) * (1 + delta[w])
+            if not w == s:
+                betweenness_centrality[w] += delta[w]
+
+    # normalize - divide by no of pairs -> (n-1)*(n-2) / 2
+    # divide by 2, because in Brandes’ algorithm all shortest paths are considered twice
+    for i in range(n):
+        betweenness_centrality[i] *= 1 / ((n - 1) * (n - 2))
+
+    return betweenness_centrality
+
 
 if __name__ == "__main__":
     global adj
