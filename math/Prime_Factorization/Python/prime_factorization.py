@@ -15,5 +15,5 @@ def prime_factorize(n):
 		prime = prime + 1
 	return answer
 
-n = int(raw_input())
+n = int(input())
 print(prime_factorize(n))

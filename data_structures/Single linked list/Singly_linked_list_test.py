@@ -1,3 +1,5 @@
+from .Singly_linked_list import linkedlist, node
+
 list=linkedlist()
 list.head=node("Monday")
 list1=node("Tuesday")

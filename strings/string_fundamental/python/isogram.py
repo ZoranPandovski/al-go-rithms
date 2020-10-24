@@ -14,7 +14,7 @@ def check_isogram(string_to_be_evaluated):
 if __name__ == '__main__':
     string_one = input("Enter string to check if it's an isogram:")
     is_isogram = check_isogram(string_one)
-    if is_anagram:
+    if check_isogram:
         print("The string has no repeated letters and is therefore an Isogram.")
     else:
         print("The string is not an Isogram.")

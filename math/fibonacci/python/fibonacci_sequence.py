@@ -1,3 +1,4 @@
+from __future__ import print_function
 def fibonacci(n):
     if(n <= 1):
         return n
@@ -6,4 +7,4 @@ def fibonacci(n):
 n = int(input("Enter number of terms:"))
 print("Fibonacci sequence:")
 for i in range(n):
-    print fibonacci(i),
+    print(fibonacci(i), end=' ')

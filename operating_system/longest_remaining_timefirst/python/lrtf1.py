@@ -24,7 +24,7 @@ def findCT(totaltime):
     index = 0
     flag = 0
     i = p[0][1]  
-    while (true):  
+    while (True):  
         index = findlargest(i if i <= 4 else 4)     
         print("Process execute at time ", 
                     totaltime, end = " ") 

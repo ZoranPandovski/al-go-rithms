@@ -1,3 +1,4 @@
+from __future__ import print_function
 # A Python program for Prim's Minimum Spanning Tree (MST) algorithm. 
 # The program is for adjacency matrix representation of the graph can also be done with adjacency list  
   
@@ -12,9 +13,9 @@ class Graph():
   
     # A utility function to print the constructed MST stored in parent[] 
     def printMST(self, parent): 
-        print "Edge \tWeight"
+        print("Edge \tWeight")
         for i in range(1,self.V): 
-            print parent[i],"-",i,"\t",self.graph[i][ parent[i] ] 
+            print(parent[i],"-",i,"\t",self.graph[i][ parent[i] ]) 
   
     # A utility function to find the vertex with  
     # minimum distance value, from the set of vertices  

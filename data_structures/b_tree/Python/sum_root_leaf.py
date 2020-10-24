@@ -2,6 +2,7 @@
 To find whether a tree has a sum of tree from root to leaf is equal to the given number.
 If true, return the path which produces the sum. Else, return False
 """
+from __future__ import print_function
 import binary_search_tree
 
 class SumRootLeaf():
@@ -43,6 +44,6 @@ root = tree.insert(root, 5)
 obj = SumRootLeaf()
 path = []
 if(obj.root_leaf(root,9,0,path)):
-    print path
+    print(path)
 else:
-    print None
+    print(None)

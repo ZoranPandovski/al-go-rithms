@@ -1,5 +1,5 @@
 from keras.models import Sequential
-from keras.layers import Dense,LSTM,Activation
+from keras.layers import Dense,Dropout,LSTM,Activation
 
 def rnn_model(input_shape):
     model = Sequential()

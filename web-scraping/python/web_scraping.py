@@ -14,8 +14,11 @@ import base64
 import re
 import sys  
 
-reload(sys)  
-sys.setdefaultencoding('utf8')
+try:
+    reload(sys)  
+    sys.setdefaultencoding('utf8')
+except NameError:  # reload() was moved in Python 3
+    pass
 
 # Routine to scrape the day's comics from a site and add to HTML mail
 def getComics():

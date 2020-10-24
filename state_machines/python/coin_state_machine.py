@@ -5,14 +5,15 @@ then it will spit out a quarter. The machine is totally oblivious to what coins 
 its current state, all it knows is the state it is in, which is how it achieves the "no memory" standard.
 (at least conceptually)
 '''
+from __future__ import print_function
 
 
 def change_state(state):
     while state != 25:
-        print "Balance: {}".format(state)
-        print "Please insert a coin (penny, nickel, dime, quarter)"
+        print("Balance: {}".format(state))
+        print("Please insert a coin (penny, nickel, dime, quarter)")
 
-        coin = raw_input()
+        coin = input()
         if coin == "penny":
             state += 1
         elif coin == "nickel":
@@ -22,9 +23,9 @@ def change_state(state):
         elif coin == "quarter":
             state += 25
         else:
-            print "Sorry that's not a coin"
+            print("Sorry that's not a coin")
 
-    print "Thanks, here's your quarter"
+    print("Thanks, here's your quarter")
     return state
 
 

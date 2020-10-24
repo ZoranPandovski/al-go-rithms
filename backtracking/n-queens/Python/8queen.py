@@ -1,3 +1,4 @@
+from __future__ import print_function
 board = []
 size = 8
 
@@ -14,7 +15,7 @@ def danger(row, col):
     
 def placequeen(row):
     if row > size:
-        print board
+        print(board)
     else:
         for col in range(1, size + 1):
             if not danger(row, col):

@@ -1,3 +1,4 @@
+from __future__ import print_function
 
 def minimum_coins(value, denominations):
     result = []
@@ -23,7 +24,7 @@ def test():
         actual = minimum_coins(scenario[0], scenario[1])
         if actual != scenario[2]:
             message = "Test Failed: Value: {}, Denominations: {}, Expected Result: {}, Actual Result: {}".format(scenario[0], scenario[1], scenario[2], actual)
-            print message
+            print(message)
 
     return None
 

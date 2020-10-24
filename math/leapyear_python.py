@@ -4,7 +4,6 @@ def leapyear(year):
 		print(year," is a leap year")   #input is a leap year
 	else:
 		print(year," is not a leap year")   #input is not a leap year
-	else:
 
 year=int(input("Enter the year: "))
 while year<=999 or year>=10000:           #check whether the year is four digit number or not

@@ -1,9 +1,10 @@
+from __future__ import print_function
 # Python program for solution of 
 # hamiltonian cycle problem 
 
 class Graph(): 
 	def __init__(self, vertices): 
-		self.graph = [[0 for column in range(vertices)]\ 
+		self.graph = [[0 for column in range(vertices)]
 							for row in range(vertices)] 
 		self.V = vertices 
 
@@ -65,14 +66,14 @@ class Graph():
 		path[0] = 0
 
 		if self.hamCycleUtil(path,1) == False: 
-			print "Solution does not exist\n"
+			print("Solution does not exist\n")
 			return False
 
 		self.printSolution(path) 
 		return True
 
 	def printSolution(self, path): 
-		print "Solution Exists: Following is one Hamiltonian Cycle"
+		print("Solution Exists: Following is one Hamiltonian Cycle")
 		for vertex in path: 
-			print vertex, 
-		print path[0], "\n"
+			print(vertex, end=' ') 
+		print(path[0], "\n")

@@ -1,3 +1,5 @@
+from .ZoranPandovski_Singly_linked_list import linkedlist, node
+
 # test cases
 def test_insert():
     list = linkedlist()

@@ -1,5 +1,8 @@
-import numpy as np
 import h5py
+import numpy as np
+import matplotlib as plt
+
+get_ipython = get_ipython  # noqa: F821
 get_ipython().magic('matplotlib inline')
 plt.rcParams['figure.figsize'] = (5.0, 4.0)  # set default size of plots
 plt.rcParams['image.interpolation'] = 'nearest'
