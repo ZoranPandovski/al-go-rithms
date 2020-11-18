@@ -1,0 +1,26 @@
+.node-list{
+  margin-top:10px;
+}
+.node{
+  display:inline-block;
+}
+.node span{
+  display:inline-block;
+  border:1px solid #ccc;
+  border-radius:100%;
+  padding:8px;
+  transition:1s all;
+}
+.node:before{
+  content:'';
+  display:inline-block;
+  width:50px;
+  height:0px;
+  margin-bottom:4px;
+  line-height:1px;
+  border:1px solid #333;
+  border-width:1px  0 0;
+}
+.zoom{
+  transform:scale(2)
+}
