@@ -7,7 +7,7 @@
 %% 2> isPrime:is_prime(2).
 %% true
 %% 3> isPrime:is_prime(-1).
-%% ** exception error: no function clause matching isPrime:is_prime(-1) (isPrime.erl, line 6)
+%% ** exception error: no function clause matching isPrime:is_prime(-1) (isPrime.erl, line 13)
 
 -spec is_prime(pos_integer()) -> boolean().
 is_prime(1) -> false;
