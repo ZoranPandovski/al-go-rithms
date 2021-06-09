@@ -1,0 +1,1 @@
+It follows the divisibility rules for various numbers.
