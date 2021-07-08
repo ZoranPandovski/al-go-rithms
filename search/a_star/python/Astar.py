@@ -8,9 +8,9 @@
 #It is similar to Dijkstra’s Algorithm in the sense that the main objective of both algorithms is to find the shortest path
 #       but it runs much quicker than Dijkstra’s Algorithm
 
+
 class Node():
     """A node class for A* Pathfinding"""
-
     def __init__(self, parent=None, position=None):
         self.parent = parent
         self.position = position
@@ -33,26 +33,21 @@ def astar(maze, start, end):
     end_node.g = end_node.h = end_node.f = 0
 
     # Initialize both open and closed list
-    open_list = []
-    closed_list = []
+    open_list = {}
+    closed_list = set()
 
     # Add the start node
-    open_list.append(start_node)
+    open_list[start_node.position] = start_node
 
     # Loop until you find the end
-    while len(open_list) > 0:
-
+    while len(open_list):
         # Get the current node
-        current_node = open_list[0]
-        current_index = 0
-        for index, item in enumerate(open_list):
-            if item.f < current_node.f:
-                current_node = item
-                current_index = index
+        current_index = min(open_list, key=lambda x: open_list[x].f)
+        current_node = open_list[current_index]
 
         # Pop current off open list, add to closed list
         open_list.pop(current_index)
-        closed_list.append(current_node)
+        closed_list.add(current_index)
 
         # Found the goal
         if current_node == end_node:
@@ -65,13 +60,16 @@ def astar(maze, start, end):
 
         # Generate children
         children = []
-        for new_position in [(0, -1), (0, 1), (-1, 0), (1, 0), (-1, -1), (-1, 1), (1, -1), (1, 1)]: # Adjacent squares
-
+        adj = [(0, -1), (0, 1), (-1, 0), (1, 0), (-1, -1), (-1, 1), (1, -1), (1, 1)]
+        for new_position in adj:  # Adjacent squares
             # Get node position
-            node_position = (current_node.position[0] + new_position[0], current_node.position[1] + new_position[1])
+            node_position = (current_node.position[0] + new_position[0],
+                             current_node.position[1] + new_position[1])
 
             # Make sure within range
-            if node_position[0] > (len(maze) - 1) or node_position[0] < 0 or node_position[1] > (len(maze[len(maze)-1]) -1) or node_position[1] < 0:
+            if (node_position[0] > (len(maze) - 1) or node_position[0] < 0
+                    or node_position[1] > (len(maze[len(maze) - 1]) - 1)
+                    or node_position[1] < 0):
                 continue
 
             # Make sure walkable terrain
@@ -86,24 +84,22 @@ def astar(maze, start, end):
 
         # Loop through children
         for child in children:
-
             # Child is on the closed list
-            for closed_child in closed_list:
-                if child == closed_child:
-                    continue
+            if child.position in closed_list:
+                continue
 
             # Create the f, g, and h values
             child.g = current_node.g + 1
-            child.h = ((child.position[0] - end_node.position[0]) ** 2) + ((child.position[1] - end_node.position[1]) ** 2)
+            child.h = ((child.position[0] - end_node.position[0])**2) + (
+                (child.position[1] - end_node.position[1])**2)
             child.f = child.g + child.h
 
             # Child is already in the open list
-            for open_node in open_list:
-                if child == open_node and child.g > open_node.g:
-                    continue
+            if child.position in open_list and child.g > open_list[child.position].g:
+                continue
 
             # Add the child to the open list
-            open_list.append(child)
+            open_list[child.position] = child
 
 
 def main():
