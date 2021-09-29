@@ -1,4 +1,4 @@
-from .Singly_linked_list import linkedlist, node
+from Singly_linked_list import linkedlist, node
 
 list=linkedlist()
 list.head=node("Monday")
