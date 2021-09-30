@@ -1,21 +1,16 @@
+
 def climbingStaircase(n, k):
-    if n == 0:
-        return [[]]
-    stair = [1] * n
-    return findPossible(stair, k)
-    
-def findPossible(stair, k):
-    if len(stair) == 0:
-        return [[]]
-    if len(stair) == 1:
-        return [[1]]
-    if len(stair) < k:
-        return findPossible(stair, len(stair))
-    
-    solutions = []
-    for i in range(1,k+1):
-        results = findPossible(stair[i::],k)
-        print(results)
-        for result in results:
-            solutions.append([i]+result)
-    return solutions
+    output = []
+    steps = []
+    helper(output, steps, k, n)
+    return output
+        
+def helper(output, steps, k, left):
+    if left == 0:
+        output.append(list(steps)) # notice hard copy here
+    else:
+        for i in range(1, k+1):
+            if i <= left:
+                steps.append(i)
+                helper(output, steps, k, left-i)
+                steps.pop()

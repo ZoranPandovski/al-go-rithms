@@ -1,37 +1,27 @@
-<html>
- <head>
-  <title>
-   Selection sort
-  </title>
- </head>
- <body>
-  <script>
-   function smallest(a,n,i)
-   {
-    var small = a[i];
-    var pos = i;
-    for(j=i+1;j<10;j++)
+function SelectionSort(a)
+{
+    var small,pos,i;
+    for(var m=0;m<a.length-1;m++)
     {
-     if(a[j]<small)
-     {
-      small = a[j];
-      pos = j;
-     }
+        small = a[m]; pos = m;
+        for(i=m+1;i<a.length;i++)
+        {
+            if(a[i]<small)
+            {
+                //console.log("Swapped here");
+                small = a[i];
+                pos = i;
+            }
+        }
+
+        //now we have to swap the value at index m with value at index pos
+        a[pos] = a[m];//we had initially saved the value at mth index of a
+        a[m] = small;
     }
-    return pos;
-   }
-   var a = [10,9,7,101,23,44,12,78,34,23];
-   for(i=0;i<10;i++)
-   {
-    pos = smallest(a,10,i);
-    temp = a[i];
-    a[i] = a[pos];
-   }
-   document.writeln(:printing sorted elements...\n" + "<br>");
-   for(i=0;i<10;i++)
-   {
-    document.writeln(a[i]+"<br>");
-   }
-  </script>
- </body>
-</html>
+    
+    return a;
+}
+
+var a= [7,6,5,4,3,2,1];
+console.log("Elements Before Selection sort-->",a);
+console.log("Elements After Selection Sort-->",SelectionSort(a));
