@@ -26,7 +26,7 @@ Clean example implementations of data structures and algorithms written in diffe
    e.g
    > bubble_sort/python/bubble_sort.py
 
- * If there is an implementation of the same algorithm in your language, add your username in front of the file name.
+ * If there is an implementation of the same algorithm in your language, add your username in front of the file name. E.g., if the already exisitng algorithm is binary_sort and your user name is my_name, just name the new file as 'my_name_binary_sort'.
  * Please include a description for the algorithm that you are implementing. It doesn't matter if it's copied from somewhere as long as it helps people that are learning new algorithm.
  * Graphical examples would be very helpful too.
  * Don't forget to include tests.
