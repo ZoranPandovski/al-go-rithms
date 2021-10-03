@@ -23,7 +23,7 @@ class SetImpl<T> implements ISet<T> {
 	}
 
 	public delete(value: T): ISet<T> {
-		this._set.filter(element => element !== value);
+		this._set = this._set.filter(element => element !== value);
 
 		return this;
 	}
