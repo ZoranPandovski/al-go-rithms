@@ -50,7 +50,7 @@ The model is trained using the following steps:
 3. Continue these steps for the number of epochs given.
 
 We will use the gradient descent optimization technique.
-![]()
+![](model.png)
 
 # Results
 ![](Result.png)
