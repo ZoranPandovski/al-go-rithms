@@ -13,3 +13,4 @@ queens(N, Board) :-
     ),
     
     labeling(Board).
+
