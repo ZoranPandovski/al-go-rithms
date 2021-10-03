@@ -90,10 +90,10 @@ if __name__ == '__main__':
     # Here is the driver code
     w_vector = np.random.randn(4)
     # We will be fitting a 3 degree polynomial
-    x,y = create_dataset(20)
+    x,y = create_dataset(30)
     # The above line creates the dataset and the line below displays it.
     show_dataset(x,y)
     # The model is trained
-    l,yhat = model_creation(loss,x,y,w_vector,1e-6,100000)
+    l,yhat = model_creation(loss,x,y,w_vector,1e-7,50000)
     #The results are shown
     show_output(x,y,yhat)
