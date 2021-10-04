@@ -31,7 +31,7 @@ def Fibonacci(n):
  
  
 
-n
+n = int(input('Enter number for fibonarcii'))
 l = Fibonacci(n+1)
 l = sort(l)
 print(l)
