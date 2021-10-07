@@ -61,5 +61,3 @@ if __name__ == '__main__':
 
 	print("\nStack elements after sorting: ")
 	printStack(s)
-
-# This code is contributed by Muskan Kalra.
