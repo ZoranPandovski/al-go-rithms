@@ -17,7 +17,7 @@ void stockBuySell(int price[], int n)
     int count = 0; // count of solution pairs 
   
     // solution vector 
-    Interval sol[n/2 + 1]; 
+    struct Interval sol[n/2 + 1]; 
   
     // Traverse through given price array 
     int i = 0; 
@@ -53,7 +53,7 @@ void stockBuySell(int price[], int n)
     else
     { 
        for (int i = 0; i < count; i++) 
-          printf("Buy on day: %dt Sell on day: %dn", sol[i].buy, sol[i].sell); 
+          printf("Buy on day: %d \t Sell on day: %d \n", sol[i].buy, sol[i].sell); 
     } 
   
     return; 
