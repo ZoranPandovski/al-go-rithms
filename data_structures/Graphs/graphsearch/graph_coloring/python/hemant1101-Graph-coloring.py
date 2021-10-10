@@ -1,16 +1,16 @@
 """
-Graph coloring problem is to assign colors to certain elements of a graph subject to certain constraints. 
-
-Vertex coloring is the most common graph coloring problem.The problem is, given m colors, 
+Graph coloring problem is to assign colors to certain elements of a graph subject 
+to certain constraints. 
+Vertex coloring is the most common graph coloring problem. The problem is, given m colors, 
 find a way of coloring the vertices of a graph such that no two adjacent vertices are 
-colored using same color. The other graph coloring problems like Edge Coloring 
-(No vertex is incident to two edges of same color) and Face Coloring (Geographical Map Coloring) 
-can be transformed into vertex coloring.
+colored using same color. The other graph coloring problems like Edge Coloring (No vertex is 
+incident to two edges of same color) and Face Coloring (Geographical Map Coloring) 
+can be transformed into vertex coloring. 
 
 To learn more about this algorithm you can follow up on GeeksforGeeks.
 
 """
-# Implementation of Algorithm
+# Algorithm Implementation
 
 def isSafe(graph, color):
     for i in range(4):
@@ -34,7 +34,7 @@ def graphColoring(graph, m, i, color):
         color[i] = 0
     return False
 
-# Printing the Solutions
+# Printing the solution
 
 def printSolution(color):
     print("Solution Exists:" " Following are the assigned colors \nVertices: ", end=" ")
@@ -44,7 +44,7 @@ def printSolution(color):
     for i in range(4):
         print(color[i], end=" ")
 
-# Driver code
+# Driver Code
 
 if __name__ == '__main__':
 
