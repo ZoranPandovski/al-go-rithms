@@ -1,10 +1,10 @@
-klearn import linear_model
+from sklearn import linear_model
 #Load Train and Test datasets
 #Identify feature and response variable(s) and
 #values must be numeric and numpy arrays
-x_train=input_variables_values_training_datasets
-y_train=target_variables_values_training_datasets
-x_test=input_variables_values_test_datasets
+x_train=input_variables_values_training_datasets   # noqa: F821
+y_train=target_variables_values_training_datasets  # noqa: F821
+x_test=input_variables_values_test_datasets        # noqa: F821
 #Create linear regression object
 linear = linear_model.LinearRegression()
 #Train the model using the training sets and

@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Python program to find out whether a  
 # given graph is Bipartite or not 
   
@@ -5,11 +6,11 @@ class Graph():
   
     def __init__(self, V): 
         self.V = V 
-        self.graph = [[0 for column in range(V)] \ 
+        self.graph = [[0 for column in range(V)]
                                 for row in range(V)] 
   
     # This function returns true if graph G[V][V]  
-    # is Bipartite, else false 
+    # is Bipartite, else false
     def isBipartite(self, src): 
   
         # Create a color array to store colors  
@@ -69,4 +70,4 @@ g.graph = [[0, 1, 0, 1],
             [1, 0, 1, 0] 
             ] 
               
-print "Yes" if g.isBipartite(0) else "No"
+print("Yes" if g.isBipartite(0) else "No")

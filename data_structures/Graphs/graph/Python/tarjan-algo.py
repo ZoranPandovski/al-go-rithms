@@ -1,3 +1,4 @@
+from __future__ import print_function
 
 from collections import defaultdict 
 class Graph: 
@@ -36,10 +37,10 @@ class Graph:
 		if low[u] == disc[u]: 
 			while w != u: 
 				w = st.pop() 
-				print w, 
+				print(w, end=' ') 
 				stackMember[w] = False
 				
-			print"" 
+			print("") 
 			
 	def SCC(self): 
 
@@ -62,14 +63,14 @@ def main():
 	g1.addEdge(2, 1) 
 	g1.addEdge(0, 3) 
 	g1.addEdge(3, 4) 
-	print "SSC in first graph "
+	print("SSC in first graph ")
 	g1.SCC() 
 
 	g2 = Graph(4) 
 	g2.addEdge(0, 1) 
 	g2.addEdge(1, 2) 
 	g2.addEdge(2, 3) 
-	print "nSSC in second graph "
+	print("nSSC in second graph ")
 	g2.SCC() 
 
 
@@ -82,7 +83,7 @@ def main():
 	g3.addEdge(1, 6) 
 	g3.addEdge(3, 5) 
 	g3.addEdge(4, 5) 
-	print "nSSC in third graph "
+	print("nSSC in third graph ")
 	g3.SCC() 
 
 	g4 = Graph(11) 
@@ -103,7 +104,7 @@ def main():
 	g4.addEdge(7, 9) 
 	g4.addEdge(8, 9) 
 	g4.addEdge(9, 8) 
-	print "nSSC in fourth graph "
+	print("nSSC in fourth graph ")
 	g4.SCC(); 
 
 
@@ -114,7 +115,7 @@ def main():
 	g5.addEdge(2, 4) 
 	g5.addEdge(3, 0) 
 	g5.addEdge(4, 2) 
-	print "nSSC in fifth graph "
+	print("nSSC in fifth graph ")
 	g5.SCC(); 
 
 if __name__ == '__main__':

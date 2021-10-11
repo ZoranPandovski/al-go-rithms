@@ -1,3 +1,4 @@
+from __future__ import print_function
 # A recursive Python program to print REVERSE level order traversal 
   
 # A binary tree node 
@@ -21,7 +22,7 @@ def printGivenLevel(root, level):
     if root is None: 
         return 
     if level ==1 : 
-        print root.data, 
+        print(root.data, end=' ') 
   
     elif level>1: 
         printGivenLevel(root.left, level-1) 
@@ -52,6 +53,6 @@ root.right = Node(3)
 root.left.left = Node(4) 
 root.left.right = Node(5) 
   
-print "Level Order traversal of binary tree is"
+print("Level Order traversal of binary tree is")
 reverseLevelOrder(root) 
   

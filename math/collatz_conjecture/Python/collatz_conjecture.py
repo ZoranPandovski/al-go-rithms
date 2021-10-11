@@ -1,3 +1,4 @@
+from __future__ import print_function
 def collatz(n):
     seq = [n]
     while n > 1:
@@ -11,4 +12,4 @@ def collatz(n):
 
 if __name__ == "__main__" :
     number = input("Enter the number for which collatz sequence is to be displayed : ")
-    print collatz(number)
+    print(collatz(number))

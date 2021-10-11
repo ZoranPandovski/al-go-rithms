@@ -1,72 +1,41 @@
-import sys  # Library for INT_MAX
+from collections import defaultdict
+import heapq
 
-class Graph():
 
-    def __init__(self, vertices):
-        self.V = vertices
-        self.graph = [[0 for column in range(vertices)]
-                      for row in range(vertices)]
+def create_spanning_tree(graph, starting_vertex):
+    mst = defaultdict(set)
+    visited = set([starting_vertex])
+    edges = [
+        (cost, starting_vertex, to)
+        for to, cost in graph[starting_vertex].items()
+    ]
+    heapq.heapify(edges)
 
-    # A utility function to print the constructed MST stored in parent[]
-    def printMST(self, parent):
-        print "Edge \tWeight"
-        for i in range(1,self.V):
-            print parent[i],"-",i,"\t",self.graph[i][ parent[i] ]
+    while edges:
+        cost, frm, to = heapq.heappop(edges)
+        if to not in visited:
+            visited.add(to)
+            mst[frm].add(to)
+            for to_next, cost in graph[to].items():
+                if to_next not in visited:
+                    heapq.heappush(edges, (cost, to, to_next))
 
-    # A utility function to find the vertex with minimum distance value, from
-    # the set of vertices not yet included in shortest path tree
-    def minKey(self, key, mstSet):
+    return mst
 
-        # Initilaize min value
-        min = sys.maxint
+example_graph = {
+    'A': {'B': 2, 'C': 3},
+    'B': {'A': 2, 'C': 1, 'D': 1, 'E': 4},
+    'C': {'A': 3, 'B': 1, 'F': 5},
+    'D': {'B': 1, 'E': 1},
+    'E': {'B': 4, 'D': 1, 'F': 1},
+    'F': {'C': 5, 'E': 1, 'G': 1},
+    'G': {'F': 1},
+}
 
-        for v in range(self.V):
-            if key[v] < min and mstSet[v] == False:
-                min = key[v]
-                min_index = v
+dict(create_spanning_tree(example_graph, 'A'))
 
-        return min_index
-
-    # Function to construct and print MST for a graph represented using
-    # adjacency matrix representation
-    def primMST(self):
-
-        #Key values used to pick minimum weight edge in cut
-        key = [sys.maxint] * self.V
-        parent = [None] * self.V # Array to store constructed MST
-        key[0] = 0   # Make key 0 so that this vertex is picked as first vertex
-        mstSet = [False] * self.V
-
-        parent[0] = -1  # First node is always the root of
-
-        for cout in range(self.V):
-
-            # Pick the minimum distance vertex from the set of vertices not
-            # yet processed. u is always equal to src in first iteration
-            u = self.minKey(key, mstSet)
-
-            # Put the minimum distance vertex in the shortest path tree
-            mstSet[u] = True
-
-            # Update dist value of the adjacent vertices of the picked vertex
-            # only if the current distance is greater than new distance and
-            # the vertex in not in the shotest path tree
-            for v in range(self.V):
-                # graph[u][v] is non zero only for adjacent vertices of m
-                # mstSet[v] is false for vertices not yet included in MST
-                # Update the key only if graph[u][v] is smaller than key[v]
-                if self.graph[u][v] > 0 and mstSet[v] == False and key[v] > self.graph[u][v]:
-                        key[v] = self.graph[u][v]
-                        parent[v] = u
-
-        self.printMST(parent)
-
-g  = Graph(5)
-g.graph = [ [0, 2, 0, 6, 0],
-             [2, 0, 3, 8, 5],
-             [0, 3, 0, 0, 7],
-             [6, 8, 0, 0, 9],
-             [0, 5, 7, 9, 0],
-           ]
-
-g.primMST();
+# {'A': set(['B']),
+#  'B': set(['C', 'D']),
+#  'D': set(['E']),
+#  'E': set(['F']),
+#  'F': set(['G'])}

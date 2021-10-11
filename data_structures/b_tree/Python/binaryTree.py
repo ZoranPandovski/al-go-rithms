@@ -1,6 +1,7 @@
 """
 Implementation of binary tree
 """
+from __future__ import print_function
 from collections import deque
 
 
@@ -41,14 +42,6 @@ class BinaryTree(object):
                 return root
 
 
-    def search(root,element):
-        if root == None:
-            return False
-        if root.val == element:
-            return True
-        return self.search(root.left,element) or self.search(root.right,element)
-
-
     ## yet to code delete method
     def delete(self,root,data):
         pass
@@ -58,7 +51,7 @@ class BinaryTree(object):
         #preorder Traversal
         if root == None:
             return
-        print root.val
+        print(root.val)
         self.display(root.left)
         self.display(root.right)
 
@@ -67,3 +60,10 @@ class BinaryTree(object):
         if root == None:
             return 0
         return (1 + self.size(root.left) + self.size(root.right))
+
+    def search(self,root,element):
+        if root == None:
+            return False
+        if root.val == element:
+            return True
+        return self.search(root.left,element) or self.search(root.right,element)

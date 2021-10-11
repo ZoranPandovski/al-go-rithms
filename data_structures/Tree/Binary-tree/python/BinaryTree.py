@@ -1,3 +1,4 @@
+from __future__ import print_function
 class Node:
     def __init__(self, key):
         self.right = None
@@ -42,4 +43,4 @@ if __name__ == '__main__':
     tree = BinaryTree()
     root = tree.getRootOfTree()
     # Print Inorder Traversal of Tree
-    print 'Inorder traversal for binary tree:', inorder(root, [])
+    print('Inorder traversal for binary tree:', inorder(root, []))

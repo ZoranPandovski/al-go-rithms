@@ -1,7 +1,8 @@
 PRIME = 30011
 
- FibRepSq(n):
-    if(n==0) return 0;
+def FibRepSq(n):
+    if n==0:
+        return 0
     magic_mat = [[1,1],[1,0]]
     f1_f0 = [[1],[0]]
     magic_mat = power(magic_mat,n-1)

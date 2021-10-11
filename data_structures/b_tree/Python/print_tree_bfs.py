@@ -1,6 +1,7 @@
 """
 Print the tree by traversing in a BFS manner
 """
+from __future__ import print_function
 
 from collections import deque
 import binary_search_tree
@@ -13,7 +14,7 @@ def print_bfs(root):
 
     q = deque()
     q.append(root)
-    node = binary_tree.Node('$')
+    node = binary_tree.Node('$')  # noqa: F821 TODO!
     q.append(node)
 
     while len(q) != 0:
@@ -30,10 +31,10 @@ def print_bfs(root):
             if popped.right:
                 q.append(popped.right)
 
-            print popped.val, ' ',
+            print(popped.val, ' ', end=' ')
 
         # Prints new line
-        print
+        print()
         # Enqueues '$'
         q.append(node)
         # Dequeues'$'

@@ -1,3 +1,4 @@
+from __future__ import print_function
 baconian_codes = {'a' : 'AAAAA', 'b' : 'AAAAB', 'c' : 'AAABA', 'd' :
 'AAABB', 'e' : 'AABAA', 'f' : 'AABAB', 'g' : 'AABBA', 'h' : 'AABBB',
 'i' : 'ABAAA', 'j' : 'BBBAA', 'k' : 'ABAAB', 'l' : 'ABABA', 'm' :
@@ -13,4 +14,4 @@ if __name__ == '__main__':
 			ciphertext += baconian_codes[ch.lower()]
 		else:
 			ciphertext += ' '
-	print ciphertext
+	print(ciphertext)

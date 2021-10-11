@@ -6,7 +6,8 @@
  * performed. This can be used to listen in on internals of the algorithm.
  * @returns The sorted array.
  */
- function sort(array, compare, swap) {
+
+function sort(array, compare, swap) {
     var sorted = false;
     while (!sorted) {
       sorted = innerSort(array, 1, compare, swap);
@@ -34,4 +35,6 @@
       }
     }
     return sorted;
+
   }
+

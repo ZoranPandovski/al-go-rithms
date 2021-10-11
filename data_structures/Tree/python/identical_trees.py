@@ -1,3 +1,4 @@
+from __future__ import print_function
 #  to determine if two trees are identical
 
 from tree_utils import TreeNode
@@ -27,6 +28,6 @@ def test():
 	root2.left.right = TreeNode(5)
 
 	if identical_trees(root1, root2):
-		print "Both trees are identical"
+		print("Both trees are identical")
 	else:
-		print "Trees are not identical"
+		print("Trees are not identical")

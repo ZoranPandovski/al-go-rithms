@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Python program to implement Runge Kutta method 
 # A sample differential equation "dy / dx = (x - y)/2" 
 def dydx(x, y): 
@@ -30,6 +31,6 @@ x0 = 0
 y = 1
 x = 2
 h = 0.2
-print 'The value of y at x is:', rungeKutta(x0, y, x, h) 
+print('The value of y at x is:', rungeKutta(x0, y, x, h)) 
 
 # This code is contributed by Prateek Bhindwar 
