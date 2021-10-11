@@ -46,7 +46,7 @@ int main(){
 	string str1 = "geeks";
 	string str2 = "eksge";
 
-	isRotated(str1, str2) ? cout << "Yes"
-						: cout << "No";
+	isRotated(str1, str2) ? cout << "Yes" : cout << "No";
+	
 	return 0;
 }
