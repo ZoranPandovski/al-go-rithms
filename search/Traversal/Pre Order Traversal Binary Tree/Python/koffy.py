@@ -10,7 +10,7 @@ class Solution:
         result = []
         if root:
             result.append(root.val)
-            result += self.inorderTraversal(root.left)
-            result += self.inorderTraversal(root.right)
+            result += self.preorderTraversal(root.left)
+            result += self.preorderTraversal(root.right)
             
         return result
