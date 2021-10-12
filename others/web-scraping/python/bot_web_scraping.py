@@ -26,3 +26,4 @@ while count < repeat:
     inputSend = driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[1]/div[4]/div[1]/footer/div[1]/div/div/div[2]/div[2]/button')
     inputSend.click()
     count += 1
+    
