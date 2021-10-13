@@ -1,5 +1,5 @@
 class Solution:
-    def bubbleSortOptimized(self, nums: List[int]) -> None:
+    def bubbleSortOptimized(self, nums: list[int]) -> None:
         if len(nums) == 1:
             return nums
         else:
