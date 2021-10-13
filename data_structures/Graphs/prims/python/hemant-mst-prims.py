@@ -31,9 +31,7 @@ class Graph():
         parent = [None] * self.V
         key[0] = 0
         mstSet = [False] * self.V
-
         parent[0] = -1
-
         for _ in range(self.V):
             u = self.minKey(key, mstSet)
             mstSet[u] = True
