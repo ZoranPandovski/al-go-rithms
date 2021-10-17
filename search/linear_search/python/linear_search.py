@@ -5,7 +5,7 @@ def linear_search(list, key):
 			return i
 	return None
 
-# Return True if given number is found in the list
+# Return whether the given number is found in the list
 def linear_search1(list, key):
 	position = 0
 	found = False
@@ -15,7 +15,7 @@ def linear_search1(list, key):
 		position += 1
 	return found
 
-# Return True if given number is found in the list
+# Return whether the given number is found in the list
 def linear_search2(list, key):
 	return lambda list, key: list.index(key) if key in list else None
 
