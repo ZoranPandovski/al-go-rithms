@@ -25,7 +25,7 @@ public class LIS {
     }
 
     public static int longestIncreasingSubsequence(List<Integer> a){
-        //equals included then upperbound
+        // equals included then upperbound
         // else lower bound use as required
         ArrayList<Integer> ans = new ArrayList<>();
         for(int i=0;i<a.size();i++){
