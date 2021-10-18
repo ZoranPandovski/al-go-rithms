@@ -11,7 +11,7 @@ class TreeNode:
          self.right = right
          
 class Solution:
-    def diameterOfBinaryTree(self, root: TreeNode) -> int:
+    def diameterOfBinaryTree(self, root):
         def diameterTreeUtil(root):
             if root == None: return [0,0]
             
