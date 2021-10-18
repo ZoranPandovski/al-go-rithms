@@ -10,7 +10,7 @@ public class CoinToss {
         if (answer == num) {
             System.out.println("Correct!");
         } else {
-            System.out.println("Try Again!");
+            System.out.println("Whoops, try Again!");
         }
     }
 }
