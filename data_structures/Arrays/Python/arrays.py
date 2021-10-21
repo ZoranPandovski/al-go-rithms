@@ -5,6 +5,7 @@ Python arrays are known as 'lists'
 
 # Creating a list
 empty_list = []  # Empty list
+empty_list = list() #alternative method
 list_with_values = [1, 2, 3, 4, 5, 6]  # List with integers
 list_with_mixed_values = [1, "hello", 2, "world", 3]  # Lists with different data types
 
