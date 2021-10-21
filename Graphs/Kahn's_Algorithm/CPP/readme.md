@@ -41,8 +41,10 @@ The approach is based on the below fact:
 	<br>
 </h1>
 
-#### <Strong>Output</Strong>: 4 5 2 0 3 1 
-#### <Strong>Explanation</Strong>: The topological sorting of a DAG is done in a order such that for every directed edge uv, vertex u comes before v in the ordering. 4 has no incoming edge. 5 has no incoming edge, 2 and 0 have incoming edge from 4 and 5 and 1 is placed at last. Another topological sorting of the following graph is “5 4 2 3 1 0″. 
+#### <Strong>Output</Strong>: 
+4 5 2 0 3 1 
+#### <Strong>Explanation</Strong>: 
+The topological sorting of a DAG is done in a order such that for every directed edge uv, vertex u comes before v in the ordering. 4 has no incoming edge. 5 has no incoming edge, 2 and 0 have incoming edge from 4 and 5 and 1 is placed at last. Another topological sorting of the following graph is “5 4 2 3 1 0″. 
 
 <br>
 
