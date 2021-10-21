@@ -1,5 +1,5 @@
 
-function fibonnaciSearch(arr, x, n)
+function fibonacciSearch(arr, x, n)
 {
 	/* Initialize fibonacci numbers */
 	let fibMMm2 = 0; // (m-2)'th Fibonacci No.
@@ -59,4 +59,4 @@ function fibonnaciSearch(arr, x, n)
 	return -1;
 }
 
-module.exports = fibonnaciSearch;
+module.exports = fibonacciSearch;

@@ -5,7 +5,7 @@
 // jasmine <this_file>
 
 
-const fibonnaciSearch = require('./fibonnaci-search')
+const fibonacciSearch = require('./fibonacci-search')
 
 describe('Fibonacci Search', () => {
 
@@ -14,7 +14,7 @@ describe('Fibonacci Search', () => {
         let n = arr.length;
         let x = [290, 82, 50];
         x.forEach(test => {
-            let ind = fibonnaciSearch(arr, test, n);
+            let ind = fibonacciSearch(arr, test, n);
             expect(ind).toBe(arr.indexOf(test))
             if(ind>=0){
             console.log(test + " Found at index: " + ind);
@@ -30,7 +30,7 @@ describe('Fibonacci Search', () => {
         let n = arr.length;
         let x = [10, 100, 238];
         x.forEach(test => {
-            let ind = expect(fibonnaciSearch(arr, test, n)).toBe(-1)
+            let ind = expect(fibonacciSearch(arr, test, n)).toBe(-1)
             expect(ind).not.toBe(Math.sign(ind) == -1)
             if(ind>=0){
             console.log("Found at index: " + ind);
