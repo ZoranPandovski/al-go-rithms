@@ -1,6 +1,4 @@
 
-
-/* Returns index of x if present, else returns -1 */
 function fibonnaciSearch(arr, x, n)
 {
 	/* Initialize fibonacci numbers */
@@ -60,22 +58,5 @@ function fibonnaciSearch(arr, x, n)
 	/*element not found. return -1 */
 	return -1;
 }
-
-/* driver code */
-let arr = [10, 22, 35, 40, 45, 50, 80, 82,85, 90, 100,235];
-let n = arr.length;
-let x = [90, 10, 100, 82];
-x.forEach(test => {
-    let ind = fibonnaciSearch(arr, test, n);
-    console.log(ind, arr.indexOf(test))
-    if(Math.sign(ind) !== -1) {
-    console.log("Found at index: " + ind);
-    }else{
-    console.log(test + " isn't present in the array");
-    }
-})
-	
-
-// This code is contributed by _saurabh_jaiswal
 
 module.exports = fibonnaciSearch;
