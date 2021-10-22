@@ -26,6 +26,7 @@ const matrixMultiplier = (matrixA,matrixB) => {
         result.push([])
     });
     matrixA.forEach((v,i)=>{
+        let i2
         for(i2=0;i2<matrixB[0].length;i2++){
             let total = 0;
             v.forEach((v3,i3)=>{
