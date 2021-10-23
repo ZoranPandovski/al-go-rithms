@@ -9,10 +9,13 @@
 
 #### Definition-
 
-Pointers are variables that store the address of another variable.  
+Pointers are variables that store the address of another variable.
 
-![Image](http://blog.ashutoshdwivedi.in/tutorials/pointers/introduction%20to%20pointers/1.png)
-![Image](http://blog.ashutoshdwivedi.in/tutorials/pointers/introduction%20to%20pointers/2.png)
+![image](https://user-images.githubusercontent.com/57450747/138556486-8c12421f-7020-45b9-a3fd-5c3bbdd9dd53.png)
+
+
+<!-- ![Image](http://blog.ashutoshdwivedi.in/tutorials/pointers/introduction%20to%20pointers/1.png)
+![Image](http://blog.ashutoshdwivedi.in/tutorials/pointers/introduction%20to%20pointers/2.png) -->
 
   
 
