@@ -1,5 +1,5 @@
 {
-    n = as.integer(readline(prompt = "Enter a number :"))
+    x = as.integer(readline(prompt = "Enter a number :"))
     
     s = 9
     while (x > 0) {
