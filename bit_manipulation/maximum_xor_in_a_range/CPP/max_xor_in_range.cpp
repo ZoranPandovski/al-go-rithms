@@ -1,3 +1,5 @@
+// This is an O(1) solution to finding the maximum XOR of a pair of numbers in a range
+
 #include<bits/stdc++.h>
 #include<algorithm>
 
