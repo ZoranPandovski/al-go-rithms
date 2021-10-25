@@ -18,7 +18,24 @@ void Rmn::getData()
   cout<<"\n The program to generate Ramanujam's Birthday Magic Square\n";
 
   cout<<"\n Enter your Date of Birth in the order of day (dd) ,month (mm) and year in the form (YYYY) \n";
-  cin>>dd>>mm>>m;
+  //bug fixed
+  cin>>dd;
+  if(dd>31){
+    cout<<"Day can be only between 1 and 31"<<endl;
+    int temp;
+    cin>>temp;
+    dd=temp;
+    cout<<"Enter the month"<<endl;
+  }
+  cin>>mm;
+  if(mm>12){
+    cout<<"Month can be only between 1 and 12 inc."<<endl;
+    int temp;
+    cin>>temp;
+    mm=temp;
+    cout<<"Enter the year"<<endl;
+  }
+  cin>>m;
   yy=(m/1000)*10 + (m%1000/100);
   YY=m%100;
 
