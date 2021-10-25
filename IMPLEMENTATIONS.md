@@ -75,7 +75,8 @@
   * [josepheus_problem](math/josepheus_problem)
   * [fast pow](math/fast_pow)
   * [nCr Computations](math/nCr_computations)
-  
+  * [FIzz Buzz](math/Fizz_Buzz)
+
 * [Cryptography](cryptography)
   * [affine cipher](cryptography/affine_cipher)
   * [autokey cipher](cryptography/autokey_cipher)
