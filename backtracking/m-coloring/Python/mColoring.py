@@ -1,3 +1,4 @@
+from __future__ import print_function
 
 
 class Graph():
@@ -34,9 +35,9 @@ class Graph():
 			return False
 
 		# Print the solution
-		print "Solution exist and Following are the assigned colours:"
+		print("Solution exist and Following are the assigned colours:")
 		for c in colour:
-			print c,
+			print(c, end=' ')
 		return True
 
 # Driver Code

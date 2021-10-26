@@ -1,0 +1,102 @@
+
+#include<iostream>  
+using namespace std;
+
+  
+void eightcoin(int arr[]);
+void compare(int a, int b, int real, int index1, int index2);
+void print(int fake, int real, int i);
+
+int main()//Get the weight of coins
+{
+    int arr[8];
+    //Enter the weight of coins
+    cout << "Please enter eight coins:" << endl;
+    for (int i = 0; i < 8; i++)
+    {
+        cin >> arr[i];
+    }
+    eightcoin(arr);
+    return 0;
+}
+
+void eightcoin(int arr[])
+{
+  
+    int abc = arr[0] + arr[1] + arr[2];
+    int def = arr[3] + arr[4] + arr[5];
+    int a = arr[0];
+    int b = arr[1];
+    int c = arr[2];
+    int d = arr[3];
+    int e = arr[4];
+    int f = arr[5];
+    int g = arr[6];
+    int h = arr[7];
+    if (abc > def)         
+    {
+        if ((a + e) > (d + b)) 
+        {
+            compare(a, d, g, 0, 3);
+
+        }
+        else if ((a + e) == (d + b))
+        {
+            compare(c, f, g, 2, 5);
+        }
+        else
+        {
+            compare(b, e, g, 1, 4);
+        }
+    }
+    else if (abc == def) 
+    {
+
+        if (g == a)
+        {
+            print(h, g, 7);
+        }
+        else
+        {
+            print(g, h, 6);
+        }
+    }
+    else               
+    {
+        if ((a + e) > (d + b))
+        {
+            compare(b, e, g, 1, 4);
+        }
+        else if ((a + e) == (d + b))
+        {
+            compare(c, f, g, 2, 5);
+        }
+        else
+        {
+            compare(a, d, g, 0, 3);
+        }
+    }
+
+}
+
+void compare(int a, int b, int real, int index1, int index2)//compare coins and find real coins and fake coin.
+{
+    if (a == real)
+    {
+        print(b, real, index2);
+    }
+    else
+    {
+        print(a, real, index1);
+    }
+}
+void print(int fake, int real, int i)//print the result
+{
+    if (fake > real)
+    {
+        cout << "The fake money is located at " << (i + 1)<<" and it is heavier than real one" ;
+    }
+    else {
+        cout << "The fake money is located at" << (i + 1)<<" and it is lighter than real one" ;
+    }
+}

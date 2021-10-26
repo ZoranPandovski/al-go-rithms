@@ -14,7 +14,7 @@ def floydWarshall (graph):
 	for i in range(V):
 		for j in range(V):
 			for k in range(V):
-				dist[i][j] = min(matrix[i][j], matrix[i][k] + matrix[k][j])
+				dist[i][j] = min(graph[i][j], graph[i][k] + graph[k][j])
 
 	printSolution(dist)
 

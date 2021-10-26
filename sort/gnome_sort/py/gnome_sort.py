@@ -1,3 +1,4 @@
+from __future__ import print_function
 def gnomeSort( arr, n):
     index = 0
     while index < n:
@@ -16,7 +17,7 @@ arr = [ 34, 2, 10, -9]
 n = len(arr)
  
 arr = gnomeSort(arr, n)
-print "Sorted seqquence after applying Gnome Sort :",
+print("Sorted seqquence after applying Gnome Sort :", end=' ')
 for i in arr:
-    print i,
+    print(i, end=' ')
     

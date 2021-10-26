@@ -1,21 +1,22 @@
+from __future__ import print_function
 #this program solves any mxn rat maze with the given conditions using recursion
 import os
 
 def printgrid(grid,m,n):  #to print the grid
 
-    print "\n"
+    print("\n")
     for i in grid:
         for j in i:
             if j==0:
-                print "#",   #to print the wall
+                print("#", end=' ')   #to print the wall
             elif j==1:
-                print ".",   #to print the entry
+                print(".", end=' ')   #to print the entry
             else :
-                print "~" ,   #to print the rat's path
+                print("~", end=' ')   #to print the rat's path
 
-        print '' 
+        print('') 
 
-    print "\n"       
+    print("\n")       
 
 
 def solve(grid, ratPostion,m,n): #this function solves one step of the maze each time it is called
@@ -72,7 +73,7 @@ grid=[]
 m=input("enter the value of m(width of grid): ")
 n=input("enter the value of n(height of the grid): ")
 
-print "Enter the elements of the grid(0:wall, 1:entry)"
+print("Enter the elements of the grid(0:wall, 1:entry)")
 
 for i in range(m):
     temp=[]

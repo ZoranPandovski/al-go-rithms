@@ -54,7 +54,7 @@ def decode(image):
 
 a = Image.open('bird.bmp', 'r')
 print("Enter string to encode ended by $: ")
-string_to_encode = raw_input()
+string_to_encode = input()
 encode(a, string_to_encode)
 
 b = Image.open('out.bmp', 'r')

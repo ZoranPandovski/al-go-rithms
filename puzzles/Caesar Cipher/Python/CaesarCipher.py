@@ -1,3 +1,4 @@
+from __future__ import print_function
 #A python program to illustrate Caesar Cipher Technique 
 def encrypt(text,s): 
 	result = "" 
@@ -19,7 +20,7 @@ def encrypt(text,s):
 #Test for the above function 
 text = "ATTACKATONCE"
 s = 4
-print "Text : " + text 
-print "Shift : " + str(s) 
-print "Cipher: " + encrypt(text,s) 
+print("Text : " + text) 
+print("Shift : " + str(s)) 
+print("Cipher: " + encrypt(text,s)) 
 

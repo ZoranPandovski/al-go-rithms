@@ -1,3 +1,4 @@
+from __future__ import print_function
 from collections import defaultdict
  
 #Class to represent a graph
@@ -38,7 +39,7 @@ class Graph:
                 self.topologicalSortUtil(i,visited,stack)
  
         # Print contents of stack
-        print stack
+        print(stack)
 def main():
     g= Graph(6)
     g.addEdge(5, 2);
@@ -48,7 +49,7 @@ def main():
     g.addEdge(2, 3);
     g.addEdge(3, 1);
      
-    print "Following is a Topological Sort of the given graph"
+    print("Following is a Topological Sort of the given graph")
     g.topologicalSort()
 
 if __name__ == '__main__':

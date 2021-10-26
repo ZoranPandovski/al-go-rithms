@@ -16,7 +16,7 @@
 #importing all the required libraries
 import numpy as np
 import matplotlib.pyplot as plt
-get_ipython().run_line_magic('matplotlib', 'inline')
+get_ipython().run_line_magic('matplotlib', 'inline')  # noqa: F821
 from sklearn import datasets
 
 

@@ -1,3 +1,4 @@
+from __future__ import print_function
 import numpy as np
 
 # The key is based on 3 x 3, but can change it
@@ -32,14 +33,14 @@ def encrypt(word, key):
 
 # User input
 while True:
-	toEncrypt = raw_input("Please enter a word/phrase to encrypt with a length divisible by 3:\n")
+	toEncrypt = input("Please enter a word/phrase to encrypt with a length divisible by 3:\n")
 	if (len(toEncrypt.strip()) % 3 != 0):
-		print "\nEnter a valid length!"
-		toEncrypt = raw_input("Please enter a word/phrase to encrypt:\n")
+		print("\nEnter a valid length!")
+		toEncrypt = input("Please enter a word/phrase to encrypt:\n")
 	elif not toEncrypt.strip().isalpha():
-		print "\nEnter only alphabetical!"
-		toEncrypt = raw_input("Please enter a word/phrase to encrypt:\n")
+		print("\nEnter only alphabetical!")
+		toEncrypt = input("Please enter a word/phrase to encrypt:\n")
 	else:
 		break
 
-print encrypt(toEncrypt, key)
+print(encrypt(toEncrypt, key))

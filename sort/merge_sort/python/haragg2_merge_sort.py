@@ -1,6 +1,7 @@
 '''merge sort routine written by me two years back when I started learning
  algorithms.This is special because it took me 2-3 days to write this and was 
  my first algo problem that I solved'''
+from __future__ import print_function
 
 def merge_sort(lst):
 	n=len(lst)
@@ -37,10 +38,10 @@ new_list=[]
 for x in range (0, 100000000):
     new_list.append(random.randint(0, 9999999999999))
     
-print len(new_list)
+print(len(new_list))
 
 a=merge_sort(new_list)
-print a
+print(a)
 
 
 

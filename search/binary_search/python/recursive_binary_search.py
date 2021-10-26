@@ -12,10 +12,10 @@ def recursive_binary_search(n, e, i, j):
        return half
 
     elif e < n[half]:
-       return binary_search(n, e, i, half-1)
+       return recursive_binary_search(n, e, i, half-1)
 
     elif e > n[half]:
-       return binary_search(n, e, half+1, j)
+       return recursive_binary_search(n, e, half+1, j)
 
 
 def test():

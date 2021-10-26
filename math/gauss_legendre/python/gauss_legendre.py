@@ -28,7 +28,7 @@ t[0] = 0.25
 p[0] = 1.0
 
 #Update on each iteration
-for i in xrange(1, num_iter+1):
+for i in range(1, num_iter+1):
   a[i] = (a[i-1]+b[i-1])/2
   b[i] = np.sqrt(a[i-1]*b[i-1])
   t[i] = t[i-1]-p[i-1]*(a[i-1]-a[i])**2

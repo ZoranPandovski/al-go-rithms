@@ -1,3 +1,4 @@
+from __future__ import print_function
 
 from collections import defaultdict
 
@@ -32,7 +33,7 @@ class Graph:
 
 			# Dequeue a vertex from queue and print it
 			s = queue.pop(0)
-			print s,
+			print(s, end=' ')
 
 			# Get all adjacent vertices of the dequeued
 			# vertex s. If a adjacent has not been visited,
@@ -53,7 +54,7 @@ def main():
 	g.addEdge(2, 3)
 	g.addEdge(3, 3)
 
-	print "Following is Breadth First Traversal (starting from vertex 2)"
+	print("Following is Breadth First Traversal (starting from vertex 2)")
 	g.BFS(2)
 
 if __name__ == '__main__':

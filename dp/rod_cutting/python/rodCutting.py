@@ -5,7 +5,7 @@ def rodCutting(res, prices, n):
 		# call recursively
 		rodCutting(res, prices, n-1)		
 		maxval = prices[n]
-		for i in xrange(1, n):
+		for i in range(1, n):
 			maxval = max(maxval, prices[i] + res[n-i])
 		res[n] = maxval
 
@@ -13,7 +13,7 @@ def rodCutting(res, prices, n):
 n = input("Enter value of n: ")
 res = [-1]*(n+1)
 prices = [-1]*(n+1)
-for i in xrange(n):
+for i in range(n):
 	prices[i+1] = input("")
 
 rodCutting(res, prices, n)
