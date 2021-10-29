@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.body {
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color: ; */
+}
+
+#board {
+    background: linear-gradient(rgb(96, 23, 214), rgb(0, 0, 0));
+    /* background-image: url("snake1.png"); */
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 90vmin;
+    height: 90vmin;
+    border: 1px solid rgb(0, 0, 0);
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+.head {
+    background: linear-gradient( rgb(26, 104, 17), rgb(165, 211, 38));
+    border: dashed .25vmin rgb(9, 243, 9);
+    border-radius: 13px;
+    transform: scale(1.1);
+    /* color: ; */
+}
+
+.food {
+    background: linear-gradient(rgb(189, 209, 7), rgb(228, 10, 10));
+    border: outset .4vmin rgb(22, 185, 226);
+    border-radius: 13px;
+    transform: scale(1.1);
+}
+
+.snake {
+    background: linear-gradient( rgb(4, 43, 3), rgb(20, 175, 33));
+    border: dashed .3vmin rgb(17, 206, 32);
+    border-radius: 15px;
+}
+
+#scoreBox {
+    display: flex;
+    font-size: xx-large;
+    font-weight: bold;
+    color: purple;
+}
+
+#hiscoreBox {
+    display: flex;
+    font-size: xx-large;
+    font-weight: bold;
+    color: purple;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+}
