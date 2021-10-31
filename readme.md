@@ -111,6 +111,7 @@ Clean example implementations of data structures and algorithms written in diffe
     * [Geeks For Geeks](https://practice.geeksforgeeks.org)
     * [Kattis](https://open.kattis.com/)
     * [Codility](https://www.codility.com/)
+    * [Edabit](https://edabit.com/)
 
 ## License
 
