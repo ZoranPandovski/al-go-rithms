@@ -4,11 +4,11 @@ int i=0,j=0,k=0,l=0,flag=0, p=0;         //Declarations
 void read()                              // Function for reading 3 strings !!
 {
   printf("\n Enter the string \n");         
-  scanf("%[^\n]",STR);
+  scanf("%50s",STR);
   printf("\n Enter the pattern string \n");
-  scanf("%c*%[^\n]",PAT);
+  scanf("%50s",PAT);
   printf("\n Enter the replace string \n");
-  scanf("%c*%[^\n]",REP);
+  scanf("%50s",REP);
 }
 void match()                            // Function for comparing 2 strings !!
 {
