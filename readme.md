@@ -82,6 +82,9 @@ Clean example implementations of data structures and algorithms written in diffe
      * [Algorithms and Data Structures Capstone](https://www.edx.org/course/algorithms-data-structures-capstone-uc-san-diegox-algs207x)
    * Stony Brook University
      * [Skiena's algorithms lectures](http://www3.cs.stonybrook.edu/~algorith/video-lectures/)
+   * Scaler
+     * [Data Structure and algorithm](https://www.scaler.com/topics/data-structures/)
+
 * **Online classes (paid)**
   * Udemy 
       * [The Coding Interview Bootcamp: Algorithms + Data Structures](https://www.udemy.com/coding-interview-bootcamp-algorithms-and-data-structure/)
