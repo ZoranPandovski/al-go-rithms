@@ -46,6 +46,7 @@ Clean example implementations of data structures and algorithms written in diffe
    * [Grokking Algorithms](https://www.amazon.com/Grokking-Algorithms-illustrated-programmers-curious/dp/1617292230/ref=zg_bs_3870_3?_encoding=UTF8&psc=1&refRID=CBQSARF3C86P7FMQ4DEV)
    * [Algorithms](https://www.amazon.in/Algorithms-Robert-Sedgewick/dp/032157351X)
    * [Competitive Programming 3](https://www.amazon.com/Competitive-Programming-3rd-Steven-Halim/dp/B00FG8MNN8)
+   * [10 Best Data Structures and Algorithms Books](https://www.interviewbit.com/blog/data-structures-and-algorithms-books/)
  * **Sites**
    * [Algorithms and Data Structures -Emaxx](https://cp-algorithms.com/algebra/extended-euclid-algorithm.html)
    * [All Good Tutorials on Codeforces](http://codeforces.com/blog/entry/57282)
