@@ -1,3 +1,4 @@
+from __future__ import print_function
 class Node:
     def __init__(self, label=None, data=None):
         self.label = label
@@ -118,6 +119,6 @@ if __name__ == '__main__':
     words = 'hello goodbye help gerald gold tea ted team to too tom stan standard money'
     for word in words.split():
         trie.add(word)
-    print "'goodbye' in trie: ", trie.has_word('goodbye')
-    print trie.start_with_prefix('g')
-    print trie.start_with_prefix('to')
+    print("'goodbye' in trie: ", trie.has_word('goodbye'))
+    print(trie.start_with_prefix('g'))
+    print(trie.start_with_prefix('to'))

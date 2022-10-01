@@ -1,3 +1,4 @@
+from __future__ import print_function
 def knapsack(weights, values, W):
 
 	n = len(weights)
@@ -24,7 +25,7 @@ def main():
 	W = 40
 
 	#Call knapsack routine to compute value
-	print "Result - {}".format(knapsack(weights, values, W))
+	print("Result - {}".format(knapsack(weights, values, W)))
 
 	return
 

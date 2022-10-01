@@ -27,7 +27,7 @@ int main(){
     int j=0;
     int counter=0;
     int b[1240];
-    for(int i=0;i<=max;i++){
+    for(int i=0;i<max;i++){
         if(a[i]==1){
             b[j]=i;
             j++;

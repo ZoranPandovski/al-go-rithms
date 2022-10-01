@@ -1,3 +1,4 @@
+from __future__ import print_function
 class TreeNode(object):
 
 	def __init__(self, data=None, left=None, right=None):
@@ -11,12 +12,12 @@ class Traversals(object):
 	def in_order_traversal(self, root):
 		if root:
 			self.in_order_traversal(root.left)
-			print str(root.data)
+			print(str(root.data))
 			self.in_order_traversal(root.right)
 
 	def pre_order_traversal(self, root):
 		if root:
-			print str(root.data)
+			print(str(root.data))
 			self.pre_order_traversal(root.left)
 			self.pre_order_traversal(root.right)
 
@@ -24,14 +25,14 @@ class Traversals(object):
 		if root:
 			self.post_order_traversal(root.left)
 			self.post_order_traversal(root.right)
-			print str(root.data)
+			print(str(root.data))
 
 	def level_order(self, root):
 		level_queue = list()
 		level_queue.append(root)
 		while level_queue:
 			current_node = level_queue.pop(0)
-			print current_node.data
+			print(current_node.data)
 			if current_node.left:
 				level_queue.append(current_node.left)
 			if current_node.right:
@@ -48,13 +49,13 @@ def test():
 	l21 = TreeNode(3, l3, l4)
 	root = TreeNode(1, l11, l21)
 	traversal = Traversals()
-	print "In-Order:"
+	print("In-Order:")
 	traversal.in_order_traversal(root)
-	print "Pre-Order:"
+	print("Pre-Order:")
 	traversal.pre_order_traversal(root)
-	print "Post-Order:"
+	print("Post-Order:")
 	traversal.post_order_traversal(root)
-	print "Level Order"
+	print("Level Order")
 	traversal.level_order(root)
 
 

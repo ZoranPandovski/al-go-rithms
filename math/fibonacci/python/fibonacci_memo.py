@@ -1,3 +1,4 @@
+from __future__ import print_function
 
 # Fibonacci with memoization
 # Get the number by running fibonacci(n)
@@ -20,7 +21,7 @@ def fibonacci(n):
 
 
 # fibonacci(10) = 55
-print fibonacci(10)
+print(fibonacci(10))
 
 # fibonacci(43) = 433494437 
-print fibonacci(43)
+print(fibonacci(43))

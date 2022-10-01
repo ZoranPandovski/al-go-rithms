@@ -1,126 +1,91 @@
-import numpy as np 
+import numpy as np
 
-import matplotlib.pyplot as plt 
+import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 
-  
 
-def estimate_coef(x, y): 
+def estimate_coef(x, y):
 
-    # number of observations/points 
+    # number of observations/points
 
-    n = np.size(x) 
+    n = np.size(x)
 
-  
+    # mean of x and y vector
 
-    # mean of x and y vector 
+    m_x, m_y = np.mean(x), np.mean(y)
 
-    m_x, m_y = np.mean(x), np.mean(y) 
+    # calculating cross-deviation and deviation about x
 
-  
+    SS_xy = np.sum(y * x - n * m_y * m_x)
 
-    # calculating cross-deviation and deviation about x 
+    SS_xx = np.sum(x * x - n * m_x * m_x)
 
-    SS_xy = np.sum(y*x - n*m_y*m_x) 
+    # calculating regression coefficients
 
-    SS_xx = np.sum(x*x - n*m_x*m_x) 
+    b_1 = SS_xy / SS_xx
 
-  
+    b_0 = m_y - b_1 * m_x
 
-    # calculating regression coefficients 
+    return (b_0, b_1)
 
-    b_1 = SS_xy / SS_xx 
 
-    b_0 = m_y - b_1*m_x 
+def plot_regression_line(x, y, b):
 
-  
+    # plotting the actual points as scatter plot
 
-    return(b_0, b_1) 
+    plt.scatter(x, y, color="m", marker="o", s=30)
 
-  
+    # predicted response vector
 
-def plot_regression_line(x, y, b): 
+    y_pred = b[0] + b[1] * x
 
-    # plotting the actual points as scatter plot 
+    # plotting the regression line
 
-    plt.scatter(x, y, color = "m", 
+    plt.plot(x, y_pred, color="g")
 
-               marker = "o", s = 30) 
+    # putting labels
 
-  
+    plt.xlabel("x")
 
-    # predicted response vector 
+    plt.ylabel("y")
 
-    y_pred = b[0] + b[1]*x 
+    # function to show plot
 
-  
-
-    # plotting the regression line 
-
-    plt.plot(x, y_pred, color = "g") 
-
-  
-
-    # putting labels 
-
-    plt.xlabel('x') 
-
-    plt.ylabel('y') 
-
-  
-
-    # function to show plot 
-
-    plt.show() 
-
-def check(x,y):
-    lr = LinearRegression()
-    lr.fit(x,y)
-    y_pred = lr.predict(x)
-    plt.plot(x,y_pred)
-    plt.scatter(x,y)
     plt.show()
 
 
-def main(): 
+def check(x, y):
+    lr = LinearRegression()
+    lr.fit(x, y)
+    y_pred = lr.predict(x)
+    plt.plot(x, y_pred)
+    plt.scatter(x, y)
+    plt.show()
 
-    # observations 
 
-    x = np.array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]) 
+def main():
 
-    y = np.array([1, 3, 2, 5, 7, 8, 8, 9, 10, 12]) 
+    # observations
 
-  
+    x = np.array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
 
-    # estimating coefficients 
+    y = np.array([1, 3, 2, 5, 7, 8, 8, 9, 10, 12])
 
-    b = estimate_coef(x, y) 
+    # estimating coefficients
 
-    print("Estimated coefficients:\nb_0 = {}  \ 
+    b = estimate_coef(x, y)
 
-          \nb_1 = {}".format(b[0], b[1])) 
+    print("Estimated coefficients:\nb_0 = {}\nb_1 = {}".format(b[0], b[1]))
 
-  
-
-    # plotting regression line 
+    # plotting regression line
 
     plot_regression_line(x, y, b)
-    
-    #now check if the plot we have gotten matches with the plot we get by using the sklearn library
-    #but first we need to reshape x array as it should be a matrix
-    x = x.reshape((len(x),1)
-    check(x,y)
-    
-    
-                  
+
+    # now check if the plot we have gotten matches with the plot we get by using the sklearn library
+    # but first we need to reshape x array as it should be a matrix
+    x = x.reshape(len(x), 1)
+    check(x, y)
 
 
-
-
-  
-
-if __name__ == "__main__": 
-
-    main() 
-    
-
+if __name__ == "__main__":
+    main()

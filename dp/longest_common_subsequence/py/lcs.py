@@ -1,3 +1,4 @@
+from __future__ import print_function
 def lcs(X , Y):
 	m = len(X)
 	n = len(Y)
@@ -16,4 +17,4 @@ def lcs(X , Y):
 X = "FABCDGH"
 Y = "AVBDC"
 
-print "LCS (Length) = ", lcs(X, Y)
+print("LCS (Length) = ", lcs(X, Y))

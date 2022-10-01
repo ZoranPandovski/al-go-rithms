@@ -1,3 +1,4 @@
+from __future__ import print_function
 import sys
 from tree_utils import *
 
@@ -56,13 +57,13 @@ def reverse_level_order(root):
 		level_stack.append(curr_node)
 	while level_stack:
 		curr_node = level_stack.pop()
-		print curr_node.data,
+		print(curr_node.data, end=' ')
 
 
 # LeftView of Tree
 def left_view_of_tree(root):
 	if root:
-		print root.data
+		print(root.data)
 		if root.left:
 			left_view_of_tree(root.left)
 		else:
@@ -88,7 +89,7 @@ def bottom_view(root):
 	if root:
 		bottom_view(root.left)
 		if not root.left and not root.right:
-			print root.data
+			print(root.data)
 		bottom_view(root.right)
 
 
@@ -126,4 +127,4 @@ def test():
 	# print "height: "
 	# print height_of_tree(l1)
 	bottom_view(root)
-	print "Leaf:",get_leaf_node_count(root)
+	print("Leaf:",get_leaf_node_count(root))

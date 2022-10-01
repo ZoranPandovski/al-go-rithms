@@ -1,5 +1,5 @@
 def Tower(height,fromP,toP,aux):
-	if(heigt>=1):
+	if(height>=1):
 		Tower(height-1,fromP,aux,toP)
 		move(fromP,toP)
 		Tower(height-1,aux,toP,fromP)

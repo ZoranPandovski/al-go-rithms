@@ -1,3 +1,4 @@
+from __future__ import print_function
 def merge(left, right):
     """Merge sort merging function."""
 
@@ -33,7 +34,7 @@ def merge_sort(array):
 def test():
     list = [5, 7, 6, 2, 1, 7, 3]
     sorted_list = merge_sort(list)
-    print 'Sorted: ', sorted_list
+    print('Sorted: ', sorted_list)
 
 if __name__ == '__main__':
     test()

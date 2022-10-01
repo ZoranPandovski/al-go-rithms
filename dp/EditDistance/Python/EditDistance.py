@@ -1,3 +1,4 @@
+from __future__ import print_function
 
 def editDistance(str1, str2, m , n):
 
@@ -29,6 +30,6 @@ def editDistance(str1, str2, m , n):
 # Driver program to test the above function
 str1 = "sunday"
 str2 = "saturday"
-print editDistance(str1, str2, len(str1), len(str2))
+print(editDistance(str1, str2, len(str1), len(str2)))
 
 

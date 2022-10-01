@@ -1,7 +1,9 @@
 /* Part of Cosmos by OpenGenus Foundation */
 import java.util.*;
-public class Greatest_digit_in_number{
-    public static void main(String args[]) {
+public class Greatest_digit_in_number
+{
+    public static void main(String args[]) 
+    {
         int num = 23238934;
         System.out.println(greatest_digit(num));
     }

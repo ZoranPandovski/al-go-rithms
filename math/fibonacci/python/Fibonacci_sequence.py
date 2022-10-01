@@ -1,23 +1,11 @@
-def fib(n):
-    '''
-    Returns Fibonacci sequence.
-    '''
-    
-    # Edge cases:
-    if n < 0:
-        raise ValueError('negative index')
-    elif n in [0, 1]:
+from __future__ import print_functions
+
+def fibonacci(n):
+    if(n <= 1):
         return n
-
-    # 0th fibonacci
-    prevPrev = 0
-    # 1st fibonacci
-    prev = 1       
-
-    # nth fibonacci
-    for _ in range(n - 1):
-        current = prev + prevPrev
-        prevPrev = prev
-        prev = current
-
-    return current
+    else:
+        return(fibonacci(n-1) + fibonacci(n-2))
+n = int(input("Enter number of terms:"))
+print("Fibonacci sequence:")
+for i in range(n):
+    print(fibonacci(i), end=" ")

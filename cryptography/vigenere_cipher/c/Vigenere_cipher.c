@@ -9,7 +9,7 @@
 int main(void)
 {
 	// Enter string to encrypt here
-	char* passwordText = "string to encrypt");
+	char* passwordText = "string to encrypt";
 
 	// Enter key to cipher here
     char* key = "key";

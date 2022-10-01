@@ -8,6 +8,7 @@
 [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ZoranPandovski)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/ZoranPandovski/al-go-rithms/issues)
 [![Join the chat at https://gitter.im/al-go-rithms](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/al-go-rithms?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Number of Algorithms](https://img.shields.io/badge/dynamic/json?&label=Algorithms&query=count&url=https://api.myjson.com/bins/j5r1c&style=flat)](https://github.com/ZoranPandovski/al-go-rithms)
 
 # Data Structures and Algorithms [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Algorithms%20written%20in%20different%20programing%20languages&url=https://github.com/ZoranPandovski/al-go-rithms&via=algorithms&hashtags=algorithms,datastructures,python,java,c,cpp,php,javascript)
 
@@ -25,7 +26,7 @@ Clean example implementations of data structures and algorithms written in diffe
    e.g
    > bubble_sort/python/bubble_sort.py
 
- * If there is an implementation of the same algorithm in your language, add your username in front of the file name.
+ * If there is an implementation of the same algorithm in your language, add your username in front of the file name. E.g., if the already existing algorithm is binary_sort and your user name is my_name, just name the new file as 'my_name_binary_sort'.
  * Please include a description for the algorithm that you are implementing. It doesn't matter if it's copied from somewhere as long as it helps people that are learning new algorithm.
  * Graphical examples would be very helpful too.
  * Don't forget to include tests.
@@ -44,6 +45,8 @@ Clean example implementations of data structures and algorithms written in diffe
    * [Algorithm Design](https://www.amazon.com/Algorithm-Design-Jon-Kleinberg/dp/0321295358)
    * [Grokking Algorithms](https://www.amazon.com/Grokking-Algorithms-illustrated-programmers-curious/dp/1617292230/ref=zg_bs_3870_3?_encoding=UTF8&psc=1&refRID=CBQSARF3C86P7FMQ4DEV)
    * [Algorithms](https://www.amazon.in/Algorithms-Robert-Sedgewick/dp/032157351X)
+   * [Competitive Programming 3](https://www.amazon.com/Competitive-Programming-3rd-Steven-Halim/dp/B00FG8MNN8)
+   * [10 Best Data Structures and Algorithms Books](https://www.interviewbit.com/blog/data-structures-and-algorithms-books/)
  * **Sites**
    * [Algorithms and Data Structures -Emaxx](https://cp-algorithms.com/algebra/extended-euclid-algorithm.html)
    * [All Good Tutorials on Codeforces](http://codeforces.com/blog/entry/57282)
@@ -57,6 +60,8 @@ Clean example implementations of data structures and algorithms written in diffe
    * [Visual Algorithm - visualising data structures and algorithms through animation](https://visualgo.net/en)
    * [Java Algorithms - Geeks For Geeks](https://www.geeksforgeeks.org/top-algorithms-and-data-structures-for-competitive-programming/)
    * [Data Structure and Algorithms Visualization](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
+   * [Best Data structures and algorithms Tutorials - Coursesity](https://coursesity.com/best-tutorials-learn/data-structure-algorithm)
+
 * **Online classes (Free)**
   * Coursera 
       * [Introduction to algorithms Part 1](https://www.coursera.org/learn/introduction-to-algorithms)
@@ -78,6 +83,9 @@ Clean example implementations of data structures and algorithms written in diffe
      * [Algorithms and Data Structures Capstone](https://www.edx.org/course/algorithms-data-structures-capstone-uc-san-diegox-algs207x)
    * Stony Brook University
      * [Skiena's algorithms lectures](http://www3.cs.stonybrook.edu/~algorith/video-lectures/)
+   * Scaler
+     * [Data Structure and algorithm](https://www.scaler.com/topics/data-structures/)
+
 * **Online classes (paid)**
   * Udemy 
       * [The Coding Interview Bootcamp: Algorithms + Data Structures](https://www.udemy.com/coding-interview-bootcamp-algorithms-and-data-structure/)
@@ -99,11 +107,15 @@ Clean example implementations of data structures and algorithms written in diffe
     * [Careercup](https://www.careercup.com/)
     * [AtCoder](https://atcoder.jp/)
     * [Codejam](https://code.google.com/codejam/)
-    * [Excercism](https://exercism.io/)
+    * [Exercism](https://exercism.io/)
     * [freeCodeCamp](https://www.freecodecamp.org/)
     * [CodingBat](https://codingbat.com)
     * [CodeGround](https://codeground.in/online-coding-test.html)
     * [CoderByte](https://coderbyte.com/)
+    * [Geeks For Geeks](https://practice.geeksforgeeks.org)
+    * [Kattis](https://open.kattis.com/)
+    * [Codility](https://www.codility.com/)
+    * [Edabit](https://edabit.com/)
 
 ## License
 

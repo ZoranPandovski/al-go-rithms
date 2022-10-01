@@ -98,4 +98,4 @@ class BTree(object):
 
     def __str__(self):
         r = self.root
-return r.__str__() + '\n'.join([child.__str__() for child in r.c]) 
+        return r.__str__() + '\n'.join([child.__str__() for child in r.c]) 

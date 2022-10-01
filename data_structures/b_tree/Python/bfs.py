@@ -1,6 +1,7 @@
 """
 Breadth first Search or Level Order Traversal
 """
+from __future__ import print_function
 from collections import deque
 import binary_search_tree
 
@@ -23,7 +24,7 @@ def bfs(root):
         if popped.right != None:
             q.append(popped.right)
 
-    print result
+    print(result)
 
                                         ### Testcases ###
 

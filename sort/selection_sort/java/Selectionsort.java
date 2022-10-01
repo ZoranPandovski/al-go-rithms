@@ -1,42 +1,32 @@
-class SelectionSort
-{
-    void sort(int arr[])
-    {
-        int n = arr.length;
- 
-        // One by one move boundary of unsorted subarray
-        for (int i = 0; i < n-1; i++)
-        {
-            // Find the minimum element in unsorted array
-            int min_idx = i;
-            for (int j = i+1; j < n; j++)
-                if (arr[j] < arr[min_idx])
-                    min_idx = j;
- 
-            // Swap the found minimum element with the first
-            // element
-            int temp = arr[min_idx];
-            arr[min_idx] = arr[i];
-            arr[i] = temp;
-        }
-    }
- 
-    // Prints the array
-    void printArray(int arr[])
-    {
-        int n = arr.length;
-        for (int i=0; i<n; ++i)
-            System.out.print(arr[i]+" ");
-        System.out.println();
-    }
- 
-    // Driver code to test above
-    public static void main(String args[])
-    {
-        SelectionSort ob = new SelectionSort();
-        int arr[] = {64,25,12,22,11};
-        ob.sort(arr);
-        System.out.println("Sorted array");
-        ob.printArray(arr);
-    }
-}
+public class SelectionSortExample {  
+    public static void selectionSort(int[] arr){  
+        for (int i = 0; i < arr.length - 1; i++)  
+        {  
+            int index = i;  
+            for (int j = i + 1; j < arr.length; j++){  
+                if (arr[j] < arr[index]){  
+                    index = j;//searching for lowest index  
+                }  
+            }  
+            int smallerNumber = arr[index];   
+            arr[index] = arr[i];  
+            arr[i] = smallerNumber;  
+        }  
+    }  
+       
+    public static void main(String a[]){  
+        int[] arr1 = {9,14,3,2,43,11,58,22};  
+        System.out.println("Before Selection Sort");  
+        for(int i:arr1){  
+            System.out.print(i+" ");  
+        }  
+        System.out.println();  
+          
+        selectionSort(arr1);//sorting array using selection sort  
+         
+        System.out.println("After Selection Sort");  
+        for(int i:arr1){  
+            System.out.print(i+" ");  
+        }  
+    }  
+}  
