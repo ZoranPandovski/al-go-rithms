@@ -1,4 +1,4 @@
-def trap(self, height: List[int]) -> int:
+def trap(self, height):
         left_max=0
         right_max=0
         left=0
