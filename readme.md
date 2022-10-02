@@ -26,7 +26,7 @@ Clean example implementations of data structures and algorithms written in diffe
    e.g
    > bubble_sort/python/bubble_sort.py
 
- * If there is an implementation of the same algorithm in your language, add your username in front of the file name. E.g., if the already exisitng algorithm is binary_sort and your user name is my_name, just name the new file as 'my_name_binary_sort'.
+ * If there is an implementation of the same algorithm in your language, add your username in front of the file name. E.g., if the already existing algorithm is binary_sort and your user name is my_name, just name the new file as 'my_name_binary_sort'.
  * Please include a description for the algorithm that you are implementing. It doesn't matter if it's copied from somewhere as long as it helps people that are learning new algorithm.
  * Graphical examples would be very helpful too.
  * Don't forget to include tests.
@@ -46,6 +46,7 @@ Clean example implementations of data structures and algorithms written in diffe
    * [Grokking Algorithms](https://www.amazon.com/Grokking-Algorithms-illustrated-programmers-curious/dp/1617292230/ref=zg_bs_3870_3?_encoding=UTF8&psc=1&refRID=CBQSARF3C86P7FMQ4DEV)
    * [Algorithms](https://www.amazon.in/Algorithms-Robert-Sedgewick/dp/032157351X)
    * [Competitive Programming 3](https://www.amazon.com/Competitive-Programming-3rd-Steven-Halim/dp/B00FG8MNN8)
+   * [10 Best Data Structures and Algorithms Books](https://www.interviewbit.com/blog/data-structures-and-algorithms-books/)
  * **Sites**
    * [Algorithms and Data Structures -Emaxx](https://cp-algorithms.com/algebra/extended-euclid-algorithm.html)
    * [All Good Tutorials on Codeforces](http://codeforces.com/blog/entry/57282)
@@ -82,6 +83,9 @@ Clean example implementations of data structures and algorithms written in diffe
      * [Algorithms and Data Structures Capstone](https://www.edx.org/course/algorithms-data-structures-capstone-uc-san-diegox-algs207x)
    * Stony Brook University
      * [Skiena's algorithms lectures](http://www3.cs.stonybrook.edu/~algorith/video-lectures/)
+   * Scaler
+     * [Data Structure and algorithm](https://www.scaler.com/topics/data-structures/)
+
 * **Online classes (paid)**
   * Udemy 
       * [The Coding Interview Bootcamp: Algorithms + Data Structures](https://www.udemy.com/coding-interview-bootcamp-algorithms-and-data-structure/)
@@ -111,6 +115,8 @@ Clean example implementations of data structures and algorithms written in diffe
     * [Geeks For Geeks](https://practice.geeksforgeeks.org)
     * [Kattis](https://open.kattis.com/)
     * [Codility](https://www.codility.com/)
+    * [Edabit](https://edabit.com/)
+    * [CodingNonjas](https://codingninjas.com/)
 
 ## License
 

@@ -3,7 +3,7 @@
 
 void Prime(int x){
 	int flag = 1;
-	if (x == 0 && x == 1) {
+	if (x == 0 || x == 1) {
 		printf("This number is not prime!\n");
 		return;
 	}

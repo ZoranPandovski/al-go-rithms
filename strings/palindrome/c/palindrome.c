@@ -22,7 +22,7 @@
 
 int main() {
     char str[100], reversed_str[100], ch;
-    int str_length, i;
+    int str_length, i=0;
 
     printf("Enter the string: ");
     scanf(" %[^\n]%*c", str); 

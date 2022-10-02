@@ -12,3 +12,6 @@ Therefore, the actual search tree that is traversed by the algorithm is only a p
 ![](https://upload.wikimedia.org/wikipedia/commons/8/8c/Sudoku_solved_by_bactracking.gif)
 
 #### Further reading: [Wikipedia](https://en.wikipedia.org/wiki/Backtracking)
+
+![image](https://user-images.githubusercontent.com/57450747/138395454-2c726ebc-d816-4aeb-b028-fdf2feb5442f.png)
+
