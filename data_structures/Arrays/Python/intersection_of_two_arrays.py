@@ -13,7 +13,7 @@
 # nums1 = [9,4,9,8,4]
 # print( set(nums1) ) # Output: {8, 9, 4}
 
-# Python sets have built-in intersection method which returns a set of unique elements that are present in both sets.
+# Python sets have a built-in intersection method which returns a set of unique elements that are present in both sets.
 # Example:
 # nums1 = [9,4,9,8,4]
 # nums2 = [3,9,3,1]
