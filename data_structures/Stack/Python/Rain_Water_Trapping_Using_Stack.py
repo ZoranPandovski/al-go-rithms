@@ -67,7 +67,7 @@ Example: given input: [3,2,0,2,0,4] ---> answer: 8
              0 0 x 0 x 0
     -----------------------------------
 
-    Here 0 represen the blocks and number of x is the total area where water can be trapped.
+    Here 0 represent the blocks and number of x is the total area where water can be trapped.
 
 """
 
