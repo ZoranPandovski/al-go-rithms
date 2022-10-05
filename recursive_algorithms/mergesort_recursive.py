@@ -1,9 +1,9 @@
 def merge_sort(array):
     temp = []
-    if( len(array) == 1):
-        return array;
-      
-    half  = len(array) / 2
+    if(len(array) == 1):
+        return array
+
+    half = len(array) / 2
     lower = merge_sort(array[:half])
     upper = merge_sort(array[half:])
     lower_len = len(lower)
@@ -11,7 +11,7 @@ def merge_sort(array):
     i = 0
     j = 0
     while i != lower_len or j != upper_len:
-        if( i != lower_len and (j == upper_len or lower[i] < upper[j])):
+        if(i != lower_len and (j == upper_len or lower[i] < upper[j])):
             temp.append(lower[i])
             i += 1
         else:
@@ -20,7 +20,7 @@ def merge_sort(array):
 
     return temp
 
-  
-array = [11, 12, 3, 28, 41, 62,16, 10]
+
+array = [11, 12, 3, 28, 41, 62, 16, 10]
 ar = merge_sort(array)
-print " ".join(str(x) for x in ar)
+print(" ".join(str(x) for x in ar))
