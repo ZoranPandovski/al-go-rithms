@@ -10,6 +10,6 @@ def XOR_from_1_to_N(n: int) -> None:
     print(ans)
 
 def main() -> None:
-    XOR_from_1_to_N(int(input("Enter the number : ")))
+    XOR_from_1_to_N(int(input()))
 
 main()
