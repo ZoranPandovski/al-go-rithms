@@ -6,17 +6,17 @@ Example 1:
 
 >Input: 2
 
->Output: 
+>Output: 2
 
 Example 2:
 
 >Input: 5
 
->Output: 
+>Output: 2
 
 Follow up:
 
 A naive solution (taking the XOR and sum of all numbers from 1 to N-1 with N and checking using a for loop) would result in a time complexity of O(N). 
 But can we do better?
 
-Hint: Are you reminded of any identity when you see sum and XOR?
+Hint: Are you reminded of any identity when you see sum and XOR together (of two numbers)?
