@@ -117,6 +117,30 @@ Clean example implementations of data structures and algorithms written in diffe
     * [Codility](https://www.codility.com/)
     * [Edabit](https://edabit.com/)
     * [CodingNonjas](https://codingninjas.com/)
+    
+    *Learning Coding Different Topic Wise Explanation YouTube Channels:
+    
+    Dynamic Programming 
+    1)Aditya Verma  https://youtube.com/playlist?list=PL_z_8CaSLPWekqhdCPmFohncHwz8TY2Go
+    2)Take u Forward by Strivers  https://youtube.com/playlist?list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY
+    
+    Stack and Queue
+    1)Aditya Verma https://youtube.com/playlist?list=PL_z_8CaSLPWdeOezg68SKkeLN4-T_jNHd
+    2)Tech Dose https://youtube.com/playlist?list=PLEJXowNB4kPzEvxN8ed6T13Meet7HP3h0
+    
+    Sliding Window
+    1)Aditya Verma  https://youtube.com/playlist?list=PL_z_8CaSLPWeM8BDJmIYDaoQ5zuwyxnfj
+    
+    Recursion
+    1) Lead Code by Faraz https://youtube.com/playlist?list=PLjkkQ3iH4jy82KRn9jXeFyWzvX7sqYrjE
+    2) Aditya Verma https://youtube.com/playlist?list=PL_z_8CaSLPWeT1ffjiImo0sYTcnLzo-wY
+    
+    Graph 
+    1)take u forward by Strivers https://youtube.com/playlist?list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw.
+    
+    Heap
+    1) Aditya Verma https://youtube.com/playlist?list=PL_z_8CaSLPWdtY9W22VjnPxG30CXNZpI9
+    
 
 ## License
 
