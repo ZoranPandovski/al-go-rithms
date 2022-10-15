@@ -1,1 +1,0 @@
-Arrays that are created on runtime on heap.
