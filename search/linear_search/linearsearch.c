@@ -21,7 +21,6 @@ c++;
 }
 if (c == 0)
 printf("Number is not present in array");
-printf("This is prepared by VIMARSH JAISWAL , Roll no 2100321530187");
 return 0;
 }
 
