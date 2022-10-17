@@ -57,8 +57,15 @@ int main()
 }
 
 /*
+    Time Complexity: O(n), Only one traversal of the array is needed.
+    Space Complexity: O(1), No extra space is required.
+*/
 
-Time Complexity: O(n), Only one traversal of the array is needed.
-Space Complexity: O(1), No extra space is required.
+/* 
+    Disclaimer: 
+    * RoyCoding8 (Me) isn't the original author of this code. The original author is shivesh41kr.
+    * I have just updated the decription to account for the simplification of the file name.
+
+    Description: The problem sorts an array containing 0,1 and 2 in a single iteration. (The Dutch national flag problem).
 
 */
