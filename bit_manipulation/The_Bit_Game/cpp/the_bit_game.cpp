@@ -33,7 +33,7 @@ int main()
         long long N;
         cin >> N;
         Solution ob;
-        cout << ob.swabBitGame(N) << endl;
+        cout << ob.swapBitGame(N) << endl;
     }
     return 0;
 }
