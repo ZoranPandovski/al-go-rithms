@@ -9,7 +9,7 @@ class Solution
 public:
     int swapBitGame(long long N)
     {
-        // code here
+        // Code here
         int count = 0;
         while (N > 0)
         {
