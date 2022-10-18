@@ -1,0 +1,23 @@
+body {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+#top {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+#mid {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+#imageNames {
+  column-count: 3;
+}
+#bot {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
