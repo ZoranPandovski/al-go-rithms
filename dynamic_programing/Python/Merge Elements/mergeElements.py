@@ -10,7 +10,7 @@ If the sequence is [A1, A2, A3, A4] and you merge A2 and A3, you incur a cost of
 Find the Minimum cost to merge all the elements into a single element.
 """
 
-
+int ans;
 def mergeElements(l, r):
     if l == r:
         return 0
