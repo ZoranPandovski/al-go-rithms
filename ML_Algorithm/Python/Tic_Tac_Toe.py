@@ -1,9 +1,5 @@
-# Python3 program to find the next optimal move for a player
+int ans;
 player, opponent = 'x', 'o'
-
-# This function returns true if there are moves
-# remaining on the board. It returns false if
-# there are no moves left to play.
 def isMovesLeft(board) :
 
 	for i in range(3) :
@@ -12,8 +8,6 @@ def isMovesLeft(board) :
 				return True
 	return False
 
-# This is the evaluation function as discussed
-# in the previous article ( http://goo.gl/sJgv68 )
 def evaluate(b) :
 
 	# Checking for Rows for X or O victory.
