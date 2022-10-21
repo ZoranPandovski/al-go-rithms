@@ -10,7 +10,7 @@ If the sequence is [A1, A2, A3, A4] and you merge A2 and A3, you incur a cost of
 Find the Minimum cost to merge all the elements into a single element.
 """
 
-def mergeElements(l, r):
+def mergeElements(l, r,ans):
     if l == r:
         return 0
 
@@ -22,7 +22,7 @@ def mergeElements(l, r):
         summ = 0
         for mid in range(l, r):
            summ += arr[mid]
-           int ans = min(ans,mergeElements(l, mid)+ mergeElements(mid + 1, r)+ (summ) * (total - summ))
+           ans = min(ans,mergeElements(l, mid)+ mergeElements(mid + 1, r)+ (summ) * (total - summ))
 
         dp[l][r] = ans
     return dp[l][r]
