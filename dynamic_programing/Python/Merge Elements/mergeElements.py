@@ -21,8 +21,8 @@ def mergeElements(l, r):
 
         summ = 0
         for mid in range(l, r):
-            summ += arr[mid]
-            ans = min(ans,mergeElements(l, mid)+ mergeElements(mid + 1, r)+ (summ) * (total - summ))
+           summ += arr[mid]
+           int ans = min(ans,mergeElements(l, mid)+ mergeElements(mid + 1, r)+ (summ) * (total - summ))
 
         dp[l][r] = ans
     return dp[l][r]
