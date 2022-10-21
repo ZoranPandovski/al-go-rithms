@@ -1,4 +1,4 @@
-int ans;
+
 player, opponent = 'x', 'o'
 def isMovesLeft(board) :
 
