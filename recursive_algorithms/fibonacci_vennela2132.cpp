@@ -19,3 +19,12 @@ int main()
   return 0;
   
 }
+
+/*
+Test cases:
+Input: 3
+Output: 0 1 1
+
+Input: 8
+Output: 0 1 1 2 3 5 8 13
+*/
