@@ -60,22 +60,22 @@ print(ans) # 3
 
 
 # Full code including reading from stdin for Forest Queries problem:
-n, q = map(int, input().split())
-grid = [[0]*n for _ in range(n)]
-for i in range(n):
-    row = input()
-    for j in range(n):
-        if row[j] == '*': grid[i][j] = 1
-for i in range(n):
-    for j in range(n):
-        if i > 0: grid[i][j] += grid[i-1][j]
-        if j > 0: grid[i][j] += grid[i][j-1]
-        if i > 0 and j > 0: grid[i][j] -= grid[i-1][j-1]
-for i in range(q):
-    y1, x1, y2, x2 = map(int, input().split())
-    ans = grid[y2-1][x2-1]
-    if y1 > 1: ans -= grid[y1-2][x2-1]
-    if x1 > 1: ans -= grid[y2-1][x1-2] 
-    if y1 > 1 and x1 > 1: ans += grid[y1-2][x1-2]
-    print(ans)
+# n, q = map(int, input().split())
+# grid = [[0]*n for _ in range(n)]
+# for i in range(n):
+#     row = input()
+#     for j in range(n):
+#         if row[j] == '*': grid[i][j] = 1
+# for i in range(n):
+#     for j in range(n):
+#         if i > 0: grid[i][j] += grid[i-1][j]
+#         if j > 0: grid[i][j] += grid[i][j-1]
+#         if i > 0 and j > 0: grid[i][j] -= grid[i-1][j-1]
+# for i in range(q):
+#     y1, x1, y2, x2 = map(int, input().split())
+#     ans = grid[y2-1][x2-1]
+#     if y1 > 1: ans -= grid[y1-2][x2-1]
+#     if x1 > 1: ans -= grid[y2-1][x1-2] 
+#     if y1 > 1 and x1 > 1: ans += grid[y1-2][x1-2]
+#     print(ans)
 
