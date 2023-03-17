@@ -13,6 +13,12 @@ def mergeElements(arr):
 
     return dp[0][n-1]
 
-n = int(input())
-arr = [int(x) for x in input().split()]
+try:
+    arr = [int(x) for x in input().split()]
+except:
+    print("enter a valid list")
+    arr = [int(x) for x in input().split()]
+
 print(mergeElements(arr))
+   
+   
