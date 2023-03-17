@@ -1,0 +1,15 @@
+Algorithm for the Trapping Rainwater problem using the stack approach:
+
+1.Initialize a variable, totalWater, to 0.
+2.Initialize an empty stack, stack.
+3.Loop through each element in the input array, heights:
+ a. While the stack is not empty and the current element, heights[i], is greater than the height of the top element in the stack:
+ i. Pop the top element from the stack and store its index in topIndex.
+ ii. If the stack is empty, break out of the loop.
+ iii. Get the index of the previous element in the stack, prevIndex, which is the new top element of the stack.
+ iv. Calculate the distance between the current index and the index of the previous element in the stack, prevIndex, using the formula: distance = i - prevIndex - 1.
+ v. Calculate the trapped water for the popped element using the formula: trappedWater = distance * (min(heights[i], heights[prevIndex]) - heights[topIndex]).
+ vi. Add the trapped water to totalWater.
+ b. Push the current index onto the stack.
+4.Return totalwater.
+5.You may change your input by manually changing the Heights weight before running the code.
