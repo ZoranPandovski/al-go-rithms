@@ -11,8 +11,9 @@ def bubble_sort(list1):
   
 list1 = []
 num=int(input("enter the number of elements in the array : "))
-for i in range(num):
-    arr =int(input("enter the element : "))
-    list1.append(arr)
+for i in range(0,num):
+    user_input = int(input("Enter a number: "))
+    list1.append(user_input)
+
 
 print("The leader of the array",list1[-1])    

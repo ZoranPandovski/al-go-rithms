@@ -12,7 +12,10 @@ def bubble_sort(list1):
 list1 = []
 num=int(input("enter the number of elements in the array : "))
 for i in range(num):
-    arr =int(input("enter the element : "))
-    list1.append(arr)
+    try:
+        arr =int(input("enter the element : "))
+    except ValueError:
+        print('Enter a valid number')
+
 
 print("The leader of the array",list1[-1])    
