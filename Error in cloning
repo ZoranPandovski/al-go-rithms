@@ -1,0 +1,8 @@
+in this issue there is a small bug in the git clone command we should slove it by the given solution 
+Screenshot(6).png
+Is the problem which is happened while cloning the repoistory we should solve it with copying correct repo link
+Screenshot(2).png
+Is the command to clone the repoistory into the local environment 
+we should use the command git clone <repo link>
+the issue is given as in the repo
+Screenshot(1).png
