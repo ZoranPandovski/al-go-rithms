@@ -1,37 +1,32 @@
 #include <stdio.h>
+
+int binarySearch(int arr[], int start, int end, int x) {
+
+	if (start <= end) {
+
+		int mid = start + (end - start) / 2;
+
+		if (arr[mid] == x)
+			return mid;
+
+		if (arr[mid] > x)
+			return binarySearch(arr, start, mid - 1, x);
+
+		return binarySearch(arr, mid + 1, end, x);
+	}
+	return -1;
+}
+
 int main()
 {
-  int c, first, last, middle, n, search, array[100];
+	int arr[] = { 2, 3, 7, 8, 78, 99, 102, 5555 };
+	int x = 9;
+	int result = binarySearch(arr, 0, sizeof(arr) / sizeof(arr[0]), x);
 
-  printf("Enter number of elements\n");
-  scanf("%d", &n);
-
-  printf("Enter %d integers\n", n);
-
-  for (c = 0; c < n; c++)
-    scanf("%d", &array[c]);
-
-  printf("Enter value to find\n");
-  scanf("%d", &search);
-
-  first = 0;
-  last = n - 1;
-  middle = (first+last)/2;
-
-  while (first <= last) {
-    if (array[middle] < search)
-      first = middle + 1;
-    else if (array[middle] == search) {
-      printf("%d found at location %d.\n", search, middle+1);
-      break;
-    }
-    else
-      last = middle - 1;
-
-    middle = (first + last)/2;
-  }
-  if (first > last)
-    printf("Not found! %d isn't present in the list.\n", search);
-
-  return 0;
+	if (result == -1) {
+		printf("Element not present");
+	}
+	else {
+		printf("Element found at index %d", result);
+	}
 }
