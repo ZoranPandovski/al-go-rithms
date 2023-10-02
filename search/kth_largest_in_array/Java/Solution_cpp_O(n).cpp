@@ -2,7 +2,7 @@
 #define ll long long
 using namespace std;
 
-ll partition(ll a[],int l,int r){
+int partition(ll a[],int l,int r){
     int k=l+rand()%(r-l+1),i=l;
     swap(a[l],a[k]);
     ll key=a[l];
