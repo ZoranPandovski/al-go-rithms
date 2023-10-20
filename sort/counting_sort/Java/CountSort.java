@@ -1,34 +1,33 @@
+public class countingSort {
+    static void CountSort(int a[],int n){
+        int max=a[0];
+        for (int i = 0; i <n; i++) {
+            if(a[i]>max){
+                max=a[i];
+            }
+        }
+        int[] elements=new int[max+1];
+        for (int i = 0; i <n; i++) {
+            elements[a[i]]++;
+        }
 
-public class CountSort {
-	
-	private int getMax(int [] A) {
-		int max = A[0];
-		for(int i = 0 ; i < A.length ; i ++)
-			if(max< A[i])
-				max = A[i];
-		return max;
-	}
-	
-	private void getFreq(int [] A , int [] freq) {
-		for(int i = 0 ; i < A.length ; i ++)
-			freq[A[i]] += 1 ;
-	}
-	
-	public void sort(int [] A) {
-		int [] freq = new int [getMax(A)+1];
-		getFreq(A, freq);
-		for(int i = 0 , j = 0 ; i < A.length ; i ++) {
-			while(freq[j] == 0)
-				j++;
-			A[i] = j ;
-			freq[j] -= 1;
-		}
-	}
-	
-	public static void main (String [] args) {
-		int nosrt[] = {4,3,10,8,1,16,17,1,12,11,20};
-		new CountSort().sort(nosrt);
-		for(int i = 0 ; i < nosrt.length ; i ++)
-			System.out.println(nosrt[i]);
-	}
+        for (int i = 1; i <= max; i++) {
+            elements[i]+=elements[i-1];
+        }
+        int[] output=new int[max];
+        for (int i = n-1; i>=0; i--) {
+            output[--elements[a[i]]]=a[i];
+        }
+        for (int i = 0; i < n; i++) {
+            a[i]=output[i];
+        }
+
+    }
+    public static void main(String[] args) {
+        int[] a={1,6,4,2,7,5,3,8,5,7,4,6,2,1,5,7,4,7,4,7,5,67};
+        CountSort(a, a.length);
+        for (int i = 0; i < a.length; i++) {
+            System.out.print(a[i]+" ");
+        }
+    }
 }
