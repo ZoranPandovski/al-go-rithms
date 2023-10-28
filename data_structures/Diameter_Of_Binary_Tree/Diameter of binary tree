@@ -1,0 +1,54 @@
+#include <iostream>
+#include <algorithm>
+
+class TreeNode {
+public:
+    int val;
+    TreeNode* left;
+    TreeNode* right;
+
+    TreeNode(int value) : val(value), left(nullptr), right(nullptr) {}
+};
+
+class BinaryTree {
+public:
+    TreeNode* root;
+
+    int diameterOfBinaryTree(TreeNode* root) {
+        int diameter = 0;
+        depth(root, diameter);
+        return diameter;
+    }
+
+private:
+    int depth(TreeNode* node, int& diameter) {
+        if (node == nullptr) {
+            return 0;
+        }
+
+        int leftDepth = depth(node->left, diameter);
+        int rightDepth = depth(node->right, diameter);
+
+        // Update the diameter if the current path is longer
+        diameter = std::max(diameter, leftDepth + rightDepth);
+
+        // Return the depth of the current node
+        return 1 + std::max(leftDepth, rightDepth);
+    }
+};
+
+int main() {
+    BinaryTree tree;
+
+    // Create a sample binary tree
+    tree.root = new TreeNode(1);
+    tree.root->left = new TreeNode(2);
+    tree.root->right = new TreeNode(3);
+    tree.root->left->left = new TreeNode(4);
+    tree.root->left->right = new TreeNode(5);
+
+    int diameter = tree.diameterOfBinaryTree(tree.root);
+    std::cout << "Diameter of the binary tree: " << diameter << std::endl;
+
+    return 0;
+}
