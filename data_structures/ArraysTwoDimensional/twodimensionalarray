@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Define a 2D array with 3 rows and 4 columns
+    int twodArray[3][4];
+
+    // Initialize the 2D array
+    for (int i = 0; i < 3; ++i) {
+        for (int j = 0; j < 4; ++j) {
+            twodArray[i][j] = i * 4 + j + 1;
+        }
+    }
+
+    // Access and print elements of the 2D array
+    for (int i = 0; i < 3; ++i) {
+        for (int j = 0; j < 4; ++j) {
+            cout << twodArray[i][j] << " ";
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
