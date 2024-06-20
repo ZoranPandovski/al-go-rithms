@@ -1,54 +1,60 @@
 #include <iostream>
-
 using namespace std;
 
-void heapify(int arr[], int n, int i)
+
+void heapify(int arr[], int N, int i)
 {
-    int largest = i;
-    int l = 2 * i + 1;
-    int r = 2 * i + 2;
 
-    if (l < n && arr[l] > arr[largest])
-        largest = l;
+	int count = i;
 
-    if (r < n && arr[r] > arr[largest])
-        largest = r;
+	int l = 2 * i + 1;
 
-    if (largest != i)
-    {
-        swap(arr[i], arr[largest]);
+	int r = 2 * i + 2;
 
-        heapify(arr, n, largest);
-    }
+	if (l < N && arr[l] > arr[count])
+		count = l;
+
+
+	if (r < N && arr[r] > arr[count])
+		count = r;
+
+	if (count != i) {
+		swap(arr[i], arr[count]);
+
+	
+		heapify(arr, N, count);
+	}
 }
 
-void heapSort(int arr[], int n)
+void heapSort(int arr[], int N)
 {
-    for (int i = n / 2 - 1; i >= 0; i--)
-        heapify(arr, n, i);
 
-    for (int i = n - 1; i > 0; i--)
-    {
-        swap(arr[0], arr[i]);
+	for (int i = N / 2 - 1; i >= 0; i--)
+		heapify(arr, N, i);
 
-        heapify(arr, i, 0);
-    }
+
+	for (int i = N - 1; i > 0; i--) {
+
+		swap(arr[0], arr[i]);
+
+		heapify(arr, i, 0);
+	}
 }
 
-void printArray(int arr[], int n)
+void printArray(int arr[], int N)
 {
-    for (int i = 0; i < n; ++i)
-        cout << arr[i] << " ";
-    cout << "\n";
+	for (int i = 0; i < N; ++i)
+		cout << arr[i] << " ";
+	cout << "\n";
 }
 
 int main()
 {
-    int arr[] = {12, 11, 13, 5, 6, 7};
-    int n = sizeof(arr) / sizeof(arr[0]);
+	int arr[] = { 12, 11, 13, 5, 6, 7 };
+	int N = sizeof(arr) / sizeof(arr[0]);
 
-    heapSort(arr, n);
+	heapSort(arr, N);
 
-    cout << "Sorted array is \n";
-    printArray(arr, n);
+	cout << "Sorted array is \n";
+	printArray(arr, N);
 }
